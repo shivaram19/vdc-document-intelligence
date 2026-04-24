@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "agents": {
+    "defaults": {
+      "workspace": "/home/shivaramgoud/tinkering/tinkering-with-claws/picocloth/node-b/workspace",
+      "restrict_to_workspace": false,
+      "model_name": "grok-4.20-multi-agent",
+      "max_tokens": 32768,
+      "max_tool_iterations": 20,
+      "context_window": 2000000,
+      "steering_mode": "one-at-a-time",
+      "routing": {
+        "enabled": true,
+        "light_model": "grok-4.1-fast",
+        "threshold": 0.4
+      }
+    }
+  },
+  "channel_list": {
+    "pico": {
+      "enabled": true,
+      "type": "pico",
+      "settings": {
+        "ping_interval": 30,
+        "read_timeout": 60,
+        "write_timeout": 10,
+        "max_connections": 100,
+        "token": "119c0e1c2e5da08ff9f63120e0aaed7a"
+      }
+    }
+  },
+  "model_list": [
+    {
+      "model_name": "grok-4.20-multi-agent",
+      "provider": "openai",
+      "model": "grok-4.20-multi-agent-0309",
+      "api_base": "https://api.x.ai/v1",
+      "api_keys": [
+        "xai-NAncuOYy8VqcSlBMzTI1n8FV1lx2GWUj6Q0irGUyHuFpbuwuxFJX6zvwUHeUwAaZgmWqOLpTtG5Oeq7n"
+      ],
+      "enabled": true
+    },
+    {
+      "model_name": "grok-4.1-fast",
+      "provider": "openai",
+      "model": "grok-4-1-fast-non-reasoning",
+      "api_base": "https://api.x.ai/v1",
+      "api_keys": [
+        "xai-NAncuOYy8VqcSlBMzTI1n8FV1lx2GWUj6Q0irGUyHuFpbuwuxFJX6zvwUHeUwAaZgmWqOLpTtG5Oeq7n"
+      ],
+      "enabled": true
+    }
+  ],
+  "gateway": {
+    "host": "127.0.0.1",
+    "port": 18791,
+    "log_level": "info"
+  },
+  "heartbeat": {
+    "enabled": true,
+    "interval": 30
+  },
+  "hooks": {
+    "enabled": true,
+    "processes": {
+      "langfuse_bridge": {
+        "enabled": true,
+        "priority": 1,
+        "command": [
+          "/home/shivaramgoud/tinkering/tinkering-with-claws/picocloth/.venv/bin/python3",
+          "/home/shivaramgoud/tinkering/tinkering-with-claws/picocloth/hooks/langfuse_bridge.py"
+        ],
+        "env": {
+          "FLEET_NODE_ID": "node-b",
+          "LANGFUSE_HOST": "http://localhost:3000"
+        },
+        "observe": [
+          "turn_start",
+          "turn_end",
+          "llm_request",
+          "llm_response",
+          "tool_exec_start",
+          "tool_exec_end",
+          "error",
+          "subturn_spawn",
+          "context_compress"
+        ]
+      }
+    }
+  },
+  "tools": {
+    "mcp": {
+      "enabled": true,
+      "servers": {
+        "fleet_server": {
+          "enabled": true,
+          "command": "python3",
+          "args": [
+            "/home/shivaramgoud/tinkering/tinkering-with-claws/picocloth/mcp-fleet-server/server.py"
+          ],
+          "env": {
+            "FLEET_NODE_ID": "node-b",
+            "FLEET_SHARED_DIR": "/home/shivaramgoud/tinkering/tinkering-with-claws/picocloth/shared"
+          }
+        }
+      }
+    }
+  }
+}

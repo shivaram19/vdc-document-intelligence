@@ -1,0 +1,24 @@
+{
+  "trade": "Structural",
+  "division": "03",
+  "description": "Structural concrete and steel checklist",
+  "items": [
+    {"id": "str-01", "category": "Concrete", "check": "Concrete compressive strength (f'c) specified for all elements", "severity": "critical"},
+    {"id": "str-02", "category": "Concrete", "check": "Rebar grade and size specified (ASTM A615/A706)", "severity": "critical"},
+    {"id": "str-03", "category": "Concrete", "check": "Rebar cover meets ACI 318 minimums", "severity": "critical"},
+    {"id": "str-04", "category": "Concrete", "check": "Concrete class (exposure category) specified", "severity": "critical"},
+    {"id": "str-05", "category": "Concrete", "check": "Post-tensioning details and stressing sequence provided", "severity": "critical"},
+    {"id": "str-06", "category": "Concrete", "check": "Expansion/control joint spacing defined", "severity": "medium"},
+    {"id": "str-07", "category": "Steel", "check": "Structural steel grade specified (A992, A572, etc.)", "severity": "critical"},
+    {"id": "str-08", "category": "Steel", "check": "Bolt grades and torque values specified", "severity": "critical"},
+    {"id": "str-09", "category": "Steel", "check": "Welding procedures and inspection requirements listed", "severity": "critical"},
+    {"id": "str-10", "category": "Steel", "check": "Fireproofing rating and thickness specified", "severity": "critical"},
+    {"id": "str-11", "category": "Foundations", "check": "Soil bearing capacity and settlement limits noted", "severity": "critical"},
+    {"id": "str-12", "category": "Foundations", "check": "Pile capacities and load tests specified", "severity": "critical"},
+    {"id": "str-13", "category": "Loadings", "check": "Live loads per IBC Table 1607.1", "severity": "critical"},
+    {"id": "str-14", "category": "Loadings", "check": "Seismic design category and parameters specified", "severity": "critical"},
+    {"id": "str-15", "category": "Loadings", "check": "Wind design pressures and exposure category", "severity": "critical"},
+    {"id": "str-16", "category": "Detailing", "check": "Column spacing consistent across all disciplines", "severity": "critical"},
+    {"id": "str-17", "category": "Detailing", "check": "Beam depths coordinate with ceiling heights", "severity": "medium"}
+  ]
+}

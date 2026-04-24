@@ -1,0 +1,25 @@
+# Secrets & Environment
+.env
+.env.local
+secrets/
+*.key
+
+# Data & Logs
+data/
+*.log
+audit.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Models
+models/
+
+# OS
+.DS_Store
+Thumbs.db

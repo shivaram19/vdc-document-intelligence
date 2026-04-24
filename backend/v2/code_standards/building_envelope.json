@@ -1,0 +1,18 @@
+{
+  "standard": "Building Envelope Code Minimums",
+  "codes": ["IBC", "IECC"],
+  "climate_zones": {
+    "1-2": {"wall_r": 13, "roof_r": 30, "window_u": 0.65, "window_shgc": 0.25},
+    "3": {"wall_r": 13, "roof_r": 30, "window_u": 0.50, "window_shgc": 0.25},
+    "4": {"wall_r": 20, "roof_r": 38, "window_u": 0.40, "window_shgc": 0.40},
+    "5": {"wall_r": 20, "roof_r": 38, "window_u": 0.32, "window_shgc": 0.40},
+    "6": {"wall_r": 20, "roof_r": 49, "window_u": 0.32, "window_shgc": 0.40},
+    "7": {"wall_r": 21, "roof_r": 49, "window_u": 0.30, "window_shgc": 0.40},
+    "8": {"wall_r": 21, "roof_r": 49, "window_u": 0.27, "window_shgc": 0.40}
+  },
+  "notes": [
+    "R-values are minimum continuous insulation values.",
+    "Window U-factors are maximum allowed (lower is better).",
+    "SHGC = Solar Heat Gain Coefficient (lower is better for cooling-dominated climates)."
+  ]
+}

@@ -1,0 +1,108 @@
+{"type": "inbox_detected", "filename": "MECH_SPEC_HVAC.txt", "size_bytes": 1183, "_ts": "2026-04-24T13:03:31.386960Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "c1026bcfd737", "doc_name": "ARCH_DRAWING_NOTES.txt", "chunk_count": 4, "_ts": "2026-04-24T13:04:33.426179Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "ARCH_DRAWING_NOTES.txt", "_ts": "2026-04-24T13:04:33.426246Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "3a1e3c5883ac", "doc_name": "FIRE_PROTECTION_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-24T13:04:46.483077Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "FIRE_PROTECTION_SPEC.txt", "_ts": "2026-04-24T13:04:46.483144Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "979e9f6d353b", "doc_name": "MECH_SPEC_HVAC.txt", "chunk_count": 4, "_ts": "2026-04-24T13:04:59.340585Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "MECH_SPEC_HVAC.txt", "_ts": "2026-04-24T13:04:59.340651Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "c9f5865cac7c", "doc_name": "RFI_LOG.txt", "chunk_count": 3, "_ts": "2026-04-24T13:05:12.358723Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "RFI_LOG.txt", "_ts": "2026-04-24T13:05:12.358802Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "f4d959a25f6b", "doc_name": "STRUCT_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-24T13:05:25.552448Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "STRUCT_SPEC.txt", "_ts": "2026-04-24T13:05:25.552515Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 2", "_ts": "2026-04-24T13:05:40.785482Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength for columns?", "_ts": "2026-04-24T13:05:52.299028Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "What is the column spacing?", "_ts": "2026-04-24T13:05:52.778567Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength for columns?", "_ts": "2026-04-24T13:07:20.035738Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "What is the column spacing at Grid Line C-4?", "_ts": "2026-04-24T13:07:21.701191Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 0", "_ts": "2026-04-24T13:08:12.672127Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the concrete strength?", "top_k": 5}, "_ts": "2026-04-24T13:08:18.732393Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength?", "_ts": "2026-04-24T13:08:34.033178Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 15.3, "success": true, "_ts": "2026-04-24T13:08:34.033319Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 0", "_ts": "2026-04-24T13:08:58.519974Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-24T13:09:24.931870Z"}
+{"type": "inbox_detected", "filename": "MECH_SPEC_HVAC.txt", "size_bytes": 1183, "_ts": "2026-04-24T13:10:18.053831Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "bca5dd7bf7a4", "doc_name": "MECH_SPEC_HVAC.txt", "chunk_count": 4, "_ts": "2026-04-24T13:10:29.486120Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "MECH_SPEC_HVAC.txt", "_ts": "2026-04-24T13:10:29.486217Z"}
+{"type": "inbox_detected", "filename": "ARCH_DRAWING_NOTES.txt", "size_bytes": 1325, "_ts": "2026-04-24T13:10:29.486396Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "4cbcf86532f8", "doc_name": "ARCH_DRAWING_NOTES.txt", "chunk_count": 4, "_ts": "2026-04-24T13:10:30.300756Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "ARCH_DRAWING_NOTES.txt", "_ts": "2026-04-24T13:10:30.300824Z"}
+{"type": "inbox_detected", "filename": "FIRE_PROTECTION_SPEC.txt", "size_bytes": 1159, "_ts": "2026-04-24T13:10:30.301021Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "2f7e132c52f4", "doc_name": "FIRE_PROTECTION_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-24T13:10:31.145668Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "FIRE_PROTECTION_SPEC.txt", "_ts": "2026-04-24T13:10:31.145731Z"}
+{"type": "inbox_detected", "filename": "RFI_LOG.txt", "size_bytes": 881, "_ts": "2026-04-24T13:10:31.145884Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "ded9a6e313b7", "doc_name": "RFI_LOG.txt", "chunk_count": 3, "_ts": "2026-04-24T13:10:31.682246Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "RFI_LOG.txt", "_ts": "2026-04-24T13:10:31.682308Z"}
+{"type": "inbox_detected", "filename": "STRUCT_SPEC.txt", "size_bytes": 1024, "_ts": "2026-04-24T13:10:31.682452Z"}
+{"type": "document_ingested", "project_id": "default", "doc_id": "fb4dcd0e4546", "doc_name": "STRUCT_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-24T13:10:32.459377Z"}
+{"type": "audit", "action": "upload", "project_id": "default", "detail": "STRUCT_SPEC.txt", "_ts": "2026-04-24T13:10:32.459444Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the concrete strength for columns?", "top_k": 5}, "_ts": "2026-04-24T20:08:02.646738Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength for columns?", "_ts": "2026-04-24T20:08:15.907498Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 13.26, "success": true, "_ts": "2026-04-24T20:08:15.907649Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the concrete strength for columns?", "top_k": 5}, "_ts": "2026-04-24T20:14:35.945255Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength for columns?", "_ts": "2026-04-24T20:14:49.200074Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 13.25, "success": true, "_ts": "2026-04-24T20:14:49.200212Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the minimum door width?", "top_k": 5}, "_ts": "2026-04-24T20:28:46.170699Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the minimum door width?", "_ts": "2026-04-24T20:28:58.560329Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 12.39, "success": true, "_ts": "2026-04-24T20:28:58.560453Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "fire protection standpipe spacing", "top_k": 5}, "_ts": "2026-04-24T20:30:25.336940Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "fire protection standpipe spacing", "_ts": "2026-04-24T20:30:33.131699Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 7.79, "success": true, "_ts": "2026-04-24T20:30:33.131812Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "fire protection standpipe", "top_k": 5}, "_ts": "2026-04-24T20:31:54.034855Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "fire protection standpipe", "_ts": "2026-04-24T20:31:56.248983Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.21, "success": true, "_ts": "2026-04-24T20:31:56.249088Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "fire protection standpipe", "top_k": 5}, "_ts": "2026-04-24T20:33:07.005639Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "fire protection standpipe", "_ts": "2026-04-24T20:33:09.527245Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.52, "success": true, "_ts": "2026-04-24T20:33:09.527360Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "fire protection standpipe spacing", "top_k": 5}, "_ts": "2026-04-24T20:36:17.115368Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "fire protection standpipe spacing", "_ts": "2026-04-24T20:36:31.558932Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 14.44, "success": true, "_ts": "2026-04-24T20:36:31.559049Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "fire protection standpipe", "top_k": 3}, "_ts": "2026-04-24T20:38:24.811467Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "fire protection standpipe", "_ts": "2026-04-24T20:38:38.494331Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 13.68, "success": true, "_ts": "2026-04-24T20:38:38.494445Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "fire protection standpipe spacing", "top_k": 5}, "_ts": "2026-04-24T20:39:38.647518Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "fire protection standpipe spacing", "_ts": "2026-04-24T20:39:51.203178Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 12.56, "success": true, "_ts": "2026-04-24T20:39:51.203301Z"}
+{"type": "workflow_start", "workflow": "rfi", "project_id": "default", "params": {"project": "default", "question": "What is the concrete compressive strength requirement?", "number": "RFI-TEST-001"}, "_ts": "2026-04-24T20:40:03.711290Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "What is the concrete compressive strength requirement?", "_ts": "2026-04-24T20:40:07.387211Z"}
+{"type": "workflow_complete", "workflow": "rfi", "project_id": "default", "duration_sec": 3.68, "success": true, "_ts": "2026-04-24T20:40:07.387327Z"}
+{"type": "workflow_start", "workflow": "scan", "project_id": "default", "params": {"project": "default", "query": ""}, "_ts": "2026-04-24T20:40:07.388537Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-24T20:40:07.391094Z"}
+{"type": "workflow_complete", "workflow": "scan", "project_id": "default", "duration_sec": 0.0, "success": true, "_ts": "2026-04-24T20:40:07.391201Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "concrete strength", "top_k": 5}, "_ts": "2026-04-24T20:42:01.399571Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "concrete strength", "_ts": "2026-04-24T20:42:03.861333Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.46, "success": true, "_ts": "2026-04-24T20:42:03.861447Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength?", "_ts": "2026-04-24T21:26:03.955248Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the concrete strength?", "top_k": 5}, "_ts": "2026-04-24T21:26:19.062943Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength?", "_ts": "2026-04-24T21:26:21.482265Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.42, "success": true, "_ts": "2026-04-24T21:26:21.482392Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the concrete strength?", "top_k": 5}, "_ts": "2026-04-24T21:27:16.131766Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength?", "_ts": "2026-04-24T21:27:19.771046Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 3.64, "success": true, "_ts": "2026-04-24T21:27:19.771228Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the concrete strength?", "top_k": 5}, "_ts": "2026-04-24T21:27:29.620891Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength?", "_ts": "2026-04-24T21:27:31.484390Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 1.86, "success": true, "_ts": "2026-04-24T21:27:31.484473Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What are the fire protection requirements?", "top_k": 5}, "_ts": "2026-04-24T21:27:31.485576Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What are the fire protection requirements?", "_ts": "2026-04-24T21:27:33.866807Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.38, "success": true, "_ts": "2026-04-24T21:27:33.866913Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the HVAC ductwork specification?", "top_k": 5}, "_ts": "2026-04-24T21:27:33.868090Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the HVAC ductwork specification?", "_ts": "2026-04-24T21:27:35.118799Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 1.25, "success": true, "_ts": "2026-04-24T21:27:35.118909Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the concrete strength?", "top_k": 5}, "_ts": "2026-04-24T21:33:15.802274Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength?", "_ts": "2026-04-24T21:33:19.087279Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 3.29, "success": true, "_ts": "2026-04-24T21:33:19.087740Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What are the fire protection requirements?", "top_k": 5}, "_ts": "2026-04-24T21:33:19.090771Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What are the fire protection requirements?", "_ts": "2026-04-24T21:33:24.549656Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 5.46, "success": true, "_ts": "2026-04-24T21:33:24.550096Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the HVAC ductwork specification?", "top_k": 5}, "_ts": "2026-04-24T21:33:24.552284Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the HVAC ductwork specification?", "_ts": "2026-04-24T21:33:27.201815Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.65, "success": true, "_ts": "2026-04-24T21:33:27.202291Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the concrete strength?", "top_k": 5}, "_ts": "2026-04-24T21:33:36.806325Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength?", "_ts": "2026-04-24T21:33:40.958210Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 4.15, "success": true, "_ts": "2026-04-24T21:33:40.958651Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What are the fire protection requirements?", "top_k": 5}, "_ts": "2026-04-24T21:33:40.961212Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What are the fire protection requirements?", "_ts": "2026-04-24T21:33:47.507319Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 6.55, "success": true, "_ts": "2026-04-24T21:33:47.507868Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"project": "default", "query": "What is the HVAC ductwork specification?", "top_k": 5}, "_ts": "2026-04-24T21:33:47.509795Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the HVAC ductwork specification?", "_ts": "2026-04-24T21:33:48.916538Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 1.41, "success": true, "_ts": "2026-04-24T21:33:48.916934Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the concrete strength?", "_ts": "2026-04-24T21:38:01.876850Z"}

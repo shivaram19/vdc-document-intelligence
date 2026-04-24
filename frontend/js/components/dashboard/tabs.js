@@ -7,11 +7,11 @@ import { state } from '../../state.js';
 
 export function renderTabsHTML() {
   return `
-    <div class="flex border-b border-slate-700/50 mb-6">
-      <button data-tab="query" class="tab-btn px-5 py-3 text-sm font-medium tab-active transition">Ask Documents</button>
-      <button data-tab="rfi" class="tab-btn px-5 py-3 text-sm font-medium tab-inactive transition">Draft RFI</button>
-      <button data-tab="contradictions" class="tab-btn px-5 py-3 text-sm font-medium tab-inactive transition">Contradictions</button>
-      <button data-tab="upload" class="tab-btn px-5 py-3 text-sm font-medium tab-inactive transition">Inbox</button>
+    <div class="flex border-b border-bp-light/30 mb-6 font-mono text-sm">
+      <button data-tab="query" class="tab-btn px-5 py-3 font-medium tab-active transition">Ask Documents</button>
+      <button data-tab="rfi" class="tab-btn px-5 py-3 font-medium tab-inactive transition">Draft RFI</button>
+      <button data-tab="contradictions" class="tab-btn px-5 py-3 font-medium tab-inactive transition">Contradictions</button>
+      <button data-tab="upload" class="tab-btn px-5 py-3 font-medium tab-inactive transition">Inbox</button>
     </div>
   `;
 }

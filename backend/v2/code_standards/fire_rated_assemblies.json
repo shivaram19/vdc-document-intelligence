@@ -1,0 +1,20 @@
+{
+  "standard": "Fire-Rated Assembly Requirements",
+  "codes": ["IBC", "NFPA 251"],
+  "assemblies": [
+    {"type": "Shaft enclosure", "rating": "2-hour", "ibc_reference": "713.3"},
+    {"type": "Exit access corridor", "rating": "1-hour", "ibc_reference": "1020.1"},
+    {"type": "Exit passageway", "rating": "1-hour", "ibc_reference": "1023.1"},
+    {"type": "Stairway enclosure", "rating": "2-hour", "ibc_reference": "1022.1"},
+    {"type": "Horizontal exit", "rating": "2-hour", "ibc_reference": "1025.1"},
+    {"type": "Occupancy separation (same building)", "rating": "1-hour", "ibc_reference": "508.4"},
+    {"type": "Tenant separation (mall)", "rating": "1-hour", "ibc_reference": "402.4.2.1"}
+  ],
+  "door_ratings": [
+    {"assembly_rating": "3-hour", "door_rating": "3-hour"},
+    {"assembly_rating": "2-hour", "door_rating": "1.5-hour"},
+    {"assembly_rating": "1-hour", "door_rating": "1-hour"},
+    {"assembly_rating": "45-minute", "door_rating": "45-minute"},
+    {"assembly_rating": "20-minute", "door_rating": "20-minute"}
+  ]
+}

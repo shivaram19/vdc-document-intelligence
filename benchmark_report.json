@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-04-23T18:54:46.404423",
+  "total_score": 24.0,
+  "max_score": 24.0,
+  "percentage": 100.0,
+  "results": [
+    {
+      "query": "What is the HVAC temperature setpoint for office spaces?",
+      "tags": [
+        "hvac",
+        "setpoint"
+      ],
+      "score": {
+        "retrieval_ok": true,
+        "fact_ok": true,
+        "citation_ok": true,
+        "disclaimer_ok": true,
+        "total": 4.0
+      },
+      "top_score": 0.7468
+    },
+    {
+      "query": "What is the concrete strength for columns?",
+      "tags": [
+        "structural",
+        "concrete"
+      ],
+      "score": {
+        "retrieval_ok": true,
+        "fact_ok": true,
+        "citation_ok": true,
+        "disclaimer_ok": true,
+        "total": 4.0
+      },
+      "top_score": 0.6368
+    },
+    {
+      "query": "What are the live loads for mechanical rooms?",
+      "tags": [
+        "loads",
+        "mechanical"
+      ],
+      "score": {
+        "retrieval_ok": true,
+        "fact_ok": true,
+        "citation_ok": true,
+        "disclaimer_ok": true,
+        "total": 4.0
+      },
+      "top_score": 0.4625
+    },
+    {
+      "query": "What is NOT the HVAC temperature setpoint for office spaces?",
+      "tags": [
+        "negation",
+        "logic"
+      ],
+      "score": {
+        "retrieval_ok": true,
+        "fact_ok": true,
+        "citation_ok": true,
+        "disclaimer_ok": true,
+        "total": 4.0
+      },
+      "top_score": 0.7306
+    },
+    {
+      "query": "What are the key findings of the construction robotics report?",
+      "tags": [
+        "robotics",
+        "dynamic"
+      ],
+      "score": {
+        "retrieval_ok": true,
+        "fact_ok": true,
+        "citation_ok": true,
+        "disclaimer_ok": true,
+        "total": 4.0
+      },
+      "top_score": 0.7501
+    },
+    {
+      "query": "What is the purpose of the construction robotics report?",
+      "tags": [
+        "robotics",
+        "intent"
+      ],
+      "score": {
+        "retrieval_ok": true,
+        "fact_ok": true,
+        "citation_ok": true,
+        "disclaimer_ok": true,
+        "total": 4.0
+      },
+      "top_score": 0.6928
+    }
+  ]
+}

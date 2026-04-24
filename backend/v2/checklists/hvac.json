@@ -1,0 +1,24 @@
+{
+  "trade": "HVAC",
+  "division": "23",
+  "description": "Heating, Ventilating, and Air Conditioning checklist",
+  "items": [
+    {"id": "hvac-01", "category": "Design Parameters", "check": "Space temperature setpoints defined for all zones", "severity": "critical"},
+    {"id": "hvac-02", "category": "Design Parameters", "check": "Outside air ventilation rates per ASHRAE 62.1", "severity": "critical"},
+    {"id": "hvac-03", "category": "Design Parameters", "check": "Humidity control range specified", "severity": "medium"},
+    {"id": "hvac-04", "category": "Equipment", "check": "VAV unit capacities match load calculations", "severity": "critical"},
+    {"id": "hvac-05", "category": "Equipment", "check": "Chiller efficiency meets ASHRAE 90.1 minimums", "severity": "critical"},
+    {"id": "hvac-06", "category": "Equipment", "check": "Boiler efficiency meets minimum AFUE requirements", "severity": "medium"},
+    {"id": "hvac-07", "category": "Ductwork", "check": "Duct insulation R-value meets energy code", "severity": "medium"},
+    {"id": "hvac-08", "category": "Ductwork", "check": "Ductwork sealing class specified (SMACNA)", "severity": "medium"},
+    {"id": "hvac-09", "category": "Controls", "check": "DDC controls sequence of operations documented", "severity": "critical"},
+    {"id": "hvac-10", "category": "Controls", "check": "BACnet integration points listed", "severity": "medium"},
+    {"id": "hvac-11", "category": "Energy", "check": "Economizer controls specified per climate zone", "severity": "critical"},
+    {"id": "hvac-12", "category": "Energy", "check": "Energy recovery ventilator (ERV) specified where required", "severity": "medium"},
+    {"id": "hvac-13", "category": "Coordination", "check": "Ceiling plenum depth adequate for duct routing", "severity": "critical"},
+    {"id": "hvac-14", "category": "Coordination", "check": "Diffuser locations coordinated with reflected ceiling plan", "severity": "medium"},
+    {"id": "hvac-15", "category": "Coordination", "check": "Thermostat locations coordinated with electrical plan", "severity": "medium"},
+    {"id": "hvac-16", "category": "Fire Safety", "check": "Fire/smoke dampers at shaft penetrations per IBC", "severity": "critical"},
+    {"id": "hvac-17", "category": "Fire Safety", "check": "Smoke evacuation system meets IBC requirements", "severity": "critical"}
+  ]
+}

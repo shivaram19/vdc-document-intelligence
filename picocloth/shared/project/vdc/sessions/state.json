@@ -1,0 +1,83 @@
+{
+  "active_sessions": [
+    {
+      "id": "sess_08187556d1979dda8f11dddcf1a8be97",
+      "project_id": "default",
+      "created": "2026-04-24T20:08:02.644017Z",
+      "expires": "2026-04-24T20:23:02.644023Z",
+      "capabilities": [
+        "can_query",
+        "can_upload",
+        "can_draft_rfi",
+        "can_scan_contradictions",
+        "can_manage_projects"
+      ],
+      "behavioral_hash": "18a22fb425d4c841",
+      "token": "sess_08187556d1979dda8f11dddcf1a8be97:can_draft_rfi,can_manage_projects,can_query,can_scan_contradictions,can_upload:18a22fb425d4c841:1777062182:bb35b5f4d86e9d64444265c5685addc3",
+      "failed_attempts": 0,
+      "anomaly_score": 0.0,
+      "status": "active"
+    },
+    {
+      "id": "sess_a3265f011650c5bda0006080b62e6f45",
+      "project_id": "default",
+      "created": "2026-04-24T20:14:35.943924Z",
+      "expires": "2026-04-24T20:29:35.943930Z",
+      "capabilities": [
+        "can_query",
+        "can_upload",
+        "can_draft_rfi",
+        "can_scan_contradictions",
+        "can_manage_projects"
+      ],
+      "behavioral_hash": "8ce409d4f62357fe",
+      "token": "sess_a3265f011650c5bda0006080b62e6f45:can_draft_rfi,can_manage_projects,can_query,can_scan_contradictions,can_upload:8ce409d4f62357fe:1777062575:cf290f504284c9a60502a2357ebd628e",
+      "failed_attempts": 0,
+      "anomaly_score": 0.0,
+      "status": "active"
+    },
+    {
+      "id": "sess_e988115bfb62fa8d3fcca37cb39709a0",
+      "project_id": "default",
+      "created": "2026-04-24T21:27:29.619965Z",
+      "expires": "2026-04-24T21:42:29.619968Z",
+      "capabilities": [
+        "can_query"
+      ],
+      "behavioral_hash": "",
+      "token": "sess_e988115bfb62fa8d3fcca37cb39709a0:can_query::1777066949:0f4286d635acb73befadf242b69f3a4b",
+      "failed_attempts": 0,
+      "anomaly_score": 0.0,
+      "status": "active"
+    },
+    {
+      "id": "sess_98ba4c985e5cfb4243a81af71196e55e",
+      "project_id": "default",
+      "created": "2026-04-24T21:33:15.797329Z",
+      "expires": "2026-04-24T21:48:15.797334Z",
+      "capabilities": [
+        "can_query"
+      ],
+      "behavioral_hash": "",
+      "token": "sess_98ba4c985e5cfb4243a81af71196e55e:can_query::1777067295:1401f852d6c026ff066bea06906fcb48",
+      "failed_attempts": 0,
+      "anomaly_score": 0.0,
+      "status": "active"
+    },
+    {
+      "id": "sess_15407832f8b2e4d2863a6912ee42b5f7",
+      "project_id": "default",
+      "created": "2026-04-24T21:33:36.803736Z",
+      "expires": "2026-04-24T21:48:36.803740Z",
+      "capabilities": [
+        "can_query"
+      ],
+      "behavioral_hash": "",
+      "token": "sess_15407832f8b2e4d2863a6912ee42b5f7:can_query::1777067316:a0731897b148300c108db905a167b96a",
+      "failed_attempts": 0,
+      "anomaly_score": 0.0,
+      "status": "active"
+    }
+  ],
+  "revoked_tokens": []
+}

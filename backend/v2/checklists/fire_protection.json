@@ -1,0 +1,19 @@
+{
+  "trade": "Fire Protection",
+  "division": "21",
+  "description": "Fire suppression and life safety checklist",
+  "items": [
+    {"id": "fp-01", "category": "System Design", "check": "Sprinkler system type per NFPA 13 (light, ordinary, extra hazard)", "severity": "critical"},
+    {"id": "fp-02", "category": "System Design", "check": "Design density and area of operation specified", "severity": "critical"},
+    {"id": "fp-03", "category": "System Design", "check": "Water supply duration meets code minimum", "severity": "critical"},
+    {"id": "fp-04", "category": "Equipment", "check": "Fire pump capacity and pressure specified", "severity": "critical"},
+    {"id": "fp-05", "category": "Equipment", "check": "Standpipe system class and pressure specified", "severity": "critical"},
+    {"id": "fp-06", "category": "Layout", "check": "Sprinkler spacing within NFPA 13 maximums", "severity": "critical"},
+    {"id": "fp-07", "category": "Layout", "check": "Obstructions to sprinkler discharge identified", "severity": "medium"},
+    {"id": "fp-08", "category": "Life Safety", "check": "Egress width per IBC Table 1005.1", "severity": "critical"},
+    {"id": "fp-09", "category": "Life Safety", "check": "Exit travel distance within code limits", "severity": "critical"},
+    {"id": "fp-10", "category": "Life Safety", "check": "Fire-rated assemblies specified for shafts and corridors", "severity": "critical"},
+    {"id": "fp-11", "category": "Alarm", "check": "Fire alarm device locations coordinated with electrical", "severity": "critical"},
+    {"id": "fp-12", "category": "Alarm", "check": "Smoke detector spacing per NFPA 72", "severity": "medium"}
+  ]
+}

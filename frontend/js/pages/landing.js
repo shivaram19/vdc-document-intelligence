@@ -1,50 +1,40 @@
 /**
  * landing.js — Landing Page Orchestrator
- *
- * SOLID Compliance:
- *   S: Only composes sections. No rendering logic.
- *   O: New sections added without modifying this file.
- *   D: Depends on section components, not concrete HTML.
- *
- * Research basis:
- *   [CITE: Krug2014] "Don't Make Me Think" — landing must communicate
- *   value proposition in < 5 seconds.
- *   [CITE: Fathima2024] Construction professionals abandon tools requiring
- *   > 2 minutes to first value. Landing page must show immediate relevance.
+ * SOLID: SRP — composes sections, delegates rendering.
  */
 
-import { navigate } from '../router.js';
 import { renderHeroSection } from '../components/landing/hero-section.js';
 import { renderFeaturesSection } from '../components/landing/features-section.js';
-import { renderResearchSection } from '../components/landing/research-section.js';
 import { renderFleetSection } from '../components/landing/fleet-section.js';
+import { renderResearchSection } from '../components/landing/research-section.js';
 import { renderCTASection } from '../components/landing/cta-section.js';
+import { navigate } from '../router.js';
 
 export function renderLanding(container) {
   container.innerHTML = `
-    <div class="min-h-screen gradient-bg text-slate-200 font-sans">
-      ${renderHeroSection()}
-      ${renderFeaturesSection()}
-      ${renderFleetSection()}
-      ${renderResearchSection()}
-      ${renderCTASection()}
-      ${renderFooter()}
-    </div>
+    <main id="landing-page" class="blueprint-bg">
+      <div id="hero-mount"></div>
+      <div id="features-mount"></div>
+      <div id="fleet-mount"></div>
+      <div id="research-mount"></div>
+      <div id="cta-mount"></div>
+      <footer class="py-8 text-center text-xs text-gray-600 font-mono border-t border-bp-light/10">
+        <p>Medha Document Intelligence — Research-Backed · Agent-Native · Construction-Aligned</p>
+        <p class="mt-1">Built with PicoCloth mesh · 3-factor auth · Cryptographic audit trail</p>
+      </footer>
+    </main>
   `;
-  wireEvents();
-}
 
-function renderFooter() {
-  return `
-    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
-      <p>Medha Document Intelligence — Agent-Native VDC Platform</p>
-      <p class="mt-1">Built with research-backed principles. Every line cited.</p>
-    </footer>
-  `;
+  container.querySelector('#hero-mount').outerHTML = renderHeroSection();
+  container.querySelector('#features-mount').outerHTML = renderFeaturesSection();
+  container.querySelector('#fleet-mount').outerHTML = renderFleetSection();
+  container.querySelector('#research-mount').outerHTML = renderResearchSection();
+  container.querySelector('#cta-mount').outerHTML = renderCTASection();
+
+  if (typeof document !== 'undefined') wireEvents();
 }
 
 function wireEvents() {
-  if (typeof document === 'undefined') return;
   document.querySelectorAll('[data-nav]').forEach((el) => {
     el.addEventListener('click', () => navigate(el.dataset.nav));
   });

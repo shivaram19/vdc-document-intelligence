@@ -1,0 +1,102 @@
+/**
+ * components.css — Badges, Cards, Banners, Tabs
+ * SOLID: SRP — only reusable UI component styles.
+ *
+ * [CITE: ISO3864] Safety color standardization.
+ */
+
+/* ── Safety Badges ── */
+.badge-pass {
+  background: rgba(46, 125, 50, 0.15);
+  color: #81c784;
+  border: 1px solid rgba(46, 125, 50, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+}
+
+.badge-caution {
+  background: rgba(245, 166, 35, 0.15);
+  color: #ffd54f;
+  border: 1px solid rgba(245, 166, 35, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+}
+
+.badge-critical {
+  background: rgba(211, 47, 47, 0.15);
+  color: #ef5350;
+  border: 1px solid rgba(211, 47, 47, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+}
+
+/* ── Source Card — Document Reference ── */
+.source-card {
+  background: rgba(10, 22, 40, 0.6);
+  border-left: 3px solid var(--safe-green);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+}
+
+/* ── Contradiction Banner ── */
+.contradiction-banner {
+  background: rgba(211, 47, 47, 0.08);
+  border: 1px solid rgba(211, 47, 47, 0.35);
+  border-left: 4px solid var(--safe-red);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-5);
+  color: #ef9a9a;
+}
+
+/* ── Chat Bubbles — Engineering Correspondence ── */
+.chat-user {
+  background: var(--bp-light);
+  color: white;
+  border-radius: 2px 12px 12px 2px;
+  border-left: 3px solid var(--bp-accent);
+}
+
+.chat-ai {
+  background: rgba(21, 34, 56, 0.95);
+  color: var(--gray-200);
+  border-radius: 12px 2px 2px 12px;
+  border: 1px solid rgba(58, 123, 213, 0.2);
+  border-right: 3px solid var(--bp-accent);
+}
+
+/* ── Tab Navigation — Inspector Tabs ── */
+.tab-active {
+  border-bottom: 2px solid var(--bp-accent);
+  color: var(--bp-accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.tab-inactive {
+  border-bottom: 2px solid transparent;
+  color: var(--gray-500);
+}
+
+.tab-inactive:hover {
+  color: var(--gray-300);
+  border-bottom-color: rgba(58, 123, 213, 0.3);
+}
+
+/* ── Status Indicators ── */
+.status-online {
+  background: rgba(46, 125, 50, 0.12);
+  color: #81c784;
+  border: 1px solid rgba(46, 125, 50, 0.3);
+}
+
+.status-working {
+  background: rgba(245, 166, 35, 0.12);
+  color: #ffd54f;
+  border: 1px solid rgba(245, 166, 35, 0.3);
+}
+
+.status-offline {
+  background: rgba(211, 47, 47, 0.12);
+  color: #ef5350;
+  border: 1px solid rgba(211, 47, 47, 0.3);
+}

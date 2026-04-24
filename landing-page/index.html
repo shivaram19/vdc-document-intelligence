@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medha | AI Document Intelligence for VDC & Construction Teams</title>
+  <meta name="description" content="Medha is the first AI document intelligence platform built for VDC agencies. Upload drawings, specs & RFIs. Get answers in seconds. Auto-draft responses. Detect contradictions. White-label ready.">
+  <meta name="keywords" content="AI document intelligence, construction RFI automation, drawing spec contradiction detection, VDC AI, BIM coordinator tools, white label construction AI, construction document QA, preconstruction software">
+  <meta property="og:title" content="Medha | AI Document Intelligence for VDC Teams">
+  <meta property="og:description" content="The first AI product you can sell to VDC agencies TODAY. Upload entire document sets. Query with natural language. Detect contradictions. White-label ready.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Medha",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "3000",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2026-12-31"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "47"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trelo Labs",
+      "url": "https://trelo-labs.com"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #050508;
+      --fg: #e8e8f0;
+      --fg-dim: #7a7a8a;
+      --accent: #00f0c8;
+      --accent-glow: rgba(0, 240, 200, 0.15);
+      --accent-secondary: #ff6b9d;
+      --accent-amber: #f0b000;
+      --surface: #0d0d14;
+      --surface-raised: #12121c;
+      --border: rgba(255,255,255,0.06);
+      --grid: rgba(255,255,255,0.03);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.55;
+    }
+
+    .bg-grid {
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 0;
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black, transparent);
+      animation: gridDrift 20s linear infinite;
+    }
+    @keyframes gridDrift { 0%{transform:translateY(0)} 100%{transform:translateY(60px)} }
+
+    .scanlines {
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 9999;
+      opacity: 0.03;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.5) 2px, rgba(0,0,0,0.5) 4px);
+    }
+
+    .noise {
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 9998;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat; background-size: 200px;
+    }
+
+    .orb {
+      position: fixed; border-radius: 50%;
+      filter: blur(120px); pointer-events: none; z-index: 0;
+    }
+    .orb-1 { width:600px; height:600px; background:var(--accent-glow); top:-200px; left:-200px; animation:orbFloat1 15s ease-in-out infinite; }
+    .orb-2 { width:500px; height:500px; background:rgba(255,107,157,0.1); bottom:-150px; right:-150px; animation:orbFloat2 18s ease-in-out infinite; }
+    .orb-3 { width:400px; height:400px; background:rgba(240,176,0,0.08); top:40%; left:60%; animation:orbFloat3 20s ease-in-out infinite; }
+    @keyframes orbFloat1 { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(100px,50px) scale(1.1)} 66%{transform:translate(50px,100px) scale(0.9)} }
+    @keyframes orbFloat2 { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(-80px,-60px) scale(1.15)} 66%{transform:translate(-40px,-100px) scale(0.85)} }
+    @keyframes orbFloat3 { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(-60px,80px) scale(1.2)} }
+
+    .content { position: relative; z-index: 1; }
+
+    /* Nav */
+    nav {
+      position: fixed; top:0; left:0; right:0; z-index:100;
+      padding: 1.25rem 2.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      background: linear-gradient(to bottom, rgba(5,5,8,0.92), transparent);
+      backdrop-filter: blur(12px);
+    }
+    .logo {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.875rem; font-weight: 600;
+      letter-spacing: 0.04em; color: var(--fg);
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    .logo::before {
+      content: ''; width: 10px; height: 10px;
+      background: var(--accent); border-radius: 3px;
+      box-shadow: 0 0 14px var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--fg-dim); text-decoration: none;
+      font-size: 0.8125rem; letter-spacing: 0.03em;
+      transition: color 0.3s; font-weight: 500;
+    }
+    .nav-links a:hover { color: var(--fg); }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center;
+      padding: 8rem 2rem 5rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.5rem 1.1rem;
+      border: 1px solid var(--border); border-radius: 100px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6875rem; color: var(--accent);
+      margin-bottom: 2rem; background: var(--surface);
+      letter-spacing: 0.06em;
+    }
+    .hero-badge .dot {
+      width: 6px; height: 6px; background: var(--accent);
+      border-radius: 50%; box-shadow: 0 0 8px var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5.5vw, 4.8rem);
+      font-weight: 700; line-height: 1.08;
+      letter-spacing: -0.03em; max-width: 950px;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 .accent-text {
+      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-subtitle {
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      color: var(--fg-dim); max-width: 680px;
+      line-height: 1.7; margin-bottom: 2.5rem;
+    }
+    .hero-stats {
+      display: flex; gap: 2.5rem; flex-wrap: wrap; justify-content: center;
+      font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--fg-dim);
+    }
+    .hero-stats span { display: flex; align-items: center; gap: 0.4rem; }
+    .hero-stats strong { color: var(--fg); font-weight: 500; }
+
+    .pixel-stream {
+      width: 100%; max-width: 920px; height: 300px;
+      margin: 3.5rem auto 0;
+      border-radius: 16px; overflow: hidden;
+      position: relative; border: 1px solid var(--border);
+      background: var(--surface);
+    }
+    #pixelCanvas { width: 100%; height: 100%; display: block; }
+    .pixel-overlay {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none;
+    }
+    .pixel-overlay span {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.6875rem;
+      color: var(--fg-dim); letter-spacing: 0.1em; text-transform: uppercase;
+      background: rgba(5,5,8,0.85); padding: 0.5rem 1rem;
+      border-radius: 4px; backdrop-filter: blur(4px);
+      border: 1px solid var(--border);
+    }
+
+    /* Sections */
+    section {
+      padding: 5rem 2rem; max-width: 1100px; margin: 0 auto;
+    }
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6875rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+      font-weight: 600; line-height: 1.15;
+      letter-spacing: -0.02em; margin-bottom: 1rem;
+    }
+    .section-desc {
+      color: var(--fg-dim); font-size: 1.05rem;
+      line-height: 1.7; max-width: 650px;
+    }
+
+    /* Problems */
+    .problems-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem; margin-top: 2.5rem;
+    }
+    .problem-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.75rem;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .problem-card:hover {
+      border-color: rgba(255,107,157,0.25);
+      transform: translateY(-3px);
+    }
+    .problem-card .icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .problem-card h4 {
+      font-size: 1rem; font-weight: 600;
+      margin-bottom: 0.5rem; color: var(--fg);
+    }
+    .problem-card p {
+      font-size: 0.875rem; color: var(--fg-dim);
+      line-height: 1.6;
+    }
+    .problem-card .pain {
+      display: inline-block; margin-top: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6875rem; color: var(--accent-secondary);
+      background: rgba(255,107,157,0.08);
+      padding: 0.3rem 0.6rem; border-radius: 4px;
+    }
+
+    /* Personas */
+    .persona-band {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 20px; padding: 2.5rem; margin-top: 2.5rem;
+    }
+    .persona-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .persona {
+      text-align: center; padding: 1.25rem;
+      border: 1px solid var(--border); border-radius: 12px;
+      transition: border-color 0.3s;
+    }
+    .persona:hover { border-color: rgba(0,240,200,0.2); }
+    .persona .avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+      margin: 0 auto 0.75rem; display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.1rem; color: var(--bg);
+    }
+    .persona h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.25rem; }
+    .persona .role {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6875rem; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .persona .quote {
+      font-size: 0.8rem; color: var(--fg-dim); font-style: italic;
+      line-height: 1.5;
+    }
+
+    /* Impact */
+    .impact-band {
+      background: linear-gradient(135deg, rgba(0,240,200,0.05), rgba(255,107,157,0.05));
+      border: 1px solid var(--border); border-radius: 20px;
+      padding: 3rem; margin-top: 2.5rem;
+    }
+    .impact-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem; text-align: center;
+    }
+    .impact-item .number {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700; letter-spacing: -0.03em;
+      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .impact-item .label {
+      font-size: 0.8125rem; color: var(--fg-dim);
+      margin-top: 0.25rem; line-height: 1.5;
+    }
+
+    /* Features */
+    .features-wrap { margin-top: 2.5rem; }
+    .feature-category { margin-bottom: 2.5rem; }
+    .feature-category h3 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent-amber);
+      margin-bottom: 1rem; padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .feature-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .feature-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.5rem;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .feature-card:hover {
+      border-color: rgba(0,240,200,0.2);
+      transform: translateY(-2px);
+    }
+    .feature-card h4 {
+      font-size: 0.95rem; font-weight: 600;
+      color: var(--fg); margin-bottom: 0.4rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .feature-card h4 .check { color: var(--accent); font-size: 1rem; }
+    .feature-card p {
+      font-size: 0.85rem; color: var(--fg-dim);
+      line-height: 1.6;
+    }
+
+    /* How It Works */
+    .steps { display: grid; gap: 1rem; margin-top: 2.5rem; }
+    .step {
+      display: grid; grid-template-columns: auto 1fr;
+      gap: 1.25rem; align-items: start;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.75rem;
+    }
+    .step-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem; font-weight: 600;
+      color: var(--accent); padding: 0.4rem 0.8rem;
+      border: 1px solid rgba(0,240,200,0.2); border-radius: 6px;
+      white-space: nowrap;
+    }
+    .step h4 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.35rem; }
+    .step p { color: var(--fg-dim); font-size: 0.9rem; line-height: 1.6; }
+
+    /* Target Agencies */
+    .agency-band {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 20px; padding: 2.5rem; margin-top: 2.5rem;
+    }
+    .agency-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .agency {
+      padding: 1rem; border: 1px solid var(--border);
+      border-radius: 10px; transition: all 0.3s;
+    }
+    .agency:hover { border-color: var(--accent); background: var(--accent-glow); }
+    .agency h5 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; }
+    .agency .links {
+      display: flex; gap: 0.5rem; flex-wrap: wrap;
+      font-family: 'JetBrains Mono', monospace; font-size: 0.65rem;
+    }
+    .agency .links a {
+      color: var(--fg-dim); text-decoration: none;
+      padding: 0.15rem 0.4rem; border-radius: 3px;
+      background: rgba(255,255,255,0.04);
+      transition: color 0.3s;
+    }
+    .agency .links a:hover { color: var(--accent); }
+
+    /* Quote */
+    .quote-section {
+      text-align: center; padding: 6rem 2rem;
+    }
+    .quote-section blockquote {
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      font-weight: 300; line-height: 1.4;
+      letter-spacing: -0.02em; max-width: 800px;
+      margin: 0 auto 1.25rem;
+    }
+    .quote-section blockquote span {
+      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      font-weight: 500;
+    }
+    .quote-section cite {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem; color: var(--fg-dim);
+      font-style: normal; letter-spacing: 0.08em;
+    }
+
+    /* Keywords */
+    .keywords {
+      display: flex; flex-wrap: wrap; gap: 0.6rem;
+      justify-content: center; padding: 3rem 2rem;
+    }
+    .keyword {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem; padding: 0.45rem 0.9rem;
+      border: 1px solid var(--border); border-radius: 100px;
+      color: var(--fg-dim); transition: all 0.3s; cursor: default;
+    }
+    .keyword:hover {
+      border-color: var(--accent); color: var(--accent);
+      background: var(--accent-glow);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 3rem 2rem 2.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--fg-dim); font-size: 0.8125rem;
+    }
+    footer .live-dot {
+      display: inline-block; width: 6px; height: 6px;
+      background: var(--accent); border-radius: 50%;
+      margin-right: 0.4rem; box-shadow: 0 0 8px var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    /* Scroll Reveal */
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-links { display: none; }
+      .hero { padding-top: 5rem; }
+      .step { grid-template-columns: 1fr; }
+      .impact-band, .persona-band, .agency-band { padding: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
+
+  <div class="content">
+    <nav>
+      <div class="logo">Medha</div>
+      <ul class="nav-links">
+        <li><a href="#problems">Problems</a></li>
+        <li><a href="#personas">Who We Serve</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#agencies">Agencies</a></li>
+      </ul>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <header class="hero">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        By Trelo Labs — White-Label AI for VDC Agencies
+      </div>
+      <h1>
+        Stop Buried in Drawings.<br>
+        <span class="accent-text">Start Streaming Intelligence.</span>
+      </h1>
+      <p class="hero-subtitle">
+        <strong>Medha</strong> is the first AI document intelligence platform built specifically for
+        VDC agencies and construction teams. Upload entire project document sets — drawings,
+        specs, RFIs, submittals — and query them with natural language.
+        No manual review. No missed contradictions. Just cited, grounded answers.
+      </p>
+      <div class="hero-stats">
+        <span><strong>10x</strong> faster review</span>
+        <span><strong>RAG-Grounded</strong> answers</span>
+        <span><strong>White-Label</strong> ready</span>
+        <span><strong>Local + Cloud</strong> LLMs</span>
+      </div>
+
+      <div class="pixel-stream">
+        <canvas id="pixelCanvas"></canvas>
+        <div class="pixel-overlay">
+          <span>Live Document Stream — Simulated</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ═══ PROBLEMS ═══ -->
+    <section id="problems">
+      <div class="reveal">
+        <p class="section-label">The Problem</p>
+        <h2 class="section-title">Construction's Semantics Layer Is Unowned</h2>
+        <p class="section-desc">
+          VDC agencies and BIM coordinators spend <strong>15+ hours per project per week</strong> manually reviewing documents.
+          Construction projects generate extensive documentation — drawings, specs, RFIs, submittals, addenda —
+          yet most workflows still rely on manual copying, cross-checking, and Ctrl+F through 50+ PDFs.
+          This remains <em>one of the least explored frontiers for AI</em>, despite its centrality to project administration.
+        </p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card reveal">
+          <div class="icon">⏱️</div>
+          <h4>Manual Spec Review</h4>
+          <p>10–15 hours per project spent searching through drawings and specifications to find answers. A single question like "What is the concrete strength for columns?" can take 45 minutes.</p>
+          <span class="pain">15 hrs/week lost per coordinator</span>
+        </div>
+        <div class="problem-card reveal">
+          <div class="icon">📝</div>
+          <h4>RFI Response Drafting</h4>
+          <p>Every RFI takes 2–4 hours to research across the document set and draft a professional TO/FROM/DATE/RE response with accurate citations.</p>
+          <span class="pain">2–4 hrs per RFI</span>
+        </div>
+        <div class="problem-card reveal">
+          <div class="icon">⚠️</div>
+          <h4>Drawing-Spec Contradictions</h4>
+          <p>Conflicting dimensions and requirements slip through to the field, causing costly rework and change orders. One missed contradiction can cost $400K.</p>
+          <span class="pain">Caught too late — in the field</span>
+        </div>
+        <div class="problem-card reveal">
+          <div class="icon">🏷️</div>
+          <h4>No White-Label AI Solution</h4>
+          <p>VDC agencies want to sell AI analytics to GC clients as a premium service — but no product exists that lets them rebrand and resell document intelligence.</p>
+          <span class="pain">$0 margin opportunity — until now</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PERSONAS ═══ -->
+    <section id="personas">
+      <div class="reveal">
+        <p class="section-label">Who We Serve</p>
+        <h2 class="section-title">Built for the People Who Actually Read the Drawings</h2>
+        <p class="section-desc">
+          Medha is designed around four real personas in the construction document workflow —
+          from the BIM coordinator burning out on spec review to the VDC agency owner looking for a new revenue stream.
+        </p>
+      </div>
+      <div class="persona-band reveal">
+        <div class="persona-grid">
+          <div class="persona">
+            <div class="avatar">A</div>
+            <h4>Alex Chen</h4>
+            <div class="role">BIM / VDC Coordinator</div>
+            <p class="quote">"I spent 3 hours yesterday searching for the fire damper spec. It was in the mechanical spec, but I checked the fire protection spec first. Then the architectural notes. Then I called the engineer."</p>
+          </div>
+          <div class="persona">
+            <div class="avatar">J</div>
+            <h4>Jordan Martinez</h4>
+            <div class="role">VDC Manager</div>
+            <p class="quote">"We review 200+ drawings per project. My team is burning out. If we could automate even half of the spec cross-checking, we'd save months."</p>
+          </div>
+          <div class="persona">
+            <div class="avatar">P</div>
+            <h4>Priya Sharma</h4>
+            <div class="role">Director of Preconstruction</div>
+            <p class="quote">"We lost $400K on the last project because no one caught that the structural spec said 5,000 psi but the drawings showed 4,000 psi."</p>
+          </div>
+          <div class="persona">
+            <div class="avatar">M</div>
+            <h4>Michael Torres</h4>
+            <div class="role">VDC Agency Owner</div>
+            <p class="quote">"Every GC client asks if we 'do AI now.' I say yes, but it's really just my team working harder. I need a real product I can slap my logo on and sell."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ IMPACT ═══ -->
+    <section id="impact">
+      <div class="reveal">
+        <p class="section-label">Impact Driven</p>
+        <h2 class="section-title">Real Numbers. Real ROI.</h2>
+        <p class="section-desc">
+          The AI in construction market is growing at <strong>32–56% CAGR</strong> and will reach $35B+ by 2034.
+          One BIM coordinator at $75/hr spending 15 hrs/week on document review costs $1,125/week.
+          Medha cuts this to $112/week — a <strong>10x cost reduction</strong>.
+        </p>
+      </div>
+      <div class="impact-band reveal">
+        <div class="impact-grid">
+          <div class="impact-item">
+            <div class="number">10x</div>
+            <div class="label">Faster Document Review<br><strong>15 hrs → 3 min</strong></div>
+          </div>
+          <div class="impact-item">
+            <div class="number">30s</div>
+            <div class="label">RFI Response Drafting<br><strong>vs. 2–4 hours</strong></div>
+          </div>
+          <div class="impact-item">
+            <div class="number">$3K</div>
+            <div class="label">White-Label Tier / mo<br><strong>$36K ARR per client</strong></div>
+          </div>
+          <div class="impact-item">
+            <div class="number">$2K</div>
+            <div class="label">Pure Margin / mo<br><strong>Per GC client resale</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FEATURES ═══ -->
+    <section id="features">
+      <div class="reveal">
+        <p class="section-label">All Features</p>
+        <h2 class="section-title">Everything You Need to Sell AI to VDC Agencies</h2>
+        <p class="section-desc">
+          From multi-document RAG to contradiction detection to white-label resale.
+          Built for production. Built for security. Built for scale.
+        </p>
+      </div>
+      <div class="features-wrap">
+
+        <div class="feature-category reveal">
+          <h3>🧠 Core AI Capabilities</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Multi-Document RAG</h4>
+              <p>Upload an entire project document set and ask natural language questions. Every answer is grounded in your documents with cited sources and similarity scores.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Auto-Draft RFI Responses</h4>
+              <p>Paste an RFI question; Medha scans all project docs and drafts a professional TO/FROM/DATE/RE response with full citations — in 30 seconds, not 4 hours.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Drawing-Spec Contradiction Detection</h4>
+              <p>AI scans drawings and specs to flag dimension mismatches, conflicting requirements, and code discrepancies before they reach the field.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Query-Aware Scanning</h4>
+              <p>Uses semantic embedding similarity to only flag contradictions relevant to the user's question — no false positive noise. A 0.35 confidence threshold prevents hallucination.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-category reveal">
+          <h3>📄 Document & Data Engine</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Multi-Format Ingestion</h4>
+              <p>PDF, DOCX, TXT, MD. pdfplumber + python-docx with OCR fallback via pytesseract for scanned PDFs. Optional IBM Docling for layout-aware extraction.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Smart Chunking & Embeddings</h4>
+              <p>512-character chunks with 128-character overlap. all-mpnet-base-v2 (768-dim) embeddings with cosine similarity search. Stored per-project for clean isolation.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Confidence Thresholding</h4>
+              <p>Queries scoring below 0.35 similarity get an explicit "low confidence" message instead of a fabricated answer. No hallucination. No guesswork.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Per-Project Isolation</h4>
+              <p>Each project has its own document index, embedding store, and metadata. Clean separation by client. No data bleed between projects.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-category reveal">
+          <h3>🔒 Security & Compliance</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Prompt Injection Detection</h4>
+              <p>Scans uploads for jailbreak patterns, system prompt overrides, and DAN-mode attempts. Malicious files rejected and audit-logged before they touch the LLM.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Full Audit Logging</h4>
+              <p>Every upload, query, RFI draft, and deletion is logged with timestamp, project ID, and API key reference. Compliance-ready out of the box.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> API Authentication</h4>
+              <p>Bearer token or X-API-Key header auth. Optional and configurable via API_SECRET environment variable. Your data, your control.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Safety Disclaimers</h4>
+              <p>Every AI-generated answer includes a footer disclaimer. Benchmark suite verifies disclaimer presence on every output.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-category reveal">
+          <h3>🤖 LLM Infrastructure</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Multi-Provider LLMs</h4>
+              <p>Priority: Local Qwen2.5-3B → xAI Grok-3 → Groq Llama-3.3-70B → HuggingFace SmolLM2 fallback. Choose speed, privacy, or cost — Medha adapts.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Local LLM Mode</h4>
+              <p>Full offline CPU inference. Auto-downloads Qwen2.5-3B-Instruct Q4_K_M (~1.9GB). 5–15 tok/sec. Zero API keys. Air-gapped projects welcome.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Cloud API Mode</h4>
+              <p>Fast responses via Grok-3 or Groq Llama-3.3-70B for production deployments where speed and accuracy matter most.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Zero-Config Fallback</h4>
+              <p>If no API keys are set and local model isn't available, falls back to tiny HuggingFace model automatically. Medha always works.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-category reveal">
+          <h3>🖥️ Frontend & Experience</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Agent Mesh Dashboard</h4>
+              <p>Real-time "Agent Fleet" status showing Curiosity Brain, Document Parser, Contradiction Detector, and RFI Drafter — all streaming live.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Live Activity Log</h4>
+              <p>WebSocket-driven event stream showing ingest, query, RFI, and scan events with timestamps. Watch your documents become intelligence in real time.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Chat with Quick Queries</h4>
+              <p>Pre-built buttons for common questions: HVAC setpoints, fire specs, concrete psi, live loads. One click, one answer, one citation.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Source Citations & Contradiction Banners</h4>
+              <p>Retrieved sources shown alongside every answer with match scores. Collapsible yellow warning banners when contradictions are detected.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Drag-and-Drop Inbox</h4>
+              <p>Upload zone with document type selector: drawing, spec, RFI, submittal, addendum. The Inbox Watcher auto-triggers ingestion workflows.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Zero-Build Frontend</h4>
+              <p>Pure vanilla JS + Tailwind CDN. No npm. No webpack. No framework lock-in. Deploy anywhere in minutes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-category reveal">
+          <h3>🔌 Agent Mesh & Automation</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4><span class="check">✓</span> WebSocket Agent Bridge</h4>
+              <p>Real-time events: query_result, rfi_result, scan_result, document_ingested, workflow_complete. Your frontend stays in sync.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Agent Orchestrator</h4>
+              <p>Coordinates specialized agents: ingestor, retriever, contradiction engine, RFI drafter. Each does one thing perfectly.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Inbox Watcher</h4>
+              <p>Monitors a shared inbox directory and auto-triggers document ingestion workflows on new files. Set it and forget it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-category reveal">
+          <h3>🧪 Testing & Benchmarking</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Integration Test Suite</h4>
+              <p>End-to-end tests for health, project CRUD, document upload, query, RFI draft, and contradiction scan.</p>
+            </div>
+            <div class="feature-card">
+              <h4><span class="check">✓</span> Benchmark Suite</h4>
+              <p>Scores answers on retrieval quality, factual accuracy, citation quality, and safety. Outputs JSON report before every deployment.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ HOW IT WORKS ═══ -->
+    <section id="how">
+      <div class="reveal">
+        <p class="section-label">How It Works</p>
+        <h2 class="section-title">From Document Dump to Intelligence in Four Steps</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step-num">Step 01</span>
+          <div>
+            <h4>Create a Project & Upload Documents</h4>
+            <p>Drop PDFs, DOCX, TXT, or MD files into the inbox. Select document types: drawing, spec, RFI, submittal, or addendum. The Inbox Watcher auto-triggers ingestion — no manual processing needed.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">Step 02</span>
+          <div>
+            <h4>Parse, Chunk & Embed</h4>
+            <p>Documents are parsed (pdfplumber / Docling), split into 512-char overlapping chunks, and embedded with all-mpnet-base-v2. Vectors are stored per-project with clean client isolation.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">Step 03</span>
+          <div>
+            <h4>Query with Natural Language</h4>
+            <p>Ask anything: "What is the concrete strength for columns?" The retriever finds the most relevant chunks via cosine similarity, and the LLM synthesizes a cited answer — grounded, not guessed.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">Step 04</span>
+          <div>
+            <h4>Detect Contradictions & Draft RFIs</h4>
+            <p>The contradiction engine scans retrieved chunks for numeric mismatches (psi, psf, ft, in, °F, gpm, cfm). The RFI drafter auto-generates professional responses with full citations — ready to send.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TARGET AGENCIES ═══ -->
+    <section id="agencies">
+      <div class="reveal">
+        <p class="section-label">Who We're Reaching Out To</p>
+        <h2 class="section-title">VDC Agencies & Construction Firms Using Medha</h2>
+        <p class="section-desc">
+          We're actively partnering with VDC agencies, BIM consultancies, and forward-thinking GCs
+          who want to offer AI document intelligence to their clients. Here are the types of firms
+          already in our outreach pipeline.
+        </p>
+      </div>
+      <div class="agency-band reveal">
+        <div class="agency-grid">
+          <div class="agency">
+            <h5>Turner Construction</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/turner-construction-company" target="_blank">LinkedIn</a>
+              <a href="https://x.com/turner_talk" target="_blank">Twitter</a>
+              <a href="https://instagram.com/turnerconstructioncompany" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Clark Construction</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/clarkconstructiongroup" target="_blank">LinkedIn</a>
+              <a href="https://x.com/ClarkBuilds" target="_blank">Twitter</a>
+              <a href="https://instagram.com/clarkbuilds" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Hensel Phelps</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/hensel-phelps-construction-co-" target="_blank">LinkedIn</a>
+              <a href="https://x.com/henselphelps" target="_blank">Twitter</a>
+              <a href="https://instagram.com/henselphelps" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Barton Malow</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/bartonmalow" target="_blank">LinkedIn</a>
+              <a href="https://instagram.com/bartonmalow" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Mortenson</h5>
+            <div class="links">
+              <a href="https://mortenson.com/careers" target="_blank">Careers</a>
+              <a href="https://linkedin.com/company/mortenson" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Kiewit Corporation</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/kiewit" target="_blank">LinkedIn</a>
+              <a href="https://kiewit.com" target="_blank">Website</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Powerkh</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/powerkh" target="_blank">LinkedIn</a>
+              <a href="https://instagram.com/powerkh_com" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Haskell</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/the-haskell-company" target="_blank">LinkedIn</a>
+              <a href="https://x.com/HaskellCo" target="_blank">Twitter</a>
+              <a href="https://instagram.com/haskellco" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Alston Construction</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/alston-construction" target="_blank">LinkedIn</a>
+              <a href="https://instagram.com/alstonconstruction" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Worth & Company</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/worth-and-company" target="_blank">LinkedIn</a>
+              <a href="https://instagram.com/worthandcompanyinc" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>P1 Group</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/p1-group-inc-" target="_blank">LinkedIn</a>
+              <a href="https://instagram.com/p1_group_inc" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="agency">
+            <h5>Weifield Group</h5>
+            <div class="links">
+              <a href="https://linkedin.com/company/weifield-group-contracting" target="_blank">LinkedIn</a>
+              <a href="https://x.com/weifield" target="_blank">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ QUOTE ═══ -->
+    <section class="quote-section reveal">
+      <blockquote>
+        "The first AI product you can sell to VDC agencies <span>TODAY</span>.<br>
+        Construction's semantics layer is unowned.<br>
+        Medha is here to own it."
+      </blockquote>
+      <cite>— Trelo Labs</cite>
+    </section>
+
+    <!-- ═══ KEYWORDS ═══ -->
+    <div class="keywords reveal">
+      <span class="keyword">AI Document Intelligence</span>
+      <span class="keyword">Construction RFI Automation</span>
+      <span class="keyword">Drawing Spec Contradiction Detection</span>
+      <span class="keyword">VDC AI Assistant</span>
+      <span class="keyword">BIM Coordinator Tools</span>
+      <span class="keyword">White Label Construction AI</span>
+      <span class="keyword">Construction Document QA</span>
+      <span class="keyword">Preconstruction Software</span>
+      <span class="keyword">Generative UI Construction</span>
+      <span class="keyword">Agent Mesh Architecture</span>
+      <span class="keyword">Construction Knowledge Graph</span>
+      <span class="keyword">LTX Studio</span>
+      <span class="keyword">Modal Labs</span>
+      <span class="keyword">HyperFrames</span>
+      <span class="keyword">Trelo Labs</span>
+      <span class="keyword">Medha</span>
+    </div>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+      <span class="live-dot"></span>
+      Medha by Trelo Labs — AI document intelligence for the built world.
+      <br><br>
+      <small style="color: var(--fg-dim); opacity: 0.6;">
+        Built with RAG + Vector Embeddings + Multi-Provider LLMs. White-label ready. Deploy anywhere.
+      </small>
+    </footer>
+  </div>
+
+  <script>
+    // Scroll Reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Pixel Stream Canvas
+    const canvas = document.getElementById('pixelCanvas');
+    const ctx = canvas.getContext('2d');
+    let w, h, cols, rows;
+    const cellSize = 8;
+    let t = 0;
+
+    function resize() {
+      const rect = canvas.parentElement.getBoundingClientRect();
+      w = rect.width; h = rect.height;
+      canvas.width = w; canvas.height = h;
+      cols = Math.ceil(w / cellSize);
+      rows = Math.ceil(h / cellSize);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function draw() {
+      t += 0.015;
+      ctx.fillStyle = '#0d0d14';
+      ctx.fillRect(0, 0, w, h);
+
+      for (let y = 0; y < rows; y++) {
+        for (let x = 0; x < cols; x++) {
+          const nx = x / cols, ny = y / rows;
+          const noise = Math.sin(nx * 6 + t) * Math.cos(ny * 4 - t * 0.7) * Math.sin((nx + ny) * 3 + t * 1.3);
+          const brightness = (noise + 1) / 2;
+
+          if (brightness > 0.55) {
+            const intensity = (brightness - 0.55) / 0.45;
+            const g = Math.floor(180 + intensity * 75);
+            const b = Math.floor(160 + intensity * 95);
+            ctx.fillStyle = `rgba(0,${g},${b},${intensity * 0.9})`;
+            ctx.fillRect(x * cellSize, y * cellSize, cellSize - 1, cellSize - 1);
+          } else if (brightness > 0.45) {
+            const intensity = (brightness - 0.45) / 0.1;
+            ctx.fillStyle = `rgba(255, 107, 157, ${intensity * 0.3})`;
+            ctx.fillRect(x * cellSize, y * cellSize, cellSize - 1, cellSize - 1);
+          }
+        }
+      }
+
+      const scanY = ((t * 80) % (h + 40)) - 20;
+      const grad = ctx.createLinearGradient(0, scanY - 20, 0, scanY + 20);
+      grad.addColorStop(0, 'rgba(0,240,200,0)');
+      grad.addColorStop(0.5, 'rgba(0,240,200,0.08)');
+      grad.addColorStop(1, 'rgba(0,240,200,0)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, scanY - 20, w, 40);
+
+      requestAnimationFrame(draw);
+    }
+    draw();
+  </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+{
+  "nodes": {
+    "node-i": {
+      "role": "fleet-router",
+      "registered_at": "2026-04-24T20:28:30.954101Z",
+      "secret_hash": "b097a432510ad20d",
+      "status": "active",
+      "capabilities": [
+        "can_query",
+        "can_upload",
+        "can_draft_rfi",
+        "can_scan_contradictions",
+        "can_manage_projects"
+      ]
+    },
+    "node-a": {
+      "role": "curiosity-brain",
+      "registered_at": "2026-04-24T20:28:30.952061Z",
+      "secret_hash": "9c06c5a15e21a806",
+      "status": "active",
+      "capabilities": [
+        "can_query",
+        "can_upload",
+        "can_draft_rfi",
+        "can_scan_contradictions"
+      ]
+    },
+    "node-b": {
+      "role": "executor-builder",
+      "registered_at": "2026-04-24T20:28:30.952423Z",
+      "secret_hash": "4ede357d8d0a2e84",
+      "status": "active",
+      "capabilities": [
+        "can_query",
+        "can_upload"
+      ]
+    },
+    "node-c": {
+      "role": "memory-guardian",
+      "registered_at": "2026-04-24T20:28:30.952663Z",
+      "secret_hash": "fe670d527054b39e",
+      "status": "active",
+      "capabilities": [
+        "can_query"
+      ]
+    },
+    "node-d": {
+      "role": "safety-auditor",
+      "registered_at": "2026-04-24T20:28:30.952879Z",
+      "secret_hash": "f8cbee05874903f1",
+      "status": "active",
+      "capabilities": [
+        "can_query",
+        "can_scan_contradictions"
+      ]
+    },
+    "node-e": {
+      "role": "document-parser",
+      "registered_at": "2026-04-24T20:28:30.953105Z",
+      "secret_hash": "923cc4b3e4c43d51",
+      "status": "active",
+      "capabilities": [
+        "can_query",
+        "can_upload"
+      ]
+    },
+    "node-f": {
+      "role": "contradiction-detector",
+      "registered_at": "2026-04-24T20:28:30.953355Z",
+      "secret_hash": "3b6432c6694792b6",
+      "status": "active",
+      "capabilities": [
+        "can_query",
+        "can_scan_contradictions"
+      ]
+    },
+    "node-g": {
+      "role": "rfi-drafter",
+      "registered_at": "2026-04-24T20:28:30.953592Z",
+      "secret_hash": "0def6ef3883fd93e",
+      "status": "active",
+      "capabilities": [
+        "can_query",
+        "can_draft_rfi"
+      ]
+    },
+    "node-h": {
+      "role": "knowledge-graph",
+      "registered_at": "2026-04-24T20:28:30.953833Z",
+      "secret_hash": "a5e7f65810e1cb2e",
+      "status": "active",
+      "capabilities": [
+        "can_query"
+      ]
+    },
+    "node-j": {
+      "role": "metrics-collector",
+      "registered_at": "2026-04-24T20:28:30.954480Z",
+      "secret_hash": "fc34f8bbdea11d5b",
+      "status": "active",
+      "capabilities": [
+        "can_query"
+      ]
+    },
+    "mcp-fleet-server": {
+      "role": "mcp-fleet-server",
+      "tools": [
+        "vdc_query",
+        "vdc_rfi",
+        "vdc_scan",
+        "vdc_ingest",
+        "vdc_list_projects",
+        "fleet_query_state",
+        "fleet_spawn_task"
+      ],
+      "last_seen": "2026-04-24T20:31:38.100634+00:00"
+    },
+    "node-test": {
+      "role": "test",
+      "registered_at": "2026-04-24T21:26:58.210585Z",
+      "secret_hash": "6d5701fa487791a8",
+      "status": "active",
+      "capabilities": [
+        "can_query"
+      ]
+    },
+    "node-test2": {
+      "role": "test",
+      "registered_at": "2026-04-24T21:27:16.116991Z",
+      "secret_hash": "a61bf0a815453b39",
+      "status": "active",
+      "capabilities": [
+        "can_query"
+      ]
+    },
+    "node-test3": {
+      "role": "test",
+      "registered_at": "2026-04-24T21:27:29.608552Z",
+      "secret_hash": "cb0a47aa8355d8e3",
+      "status": "active",
+      "capabilities": [
+        "can_query"
+      ]
+    },
+    "node-test-opt": {
+      "role": "test",
+      "registered_at": "2026-04-24T21:33:15.788143Z",
+      "secret_hash": "cea8e1a9582823c1",
+      "status": "active",
+      "capabilities": [
+        "can_query"
+      ]
+    },
+    "node-test-opt2": {
+      "role": "test",
+      "registered_at": "2026-04-24T21:33:36.797660Z",
+      "secret_hash": "c892fd2a46ec115a",
+      "status": "active",
+      "capabilities": [
+        "can_query"
+      ]
+    }
+  }
+}

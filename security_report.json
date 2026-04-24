@@ -1,0 +1,41 @@
+{
+  &quot;audit_date&quot;: &quot;2026-04-24&quot;,
+  &quot;domain&quot;: &quot;trelolabs.com&quot;,
+  &quot;app_path&quot;: &quot;/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/&quot;,
+  &quot;security_findings&quot;: [
+    {
+      &quot;id&quot;: &quot;SEC-001&quot;,
+      &quot;severity&quot;: &quot;HIGH&quot;,
+      &quot;title&quot;: &quot;File Upload Validation&quot;,
+      &quot;description&quot;: &quot;Verify PDF/DOCX/TXT upload only processes safe file types&quot;,
+      &quot;status&quot;: &quot;TODO: Manual review required&quot;
+    },
+    {
+      &quot;id&quot;: &quot;SEC-002&quot;,
+      &quot;severity&quot;: &quot;MEDIUM&quot;,
+      &quot;title&quot;: &quot;CORS Configuration&quot;,
+      &quot;description&quot;: &quot;Flask CORS should restrict origins to trelolabs.com&quot;,
+      &quot;status&quot;: &quot;TODO: Review backend/app.py&quot;
+    },
+    {
+      &quot;id&quot;: &quot;SEC-003&quot;,
+      &quot;severity&quot;: &quot;LOW&quot;,
+      &quot;title&quot;: &quot;Rate Limiting&quot;,
+      &quot;description&quot;: &quot;Consider nginx rate limiting for API endpoints&quot;,
+      &quot;status&quot;: &quot;RECOMMENDED&quot;
+    },
+    {
+      &quot;id&quot;: &quot;SEC-004&quot;,
+      &quot;severity&quot;: &quot;LOW&quot;,
+      &quot;title&quot;: &quot;Security Headers&quot;,
+      &quot;description&quot;: &quot;nginx security headers configured properly&quot;,
+      &quot;status&quot;: &quot;PASS&quot;
+    }
+  ],
+  &quot;deployment_status&quot;: {
+    &quot;nginx&quot;: &quot;Configured&quot;,
+    &quot;ssl&quot;: &quot;Pending DNS&quot;,
+    &quot;ufw&quot;: &quot;Enabled&quot;,
+    &quot;backend_service&quot;: &quot;Service file created&quot;
+  }
+}

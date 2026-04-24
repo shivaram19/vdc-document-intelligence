@@ -1,0 +1,23 @@
+{
+  "trade": "Architectural",
+  "division": "08-10",
+  "description": "Architectural drawings and finishes checklist",
+  "items": [
+    {"id": "arch-01", "category": "Building Envelope", "check": "Wall R-value meets or exceeds code minimum", "severity": "critical"},
+    {"id": "arch-02", "category": "Building Envelope", "check": "Roof R-value meets or exceeds code minimum", "severity": "critical"},
+    {"id": "arch-03", "category": "Building Envelope", "check": "Window U-factor and SHGC meet energy code", "severity": "critical"},
+    {"id": "arch-04", "category": "Building Envelope", "check": "Air barrier continuity details provided", "severity": "medium"},
+    {"id": "arch-05", "category": "Accessibility", "check": "ADA/ABA compliant path of travel shown", "severity": "critical"},
+    {"id": "arch-06", "category": "Accessibility", "check": "Door widths meet 32 inch clear minimum", "severity": "critical"},
+    {"id": "arch-07", "category": "Accessibility", "check": "Ramp slopes max 1:12", "severity": "critical"},
+    {"id": "arch-08", "category": "Accessibility", "check": "Toilet room accessibility clearances shown", "severity": "critical"},
+    {"id": "arch-09", "category": "Finishes", "check": "Finish schedule matches drawings", "severity": "medium"},
+    {"id": "arch-10", "category": "Finishes", "check": "Floor finish VOC limits specified", "severity": "low"},
+    {"id": "arch-11", "category": "Fire Rated", "check": "Fire-rated door labels specified", "severity": "critical"},
+    {"id": "arch-12", "category": "Fire Rated", "check": "Penetration firestopping details provided", "severity": "critical"},
+    {"id": "arch-13", "category": "Ceilings", "check": "Ceiling heights coordinate with MEP clearances", "severity": "critical"},
+    {"id": "arch-14", "category": "Ceilings", "check": "Acoustical ceiling NRC and CAC ratings specified", "severity": "medium"},
+    {"id": "arch-15", "category": "Dimensions", "check": "Room areas match program requirements", "severity": "medium"},
+    {"id": "arch-16", "category": "Dimensions", "check": "Column grid dimensions consistent with structural", "severity": "critical"}
+  ]
+}

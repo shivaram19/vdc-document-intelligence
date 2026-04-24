@@ -8,27 +8,30 @@ import { state } from '../../state.js';
 export function renderAuthMeshStatusHTML() {
   return `
     <section class="max-w-7xl mx-auto px-6 pb-4">
-      <div class="card-glass rounded-2xl p-4 border border-blue-500/20">
+      <div class="card-structural border-bp-accent/20">
         <div class="flex items-center justify-between mb-3">
-          <h3 class="font-semibold text-white text-sm"><i class="fas fa-shield-alt mr-2 text-blue-400"></i>Auth Mesh Status</h3>
-          <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">3-Factor Agentic</span>
+          <h3 class="font-semibold text-white text-sm flex items-center gap-2">
+            <i class="fas fa-shield-alt text-bp-accent text-xs"></i>
+            <span class="font-mono">AUTH MESH STATUS</span>
+          </h3>
+          <span class="badge-info text-[10px]">3-FACTOR AGENTIC</span>
         </div>
         <div class="grid md:grid-cols-4 gap-3 text-xs">
-          <div class="bg-slate-800/50 rounded-lg p-3 text-center">
-            <div id="auth-factor-1" class="text-amber-400 font-bold text-lg mb-1">—</div>
-            <div class="text-slate-400">Knowledge Proof</div>
+          <div class="bg-bp-dark/50 rounded-sm p-3 text-center border border-bp-light/20">
+            <div id="auth-factor-1" class="text-safe-yellow font-bold text-lg mb-1 font-mono">—</div>
+            <div class="text-gray-500 font-mono">KNOWLEDGE PROOF</div>
           </div>
-          <div class="bg-slate-800/50 rounded-lg p-3 text-center">
-            <div id="auth-factor-2" class="text-amber-400 font-bold text-lg mb-1">—</div>
-            <div class="text-slate-400">Behavioral FP</div>
+          <div class="bg-bp-dark/50 rounded-sm p-3 text-center border border-bp-light/20">
+            <div id="auth-factor-2" class="text-safe-yellow font-bold text-lg mb-1 font-mono">—</div>
+            <div class="text-gray-500 font-mono">BEHAVIORAL FP</div>
           </div>
-          <div class="bg-slate-800/50 rounded-lg p-3 text-center">
-            <div id="auth-factor-3" class="text-amber-400 font-bold text-lg mb-1">—</div>
-            <div class="text-slate-400">Agent Attestation</div>
+          <div class="bg-bp-dark/50 rounded-sm p-3 text-center border border-bp-light/20">
+            <div id="auth-factor-3" class="text-safe-yellow font-bold text-lg mb-1 font-mono">—</div>
+            <div class="text-gray-500 font-mono">AGENT ATTESTATION</div>
           </div>
-          <div class="bg-slate-800/50 rounded-lg p-3 text-center">
-            <div id="auth-capabilities" class="text-blue-400 font-bold text-lg mb-1">—</div>
-            <div class="text-slate-400">Capabilities</div>
+          <div class="bg-bp-dark/50 rounded-sm p-3 text-center border border-bp-light/20">
+            <div id="auth-capabilities" class="text-bp-accent font-bold text-lg mb-1 font-mono">—</div>
+            <div class="text-gray-500 font-mono">CAPABILITIES</div>
           </div>
         </div>
         <div id="auth-capability-list" class="mt-3 flex flex-wrap gap-1"></div>
@@ -45,13 +48,13 @@ export function updateAuthMeshStatus() {
   const capList = document.getElementById('auth-capability-list');
 
   if (state.authenticated) {
-    if (f1) f1.innerHTML = '<i class="fas fa-check text-emerald-400"></i>';
-    if (f2) f2.innerHTML = '<i class="fas fa-check text-emerald-400"></i>';
-    if (f3) f3.innerHTML = '<i class="fas fa-check text-emerald-400"></i>';
+    if (f1) f1.innerHTML = '<i class="fas fa-check text-safe-green"></i>';
+    if (f2) f2.innerHTML = '<i class="fas fa-check text-safe-green"></i>';
+    if (f3) f3.innerHTML = '<i class="fas fa-check text-safe-green"></i>';
     if (caps) caps.textContent = state.capabilities?.length || 0;
     if (capList) {
       capList.innerHTML = state.capabilities?.map((c) =>
-        `<span class="text-[10px] px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">${c.replace('can_', '')}</span>`
+        `<span class="text-[10px] px-2 py-0.5 rounded-sm bg-bp-accent/10 text-bp-accent border border-bp-accent/20 font-mono">${c.replace('can_', '')}</span>`
       ).join('') || '';
     }
   } else {

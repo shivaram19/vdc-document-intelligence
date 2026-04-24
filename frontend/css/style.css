@@ -1,0 +1,244 @@
+/**
+ * style.css — Medha Document Intelligence Global Styles
+ * SOLID: SRP — only global styles and design token imports.
+ *
+ * Design system: frontend/design-system/
+ * [CITE: Ware2021] Dark backgrounds reduce glare in prolonged monitoring.
+ * [CITE: ISO3864-2016] Safety colors for construction domain alignment.
+ */
+
+@import url('../design-system/design-tokens.css');
+
+/* --- Blueprint Background --- */
+.blueprint-bg {
+  background-color: var(--bp-dark);
+  background-image:
+    linear-gradient(rgba(58, 123, 213, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 123, 213, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* --- Structural Cards --- */
+.card-structural {
+  background: var(--bp-mid);
+  border: 1px solid var(--bp-light);
+  border-radius: 2px;
+  padding: 16px;
+  transition: border-color 150ms ease-out;
+}
+.card-structural:hover {
+  border-color: rgba(58, 123, 213, 0.4);
+}
+
+/* --- Inspection Panel --- */
+.panel-inspection {
+  background: var(--bp-mid);
+  border: 1px solid var(--bp-light);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.panel-inspection::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--bp-accent), transparent);
+  opacity: 0.3;
+  animation: scan 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  0% { transform: translateY(-2px); opacity: 0; }
+  10% { opacity: 0.3; }
+  90% { opacity: 0.3; }
+  100% { transform: translateY(400px); opacity: 0; }
+}
+
+/* --- Status Badges --- */
+.badge-pass {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: rgba(46, 125, 50, 0.12);
+  color: var(--safe-green);
+  border: 1px solid rgba(46, 125, 50, 0.3);
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.badge-warn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: rgba(245, 166, 35, 0.12);
+  color: var(--safe-yellow);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.badge-critical {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: rgba(211, 47, 47, 0.12);
+  color: var(--safe-red);
+  border: 1px solid rgba(211, 47, 47, 0.3);
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.badge-pending {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: rgba(255, 107, 53, 0.12);
+  color: var(--safe-orange);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.badge-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: rgba(58, 123, 213, 0.12);
+  color: var(--bp-accent);
+  border: 1px solid rgba(58, 123, 213, 0.3);
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* --- Tab Navigation --- */
+.tab-active {
+  color: var(--bp-accent);
+  border-bottom: 2px solid var(--bp-accent);
+}
+.tab-inactive {
+  color: var(--neutral-500);
+  border-bottom: 2px solid transparent;
+}
+.tab-inactive:hover {
+  color: var(--neutral-300);
+}
+
+/* --- Chat Bubbles --- */
+.chat-bubble-user {
+  background: rgba(58, 123, 213, 0.15);
+  border: 1px solid rgba(58, 123, 213, 0.25);
+  border-radius: 2px;
+  padding: 12px;
+}
+.chat-bubble-ai {
+  background: rgba(21, 34, 56, 0.6);
+  border: 1px solid rgba(30, 58, 95, 0.4);
+  border-radius: 2px;
+  padding: 12px;
+}
+
+/* --- Fade In Animation --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeIn 200ms ease-out forwards;
+}
+
+/* --- Typography Utilities --- */
+.type-impact {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.type-label {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--neutral-400);
+}
+
+/* --- Buttons --- */
+.btn-inspect {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--bp-accent);
+  color: white;
+  font-weight: 600;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: background 150ms ease-out;
+}
+.btn-inspect:hover {
+  background: #2d6bc4;
+}
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--neutral-300);
+  font-weight: 600;
+  border-radius: 2px;
+  border: 1px solid var(--bp-light);
+  cursor: pointer;
+  transition: all 150ms ease-out;
+}
+.btn-outline:hover {
+  background: rgba(30, 58, 95, 0.3);
+  border-color: var(--bp-accent);
+}
+
+/* --- Risk Indicators --- */
+.risk-pass { border-left: 2px solid var(--safe-green); }
+.risk-warn { border-left: 2px solid var(--safe-yellow); }
+.risk-critical { border-left: 2px solid var(--safe-red); }
+.risk-pending { border-left: 2px solid var(--safe-orange); }
+
+/* --- Animations --- */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bp-dark); }
+::-webkit-scrollbar-thumb { background: var(--bp-light); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--neutral-600); }
+
+/* --- Selection --- */
+::selection {
+  background: rgba(58, 123, 213, 0.3);
+  color: white;
+}

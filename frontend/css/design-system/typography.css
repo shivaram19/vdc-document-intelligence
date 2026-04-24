@@ -1,0 +1,32 @@
+/**
+ * typography.css — Font Families & Text Styles
+ * SOLID: SRP — only type-related rules.
+ */
+
+:root {
+  --font-mono:        'SF Mono', 'Consolas', monospace;
+  --font-sans:        'Inter', system-ui, sans-serif;
+  --font-engineering: 'Roboto Mono', monospace;
+}
+
+.type-mono {
+  font-family: var(--font-mono);
+}
+
+.type-engineering {
+  font-family: var(--font-engineering);
+}
+
+.type-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.type-impact {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}

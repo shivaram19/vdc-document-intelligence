@@ -1,0 +1,15 @@
+{
+  "version": "auth-mesh-v1",
+  "sessions": [],
+  "baselines": {
+    "18a22fb425d4c841": {
+      "mouse_entropy": 12.5,
+      "typing_wpm": 45,
+      "click_rate": 2.3
+    },
+    "8ce409d4f62357fe": {
+      "typing_wpm": 45,
+      "mouse_entropy": 12.5
+    }
+  }
+}

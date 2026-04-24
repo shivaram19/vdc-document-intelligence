@@ -1,0 +1,5 @@
+/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/medha-research/personas/user-personas.md
+/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/medha-research/agencies/vdc-agencies-usa.md
+/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/medha-research/competitors/competitive-landscape.md
+/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/medha-research/market/construction-ai-market.md
+/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/medha-research/seo/keywords-content-strategy.md

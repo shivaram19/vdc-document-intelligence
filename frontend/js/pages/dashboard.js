@@ -1,15 +1,6 @@
 /**
  * dashboard.js — Dashboard Orchestrator
- *
- * SOLID Compliance:
- *   S: Only composes sections and wires events. No rendering logic.
- *   O: New panels added without modifying this file.
- *   D: Depends on panel components, not concrete HTML.
- *
- * [CITE: Li2024] Completeness principle — dashboard surfaces ALL relevant
- * system state (auth, fleet, docs, agent activity) in one view.
- * [CITE: Mondal2015] Continuous auth requires real-time visibility of
- * trust score / anomaly status. → Auth Mesh Status panel.
+ * SOLID: SRP — composes sections, wires events.
  */
 
 import { clearApiKey } from '../config.js';
@@ -17,14 +8,11 @@ import { state } from '../state.js';
 import { navigate } from '../router.js';
 import { TokenManager } from '../auth/token_manager.js';
 
-// Layout components
 import { renderHeaderHTML } from '../components/dashboard/header.js';
 import { renderDashboardHeroHTML } from '../components/dashboard/hero.js';
 import { renderAuthMeshStatusHTML, updateAuthMeshStatus } from '../components/dashboard/auth-mesh-status.js';
 import { renderProjectSelectorHTML, renderNewProjectModalHTML, wireProjectSelector, selectProject } from '../components/dashboard/project-selector.js';
 import { renderTabsHTML, wireTabs } from '../components/dashboard/tabs.js';
-
-// Panel components
 import { renderQueryPanelHTML, wireQueryPanel } from '../components/dashboard/query-panel.js';
 import { renderRFIPanelHTML, wireRFIPanel } from '../components/dashboard/rfi-panel.js';
 import { renderContradictionPanelHTML, wireContradictionPanel } from '../components/dashboard/contradiction-panel.js';
@@ -32,7 +20,7 @@ import { renderInboxPanelHTML, wireInboxPanel } from '../components/dashboard/in
 
 export function renderDashboard(container) {
   container.innerHTML = `
-    <div class="min-h-screen gradient-bg text-slate-200 font-sans">
+    <div class="min-h-screen blueprint-bg text-gray-200 font-sans">
       ${renderHeaderHTML()}
       ${renderDashboardHeroHTML()}
       ${renderAuthMeshStatusHTML()}
@@ -59,14 +47,12 @@ function wireDashboardEvents() {
     navigate('/login');
     window.location.reload();
   });
-
   wireTabs();
   wireProjectSelector();
   wireQueryPanel();
   wireRFIPanel();
   wireContradictionPanel();
   wireInboxPanel();
-
   updateAuthMeshStatus();
 }
 

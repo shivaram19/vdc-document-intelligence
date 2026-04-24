@@ -1,60 +1,92 @@
 /**
- * hero-section.js — Landing Page Hero
+ * hero-section.js — Landing Hero
+ * SOLID: SRP — only hero section.
  *
- * SOLID: Single Responsibility — only the hero section.
- *
- * [CITE: Krug2014] Value proposition must be self-evident without scrolling.
- * [CITE: Nielsen1994] Visibility of system status — show what the product IS.
+ * [CITE: Krug2014] Value prop must be self-evident in < 5s.
+ * [CITE: Ejiofor2025] Document errors cause 5-15% rework.
  */
 
 export function renderHeroSection() {
   return `
-    <section class="relative overflow-hidden">
-      <div class="max-w-7xl mx-auto px-6 py-20 lg:py-28">
+    <section class="relative overflow-hidden border-b border-bp-light/20">
+      <div class="max-w-7xl mx-auto px-6 py-16 lg:py-24">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-medium mb-6 border border-blue-500/20">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Agent Mesh Online — 10 Nodes Active
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-safe-green/10 text-safe-green text-xs font-mono mb-6 border border-safe-green/30">
+              <span class="w-1.5 h-1.5 rounded-full bg-safe-green animate-pulse"></span>
+              INSPECTION SYSTEM ACTIVE — 10 NODES ONLINE
             </div>
-            <h1 class="text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              No APIs.<br>
-              <span class="text-blue-400">Pure Agents.</span><br>
-              Document Intelligence.
+            <h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+              Prevent Rework.<br>
+              <span class="text-bp-accent">Before It Costs You.</span>
             </h1>
-            <p class="text-lg text-slate-400 mb-8 max-w-lg">
-              Drop your construction documents into the inbox. The agent fleet parses, 
-              embeds, and analyzes them. Ask questions. Draft RFIs. Catch contradictions 
-              before they become change orders.
+            <p class="text-lg text-gray-400 mb-4 max-w-lg leading-relaxed">
+              Construction documents contradict each other. Specs say 5,000 psi. Drawings say 4,000. 
+              <strong class="text-white">Medha finds these conflicts before concrete is poured.</strong>
             </p>
-            <div class="flex flex-wrap gap-4">
-              <button data-nav="/login" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition shadow-lg shadow-blue-600/20">
-                <i class="fas fa-rocket mr-2"></i>Enter Agent Mesh
-              </button>
-              <button data-nav="/login" class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl transition border border-slate-700">
-                <i class="fas fa-shield-alt mr-2"></i>Prove Project Knowledge
-              </button>
+            <div class="flex items-center gap-6 mb-8">
+              <div class="text-center">
+                <div class="type-impact text-safe-green">$50K</div>
+                <div class="type-label text-gray-500">per contradiction caught</div>
+              </div>
+              <div class="w-px h-10 bg-gray-700"></div>
+              <div class="text-center">
+                <div class="type-impact text-safe-green">40%</div>
+                <div class="type-label text-gray-500">of RFIs are avoidable</div>
+              </div>
+              <div class="w-px h-10 bg-gray-700"></div>
+              <div class="text-center">
+                <div class="type-impact text-safe-green">5-15%</div>
+                <div class="type-label text-gray-500">of budget lost to rework</div>
+              </div>
             </div>
-            <div class="mt-8 flex items-center gap-6 text-xs text-slate-500">
-              <span><i class="fas fa-check text-emerald-400 mr-1"></i>No passwords</span>
-              <span><i class="fas fa-check text-emerald-400 mr-1"></i>3-Factor Auth</span>
-              <span><i class="fas fa-check text-emerald-400 mr-1"></i>Research-backed</span>
+            <div class="flex flex-wrap gap-3">
+              <button data-nav="/login" class="px-6 py-3 bg-bp-accent hover:bg-blue-500 text-white font-semibold rounded-sm transition shadow-lg shadow-bp-accent/20">
+                <i class="fas fa-clipboard-check mr-2"></i>Run Document Inspection
+              </button>
+              <button data-nav="/login" class="px-6 py-3 bg-transparent hover:bg-bp-light/30 text-gray-300 font-semibold rounded-sm transition border border-bp-accent/40">
+                <i class="fas fa-shield-alt mr-2"></i>Secure Access
+              </button>
             </div>
           </div>
           <div class="relative">
-            <div class="card-glass rounded-2xl p-6 border border-slate-700/50">
-              <div class="flex items-center gap-2 mb-4">
-                <div class="w-3 h-3 rounded-full bg-red-400"></div>
-                <div class="w-3 h-3 rounded-full bg-amber-400"></div>
-                <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
-                <span class="ml-2 text-xs text-slate-500">Agent Activity Log</span>
+            <div class="panel-inspection rounded-sm p-5 scanline">
+              <div class="flex items-center justify-between mb-4 border-b border-bp-accent/20 pb-3">
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-file-contract text-bp-accent text-sm"></i>
+                  <span class="text-xs font-mono text-gray-400">INSPECTION REPORT #2026-0424</span>
+                </div>
+                <span class="badge-critical text-xs">2 CRITICAL ISSUES</span>
               </div>
-              <div class="space-y-2 text-xs font-mono">
-                <div class="text-slate-400"><span class="text-emerald-400">✓</span> node-e: Ingested STRUCT_SPEC.txt (142 chunks)</div>
-                <div class="text-slate-400"><span class="text-blue-400">⚙</span> node-a: Query "concrete strength" routed to retriever</div>
-                <div class="text-slate-400"><span class="text-amber-400">!</span> node-f: Contradiction detected — spec says 5,000 psi, drawing says 4,000 psi</div>
-                <div class="text-slate-400"><span class="text-purple-400">✎</span> node-g: Drafting RFI-006 with cited sources</div>
-                <div class="text-slate-400"><span class="text-emerald-400">✓</span> node-d: Audit trail appended — SHA-256 verified</div>
+              <div class="space-y-3 font-mono text-xs">
+                <div class="flex items-start gap-3 p-3 bg-safe-red/5 border-l-2 border-safe-red rounded-sm">
+                  <i class="fas fa-times-circle text-safe-red mt-0.5"></i>
+                  <div>
+                    <p class="text-gray-300 font-semibold">CONCRETE STRENGTH mismatch</p>
+                    <p class="text-gray-500 mt-0.5">SPEC: 5,000 psi | DRAWING: 4,000 psi</p>
+                    <p class="text-safe-orange mt-1">ESTIMATED IMPACT: $47,000 rework</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-3 bg-safe-yellow/5 border-l-2 border-safe-yellow rounded-sm">
+                  <i class="fas fa-exclamation-triangle text-safe-yellow mt-0.5"></i>
+                  <div>
+                    <p class="text-gray-300 font-semibold">FIRE RATING gap</p>
+                    <p class="text-gray-500 mt-0.5">SPEC: 2-hour | ARCH: 1-hour noted</p>
+                    <p class="text-safe-orange mt-1">ESTIMATED IMPACT: $12,000 + inspection delay</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-3 bg-safe-green/5 border-l-2 border-safe-green rounded-sm">
+                  <i class="fas fa-check-circle text-safe-green mt-0.5"></i>
+                  <div>
+                    <p class="text-gray-300 font-semibold">HVAC SETPOINTS verified</p>
+                    <p class="text-gray-500 mt-0.5">All specs consistent across M-101 to M-205</p>
+                    <p class="text-safe-green mt-1">STATUS: PASS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-t border-bp-accent/20 flex items-center justify-between">
+                <span class="text-xs font-mono text-gray-500">INSPECTED: 14 docs | 1,247 chunks</span>
+                <span class="text-xs font-mono text-safe-green">CHAIN VERIFIED ✓</span>
               </div>
             </div>
           </div>

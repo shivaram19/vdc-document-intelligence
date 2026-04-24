@@ -1,0 +1,37 @@
+/**
+ * layout.css — Backgrounds, Panels, Containers
+ * SOLID: SRP — only layout and container rules.
+ */
+
+.blueprint-bg {
+  background-color: var(--bp-dark);
+  background-image:
+    linear-gradient(var(--bp-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bp-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  min-height: 100vh;
+  color: var(--gray-200);
+  font-family: var(--font-sans);
+}
+
+.panel-inspection {
+  background: rgba(21, 34, 56, 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(58, 123, 213, 0.25);
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.panel-inspection::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--bp-accent), transparent);
+}
+
+.dimension-line {
+  border-left: 2px solid var(--bp-accent);
+  padding-left: var(--space-3);
+  margin: var(--space-2) 0;
+}
