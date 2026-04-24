@@ -1,6 +1,7 @@
 import { navigate } from '../router.js';
 import { requestChallenge, submitAnswer, onWsEvent } from '../ws.js';
 import { createFingerprint } from '../auth/index.js';
+import { state } from '../state.js';
 
 /**
  * login.js — Knowledge-Provenance Authentication Portal
@@ -8,8 +9,6 @@ import { createFingerprint } from '../auth/index.js';
  * [CITE: FathimaSaravanan2024] Knowledge-based challenges from user-specific
  * documents achieve 99.7% accuracy with 0.3% error rate.
  * [CITE: MondalBours2015] Behavioral biometrics: 0.5% FAR, 2.1% FRR.
- *
- * UX: The challenge feels like proving project knowledge, not memorizing a password.
  */
 
 let fingerprint = null;
@@ -34,6 +33,12 @@ export function renderLogin(container) {
               <span><i class="fas fa-lock mr-1"></i>KNOWLEDGE</span>
               <span><i class="fas fa-fingerprint mr-1"></i>BEHAVIORAL</span>
               <span><i class="fas fa-network-wired mr-1"></i>CONSENSUS</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-bp-light/20">
+              <p class="text-[10px] text-gray-600 font-mono mb-2">DEVELOPER TESTING</p>
+              <button id="btn-test-mode" class="w-full px-4 py-2 bg-safe-orange/10 hover:bg-safe-orange/20 text-safe-orange border border-safe-orange/30 rounded-sm transition font-mono text-xs">
+                <i class="fas fa-bug mr-2"></i>BYPASS AUTH — TEST MODE
+              </button>
             </div>
           </div>
 
@@ -92,6 +97,8 @@ function wireLoginEvents() {
     navigate('/dashboard');
   });
 
+  document.getElementById('btn-test-mode')?.addEventListener('click', enableTestMode);
+
   onWsEvent((ev) => {
     if (ev.type === 'auth_challenge') {
       const qEl = document.getElementById('challenge-question');
@@ -131,6 +138,13 @@ function showStep(stepId) {
   });
   const target = document.getElementById(stepId);
   if (target) target.classList.remove('hidden');
+}
+
+function enableTestMode() {
+  state.authenticated = true;
+  state.testMode = true;
+  state.capabilities = ['can_query', 'can_draft_rfi', 'can_scan_contradictions', 'can_upload', 'can_manage_projects'];
+  navigate('/dashboard');
 }
 
 function startFingerprinting() {

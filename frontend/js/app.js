@@ -1,63 +1,37 @@
 /**
  * app.js — Application Bootstrapper
- *
- * SOLID Compliance:
- *   S: Only bootstraps. No business logic.
- *   O: New routes added via register() without modifying this file.
- *   D: Depends on router abstraction, not concrete pages.
- *
- * Research basis:
- *   [CITE: Nielsen1994] Visibility of system status — real-time connection
- *   state must be visible to user at all times.
- *   [CITE: Mondal2015] Trust function must be initialized at session start
- *   and updated on EVERY subsequent action.
- *   [CITE: Li2024] Role specialization (Solvability principle) — app.js
- *   ONLY bootstraps; all logic delegated to specialized modules.
+ * SOLID: SRP — only bootstraps. No business logic.
  */
 
-import { register, navigate, renderCurrentRoute } from './router.js';
+import { register, navigate } from './router.js';
 import { connect, onWsEvent } from './ws.js';
 import { state } from './state.js';
 import { createFingerprint } from './auth/index.js';
 
-// Page imports — each page is a single-responsibility module
 import { renderLanding } from './pages/landing.js';
 import { renderLogin } from './pages/login.js';
 import { renderDashboard } from './pages/dashboard.js';
+import { renderAgent } from './pages/agent.js';
 
-// ---------------------------------------------------------------------------
-// Route Registration (Open/Closed: add routes without touching core logic)
-// ---------------------------------------------------------------------------
 register('/', renderLanding);
 register('/login', renderLogin);
 register('/dashboard', renderDashboard);
+register('/agent/:slug', renderAgent);
 
 const fingerprint = createFingerprint();
 
 function init() {
-  // Start behavioral fingerprinting BEFORE auth (baseline collection)
   fingerprint.start();
-
-  // Start WebSocket connection
   connect();
-
-  // Listen for all agent events and update reactive state
   onWsEvent(handleWsEvent);
-
-  // Route based on hash
-  const hash = window.location.hash || '#/'; // default to landing, not login
+  const hash = window.location.hash || '#/';
   navigate(hash.replace('#', ''));
 }
 
 function handleWsEvent(ev) {
   switch (ev.type) {
-    case 'ws_connected':
-      state.connected = true;
-      break;
-    case 'ws_disconnected':
-      state.connected = false;
-      state.authenticated = false;
-      break;
+    case 'ws_connected': state.connected = true; break;
+    case 'ws_disconnected': state.connected = false; state.authenticated = false; break;
     case 'auth_success':
       state.authenticated = true;
       state.capabilities = ev.capabilities || [];
@@ -111,9 +85,6 @@ function handleWsEvent(ev) {
   updateStatusIndicator();
 }
 
-// ---------------------------------------------------------------------------
-// UI Utilities (Single Responsibility: state reflection only)
-// ---------------------------------------------------------------------------
 function updateProjectSelector() {
   const sel = document.getElementById('project-select');
   if (!sel) return;
@@ -131,6 +102,12 @@ function updateProjectSelector() {
 function updateStatusIndicator() {
   const el = document.getElementById('agent-status');
   if (!el) return;
+
+  if (state.testMode) {
+    el.innerHTML = statusBadge('safe-orange', 'TEST MODE', true);
+    el.className = statusClass('safe-orange');
+    return;
+  }
 
   if (!state.connected) {
     el.innerHTML = statusBadge('red', 'Agent Mesh Offline');

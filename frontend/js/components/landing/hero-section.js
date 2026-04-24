@@ -14,7 +14,7 @@ export function renderHeroSection() {
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-safe-green/10 text-safe-green text-xs font-mono mb-6 border border-safe-green/30">
               <span class="w-1.5 h-1.5 rounded-full bg-safe-green animate-pulse"></span>
-              INSPECTION SYSTEM ACTIVE — 10 NODES ONLINE
+              INSPECTION SYSTEM ACTIVE — 10 AGENTS ONLINE
             </div>
             <h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
               Prevent Rework.<br>
