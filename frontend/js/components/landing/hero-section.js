@@ -41,11 +41,11 @@ export function renderHeroSection() {
               </div>
             </div>
             <div class="flex flex-wrap gap-3">
-              <button data-nav="/login" class="px-6 py-3 bg-bp-accent hover:bg-blue-500 text-white font-semibold rounded-sm transition shadow-lg shadow-bp-accent/20">
-                <i class="fas fa-clipboard-check mr-2"></i>Run Document Inspection
+              <button data-nav="/demo" class="px-6 py-3 bg-bp-accent hover:bg-blue-500 text-white font-semibold rounded-sm transition shadow-lg shadow-bp-accent/20">
+                <i class="fas fa-play mr-2"></i>Live Demo — No Signup
               </button>
               <button data-nav="/login" class="px-6 py-3 bg-transparent hover:bg-bp-light/30 text-gray-300 font-semibold rounded-sm transition border border-bp-accent/40">
-                <i class="fas fa-shield-alt mr-2"></i>Secure Access
+                <i class="fas fa-shield-alt mr-2"></i>Secure Login
               </button>
             </div>
           </div>

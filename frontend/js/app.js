@@ -11,11 +11,13 @@ import { createFingerprint } from './auth/index.js';
 import { renderLanding } from './pages/landing.js';
 import { renderLogin } from './pages/login.js';
 import { renderDashboard } from './pages/dashboard.js';
+import { renderDemo } from './pages/demo-dashboard.js';
 import { renderAgent } from './pages/agent.js';
 
 register('/', renderLanding);
 register('/login', renderLogin);
 register('/dashboard', renderDashboard);
+register('/demo', renderDemo);
 register('/agent/:slug', renderAgent);
 
 const fingerprint = createFingerprint();

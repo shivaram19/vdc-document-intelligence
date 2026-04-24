@@ -54,6 +54,7 @@ export function renderNewProjectModalHTML() {
 
 export function wireProjectSelector() {
   document.getElementById('btn-new-project')?.addEventListener('click', () => {
+    console.log('[project] Opening modal');
     document.getElementById('new-project-modal')?.classList.remove('hidden');
   });
   document.getElementById('close-new-project')?.addEventListener('click', () => {
@@ -63,14 +64,43 @@ export function wireProjectSelector() {
 }
 
 async function submitNewProject() {
-  const name = document.getElementById('new-project-name').value;
-  const client = document.getElementById('new-project-client').value;
-  if (!name) return;
-  try {
-    await createProject(name, client);
+  const nameInput = document.getElementById('new-project-name');
+  const clientInput = document.getElementById('new-project-client');
+  const name = nameInput?.value.trim();
+  const client = clientInput?.value.trim() || '';
+  if (!name) {
+    alert('Project name is required.');
+    return;
+  }
+  console.log('[project] Creating:', name);
+  // Test mode: mock project creation without server round-trip
+  if (state.testMode) {
+    const mockProject = { id: 'test_' + Date.now(), name, client, docs: [], document_count: 0, chunk_count: 0 };
+    state.projects.push(mockProject);
+    selectProject(mockProject.id);
     document.getElementById('new-project-modal')?.classList.add('hidden');
+    nameInput.value = '';
+    clientInput.value = '';
+    return;
+  }
+  try {
+    const result = await createProject(name, client);
+    console.log('[project] Result:', result);
+    if (result.error) {
+      alert('Failed: ' + result.error);
+      return;
+    }
+    document.getElementById('new-project-modal')?.classList.add('hidden');
+    nameInput.value = '';
+    clientInput.value = '';
+    // Optimistically add to local state
+    if (result.project) {
+      state.projects.push(result.project);
+      selectProject(result.project.id);
+    }
   } catch (e) {
-    alert('Failed: ' + e.message);
+    console.error('[project] Error:', e);
+    alert('Failed: ' + (e.message || 'Unknown error'));
   }
 }
 
