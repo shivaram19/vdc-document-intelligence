@@ -20,6 +20,9 @@ venv/
 # Models
 models/
 
+# Virtual environments (explicit names)
+venv-docling/
+
 # OS
 .DS_Store
 Thumbs.db
