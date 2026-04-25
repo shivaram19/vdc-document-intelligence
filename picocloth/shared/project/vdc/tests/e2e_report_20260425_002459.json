@@ -1,0 +1,109 @@
+{
+  "timestamp": "2026-04-25T00:24:59.693787Z",
+  "project": "default",
+  "total_tests": 9,
+  "passed": 4,
+  "failed": 5,
+  "total_duration_sec": 20.24,
+  "timing_budget_sec": 60.0,
+  "within_budget": true,
+  "tests": [
+    {
+      "name": "Ingest ARCH_DRAWING_NOTES.txt",
+      "workflow": "ingest",
+      "success": false,
+      "duration_sec": 9.9,
+      "error": "Document 'ARCH_DRAWING_NOTES.txt' already exists in project. Skipping duplicate.",
+      "result_summary": null
+    },
+    {
+      "name": "Ingest FIRE_PROTECTION_SPEC.txt",
+      "workflow": "ingest",
+      "success": false,
+      "duration_sec": 0.64,
+      "error": "Document 'FIRE_PROTECTION_SPEC.txt' already exists in project. Skipping duplicate.",
+      "result_summary": null
+    },
+    {
+      "name": "Ingest MECH_SPEC_HVAC.txt",
+      "workflow": "ingest",
+      "success": false,
+      "duration_sec": 0.47,
+      "error": "Document 'MECH_SPEC_HVAC.txt' already exists in project. Skipping duplicate.",
+      "result_summary": null
+    },
+    {
+      "name": "Ingest RFI_LOG.txt",
+      "workflow": "ingest",
+      "success": false,
+      "duration_sec": 0.48,
+      "error": "Document 'RFI_LOG.txt' already exists in project. Skipping duplicate.",
+      "result_summary": null
+    },
+    {
+      "name": "Ingest STRUCT_SPEC.txt",
+      "workflow": "ingest",
+      "success": false,
+      "duration_sec": 0.52,
+      "error": "Document 'STRUCT_SPEC.txt' already exists in project. Skipping duplicate.",
+      "result_summary": null
+    },
+    {
+      "name": "Query: concrete strength",
+      "workflow": "query",
+      "success": true,
+      "duration_sec": 2.75,
+      "error": null,
+      "result_summary": {
+        "has_answer": true,
+        "answer_length": 551,
+        "has_citations": true,
+        "contradiction_count": 0,
+        "has_critical": false
+      }
+    },
+    {
+      "name": "Query: fire protection rating",
+      "workflow": "query",
+      "success": true,
+      "duration_sec": 1.9,
+      "error": null,
+      "result_summary": {
+        "has_answer": true,
+        "answer_length": 553,
+        "has_citations": false,
+        "contradiction_count": 0,
+        "has_critical": false
+      }
+    },
+    {
+      "name": "RFI: concrete strength discrepancy",
+      "workflow": "rfi",
+      "success": true,
+      "duration_sec": 3.57,
+      "error": null,
+      "result_summary": {
+        "contradiction_count": 0,
+        "has_critical": false
+      }
+    },
+    {
+      "name": "Scan: contradictions",
+      "workflow": "scan",
+      "success": true,
+      "duration_sec": 0.0,
+      "error": null,
+      "result_summary": {
+        "contradiction_count": 1,
+        "has_critical": false
+      }
+    }
+  ],
+  "research_citations": [
+    "SaaSFactor2025 \u2014 TTFV must be <5-15 min for optimal activation",
+    "Li2024 \u2014 Multi-agent consensus reduces false negatives by 80%",
+    "ASHRAE2019 \u2014 RFIs with citations are answered 40% faster",
+    "Ejiofor2025 \u2014 5-15% budget lost to rework from inconsistencies",
+    "Nielsen1994 \u2014 Visibility of system status heuristic"
+  ]
+}

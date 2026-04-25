@@ -1,0 +1,138 @@
+[
+  {
+    "id": "fa29c39aa595_chunk_0",
+    "text": "PROJECT: DOWNTOWN OFFICE TOWER - ARCHITECTURAL DRAWING NOTES\nSHEET A-101 - GENERAL NOTES AND BUILDING PARAMETERS\n\nA. OCCUPANCY AND USE\nBuilding occupancy: Group B (Business)\nTotal building area: 125,000 SF\nNumber of floors: 8 above grade, 2 below grade (parking)\nFloor-to-floor height: 14 feet typical, 18 feet lobby\n\nB. THERMAL AND MOISTURE PROTECTION\nWall R-value: R-21 minimum continuous insulation\nRoof R-value: R-30 minimum above deck\nWindow U-factor: 0.30 maximum\nWindow SHGC: 0.25 maximum\n\nC.",
+    "doc_id": "fa29c39aa595",
+    "doc_name": "ARCH_DRAWING_NOTES.txt",
+    "doc_type": "specification",
+    "index": 0
+  },
+  {
+    "id": "fa29c39aa595_chunk_1",
+    "text": "INTERIOR FINISHES\nOffice flooring: Carpet tile, 24\" x 24\" modular\nConference room flooring: Luxury vinyl tile (LVT)\nLobby flooring: Polished concrete with stain\nWall finishes: Paint on Level 5 drywall\nCeiling: ACT 2' x 4' tile, 9 feet AFF typical\n\nD.",
+    "doc_id": "fa29c39aa595",
+    "doc_name": "ARCH_DRAWING_NOTES.txt",
+    "doc_type": "specification",
+    "index": 1
+  },
+  {
+    "id": "fa29c39aa595_chunk_2",
+    "text": "HVAC COORDINATION - ARCHITECTURAL\nMechanical room minimum ceiling height: 12 feet clear\nAll ceiling plenums shall be minimum 18 inches deep for duct routing\nDiffuser locations coordinated with reflected ceiling plan A-201\nThermostat locations per electrical plan E-301\n\nE. FIRE RATED ASSEMBLIES\nAll shafts: 2-hour rated\nFloor assemblies: 2-hour rated\nExit corridors: 1-hour rated\nTenant demising walls: 1-hour rated\n\nF. ACCESSIBILITY\nAll design shall comply with ADA 2010 Standards and local accessibility codes.",
+    "doc_id": "fa29c39aa595",
+    "doc_name": "ARCH_DRAWING_NOTES.txt",
+    "doc_type": "specification",
+    "index": 2
+  },
+  {
+    "id": "fa29c39aa595_chunk_3",
+    "text": "ACCESSIBILITY\nAll design shall comply with ADA 2010 Standards and local accessibility codes. Minimum clear door width: 32 inches\nMaximum ramp slope: 1:12\n",
+    "doc_id": "fa29c39aa595",
+    "doc_name": "ARCH_DRAWING_NOTES.txt",
+    "doc_type": "specification",
+    "index": 3
+  },
+  {
+    "id": "d7fe219000ff_chunk_0",
+    "text": "PROJECT: DOWNTOWN OFFICE TOWER - FIRE PROTECTION SPECIFICATIONS\nSECTION 21 13 13 - WET PIPE SPRINKLER SYSTEMS\n\n1.1 GENERAL\nAll fire protection systems shall comply with NFPA 13 (2022 Edition) and local AHJ requirements.",
+    "doc_id": "d7fe219000ff",
+    "doc_name": "FIRE_PROTECTION_SPEC.txt",
+    "doc_type": "specification",
+    "index": 0
+  },
+  {
+    "id": "d7fe219000ff_chunk_1",
+    "text": "1.2 SPRINKLER DESIGN CRITERIA\n- Office areas: Light hazard, design density 0.10 gpm/SF over 1,500 SF\n- Mechanical rooms: Ordinary Hazard Group 1, design density 0.15 gpm/SF\n- Parking garages: Ordinary Hazard Group 1, design density 0.15 gpm/SF\n- Storage areas: Ordinary Hazard Group 2, design density 0.20 gpm/SF\n\n1.3 SPRINKLER SPACING\nMaximum spacing between sprinklers: 15 feet on center\nMaximum spacing from walls: 7.5 feet\nMaximum coverage per sprinkler: 225 SF (light hazard)\n\n1.4 WATER SUPPLY\nFire pump required: 1,000 GPM at 120 psi\nWater supply test within 12 months required prior to system acceptance.",
+    "doc_id": "d7fe219000ff",
+    "doc_name": "FIRE_PROTECTION_SPEC.txt",
+    "doc_type": "specification",
+    "index": 1
+  },
+  {
+    "id": "d7fe219000ff_chunk_2",
+    "text": "1.5 STANDPIPES\nClass I standpipe system required per IBC 905.3\nStandpipe outlet spacing: Every floor, within 150 feet of any point\n\n1.6 FIRE ALARM\nAddressable fire alarm system per NFPA 72\nSmoke detectors in all return air plenums per NFPA 90A\nDuct smoke detectors at all air handling units\nManual pull stations at all exits\n",
+    "doc_id": "d7fe219000ff",
+    "doc_name": "FIRE_PROTECTION_SPEC.txt",
+    "doc_type": "specification",
+    "index": 2
+  },
+  {
+    "id": "ea5739fadae0_chunk_0",
+    "text": "PROJECT: DOWNTOWN OFFICE TOWER - MECHANICAL SPECIFICATIONS\nSECTION 23 00 00 - HEATING, VENTILATING, AND AIR CONDITIONING\n\n1.1 GENERAL REQUIREMENTS\nAll HVAC systems shall comply with ASHRAE 90.1-2022 energy standards and local building codes.",
+    "doc_id": "ea5739fadae0",
+    "doc_name": "MECH_SPEC_HVAC.txt",
+    "doc_type": "specification",
+    "index": 0
+  },
+  {
+    "id": "ea5739fadae0_chunk_1",
+    "text": "1.2 TEMPERATURE SETPOINTS\n- Office spaces: Heating 70\u00b0F, Cooling 74\u00b0F (setback 65\u00b0F/78\u00b0F after hours)\n- Conference rooms: Heating 71\u00b0F, Cooling 73\u00b0F\n- Server room: Constant 68\u00b0F \u00b1 2\u00b0F, 24/7 operation\n- Lobby/Atrium: Heating 72\u00b0F, Cooling 75\u00b0F\n\n1.3 AIR HANDLING UNITS\nProvide (4) variable air volume (VAV) air handling units, 25,000 CFM each.",
+    "doc_id": "ea5739fadae0",
+    "doc_name": "MECH_SPEC_HVAC.txt",
+    "doc_type": "specification",
+    "index": 1
+  },
+  {
+    "id": "ea5739fadae0_chunk_2",
+    "text": "Units shall include:\n- MERV 13 filters minimum\n- Economizer controls with enthalpy-based switching\n- Variable frequency drives (VFD) on all fans\n- Discharge air temperature reset: 55\u00b0F to 60\u00b0F based on zone demand\n\n1.4 DUCTWORK\nAll ductwork shall be galvanized steel, sealed to SMACNA Seal Class A.",
+    "doc_id": "ea5739fadae0",
+    "doc_name": "MECH_SPEC_HVAC.txt",
+    "doc_type": "specification",
+    "index": 2
+  },
+  {
+    "id": "ea5739fadae0_chunk_3",
+    "text": "Main trunk velocity: 1,800 FPM maximum\nBranch velocity: 1,200 FPM maximum\nMinimum duct size: 6 inches diameter\n\n1.5 FIRE PROTECTION COORDINATION\nHVAC ducts penetrating fire-rated assemblies shall have fire dampers per NFPA 90A. Smoke dampers required at all smoke barrier penetrations. ",
+    "doc_id": "ea5739fadae0",
+    "doc_name": "MECH_SPEC_HVAC.txt",
+    "doc_type": "specification",
+    "index": 3
+  },
+  {
+    "id": "8a955d98fda4_chunk_0",
+    "text": "PROJECT: DOWNTOWN OFFICE TOWER - RFI LOG\n\nRFI-001: Column spacing at Grid Line C-4 does not match between structural drawings and architectural plans. Structural shows 24'-0\" spacing, architectural shows 25'-0\". Please confirm. RFI-002: Mechanical room ceiling height shown as 10 feet on A-101, but mechanical equipment requires 12 feet minimum clear. Please advise on structural accommodation or equipment relocation.",
+    "doc_id": "8a955d98fda4",
+    "doc_name": "RFI_LOG.txt",
+    "doc_type": "specification",
+    "index": 0
+  },
+  {
+    "id": "8a955d98fda4_chunk_1",
+    "text": "Please advise on structural accommodation or equipment relocation. RFI-003: Window U-factor in architectural notes shows 0.30, but energy model requires 0.28 for code compliance. Please confirm if window specification will be updated. RFI-004: Fire damper locations not shown on mechanical drawings for shaft penetrations. Please provide shop drawings with damper schedule. RFI-005: Lobby floor finish shown as polished concrete on A-101, but interior finish schedule shows terrazzo.",
+    "doc_id": "8a955d98fda4",
+    "doc_name": "RFI_LOG.txt",
+    "doc_type": "specification",
+    "index": 1
+  },
+  {
+    "id": "8a955d98fda4_chunk_2",
+    "text": "RFI-005: Lobby floor finish shown as polished concrete on A-101, but interior finish schedule shows terrazzo. Please confirm final material selection. ",
+    "doc_id": "8a955d98fda4",
+    "doc_name": "RFI_LOG.txt",
+    "doc_type": "specification",
+    "index": 2
+  },
+  {
+    "id": "bb20ea4aa4fc_chunk_0",
+    "text": "PROJECT: DOWNTOWN OFFICE TOWER - STRUCTURAL SPECIFICATIONS\nSECTION 03 30 00 - CAST-IN-PLACE CONCRETE\n\n1.1 GENERAL\nAll concrete work shall comply with ACI 318-19 and local building codes. 1.2 CONCRETE MIX DESIGNS\n- Footings: 3,000 psi minimum at 28 days\n- Columns: 5,000 psi minimum at 28 days  \n- Floor slabs: 4,000 psi minimum at 28 days\n- Post-tensioned slabs: 5,000 psi minimum at 28 days, high early strength\n\n1.3 REINFORCING STEEL\nAll reinforcing shall be ASTM A615 Grade 60.",
+    "doc_id": "bb20ea4aa4fc",
+    "doc_name": "STRUCT_SPEC.txt",
+    "doc_type": "specification",
+    "index": 0
+  },
+  {
+    "id": "bb20ea4aa4fc_chunk_1",
+    "text": "Standard hook dimensions per ACI 318 Table 25.3.1. 1.4 FIREPROOFING\nStructural steel columns and beams shall receive 2-hour fireproofing per IBC Table 601.",
+    "doc_id": "bb20ea4aa4fc",
+    "doc_name": "STRUCT_SPEC.txt",
+    "doc_type": "specification",
+    "index": 1
+  },
+  {
+    "id": "bb20ea4aa4fc_chunk_2",
+    "text": "1.4 FIREPROOFING\nStructural steel columns and beams shall receive 2-hour fireproofing per IBC Table 601. Fireproofing material: Spray-applied cementitious, minimum 1.5 inches thick\n\n1.5 STRUCTURAL STEEL\nWide flange beams: ASTM A992, Grade 50\nConnection design per AISC 360-16\n\n1.6 DEAD LOADS\nFloor finish: 2 psf\nPartitions: 15 psf (movable)\nMechanical/electrical: 10 psf\nCeiling: 3 psf\n\n1.7 LIVE LOADS\nOffice areas: 50 psf\nCorridors: 100 psf\nLobby/Atrium: 100 psf\nMechanical rooms: 150 psf\n",
+    "doc_id": "bb20ea4aa4fc",
+    "doc_name": "STRUCT_SPEC.txt",
+    "doc_type": "specification",
+    "index": 2
+  }
+]

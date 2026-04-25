@@ -1,0 +1,127 @@
+{
+  "targets": {
+    "Turner Construction": {
+      "stage": "contacted",
+      "notes": "LinkedIn connection sent",
+      "updated_at": "2026-04-25T01:32:48.958574+00:00"
+    },
+    "Shapoorji Pallonji": {
+      "stage": "demo",
+      "notes": "Demo scheduled for next week",
+      "updated_at": "2026-04-25T01:32:48.959021+00:00"
+    },
+    "TechnoStruct Academy": {
+      "stage": "identified",
+      "notes": "",
+      "updated_at": "2026-04-25T01:32:48.959433+00:00"
+    }
+  },
+  "history": [
+    {
+      "target": "Turner Construction",
+      "from_stage": "unknown",
+      "to_stage": "contacted",
+      "notes": "LinkedIn connection sent",
+      "timestamp": "2026-04-25T00:38:04.545654+00:00"
+    },
+    {
+      "target": "Shapoorji Pallonji",
+      "from_stage": "unknown",
+      "to_stage": "demo",
+      "notes": "Demo scheduled for next week",
+      "timestamp": "2026-04-25T00:38:04.546011+00:00"
+    },
+    {
+      "target": "TechnoStruct Academy",
+      "from_stage": "unknown",
+      "to_stage": "identified",
+      "notes": "",
+      "timestamp": "2026-04-25T00:38:04.546317+00:00"
+    },
+    {
+      "target": "Turner Construction",
+      "from_stage": "contacted",
+      "to_stage": "contacted",
+      "notes": "LinkedIn connection sent",
+      "timestamp": "2026-04-25T00:42:50.163012+00:00"
+    },
+    {
+      "target": "Shapoorji Pallonji",
+      "from_stage": "demo",
+      "to_stage": "demo",
+      "notes": "Demo scheduled for next week",
+      "timestamp": "2026-04-25T00:42:50.163400+00:00"
+    },
+    {
+      "target": "TechnoStruct Academy",
+      "from_stage": "identified",
+      "to_stage": "identified",
+      "notes": "",
+      "timestamp": "2026-04-25T00:42:50.163826+00:00"
+    },
+    {
+      "target": "Turner Construction",
+      "from_stage": "contacted",
+      "to_stage": "contacted",
+      "notes": "LinkedIn connection sent",
+      "timestamp": "2026-04-25T01:19:54.183023+00:00"
+    },
+    {
+      "target": "Shapoorji Pallonji",
+      "from_stage": "demo",
+      "to_stage": "demo",
+      "notes": "Demo scheduled for next week",
+      "timestamp": "2026-04-25T01:19:54.183477+00:00"
+    },
+    {
+      "target": "TechnoStruct Academy",
+      "from_stage": "identified",
+      "to_stage": "identified",
+      "notes": "",
+      "timestamp": "2026-04-25T01:19:54.183861+00:00"
+    },
+    {
+      "target": "Turner Construction",
+      "from_stage": "contacted",
+      "to_stage": "contacted",
+      "notes": "LinkedIn connection sent",
+      "timestamp": "2026-04-25T01:21:16.097327+00:00"
+    },
+    {
+      "target": "Shapoorji Pallonji",
+      "from_stage": "demo",
+      "to_stage": "demo",
+      "notes": "Demo scheduled for next week",
+      "timestamp": "2026-04-25T01:21:16.097753+00:00"
+    },
+    {
+      "target": "TechnoStruct Academy",
+      "from_stage": "identified",
+      "to_stage": "identified",
+      "notes": "",
+      "timestamp": "2026-04-25T01:21:16.098451+00:00"
+    },
+    {
+      "target": "Turner Construction",
+      "from_stage": "contacted",
+      "to_stage": "contacted",
+      "notes": "LinkedIn connection sent",
+      "timestamp": "2026-04-25T01:32:48.958585+00:00"
+    },
+    {
+      "target": "Shapoorji Pallonji",
+      "from_stage": "demo",
+      "to_stage": "demo",
+      "notes": "Demo scheduled for next week",
+      "timestamp": "2026-04-25T01:32:48.959030+00:00"
+    },
+    {
+      "target": "TechnoStruct Academy",
+      "from_stage": "identified",
+      "to_stage": "identified",
+      "notes": "",
+      "timestamp": "2026-04-25T01:32:48.959443+00:00"
+    }
+  ],
+  "last_updated": "2026-04-25T01:32:48.959446+00:00"
+}

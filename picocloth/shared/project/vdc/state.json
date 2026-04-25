@@ -108,6 +108,226 @@
           "size_mb": 0.0
         }
       ]
+    },
+    {
+      "id": "phd-test-1",
+      "name": "phd-test-1",
+      "client": "",
+      "created": "2026-04-25T03:26:50.929550",
+      "docs": [
+        {
+          "id": "59d8847f7ac7",
+          "name": "ARCH_DRAWING_NOTES.txt",
+          "type": "specification",
+          "project_id": "phd-test-1",
+          "uploaded": "2026-04-25T03:26:50.928366",
+          "chunk_count": 4,
+          "word_count": 198,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    {
+      "id": "phd-test-2",
+      "name": "phd-test-2",
+      "client": "",
+      "created": "2026-04-25T03:27:35.390988",
+      "docs": [
+        {
+          "id": "a8f0b7dac595",
+          "name": "ARCH_DRAWING_NOTES.txt",
+          "type": "specification",
+          "project_id": "phd-test-2",
+          "uploaded": "2026-04-25T03:27:35.389973",
+          "chunk_count": 4,
+          "word_count": 198,
+          "size_mb": 0.0
+        },
+        {
+          "id": "61c417b2adad",
+          "name": "FIRE_PROTECTION_SPEC.txt",
+          "type": "specification",
+          "project_id": "phd-test-2",
+          "uploaded": "2026-04-25T03:27:35.984267",
+          "chunk_count": 3,
+          "word_count": 185,
+          "size_mb": 0.0
+        },
+        {
+          "id": "b8341a6c6b9f",
+          "name": "MECH_SPEC_HVAC.txt",
+          "type": "specification",
+          "project_id": "phd-test-2",
+          "uploaded": "2026-04-25T03:27:36.478005",
+          "chunk_count": 4,
+          "word_count": 175,
+          "size_mb": 0.0
+        },
+        {
+          "id": "57b2426b7809",
+          "name": "RFI_LOG.txt",
+          "type": "specification",
+          "project_id": "phd-test-2",
+          "uploaded": "2026-04-25T03:27:36.924331",
+          "chunk_count": 3,
+          "word_count": 123,
+          "size_mb": 0.0
+        },
+        {
+          "id": "5ec78235c0ee",
+          "name": "STRUCT_SPEC.txt",
+          "type": "specification",
+          "project_id": "phd-test-2",
+          "uploaded": "2026-04-25T03:27:37.589177",
+          "chunk_count": 3,
+          "word_count": 160,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    {
+      "id": "phd-test-3",
+      "name": "phd-test-3",
+      "client": "",
+      "created": "2026-04-25T03:28:28.977209",
+      "docs": [
+        {
+          "id": "aa07942607c6",
+          "name": "ARCH_DRAWING_NOTES.txt",
+          "type": "specification",
+          "project_id": "phd-test-3",
+          "uploaded": "2026-04-25T03:28:28.975901",
+          "chunk_count": 4,
+          "word_count": 198,
+          "size_mb": 0.0
+        },
+        {
+          "id": "27941327e2c5",
+          "name": "FIRE_PROTECTION_SPEC.txt",
+          "type": "specification",
+          "project_id": "phd-test-3",
+          "uploaded": "2026-04-25T03:28:29.675717",
+          "chunk_count": 3,
+          "word_count": 185,
+          "size_mb": 0.0
+        },
+        {
+          "id": "9ec43c3f16a1",
+          "name": "MECH_SPEC_HVAC.txt",
+          "type": "specification",
+          "project_id": "phd-test-3",
+          "uploaded": "2026-04-25T03:28:30.265033",
+          "chunk_count": 4,
+          "word_count": 175,
+          "size_mb": 0.0
+        },
+        {
+          "id": "d1dea965e39e",
+          "name": "RFI_LOG.txt",
+          "type": "specification",
+          "project_id": "phd-test-3",
+          "uploaded": "2026-04-25T03:28:30.692539",
+          "chunk_count": 3,
+          "word_count": 123,
+          "size_mb": 0.0
+        },
+        {
+          "id": "527c6cdef253",
+          "name": "STRUCT_SPEC.txt",
+          "type": "specification",
+          "project_id": "phd-test-3",
+          "uploaded": "2026-04-25T03:28:31.123336",
+          "chunk_count": 3,
+          "word_count": 160,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    {
+      "id": "smoke-test",
+      "name": "smoke-test",
+      "client": "",
+      "created": "2026-04-25T03:31:50.622102",
+      "docs": [
+        {
+          "id": "fa29c39aa595",
+          "name": "ARCH_DRAWING_NOTES.txt",
+          "type": "specification",
+          "project_id": "smoke-test",
+          "uploaded": "2026-04-25T03:31:50.621003",
+          "chunk_count": 4,
+          "word_count": 198,
+          "size_mb": 0.0
+        },
+        {
+          "id": "d7fe219000ff",
+          "name": "FIRE_PROTECTION_SPEC.txt",
+          "type": "specification",
+          "project_id": "smoke-test",
+          "uploaded": "2026-04-25T03:31:51.409412",
+          "chunk_count": 3,
+          "word_count": 185,
+          "size_mb": 0.0
+        },
+        {
+          "id": "ea5739fadae0",
+          "name": "MECH_SPEC_HVAC.txt",
+          "type": "specification",
+          "project_id": "smoke-test",
+          "uploaded": "2026-04-25T03:31:51.922188",
+          "chunk_count": 4,
+          "word_count": 175,
+          "size_mb": 0.0
+        },
+        {
+          "id": "8a955d98fda4",
+          "name": "RFI_LOG.txt",
+          "type": "specification",
+          "project_id": "smoke-test",
+          "uploaded": "2026-04-25T03:31:52.452991",
+          "chunk_count": 3,
+          "word_count": 123,
+          "size_mb": 0.0
+        },
+        {
+          "id": "bb20ea4aa4fc",
+          "name": "STRUCT_SPEC.txt",
+          "type": "specification",
+          "project_id": "smoke-test",
+          "uploaded": "2026-04-25T03:31:52.914590",
+          "chunk_count": 3,
+          "word_count": 160,
+          "size_mb": 0.0
+        }
+      ]
+    },
+    {
+      "id": "phd-battle-real",
+      "name": "phd-battle-real",
+      "client": "",
+      "created": "2026-04-25T03:44:42.756885",
+      "docs": [
+        {
+          "id": "46d099be5924",
+          "name": "SMACNA_HVAC_Duct_Standards.pdf",
+          "type": "specification",
+          "project_id": "phd-battle-real",
+          "uploaded": "2026-04-25T03:44:42.745250",
+          "chunk_count": 1441,
+          "word_count": 119380,
+          "size_mb": 9.62
+        },
+        {
+          "id": "c8bcfd032863",
+          "name": "SRP_HVAC_Construction_Spec.pdf",
+          "type": "specification",
+          "project_id": "phd-battle-real",
+          "uploaded": "2026-04-25T03:53:22.580343",
+          "chunk_count": 2349,
+          "word_count": 137716,
+          "size_mb": 6.58
+        }
+      ]
     }
   ],
   "active_tasks": [],

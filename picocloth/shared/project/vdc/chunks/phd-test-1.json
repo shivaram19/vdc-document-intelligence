@@ -1,0 +1,34 @@
+[
+  {
+    "id": "59d8847f7ac7_chunk_0",
+    "text": "PROJECT: DOWNTOWN OFFICE TOWER - ARCHITECTURAL DRAWING NOTES\nSHEET A-101 - GENERAL NOTES AND BUILDING PARAMETERS\n\nA. OCCUPANCY AND USE\nBuilding occupancy: Group B (Business)\nTotal building area: 125,000 SF\nNumber of floors: 8 above grade, 2 below grade (parking)\nFloor-to-floor height: 14 feet typical, 18 feet lobby\n\nB. THERMAL AND MOISTURE PROTECTION\nWall R-value: R-21 minimum continuous insulation\nRoof R-value: R-30 minimum above deck\nWindow U-factor: 0.30 maximum\nWindow SHGC: 0.25 maximum\n\nC.",
+    "doc_id": "59d8847f7ac7",
+    "doc_name": "ARCH_DRAWING_NOTES.txt",
+    "doc_type": "specification",
+    "index": 0
+  },
+  {
+    "id": "59d8847f7ac7_chunk_1",
+    "text": "INTERIOR FINISHES\nOffice flooring: Carpet tile, 24\" x 24\" modular\nConference room flooring: Luxury vinyl tile (LVT)\nLobby flooring: Polished concrete with stain\nWall finishes: Paint on Level 5 drywall\nCeiling: ACT 2' x 4' tile, 9 feet AFF typical\n\nD.",
+    "doc_id": "59d8847f7ac7",
+    "doc_name": "ARCH_DRAWING_NOTES.txt",
+    "doc_type": "specification",
+    "index": 1
+  },
+  {
+    "id": "59d8847f7ac7_chunk_2",
+    "text": "HVAC COORDINATION - ARCHITECTURAL\nMechanical room minimum ceiling height: 12 feet clear\nAll ceiling plenums shall be minimum 18 inches deep for duct routing\nDiffuser locations coordinated with reflected ceiling plan A-201\nThermostat locations per electrical plan E-301\n\nE. FIRE RATED ASSEMBLIES\nAll shafts: 2-hour rated\nFloor assemblies: 2-hour rated\nExit corridors: 1-hour rated\nTenant demising walls: 1-hour rated\n\nF. ACCESSIBILITY\nAll design shall comply with ADA 2010 Standards and local accessibility codes.",
+    "doc_id": "59d8847f7ac7",
+    "doc_name": "ARCH_DRAWING_NOTES.txt",
+    "doc_type": "specification",
+    "index": 2
+  },
+  {
+    "id": "59d8847f7ac7_chunk_3",
+    "text": "ACCESSIBILITY\nAll design shall comply with ADA 2010 Standards and local accessibility codes. Minimum clear door width: 32 inches\nMaximum ramp slope: 1:12\n",
+    "doc_id": "59d8847f7ac7",
+    "doc_name": "ARCH_DRAWING_NOTES.txt",
+    "doc_type": "specification",
+    "index": 3
+  }
+]

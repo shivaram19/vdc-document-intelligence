@@ -1,0 +1,182 @@
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the specified concrete strength?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:22:03.698929Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the specified concrete strength?", "_ts": "2026-04-25T00:22:16.654570Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 12.96, "success": true, "_ts": "2026-04-25T00:22:16.655024Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the required fire protection rating?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:22:16.655480Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the required fire protection rating?", "_ts": "2026-04-25T00:22:21.455817Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 4.8, "success": true, "_ts": "2026-04-25T00:22:21.456655Z"}
+{"type": "workflow_start", "workflow": "rfi", "project_id": "default", "params": {"question": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "number": "RFI-TEST-001", "project": "default"}, "_ts": "2026-04-25T00:22:21.457194Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "_ts": "2026-04-25T00:22:26.196225Z"}
+{"type": "workflow_complete", "workflow": "rfi", "project_id": "default", "duration_sec": 4.74, "success": true, "_ts": "2026-04-25T00:22:26.196691Z"}
+{"type": "workflow_start", "workflow": "scan", "project_id": "default", "params": {"query": "", "project": "default"}, "_ts": "2026-04-25T00:22:26.197093Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-25T00:22:26.199391Z"}
+{"type": "workflow_complete", "workflow": "scan", "project_id": "default", "duration_sec": 0.0, "success": true, "_ts": "2026-04-25T00:22:26.199783Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the specified concrete strength?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:23:16.637068Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the specified concrete strength?", "_ts": "2026-04-25T00:23:29.653236Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 13.02, "success": true, "_ts": "2026-04-25T00:23:29.653731Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the required fire protection rating?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:23:29.654322Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the required fire protection rating?", "_ts": "2026-04-25T00:23:31.972390Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.32, "success": true, "_ts": "2026-04-25T00:23:31.972811Z"}
+{"type": "workflow_start", "workflow": "rfi", "project_id": "default", "params": {"question": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "number": "RFI-TEST-001", "project": "default"}, "_ts": "2026-04-25T00:23:31.973148Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "_ts": "2026-04-25T00:23:35.086415Z"}
+{"type": "workflow_complete", "workflow": "rfi", "project_id": "default", "duration_sec": 3.11, "success": true, "_ts": "2026-04-25T00:23:35.086923Z"}
+{"type": "workflow_start", "workflow": "scan", "project_id": "default", "params": {"query": "", "project": "default"}, "_ts": "2026-04-25T00:23:35.087416Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-25T00:23:35.089705Z"}
+{"type": "workflow_complete", "workflow": "scan", "project_id": "default", "duration_sec": 0.0, "success": true, "_ts": "2026-04-25T00:23:35.090132Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the specified concrete strength?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:23:48.531026Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the specified concrete strength?", "_ts": "2026-04-25T00:24:00.887620Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 12.36, "success": true, "_ts": "2026-04-25T00:24:00.888071Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the required fire protection rating?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:24:00.888524Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the required fire protection rating?", "_ts": "2026-04-25T00:24:03.511297Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.62, "success": true, "_ts": "2026-04-25T00:24:03.511791Z"}
+{"type": "workflow_start", "workflow": "rfi", "project_id": "default", "params": {"question": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "number": "RFI-TEST-001", "project": "default"}, "_ts": "2026-04-25T00:24:03.512243Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "_ts": "2026-04-25T00:24:07.865575Z"}
+{"type": "workflow_complete", "workflow": "rfi", "project_id": "default", "duration_sec": 4.35, "success": true, "_ts": "2026-04-25T00:24:07.866029Z"}
+{"type": "workflow_start", "workflow": "scan", "project_id": "default", "params": {"query": "", "project": "default"}, "_ts": "2026-04-25T00:24:07.866544Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-25T00:24:07.868869Z"}
+{"type": "workflow_complete", "workflow": "scan", "project_id": "default", "duration_sec": 0.0, "success": true, "_ts": "2026-04-25T00:24:07.869287Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/ARCH_DRAWING_NOTES.txt", "doc_type": "drawing", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:24:39.454577Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 9.9, "success": false, "_ts": "2026-04-25T00:24:49.358044Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/FIRE_PROTECTION_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:24:49.358523Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.64, "success": false, "_ts": "2026-04-25T00:24:49.998715Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/MECH_SPEC_HVAC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:24:49.999457Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.47, "success": false, "_ts": "2026-04-25T00:24:50.472502Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/RFI_LOG.txt", "doc_type": "rfi", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:24:50.473316Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.48, "success": false, "_ts": "2026-04-25T00:24:50.952270Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/STRUCT_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:24:50.953038Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.51, "success": false, "_ts": "2026-04-25T00:24:51.467698Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the specified concrete strength?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:24:51.468445Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the specified concrete strength?", "_ts": "2026-04-25T00:24:54.215357Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.75, "success": true, "_ts": "2026-04-25T00:24:54.215817Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the required fire protection rating?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:24:54.216257Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the required fire protection rating?", "_ts": "2026-04-25T00:24:56.120204Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 1.9, "success": true, "_ts": "2026-04-25T00:24:56.120668Z"}
+{"type": "workflow_start", "workflow": "rfi", "project_id": "default", "params": {"question": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "number": "RFI-TEST-001", "project": "default"}, "_ts": "2026-04-25T00:24:56.121107Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "_ts": "2026-04-25T00:24:59.689714Z"}
+{"type": "workflow_complete", "workflow": "rfi", "project_id": "default", "duration_sec": 3.57, "success": true, "_ts": "2026-04-25T00:24:59.690228Z"}
+{"type": "workflow_start", "workflow": "scan", "project_id": "default", "params": {"query": "", "project": "default"}, "_ts": "2026-04-25T00:24:59.690662Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-25T00:24:59.692968Z"}
+{"type": "workflow_complete", "workflow": "scan", "project_id": "default", "duration_sec": 0.0, "success": true, "_ts": "2026-04-25T00:24:59.693384Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/ARCH_DRAWING_NOTES.txt", "doc_type": "drawing", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:25:21.415545Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 10.03, "success": false, "_ts": "2026-04-25T00:25:31.441242Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/FIRE_PROTECTION_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:25:31.441804Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.49, "success": false, "_ts": "2026-04-25T00:25:31.930482Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/MECH_SPEC_HVAC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:25:31.931172Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.52, "success": false, "_ts": "2026-04-25T00:25:32.447654Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/RFI_LOG.txt", "doc_type": "rfi", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:25:32.448372Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.42, "success": false, "_ts": "2026-04-25T00:25:32.868905Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/STRUCT_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:25:32.869592Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.51, "success": false, "_ts": "2026-04-25T00:25:33.382466Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the specified concrete strength?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:25:33.383156Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the specified concrete strength?", "_ts": "2026-04-25T00:25:36.128504Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.75, "success": true, "_ts": "2026-04-25T00:25:36.128966Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the required fire protection rating?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:25:36.129454Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the required fire protection rating?", "_ts": "2026-04-25T00:25:38.330142Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.2, "success": true, "_ts": "2026-04-25T00:25:38.330656Z"}
+{"type": "workflow_start", "workflow": "rfi", "project_id": "default", "params": {"question": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "number": "RFI-TEST-001", "project": "default"}, "_ts": "2026-04-25T00:25:38.331135Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "_ts": "2026-04-25T00:25:41.577630Z"}
+{"type": "workflow_complete", "workflow": "rfi", "project_id": "default", "duration_sec": 3.25, "success": true, "_ts": "2026-04-25T00:25:41.578091Z"}
+{"type": "workflow_start", "workflow": "scan", "project_id": "default", "params": {"query": "", "project": "default"}, "_ts": "2026-04-25T00:25:41.578567Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-25T00:25:41.580957Z"}
+{"type": "workflow_complete", "workflow": "scan", "project_id": "default", "duration_sec": 0.0, "success": true, "_ts": "2026-04-25T00:25:41.581399Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/ARCH_DRAWING_NOTES.txt", "doc_type": "drawing", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:25:57.369912Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 9.88, "success": false, "_ts": "2026-04-25T00:26:07.252045Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/FIRE_PROTECTION_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:26:07.252491Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.46, "success": false, "_ts": "2026-04-25T00:26:07.715117Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/MECH_SPEC_HVAC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:26:07.715875Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.4, "success": false, "_ts": "2026-04-25T00:26:08.120064Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/RFI_LOG.txt", "doc_type": "rfi", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:26:08.120827Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.28, "success": false, "_ts": "2026-04-25T00:26:08.398803Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/STRUCT_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:26:08.399737Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.35, "success": false, "_ts": "2026-04-25T00:26:08.750728Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the specified concrete strength?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:26:08.751506Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the specified concrete strength?", "_ts": "2026-04-25T00:26:11.938853Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 3.19, "success": true, "_ts": "2026-04-25T00:26:11.939338Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the required fire protection rating?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:26:11.939764Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the required fire protection rating?", "_ts": "2026-04-25T00:26:13.787248Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 1.85, "success": true, "_ts": "2026-04-25T00:26:13.787707Z"}
+{"type": "workflow_start", "workflow": "rfi", "project_id": "default", "params": {"question": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "number": "RFI-TEST-001", "project": "default"}, "_ts": "2026-04-25T00:26:13.788128Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "_ts": "2026-04-25T00:26:18.701141Z"}
+{"type": "workflow_complete", "workflow": "rfi", "project_id": "default", "duration_sec": 4.91, "success": true, "_ts": "2026-04-25T00:26:18.701718Z"}
+{"type": "workflow_start", "workflow": "scan", "project_id": "default", "params": {"query": "", "project": "default"}, "_ts": "2026-04-25T00:26:18.702173Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-25T00:26:18.704538Z"}
+{"type": "workflow_complete", "workflow": "scan", "project_id": "default", "duration_sec": 0.0, "success": true, "_ts": "2026-04-25T00:26:18.704957Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/ARCH_DRAWING_NOTES.txt", "doc_type": "drawing", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:42:57.538288Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 10.25, "success": false, "_ts": "2026-04-25T00:43:07.783819Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/FIRE_PROTECTION_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:43:07.784407Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.49, "success": false, "_ts": "2026-04-25T00:43:08.279422Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/MECH_SPEC_HVAC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:43:08.280193Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.37, "success": false, "_ts": "2026-04-25T00:43:08.650922Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/RFI_LOG.txt", "doc_type": "rfi", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:43:08.651687Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.28, "success": false, "_ts": "2026-04-25T00:43:08.932137Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/STRUCT_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T00:43:08.932979Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.37, "success": false, "_ts": "2026-04-25T00:43:09.306890Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the specified concrete strength?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:43:09.307665Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the specified concrete strength?", "_ts": "2026-04-25T00:43:12.549357Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 3.24, "success": true, "_ts": "2026-04-25T00:43:12.549845Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the required fire protection rating?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T00:43:12.550305Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the required fire protection rating?", "_ts": "2026-04-25T00:43:14.296435Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 1.75, "success": true, "_ts": "2026-04-25T00:43:14.296895Z"}
+{"type": "workflow_start", "workflow": "rfi", "project_id": "default", "params": {"question": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "number": "RFI-TEST-001", "project": "default"}, "_ts": "2026-04-25T00:43:14.297339Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "_ts": "2026-04-25T00:43:16.980789Z"}
+{"type": "workflow_complete", "workflow": "rfi", "project_id": "default", "duration_sec": 2.68, "success": true, "_ts": "2026-04-25T00:43:16.981296Z"}
+{"type": "workflow_start", "workflow": "scan", "project_id": "default", "params": {"query": "", "project": "default"}, "_ts": "2026-04-25T00:43:16.981700Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-25T00:43:16.983371Z"}
+{"type": "workflow_complete", "workflow": "scan", "project_id": "default", "duration_sec": 0.0, "success": true, "_ts": "2026-04-25T00:43:16.983678Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/ARCH_DRAWING_NOTES.txt", "doc_type": "drawing", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T01:15:55.787285Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 10.69, "success": false, "_ts": "2026-04-25T01:16:06.473022Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/FIRE_PROTECTION_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T01:16:06.473553Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.48, "success": false, "_ts": "2026-04-25T01:16:06.958504Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/MECH_SPEC_HVAC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T01:16:06.959278Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.52, "success": false, "_ts": "2026-04-25T01:16:07.478709Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/RFI_LOG.txt", "doc_type": "rfi", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T01:16:07.479499Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.53, "success": false, "_ts": "2026-04-25T01:16:08.006490Z"}
+{"type": "workflow_start", "workflow": "ingest", "project_id": "default", "params": {"file": "/home/shivaramgoud/network-research-intiative-shivaram/vdc-document-intelligence/sample_docs/STRUCT_SPEC.txt", "doc_type": "spec", "use_docling": false, "project": "default"}, "_ts": "2026-04-25T01:16:08.007242Z"}
+{"type": "workflow_complete", "workflow": "ingest", "project_id": "default", "duration_sec": 0.44, "success": false, "_ts": "2026-04-25T01:16:08.443931Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the specified concrete strength?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T01:16:08.444714Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the specified concrete strength?", "_ts": "2026-04-25T01:16:10.976899Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 2.53, "success": true, "_ts": "2026-04-25T01:16:10.977426Z"}
+{"type": "workflow_start", "workflow": "query", "project_id": "default", "params": {"query": "What is the required fire protection rating?", "top_k": 5, "project": "default"}, "_ts": "2026-04-25T01:16:10.977873Z"}
+{"type": "audit", "action": "query", "project_id": "default", "detail": "What is the required fire protection rating?", "_ts": "2026-04-25T01:16:12.203978Z"}
+{"type": "workflow_complete", "workflow": "query", "project_id": "default", "duration_sec": 1.23, "success": true, "_ts": "2026-04-25T01:16:12.204455Z"}
+{"type": "workflow_start", "workflow": "rfi", "project_id": "default", "params": {"question": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "number": "RFI-TEST-001", "project": "default"}, "_ts": "2026-04-25T01:16:12.204880Z"}
+{"type": "audit", "action": "draft_rfi", "project_id": "default", "detail": "Structural spec calls for 5,000 psi concrete but drawing notes show 4,000 psi. Please confirm.", "_ts": "2026-04-25T01:26:28.131938Z"}
+{"type": "workflow_complete", "workflow": "rfi", "project_id": "default", "duration_sec": 615.93, "success": true, "_ts": "2026-04-25T01:26:28.132389Z"}
+{"type": "workflow_start", "workflow": "scan", "project_id": "default", "params": {"query": "", "project": "default"}, "_ts": "2026-04-25T01:26:28.132796Z"}
+{"type": "audit", "action": "scan_contradictions", "project_id": "default", "detail": "found 1", "_ts": "2026-04-25T01:26:28.135027Z"}
+{"type": "workflow_complete", "workflow": "scan", "project_id": "default", "duration_sec": 0.0, "success": true, "_ts": "2026-04-25T01:26:28.135473Z"}
+{"type": "document_ingested", "project_id": "phd-test-1", "doc_id": "59d8847f7ac7", "doc_name": "ARCH_DRAWING_NOTES.txt", "chunk_count": 4, "_ts": "2026-04-25T03:26:50.930361Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-1", "detail": "ARCH_DRAWING_NOTES.txt", "_ts": "2026-04-25T03:26:50.930792Z"}
+{"type": "document_ingested", "project_id": "phd-test-2", "doc_id": "a8f0b7dac595", "doc_name": "ARCH_DRAWING_NOTES.txt", "chunk_count": 4, "_ts": "2026-04-25T03:27:35.391867Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-2", "detail": "ARCH_DRAWING_NOTES.txt", "_ts": "2026-04-25T03:27:35.392301Z"}
+{"type": "document_ingested", "project_id": "phd-test-2", "doc_id": "61c417b2adad", "doc_name": "FIRE_PROTECTION_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-25T03:27:35.985740Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-2", "detail": "FIRE_PROTECTION_SPEC.txt", "_ts": "2026-04-25T03:27:35.986191Z"}
+{"type": "document_ingested", "project_id": "phd-test-2", "doc_id": "b8341a6c6b9f", "doc_name": "MECH_SPEC_HVAC.txt", "chunk_count": 4, "_ts": "2026-04-25T03:27:36.479625Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-2", "detail": "MECH_SPEC_HVAC.txt", "_ts": "2026-04-25T03:27:36.480065Z"}
+{"type": "document_ingested", "project_id": "phd-test-2", "doc_id": "57b2426b7809", "doc_name": "RFI_LOG.txt", "chunk_count": 3, "_ts": "2026-04-25T03:27:36.925852Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-2", "detail": "RFI_LOG.txt", "_ts": "2026-04-25T03:27:36.926297Z"}
+{"type": "document_ingested", "project_id": "phd-test-2", "doc_id": "5ec78235c0ee", "doc_name": "STRUCT_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-25T03:27:37.590917Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-2", "detail": "STRUCT_SPEC.txt", "_ts": "2026-04-25T03:27:37.591428Z"}
+{"type": "document_ingested", "project_id": "phd-test-3", "doc_id": "aa07942607c6", "doc_name": "ARCH_DRAWING_NOTES.txt", "chunk_count": 4, "_ts": "2026-04-25T03:28:28.978345Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-3", "detail": "ARCH_DRAWING_NOTES.txt", "_ts": "2026-04-25T03:28:28.978854Z"}
+{"type": "document_ingested", "project_id": "phd-test-3", "doc_id": "27941327e2c5", "doc_name": "FIRE_PROTECTION_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-25T03:28:29.677063Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-3", "detail": "FIRE_PROTECTION_SPEC.txt", "_ts": "2026-04-25T03:28:29.677906Z"}
+{"type": "document_ingested", "project_id": "phd-test-3", "doc_id": "9ec43c3f16a1", "doc_name": "MECH_SPEC_HVAC.txt", "chunk_count": 4, "_ts": "2026-04-25T03:28:30.266912Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-3", "detail": "MECH_SPEC_HVAC.txt", "_ts": "2026-04-25T03:28:30.267424Z"}
+{"type": "document_ingested", "project_id": "phd-test-3", "doc_id": "d1dea965e39e", "doc_name": "RFI_LOG.txt", "chunk_count": 3, "_ts": "2026-04-25T03:28:30.694308Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-3", "detail": "RFI_LOG.txt", "_ts": "2026-04-25T03:28:30.694823Z"}
+{"type": "document_ingested", "project_id": "phd-test-3", "doc_id": "527c6cdef253", "doc_name": "STRUCT_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-25T03:28:31.124998Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-test-3", "detail": "STRUCT_SPEC.txt", "_ts": "2026-04-25T03:28:31.125446Z"}
+{"type": "document_ingested", "project_id": "smoke-test", "doc_id": "fa29c39aa595", "doc_name": "ARCH_DRAWING_NOTES.txt", "chunk_count": 4, "_ts": "2026-04-25T03:31:50.623213Z"}
+{"type": "audit", "action": "upload", "project_id": "smoke-test", "detail": "ARCH_DRAWING_NOTES.txt", "_ts": "2026-04-25T03:31:50.623595Z"}
+{"type": "document_ingested", "project_id": "smoke-test", "doc_id": "d7fe219000ff", "doc_name": "FIRE_PROTECTION_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-25T03:31:51.484961Z"}
+{"type": "audit", "action": "upload", "project_id": "smoke-test", "detail": "FIRE_PROTECTION_SPEC.txt", "_ts": "2026-04-25T03:31:51.485501Z"}
+{"type": "document_ingested", "project_id": "smoke-test", "doc_id": "ea5739fadae0", "doc_name": "MECH_SPEC_HVAC.txt", "chunk_count": 4, "_ts": "2026-04-25T03:31:51.924567Z"}
+{"type": "audit", "action": "upload", "project_id": "smoke-test", "detail": "MECH_SPEC_HVAC.txt", "_ts": "2026-04-25T03:31:51.925240Z"}
+{"type": "document_ingested", "project_id": "smoke-test", "doc_id": "8a955d98fda4", "doc_name": "RFI_LOG.txt", "chunk_count": 3, "_ts": "2026-04-25T03:31:52.455099Z"}
+{"type": "audit", "action": "upload", "project_id": "smoke-test", "detail": "RFI_LOG.txt", "_ts": "2026-04-25T03:31:52.455731Z"}
+{"type": "document_ingested", "project_id": "smoke-test", "doc_id": "bb20ea4aa4fc", "doc_name": "STRUCT_SPEC.txt", "chunk_count": 3, "_ts": "2026-04-25T03:31:52.916710Z"}
+{"type": "audit", "action": "upload", "project_id": "smoke-test", "detail": "STRUCT_SPEC.txt", "_ts": "2026-04-25T03:31:52.917242Z"}
+{"type": "document_ingested", "project_id": "phd-battle-real", "doc_id": "46d099be5924", "doc_name": "SMACNA_HVAC_Duct_Standards.pdf", "chunk_count": 1441, "_ts": "2026-04-25T03:44:42.757967Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-battle-real", "detail": "SMACNA_HVAC_Duct_Standards.pdf", "_ts": "2026-04-25T03:44:42.758392Z"}
+{"type": "document_ingested", "project_id": "phd-battle-real", "doc_id": "c8bcfd032863", "doc_name": "SRP_HVAC_Construction_Spec.pdf", "chunk_count": 2349, "_ts": "2026-04-25T03:53:22.597539Z"}
+{"type": "audit", "action": "upload", "project_id": "phd-battle-real", "detail": "SRP_HVAC_Construction_Spec.pdf", "_ts": "2026-04-25T03:53:22.597876Z"}
