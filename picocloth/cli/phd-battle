@@ -1,0 +1,34 @@
+#!/bin/bash
+# phd-battle — PicoCloth CLI wrapper for VDC PhD Battle Arena
+# Usage: picocloth phd-battle --docs <dir> [--rounds N] [--project ID]
+#
+# Two PhD-level VDC agents interrogate each other on real construction documents.
+# They ask deep questions, retrieve from memory, and critique each other's answers.
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+AGENTS_DIR="$(cd "$SCRIPT_DIR/../agents" && pwd)"
+
+cd "$AGENTS_DIR"
+
+# Ensure venv is available
+VENV_PYTHON=""
+for v in \
+    "$SCRIPT_DIR/../../../venv-docling/bin/python" \
+    "$SCRIPT_DIR/../../venv-docling/bin/python" \
+    "$(which python3 2>/dev/null)" \
+; do
+    if [ -x "$v" ]; then
+        VENV_PYTHON="$v"
+        break
+    fi
+done
+
+if [ -z "$VENV_PYTHON" ]; then
+    echo "ERROR: No Python interpreter found."
+    exit 1
+fi
+
+# Forward all args to the interrogator
+exec "$VENV_PYTHON" phd_interrogator.py "$@"

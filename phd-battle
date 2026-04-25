@@ -1,0 +1,22 @@
+#!/bin/bash
+# phd-battle — Convenience wrapper for VDC PhD Battle Arena
+# 
+# Usage:
+#   ./phd-battle --docs real_construction_docs/ --rounds 5
+#   ./phd-battle --docs sample_docs/ --rounds 3 --project demo-test
+#
+# Two PhD-level VDC agents interrogate each other on construction documents.
+# They ask deep questions, retrieve from memory, and critique each other's answers.
+
+set -e
+
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$PROJECT_ROOT"
+
+PYTHON="$PROJECT_ROOT/venv-docling/bin/python"
+if [ ! -x "$PYTHON" ]; then
+    PYTHON="$(which python3)"
+fi
+
+cd "$PROJECT_ROOT/picocloth/agents"
+exec "$PYTHON" phd_interrogator.py "$@"

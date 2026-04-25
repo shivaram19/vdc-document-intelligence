@@ -13,12 +13,20 @@ import { renderLogin } from './pages/login.js';
 import { renderDashboard } from './pages/dashboard.js';
 import { renderDemo } from './pages/demo-dashboard.js';
 import { renderAgent } from './pages/agent.js';
+import { renderPricing } from './pages/pricing.js';
+import { renderConnectors } from './pages/connectors.js';
+import { renderConnectorOnboard } from './pages/connector-onboard.js';
+import { renderOutreach } from './pages/outreach.js';
 
 register('/', renderLanding);
 register('/login', renderLogin);
 register('/dashboard', renderDashboard);
 register('/demo', renderDemo);
 register('/agent/:slug', renderAgent);
+register('/pricing', renderPricing);
+register('/connectors', renderConnectors);
+register('/connect', renderConnectorOnboard);
+register('/outreach', renderOutreach);
 
 const fingerprint = createFingerprint();
 

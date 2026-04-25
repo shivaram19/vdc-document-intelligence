@@ -44,8 +44,11 @@ export function renderHeroSection() {
               <button data-nav="/demo" class="px-6 py-3 bg-bp-accent hover:bg-blue-500 text-white font-semibold rounded-sm transition shadow-lg shadow-bp-accent/20">
                 <i class="fas fa-play mr-2"></i>Live Demo — No Signup
               </button>
-              <button data-nav="/login" class="px-6 py-3 bg-transparent hover:bg-bp-light/30 text-gray-300 font-semibold rounded-sm transition border border-bp-accent/40">
-                <i class="fas fa-shield-alt mr-2"></i>Secure Login
+              <button data-nav="/connect" class="px-6 py-3 bg-transparent hover:bg-bp-light/30 text-gray-300 font-semibold rounded-sm transition border border-bp-accent/40">
+                <i class="fas fa-plug mr-2"></i>Connect Drawings
+              </button>
+              <button data-nav="/pricing" class="px-6 py-3 text-gray-400 hover:text-white font-semibold rounded-sm transition text-sm">
+                Pricing
               </button>
             </div>
           </div>

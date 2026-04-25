@@ -16,11 +16,17 @@ export function renderCTASection() {
             Run your first inspection in under 60 seconds.
           </p>
           <div class="flex flex-wrap justify-center gap-3">
-            <button data-nav="/demo" class="btn-inspect">
-              <i class="fas fa-play mr-2"></i>Start Live Demo — No Signup
+            <button data-nav="/connect" class="btn-inspect">
+              <i class="fas fa-plug mr-2"></i>Connect Your Drawings
             </button>
-            <button data-nav="/login" class="btn-outline">
-              <i class="fas fa-shield-alt mr-2"></i>Secure Login
+            <button data-nav="/demo" class="btn-outline">
+              <i class="fas fa-play mr-2"></i>Live Demo — No Signup
+            </button>
+            <button data-nav="/pricing" class="btn-outline">
+              <i class="fas fa-tag mr-2"></i>View Pricing
+            </button>
+            <button data-nav="/outreach" class="btn-outline">
+              <i class="fas fa-bullseye mr-2"></i>Pipeline
             </button>
           </div>
           <div class="mt-6 flex justify-center gap-6 text-xs font-mono text-gray-600">

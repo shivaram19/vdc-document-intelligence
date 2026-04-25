@@ -8,6 +8,7 @@ import { renderFeaturesSection } from '../components/landing/features-section.js
 import { renderFleetSection, wireFleetEvents } from '../components/landing/fleet-section.js';
 import { renderResearchSection } from '../components/landing/research-section.js';
 import { renderCTASection } from '../components/landing/cta-section.js';
+import { renderDemoDocsSection } from '../components/landing/demo-docs-section.js';
 import { navigate } from '../router.js';
 
 export function renderLanding(container) {
@@ -17,6 +18,7 @@ export function renderLanding(container) {
       <div id="features-mount"></div>
       <div id="fleet-mount"></div>
       <div id="research-mount"></div>
+      <div id="demo-docs-mount"></div>
       <div id="cta-mount"></div>
       <footer class="py-8 text-center text-xs text-gray-600 font-mono border-t border-bp-light/10">
         <p>Medha Document Intelligence — Research-Backed · Agent-Native · Construction-Aligned</p>
@@ -29,6 +31,7 @@ export function renderLanding(container) {
   container.querySelector('#features-mount').outerHTML = renderFeaturesSection();
   container.querySelector('#fleet-mount').outerHTML = renderFleetSection();
   container.querySelector('#research-mount').outerHTML = renderResearchSection();
+  container.querySelector('#demo-docs-mount').outerHTML = renderDemoDocsSection();
   container.querySelector('#cta-mount').outerHTML = renderCTASection();
 
   if (typeof document !== 'undefined') {
