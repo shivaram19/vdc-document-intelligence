@@ -7,9 +7,10 @@
 
 | Role | Font | Fallback | WHY |
 |------|------|----------|-----|
-| Body / UI | Inter | system-ui, sans-serif | `[CITE: Bernard2003]` Fastest reading at 10-14px on screens |
-| Monospace | Roboto Mono | monospace | `[CITE: Boulton2014]` Critical for spec section numbers, sheet IDs, hashes |
-| Impact | Inter 700 | sans-serif | Same family, bold weight for dollar amounts and counts |
+| Body / UI | Source Sans 3 | system-ui, sans-serif | `[CITE: Bernard2003]` Fastest reading at 10-14px on screens. `[CITE: Bakaus2026]` Not on AI-monoculture list. |
+| Display | Sora | system-ui, sans-serif | `[CITE: Bakaus2026]` Distinctive geometric sans; avoids overused-font detector. |
+| Monospace | JetBrains Mono | 'SF Mono', monospace | `[CITE: Boulton2014]` Critical for spec section numbers, sheet IDs, hashes. Increased letter height improves O/0 distinction. |
+| Impact | JetBrains Mono 700 | monospace | `[CITE: Boulton2014]` Tabular-nums for dollar amounts and counts; prevents jitter. |
 
 ## Scale
 

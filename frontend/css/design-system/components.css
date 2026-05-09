@@ -2,32 +2,85 @@
  * components.css — Badges, Cards, Banners, Tabs
  * SOLID: SRP — only reusable UI component styles.
  *
- * [CITE: ISO3864] Safety color standardization.
+ * [CITE: ISO3864-2016] Safety color standardization.
+ * [CITE: ADR-006] Tinted neutrals replace pure grays.
+ * [CITE: ADR-007] Modern radius scale.
  */
 
 /* ── Safety Badges ── */
 .badge-pass {
-  background: rgba(46, 125, 50, 0.15);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: rgba(46, 125, 50, 0.12);
   color: #81c784;
-  border: 1px solid rgba(46, 125, 50, 0.4);
+  border: 1px solid rgba(46, 125, 50, 0.35);
   border-radius: var(--radius-sm);
   padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .badge-caution {
-  background: rgba(245, 166, 35, 0.15);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: rgba(245, 166, 35, 0.12);
   color: #ffd54f;
-  border: 1px solid rgba(245, 166, 35, 0.4);
+  border: 1px solid rgba(245, 166, 35, 0.35);
   border-radius: var(--radius-sm);
   padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .badge-critical {
-  background: rgba(211, 47, 47, 0.15);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: rgba(211, 47, 47, 0.12);
   color: #ef5350;
-  border: 1px solid rgba(211, 47, 47, 0.4);
+  border: 1px solid rgba(211, 47, 47, 0.35);
   border-radius: var(--radius-sm);
   padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge-pending {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: rgba(255, 107, 53, 0.12);
+  color: #ff8a65;
+  border: 1px solid rgba(255, 107, 53, 0.35);
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge-info {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: rgba(58, 123, 213, 0.12);
+  color: var(--bp-accent);
+  border: 1px solid rgba(58, 123, 213, 0.35);
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 /* ── Source Card — Document Reference ── */
@@ -41,7 +94,7 @@
 /* ── Contradiction Banner ── */
 .contradiction-banner {
   background: rgba(211, 47, 47, 0.08);
-  border: 1px solid rgba(211, 47, 47, 0.35);
+  border: 1px solid rgba(211, 47, 47, 0.3);
   border-left: 4px solid var(--safe-red);
   border-radius: var(--radius-sm);
   padding: var(--space-4) var(--space-5);
@@ -52,16 +105,19 @@
 .chat-user {
   background: var(--bp-light);
   color: white;
-  border-radius: 2px 12px 12px 2px;
+  border-radius: var(--radius-sm) var(--radius-lg) var(--radius-lg) var(--radius-sm);
   border-left: 3px solid var(--bp-accent);
+  padding: var(--space-3);
 }
 
 .chat-ai {
   background: rgba(21, 34, 56, 0.95);
-  color: var(--gray-200);
-  border-radius: 12px 2px 2px 12px;
-  border: 1px solid rgba(58, 123, 213, 0.2);
+  /* [CITE: ADR-006] Tinted neutral, not pure gray. */
+  color: var(--neutral-200);
+  border-radius: var(--radius-lg) var(--radius-sm) var(--radius-sm) var(--radius-lg);
+  border: 1px solid rgba(58, 123, 213, 0.18);
   border-right: 3px solid var(--bp-accent);
+  padding: var(--space-3);
 }
 
 /* ── Tab Navigation — Inspector Tabs ── */
@@ -74,11 +130,13 @@
 
 .tab-inactive {
   border-bottom: 2px solid transparent;
-  color: var(--gray-500);
+  /* [CITE: ADR-006] Tinted neutral. */
+  color: var(--neutral-500);
+  transition: color var(--transition-fast), border-color var(--transition-fast);
 }
 
 .tab-inactive:hover {
-  color: var(--gray-300);
+  color: var(--neutral-300);
   border-bottom-color: rgba(58, 123, 213, 0.3);
 }
 

@@ -1,32 +1,66 @@
 /**
  * typography.css — Font Families & Text Styles
  * SOLID: SRP — only type-related rules.
+ *
+ * [CITE: Bakaus2026] Anti-monoculture: Inter replaced with distinctive pairing.
+ * [CITE: Bernard2003] Sans-serif body fonts optimize screen readability.
+ * [CITE: Boulton2014] Monospace maximizes character distinguishability.
  */
 
 :root {
-  --font-mono:        'SF Mono', 'Consolas', monospace;
-  --font-sans:        'Inter', system-ui, sans-serif;
-  --font-engineering: 'Roboto Mono', monospace;
+  --font-sans:    'Source Sans 3', system-ui, -apple-system, sans-serif;
+  --font-display: 'Sora', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'SF Mono', Consolas, monospace;
+}
+
+/* --- Font Family Utilities --- */
+.font-sans    { font-family: var(--font-sans); }
+.font-display { font-family: var(--font-display); }
+.font-mono    { font-family: var(--font-mono); }
+
+/* --- Type Scale --- */
+.type-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.type-heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.type-body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .type-mono {
   font-family: var(--font-mono);
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-.type-engineering {
-  font-family: var(--font-engineering);
-}
-
+/* --- Label Style (Engineering Identifier) --- */
 .type-label {
   font-family: var(--font-mono);
   font-size: 0.65rem;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  color: var(--neutral-500);
 }
 
+/* --- Impact Number --- */
 .type-impact {
   font-family: var(--font-mono);
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
 }

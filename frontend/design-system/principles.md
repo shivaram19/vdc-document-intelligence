@@ -34,9 +34,9 @@ A document controller scanning 50 files at 6 PM sees contradictions instantly. N
 
 ### WHAT
 - 4px base grid (not 8px).
-- 2px border radius (barely perceptible, not playful).
+- 4px/8px/12px border radius (modern scale, not playful). `[CITE: ADR-007]`
 - 12px row gaps in data tables (not 24px).
-- Cards have thin borders, not heavy shadows.
+- Cards use elevation-first surfaces (subtle background shifts) with borders only on hover. `[CITE: ADR-007]`
 
 ### SO WHAT
 A VDC engineer views 14 documents, 1,247 chunks, and 3 contradictions on one screen without scrolling.
@@ -128,8 +128,8 @@ A superintendent glancing at the screen from across the room knows the system st
 
 ### WHAT
 - Scan line animation: continuous, slow, represents ongoing inspection.
-- State transitions: 150ms ease-out.
-- Panel reveals: 250ms ease-out.
+- State transitions: 150ms smooth (`cubic-bezier(0.4, 0, 0.2, 1)`).
+- Panel reveals: 250ms expo-out (`cubic-bezier(0.16, 1, 0.3, 1)`). `[CITE: ADR-008]`
 - No parallax, no particle effects, no scroll-triggered reveals.
 
 ### SO WHAT

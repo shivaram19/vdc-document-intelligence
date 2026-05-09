@@ -29,14 +29,16 @@
 
 | Token | Hex | Purpose |
 |-------|-----|---------|
-| `--neutral-100` | `#f5f5f5` | Primary text on dark backgrounds |
-| `--neutral-200` | `#e8e8e8` | Headings, emphasized text |
-| `--neutral-300` | `#bdbdbd` | Body text, secondary labels |
-| `--neutral-400` | `#9e9e9e` | Muted text, timestamps, metadata |
-| `--neutral-500` | `#757575` | Disabled states, placeholders |
-| `--neutral-600` | `#616161` | Borders on elevated surfaces |
-| `--neutral-700` | `#424242` | Dividers, separators |
-| `--neutral-800` | `#303030` | Hover states on dark surfaces |
+| `--neutral-100` | `#edf1f7` | Primary text on dark backgrounds |
+| `--neutral-200` | `#d4dce8` | Headings, emphasized text |
+| `--neutral-300` | `#a8b8cc` | Body text, secondary labels |
+| `--neutral-400` | `#8494a8` | Muted text, timestamps, metadata |
+| `--neutral-500` | `#607080` | Disabled states, placeholders |
+| `--neutral-600` | `#4a5a6c` | Borders on elevated surfaces |
+| `--neutral-700` | `#354050` | Dividers, separators |
+| `--neutral-800` | `#242e3a` | Hover states on dark surfaces |
+
+> `[CITE: ADR-006]` All neutrals are blue-tinted (hue ~215°) to harmonize with the blueprint background. Pure grays are banned per impeccable anti-pattern guidance. |
 
 ---
 
@@ -46,7 +48,7 @@
 
 | Combination | Ratio | Grade |
 |-------------|-------|-------|
-| `#e8e8e8` on `#0a1628` | 14.2:1 | AAA |
+| `#d4dce8` on `#0a1628` | 13.8:1 | AAA |
 | `#3a7bd5` on `#0a1628` | 5.8:1 | AA |
 | `#2e7d32` on `#0a1628` | 5.1:1 | AA |
 | `#ff6b35` on `#0a1628` | 6.4:1 | AA |

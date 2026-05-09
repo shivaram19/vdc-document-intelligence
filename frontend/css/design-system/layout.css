@@ -1,8 +1,13 @@
 /**
  * layout.css — Backgrounds, Panels, Containers
  * SOLID: SRP — only layout and container rules.
+ *
+ * [CITE: Ware2021] Dark backgrounds reduce monitoring glare.
+ * [CITE: ADR-006] Tinted neutrals harmonize with blueprint hue.
+ * [CITE: ADR-007] Elevation-first surfaces replace border-heavy cards.
  */
 
+/* --- Blueprint Background --- */
 .blueprint-bg {
   background-color: var(--bp-dark);
   background-image:
@@ -10,28 +15,57 @@
     linear-gradient(90deg, var(--bp-grid) 1px, transparent 1px);
   background-size: 40px 40px;
   min-height: 100vh;
-  color: var(--gray-200);
+  /* [CITE: ADR-006] Tinted neutral text, not pure gray. */
+  color: var(--neutral-200);
   font-family: var(--font-sans);
 }
 
+/* --- Inspection Panel (Elevation-First) --- */
+/* [CITE: ADR-007] Background elevation + subtle border, not heavy outline. */
 .panel-inspection {
   background: rgba(21, 34, 56, 0.92);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(58, 123, 213, 0.25);
+  border: 1px solid rgba(58, 123, 213, 0.18);
   border-radius: var(--radius-md);
   position: relative;
+  transition: border-color var(--transition-fast);
 }
 
+.panel-inspection:hover {
+  border-color: rgba(58, 123, 213, 0.35);
+}
+
+/* Top accent line — data, not decoration. [CITE: Tufte2001] */
 .panel-inspection::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--bp-accent), transparent);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
+/* --- Dimension Line --- */
 .dimension-line {
   border-left: 2px solid var(--bp-accent);
   padding-left: var(--space-3);
   margin: var(--space-2) 0;
+}
+
+/* --- Structural Card (Elevation-First) --- */
+/* [CITE: ADR-007] Subtle background shift replaces heavy border. */
+.card-structural {
+  background: rgba(21, 34, 56, 0.55);
+  border: 1px solid rgba(58, 123, 213, 0.08);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  transition: background var(--transition-fast),
+              border-color var(--transition-fast),
+              transform var(--transition-fast);
+}
+
+.card-structural:hover {
+  background: rgba(21, 34, 56, 0.75);
+  border-color: rgba(58, 123, 213, 0.25);
+  transform: translateY(-1px);
 }
