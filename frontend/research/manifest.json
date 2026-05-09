@@ -1,0 +1,177 @@
+[
+  {
+    "id": "01-construction-robotics",
+    "path": "01_Construction_Robotics_Data_Collection.md",
+    "title": "Construction Robotics Data Collection",
+    "category": "Robotics",
+    "badge": "DATA"
+  },
+  {
+    "id": "02-yc-gpt-moment",
+    "path": "02_YC_GPT_Moment_Robotics.md",
+    "title": "YC GPT Moment in Robotics",
+    "category": "Robotics",
+    "badge": "STRATEGY"
+  },
+  {
+    "id": "03-agency-landscape",
+    "path": "03_Construction_Tech_Agency_Landscape.md",
+    "title": "Construction Tech Agency Landscape",
+    "category": "Market",
+    "badge": "LANDSCAPE"
+  },
+  {
+    "id": "04-voice-emotion",
+    "path": "04_Voice_Agent_Emotion_Research.md",
+    "title": "Voice Agent Emotion Research",
+    "category": "AI Research",
+    "badge": "VOICE"
+  },
+  {
+    "id": "05-ian-brown",
+    "path": "05_Ian_Brown_Dossier_and_Sustainability.md",
+    "title": "Ian Brown Dossier & Sustainability",
+    "category": "People",
+    "badge": "DOSSIER"
+  },
+  {
+    "id": "06-business-school",
+    "path": "06_Business_School_Construction_Research.md",
+    "title": "Business School Construction Research",
+    "category": "Academic",
+    "badge": "ACADEMIC"
+  },
+  {
+    "id": "07-meeting-prep",
+    "path": "07_Meeting_Prep_Ian_Brown.md",
+    "title": "Meeting Prep — Ian Brown",
+    "category": "People",
+    "badge": "PREP"
+  },
+  {
+    "id": "08-executive-synthesis",
+    "path": "08_Executive_Synthesis.md",
+    "title": "Executive Synthesis",
+    "category": "Synthesis",
+    "badge": "EXEC"
+  },
+  {
+    "id": "09-vdc-agencies",
+    "path": "09_VDC_Agencies_Deep_Research.md",
+    "title": "VDC Agencies Deep Research",
+    "category": "VDC",
+    "badge": "DEEP"
+  },
+  {
+    "id": "10-3d-reconstruction",
+    "path": "10_3D_Reconstruction_in_Construction.md",
+    "title": "3D Reconstruction in Construction",
+    "category": "Technology",
+    "badge": "3D"
+  },
+  {
+    "id": "11-llms-slims-aec",
+    "path": "11_LLMs_and_SLMs_in_AEC.md",
+    "title": "LLMs & SLMs in AEC",
+    "category": "AI Research",
+    "badge": "LLM"
+  },
+  {
+    "id": "12-ontologies-bim",
+    "path": "12_Ontologies_and_Knowledge_Graphs_for_BIM.md",
+    "title": "Ontologies & Knowledge Graphs for BIM",
+    "category": "Technology",
+    "badge": "BIM"
+  },
+  {
+    "id": "13-internal-tech-stacks",
+    "path": "13_Construction_Firm_Internal_Tech_Stacks.md",
+    "title": "Construction Firm Internal Tech Stacks",
+    "category": "Market",
+    "badge": "STACKS"
+  },
+  {
+    "id": "14-open-source",
+    "path": "14_Open_Source_Construction_Tech_Repos.md",
+    "title": "Open Source Construction Tech Repos",
+    "category": "Technology",
+    "badge": "OSS"
+  },
+  {
+    "id": "15-integrated-synthesis",
+    "path": "15_Integrated_Synthesis_Report.md",
+    "title": "Integrated Synthesis Report",
+    "category": "Synthesis",
+    "badge": "MASTER"
+  },
+  {
+    "id": "15-citation-index",
+    "path": "15_Master_URL_Citation_Index.md",
+    "title": "Master URL Citation Index",
+    "category": "Reference",
+    "badge": "CITATIONS"
+  },
+  {
+    "id": "16-company-profiles",
+    "path": "16_Company_Profiles_and_Outreach_Targets.md",
+    "title": "Company Profiles & Outreach Targets",
+    "category": "Market",
+    "badge": "OUTREACH"
+  },
+  {
+    "id": "autoresearch-readme",
+    "path": "external-repos/autoresearch/README.md",
+    "title": "Autoresearch README",
+    "category": "External",
+    "badge": "REPO"
+  },
+  {
+    "id": "autoresearch-program",
+    "path": "external-repos/autoresearch/program.md",
+    "title": "Autoresearch Program",
+    "category": "External",
+    "badge": "REPO"
+  },
+  {
+    "id": "autoresearch-agenthub",
+    "path": "external-repos/autoresearch/program_agenthub.md",
+    "title": "Autoresearch AgentHub",
+    "category": "External",
+    "badge": "REPO"
+  },
+  {
+    "id": "deep-research-synthesis",
+    "path": "papers/DEEP_RESEARCH_SYNTHESIS.md",
+    "title": "Deep Research Synthesis",
+    "category": "Papers",
+    "badge": "PAPER"
+  },
+  {
+    "id": "internet-research-rl",
+    "path": "papers/INTERNET_RESEARCH_RL_FRAMEWORK.md",
+    "title": "Internet Research RL Framework",
+    "category": "Papers",
+    "badge": "PAPER"
+  },
+  {
+    "id": "rl-research-index",
+    "path": "papers/RL_RESEARCH_INDEX.md",
+    "title": "RL Research Index",
+    "category": "Papers",
+    "badge": "PAPER"
+  },
+  {
+    "id": "master-product-strategy",
+    "path": "product-strategy/00_MASTER_PS.md",
+    "title": "Master Product Strategy",
+    "category": "Strategy",
+    "badge": "STRATEGY"
+  },
+  {
+    "id": "buildots-product-sequence",
+    "path": "product-strategy/deliverables/buildots_vp_product_sequence.md",
+    "title": "Buildots VP Product Sequence",
+    "category": "Strategy",
+    "badge": "DELIVERABLE"
+  }
+]
