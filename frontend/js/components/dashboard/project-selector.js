@@ -11,15 +11,15 @@ export function renderProjectSelectorHTML() {
     <div class="card-structural mb-4">
       <div class="flex flex-wrap items-center justify-between gap-4">
         <div class="flex items-center gap-4">
-          <label class="text-sm text-gray-500 font-mono">PROJECT:</label>
+          <label class="text-sm text-neutral-500 font-mono">PROJECT:</label>
           <select id="project-select" class="bg-bp-dark border border-bp-light/50 text-white text-sm rounded-sm px-3 py-2 focus:outline-none focus:border-bp-accent min-w-[200px] font-mono">
             <option value="">No projects</option>
           </select>
-          <button id="btn-new-project" class="text-sm px-3 py-2 bg-bp-mid hover:bg-bp-light/30 rounded-sm text-gray-300 transition border border-bp-light/30 font-mono">
+          <button id="btn-new-project" class="text-sm px-3 py-2 bg-bp-mid hover:bg-bp-light/30 rounded-sm text-neutral-300 transition border border-bp-light/30 font-mono">
             <i class="fas fa-plus mr-1"></i> NEW
           </button>
         </div>
-        <div class="flex items-center gap-4 text-sm text-gray-500 font-mono">
+        <div class="flex items-center gap-4 text-sm text-neutral-500 font-mono">
           <span id="doc-count">0 DOCUMENTS</span>
           <span id="chunk-count">0 CHUNKS INDEXED</span>
         </div>
@@ -35,16 +35,16 @@ export function renderNewProjectModalHTML() {
         <h3 class="font-semibold text-white mb-4 font-mono">CREATE NEW PROJECT</h3>
         <div class="space-y-4">
           <div>
-            <label class="text-sm text-gray-500 block mb-1 font-mono">PROJECT NAME</label>
+            <label class="text-sm text-neutral-500 block mb-1 font-mono">PROJECT NAME</label>
             <input id="new-project-name" type="text" class="w-full bg-bp-dark border border-bp-light/50 text-white rounded-sm px-3 py-2 font-mono" placeholder="e.g., Downtown Office Tower">
           </div>
           <div>
-            <label class="text-sm text-gray-500 block mb-1 font-mono">CLIENT NAME</label>
+            <label class="text-sm text-neutral-500 block mb-1 font-mono">CLIENT NAME</label>
             <input id="new-project-client" type="text" class="w-full bg-bp-dark border border-bp-light/50 text-white rounded-sm px-3 py-2 font-mono" placeholder="e.g., ABC Development Corp">
           </div>
           <div class="flex gap-3">
             <button id="submit-new-project" class="flex-1 px-4 py-2 bg-bp-accent hover:bg-blue-500 text-white rounded-sm transition font-mono">CREATE</button>
-            <button id="close-new-project" class="flex-1 px-4 py-2 bg-bp-mid hover:bg-bp-light/30 text-gray-300 rounded-sm transition border border-bp-light/30 font-mono">CANCEL</button>
+            <button id="close-new-project" class="flex-1 px-4 py-2 bg-bp-mid hover:bg-bp-light/30 text-neutral-300 rounded-sm transition border border-bp-light/30 font-mono">CANCEL</button>
           </div>
         </div>
       </div>

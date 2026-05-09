@@ -1,6 +1,10 @@
 /**
  * fleet-section.js — Agent Fleet Grid
  * SOLID: SRP — only fleet grid with navigation to agent pages.
+ *
+ * [CITE: ADR-005] Sora display font for headings.
+ * [CITE: ADR-006] Tinted neutrals replace pure grays.
+ * [CITE: ADR-007] Elevation-first card surfaces.
  */
 
 import { AGENTS } from '../../data/agents.js';
@@ -13,10 +17,10 @@ export function renderFleetSection() {
         <div class="w-9 h-9 rounded-sm bg-${a.color}/10 flex items-center justify-center">
           <i class="fas ${a.icon} text-${a.color} text-sm"></i>
         </div>
-        <span class="text-[10px] font-mono text-gray-500 border border-gray-700 px-2 py-0.5 rounded-sm">${a.role.toUpperCase()}</span>
+        <span class="text-[10px] font-mono text-neutral-500 border border-neutral-700 px-2 py-0.5 rounded-sm">${a.role.toUpperCase()}</span>
       </div>
-      <h3 class="text-base font-semibold text-white mb-1">${a.name}</h3>
-      <p class="text-xs text-gray-400 mb-3 leading-relaxed">${a.problem}</p>
+      <h3 class="text-base font-semibold font-display text-white mb-1">${a.name}</h3>
+      <p class="text-xs text-neutral-400 mb-3 leading-relaxed">${a.problem}</p>
       <div class="flex items-center justify-between">
         <span class="type-label text-${a.color}">${a.metric}</span>
         <span class="text-[10px] text-bp-accent font-mono">VIEW PROFILE →</span>
@@ -28,8 +32,8 @@ export function renderFleetSection() {
     <section class="py-20">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-14">
-          <h2 class="text-3xl font-bold text-white mb-3">10-Agent Inspection Fleet</h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold font-display text-white mb-3">10-Agent Inspection Fleet</h2>
+          <p class="text-neutral-400 max-w-2xl mx-auto">
             No single point of failure. Each agent specializes in one document control task.
             Click any card to see what it solves, how it works, and the proof behind it.
           </p>
@@ -38,7 +42,7 @@ export function renderFleetSection() {
           ${cards}
         </div>
         <div class="mt-8 text-center">
-          <span class="inline-flex items-center gap-2 text-sm text-gray-500 font-mono">
+          <span class="inline-flex items-center gap-2 text-sm text-neutral-500 font-mono">
             <span class="w-1.5 h-1.5 rounded-full bg-safe-green animate-pulse-slow"></span>
             10/10 AGENTS ONLINE — CONSENSUS THRESHOLD: 7/10
           </span>

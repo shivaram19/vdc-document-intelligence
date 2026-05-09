@@ -20,7 +20,7 @@ export function renderLanding(container) {
       <div id="research-mount"></div>
       <div id="demo-docs-mount"></div>
       <div id="cta-mount"></div>
-      <footer class="py-8 text-center text-xs text-gray-600 font-mono border-t border-bp-light/10">
+      <footer class="py-8 text-center text-xs text-neutral-600 font-mono border-t border-bp-light/10">
         <p>Medha Document Intelligence — Research-Backed · Agent-Native · Construction-Aligned</p>
         <p class="mt-1">Built with PicoCloth mesh · 3-factor auth · Cryptographic audit trail</p>
       </footer>

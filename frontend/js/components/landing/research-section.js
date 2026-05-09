@@ -1,6 +1,10 @@
 /**
  * research-section.js — Research Citations
  * SOLID: SRP — only research backing section.
+ *
+ * [CITE: ADR-005] Sora display font for headings.
+ * [CITE: ADR-006] Tinted neutrals replace pure grays.
+ * [CITE: ADR-007] Elevation-first card surfaces.
  */
 
 const PAPERS = [
@@ -39,11 +43,11 @@ export function renderResearchSection() {
     <div class="card-structural">
       <div class="flex items-start justify-between mb-2">
         <span class="text-xs font-mono text-bp-accent">${p.year}</span>
-        <i class="fas fa-external-link-alt text-xs text-gray-600"></i>
+        <i class="fas fa-external-link-alt text-xs text-neutral-600"></i>
       </div>
       <p class="text-sm font-semibold text-white mb-1">${p.title}</p>
-      <p class="text-xs text-gray-500 mb-3">${p.authors} — ${p.journal}</p>
-      <p class="text-xs text-gray-400 border-l-2 border-safe-green pl-3">${p.finding}</p>
+      <p class="text-xs text-neutral-500 mb-3">${p.authors} — ${p.journal}</p>
+      <p class="text-xs text-neutral-400 border-l-2 border-safe-green pl-3">${p.finding}</p>
     </div>
   `).join('');
 
@@ -51,8 +55,8 @@ export function renderResearchSection() {
     <section class="py-20 bg-bp-mid/30 border-y border-bp-light/10">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-14">
-          <h2 class="text-3xl font-bold text-white mb-3">Research-Backed Architecture</h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold font-display text-white mb-3">Research-Backed Architecture</h2>
+          <p class="text-neutral-400 max-w-2xl mx-auto">
             Every design decision and engineering choice is grounded in peer-reviewed research.
             Not hype. Evidence.
           </p>

@@ -17,8 +17,13 @@ import { renderPricing } from './pages/pricing.js';
 import { renderConnectors } from './pages/connectors.js';
 import { renderConnectorOnboard } from './pages/connector-onboard.js';
 import { renderOutreach } from './pages/outreach.js';
+import { renderWorkbench } from './pages/workbench.js';
+import { renderResearchPortal } from './pages/research-portal.js';
+import { renderResearchViewer } from './pages/research-viewer.js';
 
-register('/', renderLanding);
+register('/', renderWorkbench);
+register('/home', renderLanding);
+register('/workbench', renderWorkbench);
 register('/login', renderLogin);
 register('/dashboard', renderDashboard);
 register('/demo', renderDemo);
@@ -27,6 +32,8 @@ register('/pricing', renderPricing);
 register('/connectors', renderConnectors);
 register('/connect', renderConnectorOnboard);
 register('/outreach', renderOutreach);
+register('/research', renderResearchPortal);
+register('/research/:slug', renderResearchViewer);
 
 const fingerprint = createFingerprint();
 

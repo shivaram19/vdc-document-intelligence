@@ -22,7 +22,7 @@ function renderFileRow(file, progress) {
     <div class="flex items-center justify-between py-2 border-b border-bp-light/10 last:border-0">
       <div class="flex items-center gap-2">
         <i class="fas ${icon} text-xs"></i>
-        <span class="text-xs ${isAllowed ? 'text-gray-300' : 'text-warn-yellow'}">${file.name}</span>
+        <span class="text-xs ${isAllowed ? 'text-neutral-300' : 'text-warn-yellow'}">${file.name}</span>
         ${!isAllowed ? `<span class="text-[10px] text-hazard-red font-mono">NOT SUPPORTED</span>` : ''}
       </div>
       ${statusHtml}
@@ -53,24 +53,24 @@ function renderFormatGuidance() {
 function renderUploadPanel(source, files, uploadProgress, uploading) {
   const fileList = files.length
     ? files.map((f) => renderFileRow(f, uploadProgress[f.name])).join('')
-    : `<p class="text-xs text-gray-600 font-mono text-center py-4">NO FILES SELECTED</p>`;
+    : `<p class="text-xs text-neutral-600 font-mono text-center py-4">NO FILES SELECTED</p>`;
 
   return `
     <div>
       <div class="flex items-center justify-between mb-6">
         <div>
           <h2 class="text-xl font-bold text-white">Upload from ${source.name}</h2>
-          <p class="text-xs text-gray-500">Drag & drop or click to select files</p>
+          <p class="text-xs text-neutral-500">Drag & drop or click to select files</p>
         </div>
-        <button data-back class="text-xs text-gray-500 hover:text-white transition font-mono">
+        <button data-back class="text-xs text-neutral-500 hover:text-white transition font-mono">
           <i class="fas fa-arrow-left mr-1"></i>BACK
         </button>
       </div>
 
       <div id="dropzone" class="border-2 border-dashed border-bp-light/30 rounded-lg p-8 text-center cursor-pointer hover:border-bp-accent transition bg-bp-dark/30">
         <i class="fas fa-cloud-upload-alt text-3xl text-bp-accent mb-3"></i>
-        <p class="text-sm text-gray-400 mb-2">Drop PDFs, Word docs, or text files here</p>
-        <p class="text-[10px] text-gray-600 font-mono">MAX 50 MB PER FILE • AUTO-DETECTS DOC TYPE</p>
+        <p class="text-sm text-neutral-400 mb-2">Drop PDFs, Word docs, or text files here</p>
+        <p class="text-[10px] text-neutral-600 font-mono">MAX 50 MB PER FILE • AUTO-DETECTS DOC TYPE</p>
         <input type="file" id="file-input" multiple class="hidden" accept=".pdf,.docx,.doc,.txt,.md">
       </div>
 
@@ -78,8 +78,8 @@ function renderUploadPanel(source, files, uploadProgress, uploading) {
 
       <div class="mt-4 card-structural border-bp-light/20">
         <div class="flex items-center justify-between mb-2">
-          <span class="text-[10px] text-gray-500 font-mono">SELECTED FILES</span>
-          <span class="text-[10px] text-gray-500 font-mono">${files.length} FILE(S)</span>
+          <span class="text-[10px] text-neutral-500 font-mono">SELECTED FILES</span>
+          <span class="text-[10px] text-neutral-500 font-mono">${files.length} FILE(S)</span>
         </div>
         <div class="max-h-48 overflow-y-auto">${fileList}</div>
       </div>
@@ -100,9 +100,9 @@ function renderSimulatedConnector(source) {
       <div class="flex items-center justify-between mb-6">
         <div>
           <h2 class="text-xl font-bold text-white">Connect to ${source.name}</h2>
-          <p class="text-xs text-gray-500">${source.subtitle}</p>
+          <p class="text-xs text-neutral-500">${source.subtitle}</p>
         </div>
-        <button data-back class="text-xs text-gray-500 hover:text-white transition font-mono">
+        <button data-back class="text-xs text-neutral-500 hover:text-white transition font-mono">
           <i class="fas fa-arrow-left mr-1"></i>BACK
         </button>
       </div>
@@ -114,7 +114,7 @@ function renderSimulatedConnector(source) {
           </div>
           <div>
             <h3 class="text-sm font-bold text-white mb-1">${source.status === 'beta' ? 'Beta Access' : 'Coming Soon'}</h3>
-            <p class="text-xs text-gray-400 leading-relaxed mb-3">
+            <p class="text-xs text-neutral-400 leading-relaxed mb-3">
               The ${source.name} connector is ${source.status === 'beta' ? 'in beta' : 'under development'}.
               ${source.status === 'beta'
                 ? 'Request beta access and our team will configure the connection within 24 hours.'
@@ -130,7 +130,7 @@ function renderSimulatedConnector(source) {
         </div>
       </div>
 
-      <div class="mt-4 text-xs text-gray-600 font-mono">
+      <div class="mt-4 text-xs text-neutral-600 font-mono">
         <i class="fas fa-info-circle mr-1"></i>
         In the meantime, export drawings to PDF and use Local Files upload.
         All documents will migrate automatically when the connector is live.

@@ -20,22 +20,22 @@ export function renderLogin(container) {
         <div class="text-center mb-6">
           <div class="w-12 h-12 rounded-sm bg-bp-accent flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">M</div>
           <h1 class="text-2xl font-bold text-white font-mono">AUTHENTICATION MESH</h1>
-          <p class="text-sm text-gray-500 mt-2 font-mono">NO PASSWORDS. PROJECT-KNOWLEDGE PROOF.</p>
+          <p class="text-sm text-neutral-500 mt-2 font-mono">NO PASSWORDS. PROJECT-KNOWLEDGE PROOF.</p>
         </div>
 
         <div id="auth-flow">
           <div id="auth-step-request" class="text-center">
-            <p class="text-sm text-gray-400 mb-4">The fleet will ask a question based on your project documents. Only someone with legitimate access can answer correctly.</p>
+            <p class="text-sm text-neutral-400 mb-4">The fleet will ask a question based on your project documents. Only someone with legitimate access can answer correctly.</p>
             <button id="btn-request-challenge" class="w-full px-4 py-3 bg-bp-accent hover:bg-blue-500 text-white font-semibold rounded-sm transition font-mono">
               <i class="fas fa-shield-alt mr-2"></i> REQUEST CHALLENGE
             </button>
-            <div class="mt-4 flex justify-center gap-4 text-[10px] text-gray-600 font-mono">
+            <div class="mt-4 flex justify-center gap-4 text-[10px] text-neutral-600 font-mono">
               <span><i class="fas fa-lock mr-1"></i>KNOWLEDGE</span>
               <span><i class="fas fa-fingerprint mr-1"></i>BEHAVIORAL</span>
               <span><i class="fas fa-network-wired mr-1"></i>CONSENSUS</span>
             </div>
             <div class="mt-6 pt-4 border-t border-bp-light/20">
-              <p class="text-[10px] text-gray-600 font-mono mb-2">DEVELOPER TESTING</p>
+              <p class="text-[10px] text-neutral-600 font-mono mb-2">DEVELOPER TESTING</p>
               <button id="btn-test-mode" class="w-full px-4 py-2 bg-safe-orange/10 hover:bg-safe-orange/20 text-safe-orange border border-safe-orange/30 rounded-sm transition font-mono text-xs">
                 <i class="fas fa-bug mr-2"></i>BYPASS AUTH — TEST MODE
               </button>
@@ -48,8 +48,8 @@ export function renderLogin(container) {
                 <i class="fas fa-brain mr-1"></i>KNOWLEDGE-PROVENANCE CHALLENGE
               </span>
             </div>
-            <p id="challenge-question" class="text-sm text-gray-200 mb-2 font-medium font-mono"></p>
-            <p id="challenge-hint" class="text-xs text-gray-600 mb-4 font-mono"></p>
+            <p id="challenge-question" class="text-sm text-neutral-200 mb-2 font-medium font-mono"></p>
+            <p id="challenge-hint" class="text-xs text-neutral-600 mb-4 font-mono"></p>
             <div class="flex gap-3">
               <input id="challenge-answer" type="text" placeholder="Your answer..."
                 class="flex-1 bg-bp-dark border border-bp-light/50 text-white text-sm rounded-sm px-4 py-3 focus:outline-none focus:border-bp-accent font-mono">
@@ -63,7 +63,7 @@ export function renderLogin(container) {
           <div id="auth-step-success" class="hidden text-center">
             <i class="fas fa-check-circle text-safe-green text-4xl mb-3"></i>
             <h3 class="text-lg font-semibold text-white mb-1 font-mono">AUTHENTICATED</h3>
-            <p class="text-sm text-gray-500 mb-4">Agent mesh verified identity via knowledge proof + behavioral fingerprint.</p>
+            <p class="text-sm text-neutral-500 mb-4">Agent mesh verified identity via knowledge proof + behavioral fingerprint.</p>
             <button id="btn-enter-dashboard" class="px-6 py-3 bg-safe-green hover:bg-green-600 text-white font-semibold rounded-sm transition font-mono">
               <i class="fas fa-clipboard-check mr-2"></i> ENTER DASHBOARD
             </button>
@@ -71,7 +71,7 @@ export function renderLogin(container) {
         </div>
 
         <div class="mt-6 pt-4 border-t border-bp-light/20 text-center">
-          <p class="text-[10px] text-gray-600 font-mono">3-FACTOR AGENTIC AUTH: KNOWLEDGE-PROVENANCE + BEHAVIORAL FP + AGENT ATTESTATION</p>
+          <p class="text-[10px] text-neutral-600 font-mono">3-FACTOR AGENTIC AUTH: KNOWLEDGE-PROVENANCE + BEHAVIORAL FP + AGENT ATTESTATION</p>
         </div>
       </div>
     </div>

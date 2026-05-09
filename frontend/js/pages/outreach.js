@@ -35,10 +35,10 @@ function renderHeader() {
           <div class="w-9 h-9 rounded-sm bg-bp-accent flex items-center justify-center text-white font-bold">M</div>
           <div>
             <h1 class="font-bold text-white font-mono">MEDHA</h1>
-            <p class="text-xs text-gray-500 font-mono">GLOBAL OUTREACH PIPELINE</p>
+            <p class="text-xs text-neutral-500 font-mono">GLOBAL OUTREACH PIPELINE</p>
           </div>
         </div>
-        <button data-nav="/" class="text-xs text-gray-500 hover:text-white transition font-mono">
+        <button data-nav="/" class="text-xs text-neutral-500 hover:text-white transition font-mono">
           <i class="fas fa-arrow-left mr-1"></i>BACK
         </button>
       </div>
@@ -49,24 +49,24 @@ function renderHeader() {
 function renderOverview(stats) {
   const stages = ['identified', 'contacted', 'demo', 'pilot', 'customer'];
   const labels = { identified: 'IDENTIFIED', contacted: 'CONTACTED', demo: 'DEMO', pilot: 'PILOT', customer: 'CUSTOMER' };
-  const colors = { identified: 'bg-gray-600', contacted: 'bg-bp-accent', demo: 'bg-warn-yellow', pilot: 'bg-safe-orange', customer: 'bg-safe-green' };
+  const colors = { identified: 'bg-neutral-600', contacted: 'bg-bp-accent', demo: 'bg-warn-yellow', pilot: 'bg-safe-orange', customer: 'bg-safe-green' };
 
   const bars = stages.map((s) => {
     const count = stats.byStage[s] || 0;
     const pct = stats.total ? Math.round((count / stats.total) * 100) : 0;
     return `
       <div class="flex items-center gap-3 text-xs">
-        <span class="text-gray-500 font-mono w-20">${labels[s]}</span>
+        <span class="text-neutral-500 font-mono w-20">${labels[s]}</span>
         <div class="flex-1 h-2 bg-bp-light/20 rounded-full overflow-hidden">
           <div class="h-full ${colors[s]} rounded-full" style="width:${pct}%"></div>
         </div>
-        <span class="text-gray-400 font-mono w-8 text-right">${count}</span>
+        <span class="text-neutral-400 font-mono w-8 text-right">${count}</span>
       </div>`;
   }).join('');
 
   const pills = OUTREACH_TIERS.map((t) => {
     const count = stats.byTier[t.id] || 0;
-    return `<span class="px-2 py-1 rounded-sm text-[10px] font-mono bg-bp-light/20 text-gray-400">${t.name}: ${count}</span>`;
+    return `<span class="px-2 py-1 rounded-sm text-[10px] font-mono bg-bp-light/20 text-neutral-400">${t.name}: ${count}</span>`;
   }).join('');
 
   return `
@@ -74,11 +74,11 @@ function renderOverview(stats) {
       <div class="flex items-end justify-between mb-4">
         <div>
           <h2 class="text-2xl font-bold text-white">Global Pipeline</h2>
-          <p class="text-xs text-gray-500 mt-1 font-mono">${stats.total} TARGETS • 4 TIERS • RESEARCH-BACKED MESSAGING</p>
+          <p class="text-xs text-neutral-500 mt-1 font-mono">${stats.total} TARGETS • 4 TIERS • RESEARCH-BACKED MESSAGING</p>
         </div>
         <div class="text-right">
           <div class="text-3xl font-bold text-white">${stats.total}</div>
-          <p class="text-[10px] text-gray-500 font-mono">TOTAL TARGETS</p>
+          <p class="text-[10px] text-neutral-500 font-mono">TOTAL TARGETS</p>
         </div>
       </div>
       <div class="card-structural border-bp-light/30 mb-4">

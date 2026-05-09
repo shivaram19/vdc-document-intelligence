@@ -67,10 +67,10 @@ export function renderConnectors(container) {
             <div class="w-9 h-9 rounded-sm bg-bp-accent flex items-center justify-center text-white font-bold">M</div>
             <div>
               <h1 class="font-bold text-white font-mono">MEDHA</h1>
-              <p class="text-xs text-gray-500 font-mono">INTEGRATIONS</p>
+              <p class="text-xs text-neutral-500 font-mono">INTEGRATIONS</p>
             </div>
           </div>
-          <button data-nav="/" class="text-xs text-gray-500 hover:text-white transition font-mono">
+          <button data-nav="/" class="text-xs text-neutral-500 hover:text-white transition font-mono">
             <i class="fas fa-arrow-left mr-1"></i>BACK
           </button>
         </div>
@@ -79,14 +79,14 @@ export function renderConnectors(container) {
       <main class="max-w-6xl mx-auto px-6 py-16">
         <div class="text-center mb-14">
           <h2 class="text-3xl font-bold text-white mb-3">Works With Your Stack</h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
+          <p class="text-neutral-400 max-w-2xl mx-auto">
             Medha does not replace your tools. It inspects what they contain and alerts 
             you to what they missed. 
             <span class="text-bp-accent">Why?</span> Because replacing 11 tools is a 
             18-month change management project. Adding an inspection layer takes 20 minutes.
           </p>
-          <div class="mt-4 inline-flex items-center gap-2 text-xs text-gray-500 font-mono">
-            <i class="fas fa-plug text-gray-600"></i>
+          <div class="mt-4 inline-flex items-center gap-2 text-xs text-neutral-500 font-mono">
+            <i class="fas fa-plug text-neutral-600"></i>
             3 integrations live. 3 more in development.
           </div>
         </div>
@@ -97,7 +97,7 @@ export function renderConnectors(container) {
 
         <div class="mt-16 card-structural">
           <h3 class="text-lg font-semibold text-white mb-4 font-mono">WHY "INSPECTION LAYER" NOT "PLATFORM"?</h3>
-          <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-400">
+          <div class="grid md:grid-cols-2 gap-6 text-sm text-neutral-400">
             <div>
               <p class="text-white font-semibold mb-2">The Sunk Cost Trap</p>
               <p class="leading-relaxed">
@@ -129,7 +129,7 @@ export function renderConnectors(container) {
 
         <div class="mt-6 card-structural">
           <h3 class="text-lg font-semibold text-white mb-3 font-mono">CUSTOM INTEGRATION REQUEST</h3>
-          <p class="text-sm text-gray-400 mb-4">
+          <p class="text-sm text-neutral-400 mb-4">
             Don't see your tool? We add integrations based on customer demand.
             Enterprise plans include custom connector development.
           </p>
@@ -147,7 +147,7 @@ export function renderConnectors(container) {
 function renderConnector(c) {
   const badgeColor = c.status === 'available' ? 'bg-safe-green/20 text-safe-green'
     : c.status === 'beta' ? 'bg-warn-yellow/20 text-warn-yellow'
-    : 'bg-gray-700/50 text-gray-500';
+    : 'bg-neutral-700/50 text-neutral-500';
   const badgeText = c.status === 'available' ? 'LIVE'
     : c.status === 'beta' ? 'BETA'
     : 'PLANNED';
@@ -161,12 +161,12 @@ function renderConnector(c) {
           </div>
           <div>
             <h3 class="text-sm font-bold text-white">${c.name}</h3>
-            <p class="text-[10px] text-gray-500 font-mono">${c.category.toUpperCase()}</p>
+            <p class="text-[10px] text-neutral-500 font-mono">${c.category.toUpperCase()}</p>
           </div>
         </div>
         <span class="px-2 py-1 rounded-sm text-[10px] font-mono font-bold ${badgeColor}">${badgeText}</span>
       </div>
-      <p class="text-sm text-gray-400 leading-relaxed">${c.desc}</p>
+      <p class="text-sm text-neutral-400 leading-relaxed">${c.desc}</p>
     </div>
   `;
 }

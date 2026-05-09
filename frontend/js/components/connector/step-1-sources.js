@@ -18,12 +18,12 @@ function sourceCard(s) {
           </div>
           <div>
             <h3 class="text-sm font-bold text-white">${s.name}</h3>
-            <p class="text-[10px] text-gray-500 font-mono">${s.subtitle}</p>
+            <p class="text-[10px] text-neutral-500 font-mono">${s.subtitle}</p>
           </div>
         </div>
         ${renderStatusBadge(s.status)}
       </div>
-      <p class="text-xs text-gray-500 leading-relaxed">${s.why}</p>
+      <p class="text-xs text-neutral-500 leading-relaxed">${s.why}</p>
     </div>
   `;
 }
@@ -37,10 +37,10 @@ function renderSampleOffer() {
         </div>
         <div>
           <h3 class="text-sm font-bold text-white mb-1">Not Ready to Connect? Start with Sample Data</h3>
-          <p class="text-xs text-gray-400 leading-relaxed mb-3">
+          <p class="text-xs text-neutral-400 leading-relaxed mb-3">
             We'll pre-load a real construction project with 5 documents and 2 pre-found contradictions.
             You can query instantly — no upload needed.
-            <span class="text-gray-600 text-[10px] block mt-1">[CITE: NunesDreze2006] Endowed progress increases completion by 30-40%.</span>
+            <span class="text-neutral-600 text-[10px] block mt-1">[CITE: NunesDreze2006] Endowed progress increases completion by 30-40%.</span>
           </p>
           <button data-sample class="btn-inspect font-mono text-xs">
             <i class="fas fa-play mr-2"></i>START WITH SAMPLE PROJECT
@@ -59,18 +59,18 @@ export function renderStep1() {
     <div>
       <div class="text-center mb-8">
         <h2 class="text-2xl font-bold text-white mb-2">Where Do Your Drawings Live?</h2>
-        <p class="text-sm text-gray-400 max-w-lg mx-auto">
+        <p class="text-sm text-neutral-400 max-w-lg mx-auto">
           We connect to your existing tools — no migration needed.
           <span class="text-bp-accent">Why?</span> Because replacing 11 platforms takes 18 months.
           Adding an inspection layer takes 20 minutes.
-          <span class="text-gray-600 text-xs block mt-1">[CITE: Autodesk2022]</span>
+          <span class="text-neutral-600 text-xs block mt-1">[CITE: Autodesk2022]</span>
         </p>
       </div>
       <div class="grid md:grid-cols-2 gap-4 mb-6">
         ${primary.map(sourceCard).join('')}
       </div>
       <details class="group">
-        <summary class="text-xs text-gray-500 font-mono cursor-pointer hover:text-gray-300 transition list-none flex items-center gap-2">
+        <summary class="text-xs text-neutral-500 font-mono cursor-pointer hover:text-neutral-300 transition list-none flex items-center gap-2">
           <i class="fas fa-chevron-right text-[10px] group-open:rotate-90 transition-transform"></i>
           MORE SOURCES
         </summary>

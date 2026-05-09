@@ -156,9 +156,9 @@ function hijackRFIPanel() {
     if (ev.sources) {
       const srcEl = document.getElementById('rfi-sources');
       if (srcEl) srcEl.innerHTML = `
-        <p class="text-xs text-gray-500 mb-2 font-mono">SOURCES USED:</p>
+        <p class="text-xs text-neutral-500 mb-2 font-mono">SOURCES USED:</p>
         <div class="flex flex-wrap gap-2">
-          ${ev.sources.map((s) => `<span class="text-xs px-2 py-1 rounded-sm bg-bp-mid text-gray-400 border border-bp-light/20 font-mono">${s.doc_name}</span>`).join('')}
+          ${ev.sources.map((s) => `<span class="text-xs px-2 py-1 rounded-sm bg-bp-mid text-neutral-400 border border-bp-light/20 font-mono">${s.doc_name}</span>`).join('')}
         </div>`;
     }
   };
@@ -305,7 +305,7 @@ function showTyping() {
   const container = document.getElementById('chat-history');
   if (!container) return;
   typingEl = document.createElement('div');
-  typingEl.className = 'p-4 text-sm flex items-center gap-2 bg-bp-dark/50 border border-bp-light/20 rounded-sm font-mono text-gray-500';
+  typingEl.className = 'p-4 text-sm flex items-center gap-2 bg-bp-dark/50 border border-bp-light/20 rounded-sm font-mono text-neutral-500';
   typingEl.innerHTML = 'INSPECTING DOCUMENTS<span class="animate-pulse">...</span>';
   container.appendChild(typingEl);
   container.scrollTop = container.scrollHeight;
@@ -318,17 +318,17 @@ function renderSources(sources) {
   const panel = document.getElementById('sources-panel');
   if (!panel) return;
   if (!sources.length) {
-    panel.innerHTML = '<p class="text-sm text-gray-600 italic font-mono">No sources retrieved.</p>';
+    panel.innerHTML = '<p class="text-sm text-neutral-600 italic font-mono">No sources retrieved.</p>';
     return;
   }
   panel.innerHTML = sources.map((s, i) => `
     <div class="p-3 rounded-sm fade-in border border-bp-light/20 bg-bp-dark/30" style="animation-delay:${i * 0.1}s">
       <div class="flex items-center justify-between mb-1">
         <span class="text-xs font-medium text-bp-accent font-mono">${s.doc_name}</span>
-        <span class="text-xs text-gray-600 font-mono">${Math.round((s.score || 0.95) * 100)}% MATCH</span>
+        <span class="text-xs text-neutral-600 font-mono">${Math.round((s.score || 0.95) * 100)}% MATCH</span>
       </div>
-      <p class="text-xs text-gray-400 line-clamp-3">${s.text}</p>
-      <span class="inline-block mt-1 text-[10px] px-2 py-0.5 rounded-sm bg-bp-mid text-gray-500 font-mono border border-bp-light/20">${s.doc_type}</span>
+      <p class="text-xs text-neutral-400 line-clamp-3">${s.text}</p>
+      <span class="inline-block mt-1 text-[10px] px-2 py-0.5 rounded-sm bg-bp-mid text-neutral-500 font-mono border border-bp-light/20">${s.doc_type}</span>
     </div>
   `).join('');
 }
@@ -341,8 +341,8 @@ function renderContradictions(data) {
     out.innerHTML = `
       <div class="p-6 text-center">
         <i class="fas fa-check-circle text-safe-green text-3xl mb-2"></i>
-        <p class="text-gray-300 font-medium font-mono">${data.message || 'NO CONTRADICTIONS FOUND'}</p>
-        <p class="text-sm text-gray-600 mt-1 font-mono">CHECKED ${data.checked_pairs || 0} DOCUMENT PAIRS</p>
+        <p class="text-neutral-300 font-medium font-mono">${data.message || 'NO CONTRADICTIONS FOUND'}</p>
+        <p class="text-sm text-neutral-600 mt-1 font-mono">CHECKED ${data.checked_pairs || 0} DOCUMENT PAIRS</p>
       </div>`;
     return;
   }
@@ -357,17 +357,17 @@ function renderContradictions(data) {
         <div class="bg-bp-dark/60 rounded-sm p-5 border border-safe-yellow/20 fade-in">
           <div class="flex items-center gap-2 mb-3">
             <span class="text-xs font-bold px-2 py-0.5 rounded-sm bg-safe-orange/10 text-safe-orange uppercase font-mono">${c.severity || 'WARNING'}</span>
-            <span class="text-xs text-gray-600 font-mono">CONFIDENCE: ${Math.round((c.confidence || 0) * 100)}%</span>
+            <span class="text-xs text-neutral-600 font-mono">CONFIDENCE: ${Math.round((c.confidence || 0) * 100)}%</span>
           </div>
           <p class="text-sm text-white font-medium mb-3">${c.issue || 'Contradiction detected'}</p>
           <div class="grid md:grid-cols-2 gap-3">
             <div class="bg-bp-dark/50 rounded-sm p-3 border-l-2 border-bp-accent">
               <p class="text-xs text-bp-accent font-medium mb-1 font-mono">${c.spec_doc || 'SPEC'}</p>
-              <p class="text-xs text-gray-400">${c.spec_text || ''}</p>
+              <p class="text-xs text-neutral-400">${c.spec_text || ''}</p>
             </div>
             <div class="bg-bp-dark/50 rounded-sm p-3 border-l-2 border-safe-orange">
               <p class="text-xs text-safe-orange font-medium mb-1 font-mono">${c.drawing_doc || 'DRAWING'}</p>
-              <p class="text-xs text-gray-400">${c.drawing_text || ''}</p>
+              <p class="text-xs text-neutral-400">${c.drawing_text || ''}</p>
             </div>
           </div>
           ${c.impact ? `<p class="text-xs text-safe-orange mt-2 font-mono"><i class="fas fa-dollar-sign mr-1"></i>ESTIMATED IMPACT: ${c.impact}</p>` : ''}

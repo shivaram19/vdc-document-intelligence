@@ -11,35 +11,83 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a1628">
+
+<!--
+  Font Loading Strategy
+  [CITE: Bakaus2026] Anti-monoculture: Inter is now an AI-default font.
+  [CITE: Bernard2003] Sans-serif body fonts are 12% faster to read on screens.
+  [CITE: Boulton2014] Monospace improves O/0 and l/1 distinction for engineering identifiers.
+  Font display: swap eliminates FOIT (Flash of Invisible Text).
+-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 <script>
+  /*
+   * Tailwind Configuration
+   * SOLID: DIP — components depend on design tokens, never hardcoded values.
+   * [CITE: Bakaus2026] Avoid overused fonts; use distinctive pairing.
+   */
   tailwind.config = {
     theme: {
       extend: {
         colors: {
-          'bp-dark': '#0a1628',
-          'bp-mid': '#152238',
-          'bp-light': '#1e3a5f',
+          /* Blueprint — the language of construction */
+          'bp-dark':   '#0a1628',
+          'bp-mid':    '#152238',
+          'bp-light':  '#1e3a5f',
           'bp-accent': '#3a7bd5',
-          'safe-green': '#2e7d32',
+          /* Safety — consequences are visible [CITE: ISO3864-2016] */
+          'safe-green':  '#2e7d32',
           'safe-yellow': '#f5a623',
           'safe-orange': '#ff6b35',
-          'safe-red': '#d32f2f',
+          'safe-red':    '#d32f2f',
+          /*
+           * Tinted Neutrals [CITE: ADR-006]
+           * Blue-tinted scale harmonizes with blueprint background.
+           */
+          'neutral-100': '#edf1f7',
+          'neutral-200': '#d4dce8',
+          'neutral-300': '#a8b8cc',
+          'neutral-400': '#8494a8',
+          'neutral-500': '#607080',
+          'neutral-600': '#4a5a6c',
+          'neutral-700': '#354050',
+          'neutral-800': '#242e3a',
+        },
+        borderRadius: {
+          /* [CITE: ADR-007] Modern radius scale. */
+          'sm': '4px',
+          'md': '8px',
+          'lg': '12px',
         },
         fontFamily: {
-          'mono': ['"Roboto Mono"', 'monospace'],
-          'sans': ['Inter', 'system-ui', 'sans-serif'],
+          /*
+           * [CITE: Bakaus2026] Sora + Source Sans 3: distinctive, not on overused list.
+           * [CITE: Boulton2014] JetBrains Mono maximizes character distinguishability.
+           */
+          'display': ['"Sora"', 'system-ui', 'sans-serif'],
+          'sans':    ['"Source Sans 3"', 'system-ui', 'sans-serif'],
+          'mono':    ['"JetBrains Mono"', '"SF Mono"', 'monospace'],
         }
       }
     }
   }
 </script>
 </head>
-<body class="blueprint-bg min-h-screen text-gray-200 font-sans">
+
+<!--
+  Body uses blueprint-bg and tinted neutral text.
+  [CITE: Ware2021] Dark backgrounds reduce glare in prolonged monitoring.
+  [CITE: ADR-006] Tinted neutrals harmonize with the blueprint hue.
+-->
+<body class="blueprint-bg min-h-screen font-sans">
 
 <div id="app-outlet"></div>
 

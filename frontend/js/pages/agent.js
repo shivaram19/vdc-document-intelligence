@@ -15,8 +15,8 @@ export function renderAgent(container) {
     container.innerHTML = `
       <div class="min-h-screen blueprint-bg flex items-center justify-center">
         <div class="text-center">
-          <p class="text-gray-500 font-mono mb-4">AGENT NOT FOUND</p>
-          <button data-nav="/" class="btn-inspect font-mono">BACK TO FLEET</button>
+          <p class="text-neutral-500 font-mono mb-4">AGENT NOT FOUND</p>
+          <button data-nav="/home" class="btn-inspect font-mono">BACK TO FLEET</button>
         </div>
       </div>
     `;
@@ -34,10 +34,10 @@ export function renderAgent(container) {
             </div>
             <div>
               <h1 class="font-bold text-white font-mono">${agent.name.toUpperCase()}</h1>
-              <p class="text-xs text-gray-500 font-mono">${agent.role.toUpperCase()}</p>
+              <p class="text-xs text-neutral-500 font-mono">${agent.role.toUpperCase()}</p>
             </div>
           </div>
-          <button data-nav="/" class="text-xs text-gray-500 hover:text-white transition font-mono">
+          <button data-nav="/home" class="text-xs text-neutral-500 hover:text-white transition font-mono">
             <i class="fas fa-arrow-left mr-1"></i>BACK TO FLEET
           </button>
         </div>
@@ -53,16 +53,16 @@ export function renderAgent(container) {
 
         <div class="grid md:grid-cols-3 gap-4 mb-12">
           <div class="card-structural border-l-2 border-safe-red">
-            <p class="text-[10px] font-mono text-gray-500 mb-2 uppercase">The Problem</p>
-            <p class="text-sm text-gray-300 leading-relaxed">${agent.problem}</p>
+            <p class="text-[10px] font-mono text-neutral-500 mb-2 uppercase">The Problem</p>
+            <p class="text-sm text-neutral-300 leading-relaxed">${agent.problem}</p>
           </div>
           <div class="card-structural border-l-2 border-bp-accent">
-            <p class="text-[10px] font-mono text-gray-500 mb-2 uppercase">The Solution</p>
-            <p class="text-sm text-gray-300 leading-relaxed">${agent.solution}</p>
+            <p class="text-[10px] font-mono text-neutral-500 mb-2 uppercase">The Solution</p>
+            <p class="text-sm text-neutral-300 leading-relaxed">${agent.solution}</p>
           </div>
           <div class="card-structural border-l-2 border-safe-green">
-            <p class="text-[10px] font-mono text-gray-500 mb-2 uppercase">What It Adds</p>
-            <p class="text-sm text-gray-300 leading-relaxed">${agent.adds}</p>
+            <p class="text-[10px] font-mono text-neutral-500 mb-2 uppercase">What It Adds</p>
+            <p class="text-sm text-neutral-300 leading-relaxed">${agent.adds}</p>
           </div>
         </div>
 
@@ -70,7 +70,7 @@ export function renderAgent(container) {
           <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2 font-mono">
             <i class="fas fa-dumbbell text-${agent.color} text-xs"></i> CAPABILITY & STRENGTH
           </h2>
-          <p class="text-sm text-gray-400 leading-relaxed mb-4">${agent.strength}</p>
+          <p class="text-sm text-neutral-400 leading-relaxed mb-4">${agent.strength}</p>
           <div class="flex items-center gap-3">
             <span class="badge-pass text-[10px]"><i class="fas fa-check mr-1"></i>PRODUCTION-READY</span>
             <span class="badge-info text-[10px]"><i class="fas fa-chart-line mr-1"></i>${agent.metric}</span>

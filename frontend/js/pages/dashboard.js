@@ -20,7 +20,7 @@ import { renderInboxPanelHTML, wireInboxPanel } from '../components/dashboard/in
 
 export function renderDashboard(container) {
   container.innerHTML = `
-    <div class="min-h-screen blueprint-bg text-gray-200 font-sans">
+    <div class="min-h-screen blueprint-bg text-neutral-200 font-sans">
       ${renderHeaderHTML()}
       ${renderDashboardHeroHTML()}
       ${renderAuthMeshStatusHTML()}

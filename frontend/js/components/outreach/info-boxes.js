@@ -21,7 +21,7 @@ export function renderJTBDBox() {
   return `
     <div class="mt-8 card-structural border-bp-accent/30 bg-bp-accent/5">
       <h3 class="text-sm font-bold text-white mb-3 font-mono">THE 5 JOBS MEDHA IS HIRED FOR</h3>
-      <div class="grid md:grid-cols-2 gap-4 text-xs text-gray-400">${cells}</div>
+      <div class="grid md:grid-cols-2 gap-4 text-xs text-neutral-400">${cells}</div>
     </div>
   `;
 }
@@ -30,7 +30,7 @@ export function renderMethodologyBox() {
   return `
     <div class="mt-6 card-structural border-bp-light/30">
       <h3 class="text-sm font-bold text-white mb-3 font-mono">RESEARCH METHODOLOGY</h3>
-      <div class="grid md:grid-cols-2 gap-4 text-xs text-gray-400">
+      <div class="grid md:grid-cols-2 gap-4 text-xs text-neutral-400">
         <div>
           <p class="text-white font-semibold mb-1">How Targets Were Selected</p>
           <p class="leading-relaxed">
@@ -57,7 +57,7 @@ export function renderMethodologyBox() {
           Exact <code class="text-bp-accent font-mono">linkedin.com/in/...</code> profile URLs are NOT publicly discoverable via web search — LinkedIn blocks indexing via robots.txt and login walls. Discovery strategy: (1) Conference speaker pages → name + role + company, (2) Publication author bios → affiliations, (3) Webinar registrations → contact titles, (4) LinkedIn people search as fallback. All "Find on LinkedIn" buttons route to LinkedIn\'s own search results for the contact + company combination.
         </p>
       </div>
-      <p class="text-[10px] text-gray-600 mt-3 font-mono">
+      <p class="text-[10px] text-neutral-600 mt-3 font-mono">
         [CITE: Gracker2025] Gracker.ai analysis (20M+ outreach attempts). Personalized outreach outperforms templated by 3x. https://gracker.ai/blog/increase-linkedin-acceptance-rate
         [CITE: Cialdini1984] Social proof referencing similar firms increases response rates.
       </p>

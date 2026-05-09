@@ -91,10 +91,10 @@ export function renderPricing(container) {
             <div class="w-9 h-9 rounded-sm bg-bp-accent flex items-center justify-center text-white font-bold">M</div>
             <div>
               <h1 class="font-bold text-white font-mono">MEDHA</h1>
-              <p class="text-xs text-gray-500 font-mono">PRICING</p>
+              <p class="text-xs text-neutral-500 font-mono">PRICING</p>
             </div>
           </div>
-          <button data-nav="/" class="text-xs text-gray-500 hover:text-white transition font-mono">
+          <button data-nav="/" class="text-xs text-neutral-500 hover:text-white transition font-mono">
             <i class="fas fa-arrow-left mr-1"></i>BACK
           </button>
         </div>
@@ -103,13 +103,13 @@ export function renderPricing(container) {
       <main class="max-w-6xl mx-auto px-6 py-16">
         <div class="text-center mb-14">
           <h2 class="text-3xl font-bold text-white mb-3">Pay for Value, Not Seats</h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
+          <p class="text-neutral-400 max-w-2xl mx-auto">
             Construction teams fluctuate. Designers leave. Subs rotate. 
             We price per project or flat monthly — never per seat. 
             <span class="text-bp-accent">Why?</span> Because per-seat pricing penalizes collaboration.
           </p>
-          <div class="mt-4 inline-flex items-center gap-2 text-xs text-gray-500 font-mono">
-            <i class="fas fa-users text-gray-600"></i>
+          <div class="mt-4 inline-flex items-center gap-2 text-xs text-neutral-500 font-mono">
+            <i class="fas fa-users text-neutral-600"></i>
             Used by VDC teams at 12 general contractors and 3 owner's reps
           </div>
         </div>
@@ -120,7 +120,7 @@ export function renderPricing(container) {
 
         <div class="mt-16 card-structural">
           <h3 class="text-lg font-semibold text-white mb-4 font-mono">WHY PER-PROJECT PRICING?</h3>
-          <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-400">
+          <div class="grid md:grid-cols-2 gap-6 text-sm text-neutral-400">
             <div>
               <p class="text-white font-semibold mb-2">The Problem with Per-Seat</p>
               <p class="leading-relaxed">
@@ -140,7 +140,7 @@ export function renderPricing(container) {
           </div>
         </div>
 
-        <div class="mt-8 text-center text-xs text-gray-600 font-mono">
+        <div class="mt-8 text-center text-xs text-neutral-600 font-mono">
           All plans include SSL encryption, audit trails, and GDPR-compliant data handling.
           Cancel anytime. No setup fees.
         </div>
@@ -156,15 +156,15 @@ function renderTier(t) {
   const bg = t.highlight ? 'bg-bp-accent/5' : '';
   const priceDisplay = t.price === null
     ? `<span class="text-3xl font-bold text-white">Custom</span>`
-    : `<span class="text-3xl font-bold text-white">$${t.price}</span><span class="text-gray-500 text-sm font-mono"> / ${t.period}</span>`;
+    : `<span class="text-3xl font-bold text-white">$${t.price}</span><span class="text-neutral-500 text-sm font-mono"> / ${t.period}</span>`;
 
   const badge = t.badge
     ? `<div class="absolute -top-3 left-1/2 -translate-x-1/2"><span class="badge-pass text-[10px]">${t.badge}</span></div>`
     : '';
 
   const features = t.features.map((f) => `
-    <li class="flex items-start gap-2 text-sm ${f.included ? 'text-gray-300' : 'text-gray-600'}">
-      <i class="fas ${f.included ? 'fa-check text-safe-green' : 'fa-times text-gray-700'} mt-1 text-xs"></i>
+    <li class="flex items-start gap-2 text-sm ${f.included ? 'text-neutral-300' : 'text-neutral-600'}">
+      <i class="fas ${f.included ? 'fa-check text-safe-green' : 'fa-times text-neutral-700'} mt-1 text-xs"></i>
       <span>${f.text}</span>
     </li>
   `).join('');
@@ -174,7 +174,7 @@ function renderTier(t) {
       ${badge}
       <div class="mb-4">
         <h3 class="text-lg font-bold text-white font-mono">${t.name}</h3>
-        <p class="text-xs text-gray-500">${t.subtitle}</p>
+        <p class="text-xs text-neutral-500">${t.subtitle}</p>
       </div>
       <div class="mb-6">${priceDisplay}</div>
       <ul class="space-y-2 mb-6">

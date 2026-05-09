@@ -2,7 +2,10 @@
  * features-section.js — Construction Pain Points as Features
  * SOLID: SRP — only features grid.
  *
- * Each feature maps to a real construction document control problem.
+ * [CITE: Krug2014] Users scan, not read — clear hierarchy essential.
+ * [CITE: ADR-005] Sora display font for headings.
+ * [CITE: ADR-006] Tinted neutrals replace pure grays.
+ * [CITE: ADR-007] Elevation-first card surfaces.
  */
 
 const FEATURES = [
@@ -57,10 +60,10 @@ export function renderFeaturesSection() {
         <div class="w-10 h-10 rounded-sm bg-bp-accent/10 flex items-center justify-center">
           <i class="fas ${f.icon} text-bp-accent text-sm"></i>
         </div>
-        <span class="text-[10px] font-mono text-gray-500 border border-gray-700 px-2 py-0.5 rounded-sm">${f.tag}</span>
+        <span class="text-[10px] font-mono text-neutral-500 border border-neutral-700 px-2 py-0.5 rounded-sm">${f.tag}</span>
       </div>
-      <h3 class="text-lg font-semibold text-white mb-2">${f.title}</h3>
-      <p class="text-sm text-gray-400 leading-relaxed mb-3">${f.desc}</p>
+      <h3 class="text-lg font-semibold font-display text-white mb-2">${f.title}</h3>
+      <p class="text-sm text-neutral-400 leading-relaxed mb-3">${f.desc}</p>
       <div class="type-label text-safe-green font-mono">${f.stats}</div>
     </div>
   `).join('');
@@ -69,8 +72,8 @@ export function renderFeaturesSection() {
     <section class="py-20 bg-bp-mid/30 border-y border-bp-light/10">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-14">
-          <h2 class="text-3xl font-bold text-white mb-3">Built for Document Control, Not Hype</h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold font-display text-white mb-3">Built for Document Control, Not Hype</h2>
+          <p class="text-neutral-400 max-w-2xl mx-auto">
             Every feature solves a problem that costs construction firms money, time, and liability. 
             No "AI magic." Just verified inspection.
           </p>

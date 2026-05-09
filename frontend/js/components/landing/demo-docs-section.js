@@ -2,7 +2,9 @@
  * demo-docs-section.js — Real Construction Documents for Live Demo
  * SOLID: SRP — only sample document listing.
  *
- * Visitors download real-world specs & drawings, then upload to test Medha.
+ * [CITE: ADR-005] Sora display font for headings.
+ * [CITE: ADR-006] Tinted neutrals replace pure grays.
+ * [CITE: ADR-007] Elevation-first card surfaces.
  */
 
 const DEMO_DOCS = [
@@ -60,15 +62,15 @@ export function renderDemoDocsSection() {
         <div class="w-10 h-10 rounded-sm bg-bp-accent/10 flex items-center justify-center">
           <i class="fas fa-file-pdf text-bp-accent text-sm"></i>
         </div>
-        <span class="text-[10px] font-mono text-gray-500 border border-gray-700 px-2 py-0.5 rounded-sm">${d.type.toUpperCase()}</span>
+        <span class="text-[10px] font-mono text-neutral-500 border border-neutral-700 px-2 py-0.5 rounded-sm">${d.type.toUpperCase()}</span>
       </div>
-      <h3 class="text-lg font-semibold text-white mb-1">${d.name}</h3>
-      <div class="flex items-center gap-2 text-xs text-gray-500 font-mono mb-3">
+      <h3 class="text-lg font-semibold font-display text-white mb-1">${d.name}</h3>
+      <div class="flex items-center gap-2 text-xs text-neutral-500 font-mono mb-3">
         <span>${d.pages} pages</span>
-        <span class="text-gray-700">|</span>
+        <span class="text-neutral-700">|</span>
         <span>${d.size}</span>
       </div>
-      <p class="text-sm text-gray-400 leading-relaxed mb-3 flex-1">${d.desc}</p>
+      <p class="text-sm text-neutral-400 leading-relaxed mb-3 flex-1">${d.desc}</p>
       <div class="flex flex-wrap gap-1.5 mb-4">
         ${d.tags.map((t) => `<span class="text-[10px] font-mono text-bp-accent bg-bp-accent/10 px-2 py-0.5 rounded-sm">${t}</span>`).join('')}
       </div>
@@ -83,8 +85,8 @@ export function renderDemoDocsSection() {
     <section class="py-20 bg-bp-mid/30 border-y border-bp-light/10">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-14">
-          <h2 class="text-3xl font-bold text-white mb-3">Test With Real Documents</h2>
-          <p class="text-gray-400 max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold font-display text-white mb-3">Test With Real Documents</h2>
+          <p class="text-neutral-400 max-w-2xl mx-auto">
             Download actual construction specs and drawings. Upload them to Medha and see how it 
             parses sections, finds contradictions, and drafts RFIs — on real project data.
           </p>
@@ -93,7 +95,7 @@ export function renderDemoDocsSection() {
           ${cards}
         </div>
         <div class="mt-10 text-center">
-          <p class="text-xs text-gray-500 font-mono">
+          <p class="text-xs text-neutral-500 font-mono">
             All documents sourced from public repositories and government open-data portals.
             Drawing sets include first 10 pages as representative samples.
           </p>

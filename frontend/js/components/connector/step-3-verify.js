@@ -17,7 +17,7 @@ export function renderStep3(sourceId, files, uploadProgress) {
           <i class="fas fa-check text-2xl text-safe-green"></i>
         </div>
         <h2 class="text-2xl font-bold text-white mb-2">Connection Established</h2>
-        <p class="text-sm text-gray-400">
+        <p class="text-sm text-neutral-400">
           ${doneCount} of ${files.length} documents indexed from ${source?.name || 'Local Files'}.
           Your project is ready for inspection.
         </p>
@@ -26,17 +26,17 @@ export function renderStep3(sourceId, files, uploadProgress) {
       <div class="grid md:grid-cols-2 gap-4 mb-8">
         <div class="card-structural text-center">
           <div class="text-3xl font-bold text-white mb-1">${doneCount}</div>
-          <p class="text-[10px] text-gray-500 font-mono">DOCUMENTS INDEXED</p>
+          <p class="text-[10px] text-neutral-500 font-mono">DOCUMENTS INDEXED</p>
         </div>
         <div class="card-structural text-center">
           <div class="text-3xl font-bold text-bp-accent mb-1">~${doneCount * 180}</div>
-          <p class="text-[10px] text-gray-500 font-mono">CHUNKS EMBEDDED</p>
+          <p class="text-[10px] text-neutral-500 font-mono">CHUNKS EMBEDDED</p>
         </div>
       </div>
 
       <div class="card-structural border-bp-accent/30 bg-bp-accent/5 mb-6">
         <h3 class="text-sm font-bold text-white mb-2"><i class="fas fa-magic mr-2 text-bp-accent"></i>WHAT HAPPENS NEXT?</h3>
-        <ul class="space-y-2 text-xs text-gray-400">
+        <ul class="space-y-2 text-xs text-neutral-400">
           <li class="flex items-start gap-2">
             <i class="fas fa-search text-bp-accent mt-0.5"></i>
             <span><strong>Contradiction Scan:</strong> Medha is scanning your documents for inconsistencies between specs and drawings.</span>

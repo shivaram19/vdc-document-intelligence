@@ -44,10 +44,10 @@ function renderHeader() {
           <div class="w-9 h-9 rounded-sm bg-bp-accent flex items-center justify-center text-white font-bold">M</div>
           <div>
             <h1 class="font-bold text-white font-mono">MEDHA</h1>
-            <p class="text-xs text-gray-500 font-mono">CONNECT YOUR PROJECT</p>
+            <p class="text-xs text-neutral-500 font-mono">CONNECT YOUR PROJECT</p>
           </div>
         </div>
-        <button data-skip class="text-xs text-gray-500 hover:text-white transition font-mono">SKIP FOR NOW</button>
+        <button data-skip class="text-xs text-neutral-500 hover:text-white transition font-mono">SKIP FOR NOW</button>
       </div>
     </header>
   `;
@@ -64,8 +64,8 @@ function renderProgress() {
       ? `<div class="w-8 h-8 rounded-full bg-safe-green flex items-center justify-center text-bp-dark font-bold text-sm"><i class="fas fa-check"></i></div>`
       : active
         ? `<div class="w-8 h-8 rounded-full bg-bp-accent flex items-center justify-center text-white font-bold text-sm">${n}</div>`
-        : `<div class="w-8 h-8 rounded-full bg-bp-light/20 flex items-center justify-center text-gray-500 font-bold text-sm">${n}</div>`;
-    const cls = active ? 'text-white' : done ? 'text-safe-green' : 'text-gray-600';
+        : `<div class="w-8 h-8 rounded-full bg-bp-light/20 flex items-center justify-center text-neutral-500 font-bold text-sm">${n}</div>`;
+    const cls = active ? 'text-white' : done ? 'text-safe-green' : 'text-neutral-600';
     return `<div class="flex items-center gap-3">${circle}<span class="text-xs font-mono ${cls}">${label}</span></div>`;
   }).join(`<div class="flex-1 h-px bg-bp-light/20 mx-3"></div>`);
   return `<div class="flex items-center justify-between mb-2">${items}</div>`;

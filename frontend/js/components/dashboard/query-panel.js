@@ -15,12 +15,12 @@ export function renderQueryPanelHTML() {
             <p class="font-medium text-bp-accent mb-1 flex items-center gap-2 font-mono text-xs">
               <i class="fas fa-robot"></i> AGENT FLEET — FINDER + LIBRARIAN
             </p>
-            <p class="text-gray-400">Ask anything about your project documents. Sources are cited with every answer.</p>
+            <p class="text-neutral-400">Ask anything about your project documents. Sources are cited with every answer.</p>
             <div class="mt-3 flex flex-wrap gap-2">
-              <button class="quick-query-btn text-xs px-2 py-1 rounded-sm bg-bp-mid hover:bg-bp-light/30 text-gray-400 transition border border-bp-light/20 font-mono" data-q="What is the HVAC temperature setpoint for office spaces?">HVAC setpoints?</button>
-              <button class="quick-query-btn text-xs px-2 py-1 rounded-sm bg-bp-mid hover:bg-bp-light/30 text-gray-400 transition border border-bp-light/20 font-mono" data-q="What are the fire protection sprinkler requirements?">Fire sprinkler specs?</button>
-              <button class="quick-query-btn text-xs px-2 py-1 rounded-sm bg-bp-mid hover:bg-bp-light/30 text-gray-400 transition border border-bp-light/20 font-mono" data-q="What is the concrete strength for columns?">Column concrete psi?</button>
-              <button class="quick-query-btn text-xs px-2 py-1 rounded-sm bg-bp-mid hover:bg-bp-light/30 text-gray-400 transition border border-bp-light/20 font-mono" data-q="What are the live loads for mechanical rooms?">Mechanical room loads?</button>
+              <button class="quick-query-btn text-xs px-2 py-1 rounded-sm bg-bp-mid hover:bg-bp-light/30 text-neutral-400 transition border border-bp-light/20 font-mono" data-q="What is the HVAC temperature setpoint for office spaces?">HVAC setpoints?</button>
+              <button class="quick-query-btn text-xs px-2 py-1 rounded-sm bg-bp-mid hover:bg-bp-light/30 text-neutral-400 transition border border-bp-light/20 font-mono" data-q="What are the fire protection sprinkler requirements?">Fire sprinkler specs?</button>
+              <button class="quick-query-btn text-xs px-2 py-1 rounded-sm bg-bp-mid hover:bg-bp-light/30 text-neutral-400 transition border border-bp-light/20 font-mono" data-q="What is the concrete strength for columns?">Column concrete psi?</button>
+              <button class="quick-query-btn text-xs px-2 py-1 rounded-sm bg-bp-mid hover:bg-bp-light/30 text-neutral-400 transition border border-bp-light/20 font-mono" data-q="What are the live loads for mechanical rooms?">Mechanical room loads?</button>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ export function renderQueryPanelHTML() {
           <i class="fas fa-book-open text-bp-accent text-xs"></i> RETRIEVED SOURCES
         </h3>
         <div id="sources-panel" class="space-y-3">
-          <p class="text-sm text-gray-600 italic font-mono">Sources will appear here after you ask a question.</p>
+          <p class="text-sm text-neutral-600 italic font-mono">Sources will appear here after you ask a question.</p>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@ let typingEl = null;
 function showTyping() {
   const container = document.getElementById('chat-history');
   typingEl = document.createElement('div');
-  typingEl.className = 'p-4 text-sm flex items-center gap-2 bg-bp-dark/50 border border-bp-light/20 rounded-sm font-mono text-gray-500';
+  typingEl.className = 'p-4 text-sm flex items-center gap-2 bg-bp-dark/50 border border-bp-light/20 rounded-sm font-mono text-neutral-500';
   typingEl.innerHTML = 'INSPECTING DOCUMENTS<span class="animate-pulse">...</span>';
   container.appendChild(typingEl);
   container.scrollTop = container.scrollHeight;
@@ -114,17 +114,17 @@ function hideTyping() {
 function renderSources(sources) {
   const panel = document.getElementById('sources-panel');
   if (!sources.length) {
-    panel.innerHTML = '<p class="text-sm text-gray-600 italic font-mono">No sources retrieved.</p>';
+    panel.innerHTML = '<p class="text-sm text-neutral-600 italic font-mono">No sources retrieved.</p>';
     return;
   }
   panel.innerHTML = sources.map((s, i) => `
     <div class="p-3 rounded-sm fade-in border border-bp-light/20 bg-bp-dark/30" style="animation-delay:${i * 0.1}s">
       <div class="flex items-center justify-between mb-1">
         <span class="text-xs font-medium text-bp-accent font-mono">${s.doc_name}</span>
-        <span class="text-xs text-gray-600 font-mono">${Math.round(s.score * 100)}% MATCH</span>
+        <span class="text-xs text-neutral-600 font-mono">${Math.round(s.score * 100)}% MATCH</span>
       </div>
-      <p class="text-xs text-gray-400 line-clamp-3">${s.text}</p>
-      <span class="inline-block mt-1 text-[10px] px-2 py-0.5 rounded-sm bg-bp-mid text-gray-500 font-mono border border-bp-light/20">${s.doc_type}</span>
+      <p class="text-xs text-neutral-400 line-clamp-3">${s.text}</p>
+      <span class="inline-block mt-1 text-[10px] px-2 py-0.5 rounded-sm bg-bp-mid text-neutral-500 font-mono border border-bp-light/20">${s.doc_type}</span>
     </div>
   `).join('');
 }
