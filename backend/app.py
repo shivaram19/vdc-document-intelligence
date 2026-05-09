@@ -7,7 +7,7 @@ White-label AI document intelligence for VDC agencies.
 import os
 import json
 import re
-import pickle
+import sys
 import hashlib
 from datetime import datetime
 from pathlib import Path
@@ -18,6 +18,8 @@ from flask_cors import CORS
 from sentence_transformers import SentenceTransformer
 import pdfplumber
 from docx import Document
+
+from retrieval_store import RetrievalScope, build_retrieval_store
 
 # -- Docling Integration (optional advanced parsing) -------------------------------
 DOCLING_ENABLED = os.environ.get("USE_DOCLING", "false").lower() == "true"
@@ -162,20 +164,33 @@ EMBEDDINGS_DIR = DATA_DIR / "embeddings"
 DATA_DIR.mkdir(exist_ok=True)
 PROJECTS_DIR.mkdir(exist_ok=True)
 EMBEDDINGS_DIR.mkdir(exist_ok=True)
+DEFAULT_RETRIEVAL_TENANT = os.environ.get("RETRIEVAL_TENANT_ID", "local-dev")
+DEFAULT_RETRIEVAL_DATABASE = os.environ.get("RETRIEVAL_DATABASE_ID", "vdc-document-intelligence")
+RETRIEVAL_STORE = build_retrieval_store(
+    data_dir=DATA_DIR,
+    projects_dir=PROJECTS_DIR,
+    embeddings_dir=EMBEDDINGS_DIR,
+)
+print(f"Retrieval backend: {os.environ.get('RETRIEVAL_BACKEND', 'filesystem').strip().lower()}")
 
 print("Loading embedding model...")
 MODEL = SentenceTransformer('all-mpnet-base-v2')
 print("Model loaded.")
 
 if not USE_API_LLM:
-    import torch
-    from transformers import AutoTokenizer, AutoModelForCausalLM
-    print("Loading local language model (this may take a moment)...")
-    LLM_MODEL_ID = "HuggingFaceTB/SmolLM2-1.7B-Instruct"
-    LLM_TOKENIZER = AutoTokenizer.from_pretrained(LLM_MODEL_ID)
-    LLM_MODEL = AutoModelForCausalLM.from_pretrained(LLM_MODEL_ID, torch_dtype=torch.float16)
-    LLM_MODEL.eval()
-    print("Local language model loaded.")
+    try:
+        import torch
+        from transformers import AutoTokenizer, AutoModelForCausalLM
+        print("Loading local language model (this may take a moment)...")
+        LLM_MODEL_ID = "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+        LLM_TOKENIZER = AutoTokenizer.from_pretrained(LLM_MODEL_ID)
+        LLM_MODEL = AutoModelForCausalLM.from_pretrained(LLM_MODEL_ID, torch_dtype=torch.float16)
+        LLM_MODEL.eval()
+        print("Local language model loaded.")
+    except Exception as e:
+        print("No API key found and local LLM fallback is unavailable.")
+        print(f"Local LLM dependencies or model load failed: {e}")
+        print("Set XAI_API_KEY or GROQ_API_KEY, or install backend/requirements-local-llm.txt.")
 else:
     print(f"Using {API_PROVIDER.upper()} API for LLM inference (fast).")
 
@@ -455,22 +470,40 @@ def save_project_index(project_id: str, index: dict):
     path = get_project_path(project_id) / "index.json"
     save_json(path, index)
 
+def get_retrieval_scope(project_id: str) -> RetrievalScope:
+    meta = get_project_meta(project_id)
+    return RetrievalScope(
+        tenant_id=meta.get("tenant_id", DEFAULT_RETRIEVAL_TENANT),
+        database_id=meta.get("database_id", DEFAULT_RETRIEVAL_DATABASE),
+        project_id=project_id,
+    )
+
 def get_project_embeddings(project_id: str) -> tuple:
-    emb_path = EMBEDDINGS_DIR / f"{project_id}.pkl"
-    chunks_path = get_project_path(project_id) / "chunks.json"
-    if emb_path.exists() and chunks_path.exists():
-        with open(emb_path, 'rb') as f:
-            embeddings = pickle.load(f)
-        chunks = json.loads(chunks_path.read_text())
-        return embeddings, chunks
-    return None, []
+    snapshot = RETRIEVAL_STORE.load_project(get_retrieval_scope(project_id))
+    return snapshot.embeddings, snapshot.chunks
 
 def save_project_embeddings(project_id: str, embeddings: np.ndarray, chunks: List[dict]):
-    emb_path = EMBEDDINGS_DIR / f"{project_id}.pkl"
-    chunks_path = get_project_path(project_id) / "chunks.json"
-    with open(emb_path, 'wb') as f:
-        pickle.dump(embeddings, f)
-    chunks_path.write_text(json.dumps(chunks))
+    RETRIEVAL_STORE.save_project(get_retrieval_scope(project_id), embeddings, chunks)
+
+def delete_project_embeddings(project_id: str):
+    RETRIEVAL_STORE.delete_project(get_retrieval_scope(project_id))
+
+
+def clamp_top_k(value: Any, default: int = 5, upper_bound: int = 20) -> int:
+    try:
+        parsed = int(value)
+    except (TypeError, ValueError):
+        parsed = default
+    return max(1, min(parsed, upper_bound))
+
+
+def search_project_matches(project_id: str, query: str, top_k: int) -> List[dict]:
+    matches = RETRIEVAL_STORE.search_project(
+        get_retrieval_scope(project_id),
+        MODEL.encode([query], show_progress_bar=False)[0],
+        top_k=clamp_top_k(top_k),
+    )
+    return [{"score": float(match.score), "chunk": dict(match.chunk)} for match in matches]
 
 # -- API Routes -------------------------------------------------------------------
 
@@ -506,6 +539,8 @@ def list_projects():
                 "name": meta.get("name", pdir.name),
                 "client": meta.get("client", ""),
                 "created": meta.get("created", ""),
+                "tenant_id": meta.get("tenant_id", DEFAULT_RETRIEVAL_TENANT),
+                "database_id": meta.get("database_id", DEFAULT_RETRIEVAL_DATABASE),
                 "document_count": len(idx.get("documents", [])),
                 "chunk_count": idx.get("total_chunks", 0),
             })
@@ -516,12 +551,16 @@ def create_project():
     data = request.get_json() or {}
     name = data.get("name", "Untitled Project")
     client = data.get("client", "")
+    tenant_id = (data.get("tenant_id") or DEFAULT_RETRIEVAL_TENANT).strip() or DEFAULT_RETRIEVAL_TENANT
+    database_id = (data.get("database_id") or DEFAULT_RETRIEVAL_DATABASE).strip() or DEFAULT_RETRIEVAL_DATABASE
     project_id = hashlib.md5(f"{name}_{client}_{datetime.now().isoformat()}".encode()).hexdigest()[:12]
     meta = {
         "id": project_id,
         "name": name,
         "client": client,
         "created": datetime.now().isoformat(),
+        "tenant_id": tenant_id,
+        "database_id": database_id,
     }
     save_project_meta(project_id, meta)
     save_project_index(project_id, {"documents": [], "total_chunks": 0})
@@ -655,20 +694,19 @@ def delete_document(project_id, doc_id):
 def query_project(project_id):
     data = request.get_json() or {}
     query = data.get("query", "").strip()
-    top_k = data.get("top_k", 5)
+    top_k = clamp_top_k(data.get("top_k", 5))
     if not query:
         return jsonify({"error": "Empty query"}), 400
-    embeddings, chunks = get_project_embeddings(project_id)
-    if embeddings is None or len(chunks) == 0:
+    matches = search_project_matches(project_id, query, top_k)
+    if not matches:
         return jsonify({"answer": "No documents have been uploaded for this project yet.", "sources": []})
-    query_emb = MODEL.encode([query])
-    sims = cosine_similarity(query_emb, embeddings)[0]
-    top_indices = np.argsort(sims)[::-1][:top_k]
     sources = []
     context_parts = []
-    for idx in top_indices:
-        chunk = chunks[idx]
-        score = float(sims[idx])
+    retrieved_chunks = []
+    for match in matches:
+        chunk = match["chunk"]
+        score = match["score"]
+        retrieved_chunks.append(chunk)
         sources.append({
             "score": round(score, 4),
             "text": chunk["text"][:500],
@@ -676,7 +714,8 @@ def query_project(project_id):
             "doc_type": chunk["doc_type"],
         })
         context_parts.append(f"[From {chunk['doc_name']} ({chunk['doc_type']}): {chunk['text'][:800]}]")
-    top_score = round(float(sims[top_indices[0]]), 4) if len(top_indices) > 0 else 0
+    top_score = round(matches[0]["score"], 4) if matches else 0
+    contradiction_data = None
     if top_score < MIN_CONFIDENCE_THRESHOLD:
         answer = (
             "I could not find a clear answer in the uploaded documents with sufficient confidence. "
@@ -686,8 +725,7 @@ def query_project(project_id):
         )
     else:
         # Query-aware contradiction detection
-        contradictions = detect_contradictions_in_chunks([chunks[idx] for idx in top_indices], query)
-        contradiction_data = None
+        contradictions = detect_contradictions_in_chunks(retrieved_chunks, query)
         if contradictions:
             contradiction_data = contradictions
             # Add contradiction context to the LLM prompt so it can address it
@@ -801,18 +839,17 @@ def draft_rfi(project_id):
     rfi_number = data.get("rfi_number", "RFI-XXX")
     if not rfi_question:
         return jsonify({"error": "RFI question required"}), 400
-    embeddings, chunks = get_project_embeddings(project_id)
-    if embeddings is None or len(chunks) == 0:
+    matches = search_project_matches(project_id, rfi_question, 5)
+    if not matches:
         return jsonify({"draft": "No project documents available. Please upload drawings and specs first.", "sources": []})
-    query_emb = MODEL.encode([rfi_question])
-    sims = cosine_similarity(query_emb, embeddings)[0]
-    top_indices = np.argsort(sims)[::-1][:5]
     sources = []
     context_parts = []
-    for idx in top_indices:
-        chunk = chunks[idx]
+    retrieved_chunks = []
+    for match in matches:
+        chunk = match["chunk"]
+        retrieved_chunks.append(chunk)
         sources.append({
-            "score": round(float(sims[idx]), 4),
+            "score": round(match["score"], 4),
             "doc_name": chunk["doc_name"],
             "doc_type": chunk["doc_type"],
             "text": chunk["text"][:400],
@@ -820,7 +857,7 @@ def draft_rfi(project_id):
         context_parts.append(chunk["text"][:600])
     context = "\n".join(context_parts)
     # Query-aware contradiction detection for RFI
-    contradictions = detect_contradictions_in_chunks([chunks[idx] for idx in top_indices], rfi_question)
+    contradictions = detect_contradictions_in_chunks(retrieved_chunks, rfi_question)
     contradiction_data = None
     if contradictions:
         contradiction_data = contradictions
@@ -932,11 +969,10 @@ def detect_contradictions(project_id):
 def delete_project(project_id):
     import shutil
     proj_dir = get_project_path(project_id)
-    emb_path = EMBEDDINGS_DIR / f"{project_id}.pkl"
+    scope = get_retrieval_scope(project_id)
     if proj_dir.exists():
         shutil.rmtree(proj_dir)
-    if emb_path.exists():
-        emb_path.unlink()
+    RETRIEVAL_STORE.delete_project(scope)
     return jsonify({"deleted": project_id})
 
 # -- Medha v2 API Endpoints ------------------------------------------------------
@@ -1207,6 +1243,7 @@ def v2_graph_query(project_id):
                             break
 
     top_score = round(float(sims[top_indices[0]]), 4) if len(top_indices) > 0 else 0
+    contradiction_data = None
     if top_score < MIN_CONFIDENCE_THRESHOLD:
         answer = (
             "I could not find a clear answer in the uploaded documents with sufficient confidence. "
@@ -1216,7 +1253,6 @@ def v2_graph_query(project_id):
         )
     else:
         contradictions = detect_contradictions_in_chunks([chunks[idx] for idx in top_indices], query)
-        contradiction_data = None
         if contradictions:
             contradiction_data = contradictions
             cx_note = "\n\n[SYSTEM NOTE: The following potential contradictions were detected in the retrieved documents:]\n"

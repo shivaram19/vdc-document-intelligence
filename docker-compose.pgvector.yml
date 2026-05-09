@@ -1,0 +1,22 @@
+services:
+  medha-pgvector:
+    image: pgvector/pgvector:0.8.2-pg17-trixie
+    container_name: medha-pgvector
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: medha
+      POSTGRES_USER: medha
+      POSTGRES_PASSWORD: medha
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medha -d medha"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - medha-pgvector-data:/var/lib/postgresql/data
+      - ./backend/sql/001_medha_retrieval_chunks_pgvector.sql:/docker-entrypoint-initdb.d/001_medha_retrieval_chunks_pgvector.sql:ro
+
+volumes:
+  medha-pgvector-data:

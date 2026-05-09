@@ -1,0 +1,3 @@
+-r requirements.txt
+-r requirements-chroma.txt
+-r requirements-pgvector.txt
