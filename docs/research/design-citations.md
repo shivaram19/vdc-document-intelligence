@@ -190,5 +190,77 @@
 
 ---
 
+## Anti-Monoculture Design (2026-05-03)
+
+### `[CITE: Bakaus2026]` — impeccable: Frontend Design Skill
+- **Source**: Bakaus, P. (2026). *impeccable: A skill for impeccable frontend design*. GitHub.
+- **URL**: https://github.com/pbakaus/impeccable
+- **WHY**: LLMs default to the same visual patterns (Inter font, purple gradients, nested cards) without explicit guidance. Impeccable provides anti-pattern detection and curated design expertise.
+- **WHAT**: Replaced Inter with Sora+Source Sans 3. Replaced pure grays with tinted neutrals. Replaced border-heavy cards with elevation-first surfaces.
+- **QUESTIONS ANSWERED**:
+  - Why not Inter? → Listed as overused-font monoculture default in impeccable v3.0 detector.
+  - Why not Geist or Space Grotesk? → Added to overused-font list in April 2026.
+
+### `[CITE: SoraSpec]` — Sora Typeface
+- **Source**: Indian Type Foundry (2018). *Sora type specimen*. Google Fonts.
+- **URL**: https://fonts.google.com/specimen/Sora
+- **WHY**: Geometric sans-serif with distinctive character shapes; high x-height for screen readability; globally available via Google Fonts CDN.
+- **WHAT**: `--font-display: 'Sora'` for all headings and display text.
+
+### `[CITE: OKLCH_2022]` — OKLCH Color Space
+- **Source**: Safari Technology Preview (2022). *OKLCH in CSS*.
+- **URL**: https://developer.apple.com/safari/technology-preview/
+- **WHY**: OKLCH enables perceptually uniform color manipulation. Our tinted neutrals derive from OKLCH(90% 0.02 250) through OKLCH(20% 0.02 250).
+- **WHAT**: Blue-tinted neutral palette that harmonizes with the blueprint background.
+
+### `[CITE: MaterialDesign3]` — Material Design 3 Elevation
+- **Source**: Google (2021). *Material Design 3: Elevation*.
+- **URL**: https://m3.material.io/styles/elevation/overview
+- **WHY**: Elevation communicates hierarchy through surface color shifts, not borders. Reduces non-data ink.
+- **WHAT**: Cards use background elevation (`rgba` overlays) instead of 1px borders.
+
+### `[CITE: MaterialMotion2019]` — Material Motion Guidelines
+- **Source**: Google (2019). *Material Motion Guidelines*.
+- **URL**: https://m3.material.io/styles/motion/overview
+- **WHY**: `cubic-bezier(0.4, 0, 0.2, 1)` is validated across billions of user sessions as the optimal standard UI transition curve.
+- **WHAT**: `--ease-smooth` for standard transitions; `--ease-expo-out` for entrances.
+
+---
+
+## SOLID Architecture
+
+### `[CITE: Martin2003]` — Single Responsibility Principle
+- **Source**: Martin, R. C. (2003). *Agile Software Development, Principles, Patterns, and Practices*. Prentice Hall.
+- **URL**: https://www.amazon.com/Agile-Software-Development-Principles-Patterns/dp/0135974445
+- **WHY**: Frontend files that mix concerns (tokens + components + layout) become unmaintainable as the design system grows.
+- **WHAT**: Max 200 lines per CSS/JS file. One concern per file. Page files are orchestrators only.
+
+### `[CITE: Meyer1997]` — Open/Closed Principle
+- **Source**: Meyer, B. (1997). *Object-Oriented Software Construction* (2nd ed.). Prentice Hall.
+- **URL**: https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554
+- **WHY**: Design systems evolve by extension, not modification. Modifying base components breaks downstream consumers.
+- **WHAT**: Component variants via data attributes and CSS custom properties, never by editing component source.
+
+### `[CITE: Liskov1987]` — Liskov Substitution Principle
+- **Source**: Liskov, B. (1987). *Data Abstraction and Hierarchy*. OOPSLA '87.
+- **URL**: https://doi.org/10.1145/62139.62141
+- **WHY**: Badge variants, card variants, and button variants must be interchangeable without breaking layout or behavior.
+- **WHAT**: All variants share the same DOM structure and event contracts.
+
+### `[CITE: Martin2002]` — Interface Segregation Principle
+- **Source**: Martin, R. C. (2002). *The Interface Segregation Principle*. C++ Report.
+- **URL**: https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/isp.pdf
+- **WHY**: "God components" with 15+ parameters force callers to understand irrelevant options.
+- **WHAT**: Small, focused component APIs. No monolithic config objects.
+
+### `[CITE: Martin1996]` — Dependency Inversion Principle
+- **Source**: Martin, R. C. (1996). *The Dependency Inversion Principle*. C++ Report.
+- **URL**: https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/dip.pdf
+- **WHY**: Hardcoded colors and fonts in components create brittle, unmaintainable code.
+- **WHAT**: All styling flows from CSS custom properties. Tailwind `gray-*` utilities are banned.
+
+---
+
 *Generated: 2026-04-24*  
+*Updated: 2026-05-03*  
 *Maintained with: All design system decisions must cite at least one source. "I think it looks good" is not sufficient.*

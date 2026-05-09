@@ -78,6 +78,10 @@ The **$3,000/mo Agency tier** is the sweet spot. VDC agencies already charge GCs
 ## How to Run the Demo
 
 ```bash
+# 0. Optional: build an isolated retrieval env
+./backend/bootstrap_retrieval_env.sh
+source venv-retrieval/bin/activate
+
 # 1. Start the backend
 cd vdc-document-intelligence
 python3 backend/app.py
@@ -93,6 +97,39 @@ cd frontend && python3 -m http.server 8080
 
 Backend runs on `http://localhost:5001`
 Frontend runs on `http://localhost:8080`
+
+## Retrieval Backends
+
+Medha now supports a pluggable retrieval seam:
+
+- `filesystem` - current local baseline
+- `chroma` - embedded by default, server/cloud optional
+- `pgvector` - local Postgres + pgvector or external Postgres
+
+The primary `/query` and `/draft-rfi` flows now call the store's native
+`search_project(...)` path when the backend supports it. That means the benchmark
+query latency now measures backend-native retrieval instead of always loading the
+full embedding matrix into Python first.
+
+Local pgvector dev service:
+
+```bash
+docker compose -f docker-compose.pgvector.yml up -d
+```
+
+Benchmark all backends:
+
+```bash
+python3 benchmark_retrieval_backends.py --backends filesystem chroma pgvector
+```
+
+Optional local-LLM fallback dependencies remain separate:
+
+```bash
+pip install -r backend/requirements-local-llm.txt
+```
+
+See [docs/research/retrieval-backends-benchmark.md](docs/research/retrieval-backends-benchmark.md) for setup details.
 
 ---
 

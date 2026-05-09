@@ -6,6 +6,7 @@ secrets/
 
 # Data & Logs
 data/
+.bench/
 *.log
 audit.log
 
@@ -22,6 +23,7 @@ models/
 
 # Virtual environments (explicit names)
 venv-docling/
+venv-retrieval/
 
 # OS
 .DS_Store
