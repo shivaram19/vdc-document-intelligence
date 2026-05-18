@@ -26,7 +26,7 @@
         "read_timeout": 60,
         "write_timeout": 10,
         "max_connections": 100,
-        "token": "6ed6a68cbd0ec752932b63c983be8606"
+        "token": "YOUR_PICO_CHANNEL_TOKEN_HERE"
       }
     }
   },
@@ -37,7 +37,7 @@
       "model": "grok-4.20-0309-reasoning",
       "api_base": "https://api.x.ai/v1",
       "api_keys": [
-        "xai-NAncuOYy8VqcSlBMzTI1n8FV1lx2GWUj6Q0irGUyHuFpbuwuxFJX6zvwUHeUwAaZgmWqOLpTtG5Oeq7n"
+        "YOUR_XAI_API_KEY_HERE"
       ],
       "enabled": true
     },
@@ -47,7 +47,7 @@
       "model": "grok-4-1-fast-non-reasoning",
       "api_base": "https://api.x.ai/v1",
       "api_keys": [
-        "xai-NAncuOYy8VqcSlBMzTI1n8FV1lx2GWUj6Q0irGUyHuFpbuwuxFJX6zvwUHeUwAaZgmWqOLpTtG5Oeq7n"
+        "YOUR_XAI_API_KEY_HERE"
       ],
       "enabled": true
     }
