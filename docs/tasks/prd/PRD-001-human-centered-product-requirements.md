@@ -1,9 +1,9 @@
 # PRD-001: Human-Centered Product Requirements for Medha
 ## Construction Document Intelligence — VDC ↔ Construction Interface
 
-**Date:** 2026-05-03  
-**Status:** Council of Ten Consensus — Approved  
-**Scope:** Product requirements derived from human workflow research, not feature wishlists  
+**Date:** 2026-05-03
+**Status:** Council of Ten Consensus — Approved
+**Scope:** Product requirements derived from human workflow research, not feature wishlists
 **Research Basis:** BFS-014, BFS-015, BFS-016, BFS-017, BFS-018
 
 ---
@@ -95,8 +95,8 @@ The construction industry does not have a "GitHub." VDC coordinators and constru
 | 16:00 | Draft RFIs from morning findings | Word template, spec references, drawing callouts | **High** — 2 hrs formatting and citing | **15 min** — Auto-generated with citations |
 | 18:30 | Administrative catch-up | Submittal log, meeting minutes | Medium | Auto-logged; minimal catch-up |
 
-**Current Tuesday total: ~10.5 hrs of document work**  
-**With Medha Tuesday total: ~4.5 hrs of document work**  
+**Current Tuesday total: ~10.5 hrs of document work**
+**With Medha Tuesday total: ~4.5 hrs of document work**
 **Time returned to Priya: 6 hours → for proactive design optimization, team mentoring, or going home on time.**
 
 ### 2.2 David (Project Manager) — Thursday
@@ -243,8 +243,35 @@ The construction industry does not have a "GitHub." VDC coordinators and constru
 | P1-5 | **Transmittal Tracking:** Auto-distribute documents, track receipt confirmation, escalate non-responders | Maria | BFS-015 §2 (Document Controller) |
 | P1-6 | **Cross-Platform Context Bridge:** Preserve clash element GUID, 3D viewpoint, spec references, and meeting context when a Navisworks clash becomes a Procore/Aconex RFI | Priya, David, Ahmed | BFS-018 §4.1 (information loss at each handoff) |
 | P1-7 | **Acknowledgment Intelligence:** Track who has viewed critical document changes, flag non-responders, go beyond "sent" to "understood" | Maria, David | BFS-018 §5.2 (receipt without understanding) |
+| P1-8 | **MeMo-Based Knowledge Integration:** Train a dedicated MEMORY model (1.5B–14B parameters) on construction document reflections to internalize cross-document relationships, replacing RAG with parametric memory queried via multi-turn protocol by a frozen EXECUTIVE model | Priya, David, Sarah | Quek2026 (MeMo: Memory as a Model); BFS-018 §5.1 (cross-document relationship gap) |
 
-### 6.3 Nice-to-Have (P2) — Future Roadmap
+### 6.3 Architectural Direction: MeMo (Memory as a Model)
+
+Based on analysis of arXiv:2605.15156 [Quek2026], Medha's retrieval substrate should evolve from **RAG (retrieve-then-read)** to **MeMo (memory-as-model)**. This is not a user-facing feature but a foundational architecture change that improves P0-1 through P1-6.
+
+#### Why MeMo Over RAG for Construction Documents
+
+| Dimension | Current RAG (Chroma/pgvector) | MeMo (Proposed) | Impact on Medha |
+|-----------|------------------------------|-----------------|-----------------|
+| **Cross-document synthesis** | Retrieves isolated chunks; misses relationships | 5-step pipeline explicitly synthesizes multi-document QA pairs | Catches contradictions spanning specs, drawings, RFIs, clash reports |
+| **Retrieval noise robustness** | HippoRAG2 drops 6.22% under noise | MeMo changes +0.55% (essentially flat) [Quek2026 Table 3] | Fewer false positives in contradiction detection |
+| **Corpus-size scalability** | Retrieval cost grows with corpus | MEMORY model is fixed-size; cost independent of corpus [Quek2026 §4.4] | Scales from single project to $200M portfolio |
+| **LLM vendor lock-in** | Embedding model coupled to retrieval | Plug-and-play with any EXECUTIVE (Grok, Claude, GPT-4) [Quek2026 §5.1] | Switch LLMs without retraining memory |
+| **Incremental updates** | Re-index entire corpus | Model merging: 33% compute savings vs full retrain [Quek2026 Table 6] | New drawings/specs added per project milestone |
+
+#### Implementation Path
+
+| Phase | Duration | Deliverable | Validation Gate |
+|-------|----------|-------------|-----------------|
+| **PoC** | 1–2 weeks | Reflection QA dataset from 5–10 sample_docs; Qwen2.5-1.5B MEMORY model | Contradiction detection accuracy vs current RAG |
+| **Dubai Corpus** | 4–6 weeks | Qwen2.5-14B MEMORY model trained on 50–100 Dubai construction docs | Benchmark on real RFI/submittal/clash workflows |
+| **Production** | 8–12 weeks | MEMORY model served via vLLM; EXECUTIVE queries via multi-turn protocol; model merging for incremental updates | User acceptance: Priya's submittal review time |
+
+**Decision gate:** Proceed to Phase 2 only if PoC demonstrates >10% improvement in cross-document contradiction recall over RAG baseline.
+
+---
+
+### 6.4 Nice-to-Have (P2) — Future Roadmap
 
 | ID | Requirement | Persona | Research Basis |
 |----|-------------|---------|---------------|
