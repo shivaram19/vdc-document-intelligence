@@ -1,0 +1,34 @@
+UK Design and Construction Standards
+Section 23 3300 | Air Duct Accessories
+
+1. ACCESS DOORS
+A. Provide duct access doors upstream and downstream of all duct-mounted coils.
+B. Provide duct access doors at fire and combination fire/smoke dampers. Doors to be no smaller than 12" x 12" (except where duct is smaller than 14" wide).
+C. Duct access doors above ceilings shall be full cam lock style – no hinges.
+
+2. FLEXIBLE DUCT
+A. All supply flexible duct shall be insulated with a 1 1/2" blanket of glass wool with an outer moisture barrier. The insulation assembly shall have a flame spread of not more than 25 and a smoke development rate of not over 50.
+B. A single length of flexible duct shall not exceed 5'0". Splicing of multiple pieces of flexible duct is not permitted.
+C. The minimum bend radius shall be 1 1/2 times the duct diameter.
+D. Total offset in any run of flexible duct shall not exceed 90 degrees for aluminum flexible duct or 180 degrees for PVC flexible duct.
+E. Flexible ductwork shall not be used in high or medium pressure ductwork.
+F. Allowable materials: Medical Campus – Aluminum or PVC. Education Campus – Aluminum.
+
+Section 23 3600 | Air Terminal Units
+
+1. VARIABLE AIR VOLUME UNITS
+A. VAV's shall be double wall construction. They shall have a low leakage damper with a cell foam gasket.
+B. Special consideration should be given during design to provide adequate access to the VAV controller and reheat piping accessories.
+
+2. REHEAT COILS
+A. Each VAV shall have an associated hot water reheat coil. The VAV box and reheat coil shall be separate components.
+B. Reheat coils shall be selected at an entering water temperature of 135 deg F and an entering air temperature of 55 deg F.
+C. Coils shall have 0.0095" aluminum fins and 0.035" copper tubes.
+D. Access door to be minimum 8" x 8" and larger where larger duct allows.
+E. Reheat coils shall be hard piped, not connected with flexible hoses.
+
+Section 23 3713 | Diffusers, Registers, and Grilles
+
+1. GENERAL REQUIREMENTS
+A. Generally, diffusers, registers, and grilles shall be of aluminum construction.
+B. Where terminal units require to be filtered, the filter shall be at the return grille and not at the unit.

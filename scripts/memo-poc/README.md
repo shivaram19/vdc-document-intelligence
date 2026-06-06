@@ -83,3 +83,23 @@ With `gpt-4o` on 50–100 real construction documents:
 ## Paper Reference
 
 - [Quek2026] Quek, R.W.H., Lee, S., Leong, A.W.L., Verma, A., et al. (2026). *MeMo: Memory as a Model.* arXiv:2605.15156v2 [cs.CL]. https://arxiv.org/abs/2605.15156
+
+## Parallel Pipeline (New)
+
+A parallel version using `ThreadPoolExecutor` achieves **~20× speedup**:
+
+```bash
+python reflection_synthesis_pipeline_parallel.py \
+    --docs-dir ../../real_construction_docs \
+    --output ../../data/reflections/reflections.jsonl \
+    --model gpt-4o-mini \
+    --workers 20 \
+    --chunk-size 12000
+```
+
+| Version | 30 chunks | 58 chunks |
+|---------|-----------|-----------|
+| Sequential | 11 min | ~30 min (est.) |
+| Parallel (20 workers) | **35 sec** | **82 sec** |
+
+See [TEST_REPORT_001.md](TEST_REPORT_001.md) for full validation results on real construction documents.

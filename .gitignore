@@ -28,3 +28,7 @@ venv-retrieval/
 # OS
 .DS_Store
 Thumbs.db
+
+# Large construction document PDFs (extracted text is kept)
+real_construction_docs/*.pdf
+real_construction_docs/UMD_*.txt
