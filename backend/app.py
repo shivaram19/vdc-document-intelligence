@@ -21,6 +21,37 @@ from docx import Document
 
 from retrieval_store import RetrievalScope, build_retrieval_store
 
+# -- New MVP Pipeline Imports -----------------------------------------------------
+try:
+    from chunkers.semantic_chunker import chunk_text as semantic_chunk_text
+    CHUNKER_AVAILABLE = True
+except Exception as e:
+    CHUNKER_AVAILABLE = False
+    print(f"Semantic chunker not available: {e}")
+
+try:
+    from stores.chroma_store import ChromaStore
+    CHROMA_STORE = ChromaStore(persist_dir="./chroma_db")
+    print("ChromaStore initialized.")
+except Exception as e:
+    CHROMA_STORE = None
+    print(f"ChromaStore initialization failed: {e}")
+
+try:
+    from stores.entity_store import EntityStore
+    ENTITY_STORE = EntityStore(db_path="./medha_entities.db")
+    print("EntityStore initialized.")
+except Exception as e:
+    ENTITY_STORE = None
+    print(f"EntityStore initialization failed: {e}")
+
+try:
+    from extractors.entity_extractor import extract_entities
+    EXTRACTOR_AVAILABLE = True
+except Exception as e:
+    EXTRACTOR_AVAILABLE = False
+    print(f"Entity extractor not available: {e}")
+
 # -- Docling Integration (optional advanced parsing) -------------------------------
 DOCLING_ENABLED = os.environ.get("USE_DOCLING", "false").lower() == "true"
 if DOCLING_ENABLED:
@@ -56,7 +87,7 @@ else:
 
 try:
     from dotenv import load_dotenv
-    load_dotenv(Path(__file__).parent.parent / ".env")
+    load_dotenv(Path(__file__).parent.parent / ".env", override=True)
 except Exception:
     pass
 
@@ -127,13 +158,23 @@ def audit_log(action: str, project_id: str = "", detail: str = ""):
 # -- LLM Provider Setup -----------------------------------------------------------
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 XAI_API_KEY = os.environ.get("XAI_API_KEY")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 OPENAI_CLIENT = None
 LLM_TOKENIZER = None
 LLM_MODEL = None
 USE_API_LLM = False
 API_PROVIDER = None
 
-if XAI_API_KEY:
+if OPENAI_API_KEY:
+    try:
+        from openai import OpenAI
+        OPENAI_CLIENT = OpenAI(api_key=OPENAI_API_KEY)
+        USE_API_LLM = True
+        API_PROVIDER = "openai"
+        print("OpenAI API configured.")
+    except Exception as e:
+        print(f"OpenAI import failed: {e}")
+elif XAI_API_KEY:
     try:
         from openai import OpenAI
         OPENAI_CLIENT = OpenAI(api_key=XAI_API_KEY, base_url="https://api.x.ai/v1")
@@ -152,7 +193,7 @@ elif GROQ_API_KEY:
     except Exception as e:
         print(f"Groq import failed: {e}")
 else:
-    print("No API key found (XAI_API_KEY or GROQ_API_KEY). Falling back to local CPU model (slow).")
+    print("No API key found (OPENAI_API_KEY, XAI_API_KEY, or GROQ_API_KEY). Falling back to local CPU model (slow).")
 
 app = Flask(__name__)
 CORS(app)
@@ -219,14 +260,21 @@ def extract_text_from_pdf(filepath: str) -> str:
     # Fallback to OCR if native text extraction is sparse
     if len(text.strip()) < 200 and OCR_AVAILABLE:
         try:
+            from PIL import Image
             ocr_text = ""
-            images = convert_from_path(filepath, dpi=200)
+            # Limit to first 10 pages for large scanned PDFs to keep processing fast
+            images = convert_from_path(filepath, dpi=150, first_page=1, last_page=10)
             for img in images:
+                # Resize large images to keep tesseract fast
+                w, h = img.size
+                if max(w, h) > 1800:
+                    ratio = 1800 / max(w, h)
+                    img = img.resize((int(w * ratio), int(h * ratio)), Image.LANCZOS)
                 ocr_text += pytesseract.image_to_string(img) + "\n"
             if len(ocr_text.strip()) > len(text.strip()):
                 text = ocr_text
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"OCR fallback failed for {filepath}: {e}")
     return text
 
 def extract_text_from_docx(filepath: str) -> str:
@@ -576,7 +624,7 @@ def upload_document(project_id):
     if 'file' not in request.files:
         return jsonify({"error": "No file provided"}), 400
     file = request.files['file']
-    doc_type = request.form.get("type", "drawing")
+    doc_type = request.form.get("type") or request.form.get("doc_type", "drawing")
     if file.filename == '':
         return jsonify({"error": "Empty filename"}), 400
     # Validate extension
@@ -604,13 +652,17 @@ def upload_document(project_id):
         filepath.unlink()
         audit_log("upload_rejected", project_id, f"{file.filename}: suspicious content detected")
         return jsonify({"error": "Upload rejected: suspicious content detected. This file contains patterns associated with prompt injection or malicious instructions."}), 400
-    chunks = chunk_text(text)
+    # Use semantic chunker if available, else fall back to legacy chunker
+    if CHUNKER_AVAILABLE:
+        chunks = semantic_chunk_text(text, chunk_tokens=256, overlap_tokens=64)
+    else:
+        chunks = chunk_text(text)
+
     if chunks:
         embeddings = embed_chunks(chunks)
     else:
         embeddings = np.array([])
-    idx = get_project_index(project_id)
-    existing_emb, existing_chunks = get_project_embeddings(project_id)
+
     doc_id = hashlib.md5(f"{file.filename}_{datetime.now().isoformat()}".encode()).hexdigest()[:12]
     chunk_records = []
     for i, chunk_text_val in enumerate(chunks):
@@ -622,6 +674,10 @@ def upload_document(project_id):
             "doc_type": doc_type,
             "index": i,
         })
+
+    # -- Legacy filesystem store (keep for v2 compatibility) ------------------------
+    idx = get_project_index(project_id)
+    existing_emb, existing_chunks = get_project_embeddings(project_id)
     if existing_emb is not None and len(existing_emb) > 0:
         all_embeddings = np.vstack([existing_emb, embeddings]) if len(chunks) > 0 else existing_emb
         all_chunks = existing_chunks + chunk_records
@@ -641,6 +697,33 @@ def upload_document(project_id):
     idx["total_chunks"] = len(all_chunks)
     save_project_index(project_id, idx)
     save_project_embeddings(project_id, all_embeddings, all_chunks)
+
+    # -- New ChromaDB store (incremental, no rewrite amplification) -----------------
+    if CHROMA_STORE is not None:
+        try:
+            CHROMA_STORE.add_chunks(
+                project_id=project_id,
+                doc_id=doc_id,
+                doc_type=doc_type,
+                doc_name=file.filename,
+                chunks=chunks
+            )
+        except Exception as e:
+            print(f"ChromaStore add_chunks failed: {e}")
+
+    # -- Entity extraction (MVP contradiction pipeline) -----------------------------
+    if EXTRACTOR_AVAILABLE and ENTITY_STORE is not None and chunks:
+        try:
+            all_entities = []
+            for i, chunk_text_val in enumerate(chunks):
+                chunk_id = f"{doc_id}_chunk_{i}"
+                entities = extract_entities(chunk_text_val, chunk_id, doc_id, _llm_generate)
+                all_entities.extend(entities)
+            if all_entities:
+                ENTITY_STORE.add_entities(project_id, all_entities)
+        except Exception as e:
+            print(f"Entity extraction failed: {e}")
+
     audit_log("upload", project_id, file.filename)
     return jsonify({
         "document": {
@@ -749,7 +832,9 @@ def query_project(project_id):
 
 API_MODEL = os.environ.get("API_MODEL", "")
 if not API_MODEL:
-    if API_PROVIDER == "xai":
+    if API_PROVIDER == "openai":
+        API_MODEL = "gpt-4o-mini"
+    elif API_PROVIDER == "xai":
         API_MODEL = "grok-3"
     elif API_PROVIDER == "groq":
         API_MODEL = "llama-3.3-70b-versatile"
@@ -923,47 +1008,7 @@ Now write the response:"""
         draft += "\n\n---\n\n**PREPARED BY:** VDC Document Intelligence AI\n**REVIEW STATUS:** Draft - Subject to VDC Manager Review"
     return draft
 
-@app.route('/api/projects/<project_id>/contradictions', methods=['GET'])
-def detect_contradictions(project_id):
-    embeddings, chunks = get_project_embeddings(project_id)
-    if embeddings is None or len(chunks) < 2:
-        return jsonify({"contradictions": [], "message": "Need at least 2 documents to detect contradictions."})
-    drawing_chunks = [(i, c) for i, c in enumerate(chunks) if c["doc_type"] in ("drawing", "plan")]
-    spec_chunks = [(i, c) for i, c in enumerate(chunks) if c["doc_type"] in ("spec", "specification")]
-    if not drawing_chunks or not spec_chunks:
-        return jsonify({"contradictions": [], "message": "Need both drawings and specs for contradiction detection."})
-    contradictions = []
-    spec_indices = [i for i, _ in spec_chunks]
-    drawing_indices = [i for i, _ in drawing_chunks]
-    spec_embs = embeddings[spec_indices]
-    drawing_embs = embeddings[drawing_indices]
-    sim_matrix = cosine_similarity(spec_embs, drawing_embs)
-    for si, spec_idx in enumerate(spec_indices):
-        best_di = int(np.argmax(sim_matrix[si]))
-        best_score = float(sim_matrix[si][best_di])
-        drawing_idx = drawing_indices[best_di]
-        if best_score > 0.5:
-            spec_text = chunks[spec_idx]["text"]
-            draw_text = chunks[drawing_idx]["text"]
-            spec_dims = set(re.findall(r'\b(\d+(?:\.\d+)?)\s*(?:ft|inches|in)\b', spec_text))
-            draw_dims = set(re.findall(r'\b(\d+(?:\.\d+)?)\s*(?:ft|inches|in)\b', draw_text))
-            if spec_dims and draw_dims and spec_dims != draw_dims:
-                contradictions.append({
-                    "severity": "medium",
-                    "confidence": round(best_score, 3),
-                    "spec_doc": chunks[spec_idx]["doc_name"],
-                    "drawing_doc": chunks[drawing_idx]["doc_name"],
-                    "spec_text": spec_text[:300],
-                    "drawing_text": draw_text[:300],
-                    "spec_dims_found": list(spec_dims)[:5],
-                    "drawing_dims_found": list(draw_dims)[:5],
-                    "issue": "Potential dimension mismatch between spec and drawing",
-                })
-    return jsonify({
-        "contradictions": contradictions[:10],
-        "checked_pairs": len(spec_chunks) * len(drawing_chunks),
-        "message": f"Found {len(contradictions)} potential contradictions." if contradictions else "No obvious contradictions detected.",
-    })
+# NOTE: /contradictions endpoint moved to MVP pipeline section at bottom of file.
 
 @app.route('/api/projects/<project_id>', methods=['DELETE'])
 def delete_project(project_id):
@@ -1483,6 +1528,123 @@ def v2_query_confidence(project_id, query_id):
         "phase": 6,
         "message": "Trust & XAI layer (confidence scoring + reasoning chains) is planned for v2-beta."
     }), 501
+
+# -- MVP Contradiction Pipeline Endpoints ----------------------------------------
+
+@app.route('/api/projects/<project_id>/link', methods=['POST'])
+def link_entities(project_id):
+    """Generate spec↔drawing links using entity similarity."""
+    if ENTITY_STORE is None:
+        return jsonify({"error": "Entity store not available"}), 503
+
+    try:
+        from linkers.text_linker import TextLinker
+    except Exception as e:
+        return jsonify({"error": f"Linker not available: {e}"}), 503
+
+    # Get all entities and split by document type
+    idx = get_project_index(project_id)
+    doc_types = {d["id"]: d["type"] for d in idx.get("documents", [])}
+
+    all_entities = ENTITY_STORE.get_all(project_id)
+    spec_entities = [e for e in all_entities if doc_types.get(e.doc_id, "") in ("specification", "spec")]
+    draw_entities = [e for e in all_entities if doc_types.get(e.doc_id, "") in ("drawing", "plan")]
+
+    linker = TextLinker()
+    links = linker.find_links(spec_entities, draw_entities)
+    ENTITY_STORE.save_links(project_id, links)
+
+    return jsonify({
+        "links_created": len(links),
+        "links": [
+            {"spec": l[0].text, "drawing": l[1].text, "score": round(l[2], 3)}
+            for l in links
+        ]
+    })
+
+
+@app.route('/api/projects/<project_id>/contradictions', methods=['GET'])
+def get_contradictions(project_id):
+    """Detect contradictions using the entity-linking pipeline."""
+    if ENTITY_STORE is None:
+        # Fallback to legacy brute-force detection
+        return _legacy_contradictions(project_id)
+
+    try:
+        from detectors.simple_contradiction import SimpleContradictionDetector
+    except Exception as e:
+        return jsonify({"error": f"Contradiction detector not available: {e}"}), 503
+
+    links = ENTITY_STORE.get_links(project_id)
+    if not links:
+        # Auto-generate links if none exist
+        try:
+            from linkers.text_linker import TextLinker
+            idx = get_project_index(project_id)
+            doc_types = {d["id"]: d["type"] for d in idx.get("documents", [])}
+            all_entities = ENTITY_STORE.get_all(project_id)
+            spec_entities = [e for e in all_entities if doc_types.get(e.doc_id, "") in ("specification", "spec")]
+            draw_entities = [e for e in all_entities if doc_types.get(e.doc_id, "") in ("drawing", "plan")]
+            if spec_entities and draw_entities:
+                linker = TextLinker()
+                links = linker.find_links(spec_entities, draw_entities)
+                ENTITY_STORE.save_links(project_id, links)
+                links = ENTITY_STORE.get_links(project_id)
+        except Exception as e:
+            print(f"Auto-link generation failed: {e}")
+
+    detector = SimpleContradictionDetector()
+    contradictions = detector.detect(links)
+
+    return jsonify({
+        "count": len(contradictions),
+        "contradictions": contradictions,
+        "message": f"Found {len(contradictions)} contradictions." if contradictions else "No contradictions detected.",
+    })
+
+
+def _legacy_contradictions(project_id):
+    """Original brute-force contradiction detection (fallback)."""
+    embeddings, chunks = get_project_embeddings(project_id)
+    if embeddings is None or len(chunks) < 2:
+        return jsonify({"contradictions": [], "message": "Need at least 2 documents to detect contradictions."})
+    drawing_chunks = [(i, c) for i, c in enumerate(chunks) if c["doc_type"] in ("drawing", "plan")]
+    spec_chunks = [(i, c) for i, c in enumerate(chunks) if c["doc_type"] in ("spec", "specification")]
+    if not drawing_chunks or not spec_chunks:
+        return jsonify({"contradictions": [], "message": "Need both drawings and specs for contradiction detection."})
+    contradictions = []
+    spec_indices = [i for i, _ in spec_chunks]
+    drawing_indices = [i for i, _ in drawing_chunks]
+    spec_embs = embeddings[spec_indices]
+    drawing_embs = embeddings[drawing_indices]
+    sim_matrix = cosine_similarity(spec_embs, drawing_embs)
+    for si, spec_idx in enumerate(spec_indices):
+        best_di = int(np.argmax(sim_matrix[si]))
+        best_score = float(sim_matrix[si][best_di])
+        drawing_idx = drawing_indices[best_di]
+        if best_score > 0.5:
+            spec_text = chunks[spec_idx]["text"]
+            draw_text = chunks[drawing_idx]["text"]
+            spec_dims = set(re.findall(r'\b(\d+(?:\.\d+)?)\s*(?:ft|inches|in)\b', spec_text))
+            draw_dims = set(re.findall(r'\b(\d+(?:\.\d+)?)\s*(?:ft|inches|in)\b', draw_text))
+            if spec_dims and draw_dims and spec_dims != draw_dims:
+                contradictions.append({
+                    "severity": "medium",
+                    "confidence": round(best_score, 3),
+                    "spec_doc": chunks[spec_idx]["doc_name"],
+                    "drawing_doc": chunks[drawing_idx]["doc_name"],
+                    "spec_text": spec_text[:300],
+                    "drawing_text": draw_text[:300],
+                    "spec_dims_found": list(spec_dims)[:5],
+                    "drawing_dims_found": list(draw_dims)[:5],
+                    "issue": "Potential dimension mismatch between spec and drawing",
+                })
+    return jsonify({
+        "contradictions": contradictions[:10],
+        "checked_pairs": len(spec_chunks) * len(drawing_chunks),
+        "message": f"Found {len(contradictions)} potential contradictions." if contradictions else "No obvious contradictions detected.",
+    })
+
 
 # -- Main -------------------------------------------------------------------------
 
