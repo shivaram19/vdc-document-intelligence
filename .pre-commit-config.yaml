@@ -1,0 +1,32 @@
+# Pre-commit hook configuration for secret scanning
+# Install: pre-commit install && pre-commit install --hook-type pre-push
+# Run manually: pre-commit run --all-files
+
+repos:
+  # Local system hooks using installed TruffleHog
+  - repo: local
+    hooks:
+      - id: trufflehog-files
+        name: TruffleHog Scan (staged files)
+        entry: trufflehog filesystem
+        language: system
+        stages: [pre-commit]
+        pass_filenames: true
+        args: [--no-update, --fail]
+
+      - id: trufflehog-git
+        name: TruffleHog Scan (commits since HEAD)
+        entry: trufflehog git file://. --since-commit HEAD --fail
+        language: system
+        stages: [pre-push]
+        pass_filenames: false
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=1000']
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
