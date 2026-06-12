@@ -83,7 +83,7 @@ Nodes (1): Fire Protection Engineer
 
 ### Community 10 - "Community 10"
 Cohesion: 1.0
-Nodes (1): Trelo Labs
+Nodes (1): Trayini.ai
 
 ### Community 11 - "Community 11"
 Cohesion: 1.0
@@ -110,7 +110,7 @@ Nodes (1): Autodesk Construction Cloud
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 9`** (1 nodes): `Fire Protection Engineer`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 10`** (1 nodes): `Trelo Labs`
+- **Thin community `Community 10`** (1 nodes): `Trayini.ai`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 11`** (1 nodes): `Bluebeam Revu`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.

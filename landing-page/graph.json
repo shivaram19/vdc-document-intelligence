@@ -292,10 +292,10 @@
       "norm_label": "white-label construction ai"
     },
     {
-      "label": "Trelo Labs",
+      "label": "Trayini.ai",
       "file_type": "document",
       "source_file": "medha-research/seo/keywords-content-strategy.md",
-      "id": "trelo_labs",
+      "id": "trayini_ai",
       "community": 0,
       "norm_label": "trelo labs"
     }
@@ -458,10 +458,10 @@
       "relation": "builds",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "_src": "trelo_labs",
+      "_src": "trayini_ai",
       "_tgt": "comp_medha",
       "source": "comp_medha",
-      "target": "trelo_labs"
+      "target": "trayini_ai"
     },
     {
       "relation": "describes",

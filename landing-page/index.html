@@ -3,1025 +3,739 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medha | AI Document Intelligence for VDC & Construction Teams</title>
-  <meta name="description" content="Medha is the first AI document intelligence platform built for VDC agencies. Upload drawings, specs & RFIs. Get answers in seconds. Auto-draft responses. Detect contradictions. White-label ready.">
-  <meta name="keywords" content="AI document intelligence, construction RFI automation, drawing spec contradiction detection, VDC AI, BIM coordinator tools, white label construction AI, construction document QA, preconstruction software">
-  <meta property="og:title" content="Medha | AI Document Intelligence for VDC Teams">
-  <meta property="og:description" content="The first AI product you can sell to VDC agencies TODAY. Upload entire document sets. Query with natural language. Detect contradictions. White-label ready.">
+  <title>Medha — Catch construction document contradictions before they cost you</title>
+  <meta name="description" content="Medha reads your drawings, specs, RFIs, and addenda together, and flags contradictions before they become rework or change orders.">
+  <meta property="og:title" content="Medha — Catch construction document contradictions before they cost you">
+  <meta property="og:description" content="Medha reads your drawings, specs, RFIs, and addenda as one connected set, and flags the mismatches that slip past manual review.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Medha",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web",
-    "offers": {
-      "@type": "Offer",
-      "price": "3000",
-      "priceCurrency": "USD",
-      "priceValidUntil": "2026-12-31"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "47"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Trelo Labs",
-      "url": "https://trelo-labs.com"
-    }
-  }
-  </script>
+  <meta name="theme-color" content="#0f1b2e">
+
+  <!--
+    Font strategy: system font stack.
+    No Google Fonts dependency; faster load, no external tracking.
+  -->
   <style>
     :root {
-      --bg: #050508;
-      --fg: #e8e8f0;
-      --fg-dim: #7a7a8a;
-      --accent: #00f0c8;
-      --accent-glow: rgba(0, 240, 200, 0.15);
-      --accent-secondary: #ff6b9d;
-      --accent-amber: #f0b000;
-      --surface: #0d0d14;
-      --surface-raised: #12121c;
-      --border: rgba(255,255,255,0.06);
-      --grid: rgba(255,255,255,0.03);
+      --bg: #fafbfc;
+      --surface: #ffffff;
+      --text: #1a202c;
+      --text-muted: #5a6578;
+      --accent: #1e4d8c;
+      --accent-light: #e8f0fa;
+      --accent-hover: #153a6d;
+      --border: #d8dee8;
+      --warning: #c06c28;
+      --warning-bg: #fff5eb;
+      --success: #2f6f45;
+      --radius: 8px;
+      --shadow: 0 1px 3px rgba(15, 27, 46, 0.08), 0 4px 12px rgba(15, 27, 46, 0.05);
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html {
       scroll-behavior: smooth;
       background: var(--bg);
-      color: var(--fg);
-      font-family: 'Space Grotesk', sans-serif;
-      line-height: 1.55;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
     }
 
-    .bg-grid {
-      position: fixed; inset: 0;
-      pointer-events: none; z-index: 0;
-      background-image:
-        linear-gradient(var(--grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-      background-size: 60px 60px;
-      mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black, transparent);
-      animation: gridDrift 20s linear infinite;
-    }
-    @keyframes gridDrift { 0%{transform:translateY(0)} 100%{transform:translateY(60px)} }
-
-    .scanlines {
-      position: fixed; inset: 0;
-      pointer-events: none; z-index: 9999;
-      opacity: 0.03;
-      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.5) 2px, rgba(0,0,0,0.5) 4px);
+    /* Layout */
+    .container {
+      width: 100%;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
     }
 
-    .noise {
-      position: fixed; inset: 0;
-      pointer-events: none; z-index: 9998;
-      opacity: 0.025;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-      background-repeat: repeat; background-size: 200px;
-    }
-
-    .orb {
-      position: fixed; border-radius: 50%;
-      filter: blur(120px); pointer-events: none; z-index: 0;
-    }
-    .orb-1 { width:600px; height:600px; background:var(--accent-glow); top:-200px; left:-200px; animation:orbFloat1 15s ease-in-out infinite; }
-    .orb-2 { width:500px; height:500px; background:rgba(255,107,157,0.1); bottom:-150px; right:-150px; animation:orbFloat2 18s ease-in-out infinite; }
-    .orb-3 { width:400px; height:400px; background:rgba(240,176,0,0.08); top:40%; left:60%; animation:orbFloat3 20s ease-in-out infinite; }
-    @keyframes orbFloat1 { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(100px,50px) scale(1.1)} 66%{transform:translate(50px,100px) scale(0.9)} }
-    @keyframes orbFloat2 { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(-80px,-60px) scale(1.15)} 66%{transform:translate(-40px,-100px) scale(0.85)} }
-    @keyframes orbFloat3 { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(-60px,80px) scale(1.2)} }
-
-    .content { position: relative; z-index: 1; }
-
-    /* Nav */
+    /* Navigation */
     nav {
-      position: fixed; top:0; left:0; right:0; z-index:100;
-      padding: 1.25rem 2.5rem;
-      display: flex; justify-content: space-between; align-items: center;
-      background: linear-gradient(to bottom, rgba(5,5,8,0.92), transparent);
-      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 251, 252, 0.94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
     }
-    .logo {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.875rem; font-weight: 600;
-      letter-spacing: 0.04em; color: var(--fg);
-      display: flex; align-items: center; gap: 0.6rem;
-    }
-    .logo::before {
-      content: ''; width: 10px; height: 10px;
-      background: var(--accent); border-radius: 3px;
-      box-shadow: 0 0 14px var(--accent);
-      animation: pulse 2s ease-in-out infinite;
-    }
-    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
 
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a {
-      color: var(--fg-dim); text-decoration: none;
-      font-size: 0.8125rem; letter-spacing: 0.03em;
-      transition: color 0.3s; font-weight: 500;
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
     }
-    .nav-links a:hover { color: var(--fg); }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-mark {
+      width: 22px;
+      height: 22px;
+      background: var(--accent);
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .nav-cta:hover { background: var(--accent-hover); }
+
+    /* Typography */
+    h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; }
+
+    .eyebrow {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
 
     /* Hero */
     .hero {
-      min-height: 100vh;
-      display: flex; flex-direction: column;
-      justify-content: center; align-items: center;
+      padding: 5rem 0 4rem;
       text-align: center;
-      padding: 8rem 2rem 5rem;
-      position: relative; overflow: hidden;
     }
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.5rem 1.1rem;
-      border: 1px solid var(--border); border-radius: 100px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.6875rem; color: var(--accent);
-      margin-bottom: 2rem; background: var(--surface);
-      letter-spacing: 0.06em;
-    }
-    .hero-badge .dot {
-      width: 6px; height: 6px; background: var(--accent);
-      border-radius: 50%; box-shadow: 0 0 8px var(--accent);
-      animation: pulse 2s ease-in-out infinite;
-    }
-    .hero h1 {
-      font-size: clamp(2.2rem, 5.5vw, 4.8rem);
-      font-weight: 700; line-height: 1.08;
-      letter-spacing: -0.03em; max-width: 950px;
-      margin-bottom: 1.25rem;
-    }
-    .hero h1 .accent-text {
-      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
-    .hero-subtitle {
-      font-size: clamp(1rem, 1.8vw, 1.2rem);
-      color: var(--fg-dim); max-width: 680px;
-      line-height: 1.7; margin-bottom: 2.5rem;
-    }
-    .hero-stats {
-      display: flex; gap: 2.5rem; flex-wrap: wrap; justify-content: center;
-      font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--fg-dim);
-    }
-    .hero-stats span { display: flex; align-items: center; gap: 0.4rem; }
-    .hero-stats strong { color: var(--fg); font-weight: 500; }
 
-    .pixel-stream {
-      width: 100%; max-width: 920px; height: 300px;
-      margin: 3.5rem auto 0;
-      border-radius: 16px; overflow: hidden;
-      position: relative; border: 1px solid var(--border);
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      max-width: 860px;
+      margin: 0 auto 1.25rem;
+      color: var(--text);
+    }
+
+    .hero p {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.5rem;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover { background: var(--accent-hover); }
+
+    .btn-secondary {
       background: var(--surface);
-    }
-    #pixelCanvas { width: 100%; height: 100%; display: block; }
-    .pixel-overlay {
-      position: absolute; inset: 0;
-      display: flex; align-items: center; justify-content: center;
-      pointer-events: none;
-    }
-    .pixel-overlay span {
-      font-family: 'JetBrains Mono', monospace; font-size: 0.6875rem;
-      color: var(--fg-dim); letter-spacing: 0.1em; text-transform: uppercase;
-      background: rgba(5,5,8,0.85); padding: 0.5rem 1rem;
-      border-radius: 4px; backdrop-filter: blur(4px);
+      color: var(--text);
       border: 1px solid var(--border);
     }
 
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
     /* Sections */
-    section {
-      padding: 5rem 2rem; max-width: 1100px; margin: 0 auto;
-    }
-    .section-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.6875rem; letter-spacing: 0.15em;
-      text-transform: uppercase; color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-    .section-title {
-      font-size: clamp(1.6rem, 3.5vw, 2.5rem);
-      font-weight: 600; line-height: 1.15;
-      letter-spacing: -0.02em; margin-bottom: 1rem;
-    }
-    .section-desc {
-      color: var(--fg-dim); font-size: 1.05rem;
-      line-height: 1.7; max-width: 650px;
+    section { padding: 4.5rem 0; }
+
+    section + section { border-top: 1px solid var(--border); }
+
+    h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+      margin-bottom: 1rem;
     }
 
-    /* Problems */
-    .problems-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1rem; margin-top: 2.5rem;
+    .section-lead {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin-bottom: 2.5rem;
     }
-    .problem-card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 14px; padding: 1.75rem;
-      transition: border-color 0.3s, transform 0.3s;
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
     }
-    .problem-card:hover {
-      border-color: rgba(255,107,157,0.25);
-      transform: translateY(-3px);
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
     }
-    .problem-card .icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
-    .problem-card h4 {
-      font-size: 1rem; font-weight: 600;
-      margin-bottom: 0.5rem; color: var(--fg);
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
     }
-    .problem-card p {
-      font-size: 0.875rem; color: var(--fg-dim);
-      line-height: 1.6;
+
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
     }
-    .problem-card .pain {
-      display: inline-block; margin-top: 0.75rem;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.6875rem; color: var(--accent-secondary);
-      background: rgba(255,107,157,0.08);
-      padding: 0.3rem 0.6rem; border-radius: 4px;
+
+    .card-warning {
+      border-left: 4px solid var(--warning);
+      background: var(--warning-bg);
+    }
+
+    /* Stats / impact */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .stat {
+      padding: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .stat span {
+      font-size: 0.92rem;
+      color: var(--text-muted);
     }
 
     /* Personas */
-    .persona-band {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 20px; padding: 2.5rem; margin-top: 2.5rem;
-    }
-    .persona-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    .personas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.5rem;
     }
-    .persona {
-      text-align: center; padding: 1.25rem;
-      border: 1px solid var(--border); border-radius: 12px;
-      transition: border-color 0.3s;
-    }
-    .persona:hover { border-color: rgba(0,240,200,0.2); }
-    .persona .avatar {
-      width: 48px; height: 48px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
-      margin: 0 auto 0.75rem; display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 1.1rem; color: var(--bg);
-    }
-    .persona h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.25rem; }
-    .persona .role {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.6875rem; color: var(--accent); margin-bottom: 0.5rem;
-    }
-    .persona .quote {
-      font-size: 0.8rem; color: var(--fg-dim); font-style: italic;
-      line-height: 1.5;
+
+    .persona h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
     }
 
-    /* Impact */
-    .impact-band {
-      background: linear-gradient(135deg, rgba(0,240,200,0.05), rgba(255,107,157,0.05));
-      border: 1px solid var(--border); border-radius: 20px;
-      padding: 3rem; margin-top: 2.5rem;
-    }
-    .impact-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 2rem; text-align: center;
-    }
-    .impact-item .number {
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 700; letter-spacing: -0.03em;
-      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
-    .impact-item .label {
-      font-size: 0.8125rem; color: var(--fg-dim);
-      margin-top: 0.25rem; line-height: 1.5;
+    .persona p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
     }
 
-    /* Features */
-    .features-wrap { margin-top: 2.5rem; }
-    .feature-category { margin-bottom: 2.5rem; }
-    .feature-category h3 {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--accent-amber);
-      margin-bottom: 1rem; padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .feature-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
-    }
-    .feature-card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 12px; padding: 1.5rem;
-      transition: border-color 0.3s, transform 0.3s;
-    }
-    .feature-card:hover {
-      border-color: rgba(0,240,200,0.2);
-      transform: translateY(-2px);
-    }
-    .feature-card h4 {
-      font-size: 0.95rem; font-weight: 600;
-      color: var(--fg); margin-bottom: 0.4rem;
-      display: flex; align-items: center; gap: 0.5rem;
-    }
-    .feature-card h4 .check { color: var(--accent); font-size: 1rem; }
-    .feature-card p {
-      font-size: 0.85rem; color: var(--fg-dim);
-      line-height: 1.6;
+    /* Steps */
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 1.25rem;
     }
 
-    /* How It Works */
-    .steps { display: grid; gap: 1rem; margin-top: 2.5rem; }
     .step {
-      display: grid; grid-template-columns: auto 1fr;
-      gap: 1.25rem; align-items: start;
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 14px; padding: 1.75rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.25rem;
+      align-items: start;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
     }
-    .step-num {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem; font-weight: 600;
-      color: var(--accent); padding: 0.4rem 0.8rem;
-      border: 1px solid rgba(0,240,200,0.2); border-radius: 6px;
-      white-space: nowrap;
-    }
-    .step h4 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.35rem; }
-    .step p { color: var(--fg-dim); font-size: 0.9rem; line-height: 1.6; }
 
-    /* Target Agencies */
-    .agency-band {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 20px; padding: 2.5rem; margin-top: 2.5rem;
+    .step::before {
+      counter-increment: step;
+      content: counter(step, decimal-leading-zero);
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      padding: 0.35rem 0.7rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
     }
-    .agency-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    .step h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .step p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Trust list */
+    .trust-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1rem;
     }
-    .agency {
-      padding: 1rem; border: 1px solid var(--border);
-      border-radius: 10px; transition: all 0.3s;
-    }
-    .agency:hover { border-color: var(--accent); background: var(--accent-glow); }
-    .agency h5 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; }
-    .agency .links {
-      display: flex; gap: 0.5rem; flex-wrap: wrap;
-      font-family: 'JetBrains Mono', monospace; font-size: 0.65rem;
-    }
-    .agency .links a {
-      color: var(--fg-dim); text-decoration: none;
-      padding: 0.15rem 0.4rem; border-radius: 3px;
-      background: rgba(255,255,255,0.04);
-      transition: color 0.3s;
-    }
-    .agency .links a:hover { color: var(--accent); }
 
-    /* Quote */
-    .quote-section {
-      text-align: center; padding: 6rem 2rem;
-    }
-    .quote-section blockquote {
-      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
-      font-weight: 300; line-height: 1.4;
-      letter-spacing: -0.02em; max-width: 800px;
-      margin: 0 auto 1.25rem;
-    }
-    .quote-section blockquote span {
-      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-      font-weight: 500;
-    }
-    .quote-section cite {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem; color: var(--fg-dim);
-      font-style: normal; letter-spacing: 0.08em;
+    .trust-list li {
+      padding: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
     }
 
-    /* Keywords */
-    .keywords {
-      display: flex; flex-wrap: wrap; gap: 0.6rem;
-      justify-content: center; padding: 3rem 2rem;
+    .trust-list strong {
+      display: block;
+      color: var(--success);
+      margin-bottom: 0.35rem;
     }
-    .keyword {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem; padding: 0.45rem 0.9rem;
-      border: 1px solid var(--border); border-radius: 100px;
-      color: var(--fg-dim); transition: all 0.3s; cursor: default;
+
+    .trust-list span {
+      font-size: 0.92rem;
+      color: var(--text-muted);
     }
-    .keyword:hover {
-      border-color: var(--accent); color: var(--accent);
-      background: var(--accent-glow);
+
+    .cite {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 1.5rem;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     }
+
+    /* Contact */
+    .contact {
+      background: var(--accent-light);
+      border-top: none;
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .contact-copy p {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    form {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      box-shadow: var(--shadow);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      margin-top: 0.35rem;
+      padding: 0.65rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+      background: var(--surface);
+    }
+
+    textarea { min-height: 100px; resize: vertical; }
+
+    form button {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    .alt {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .alt a { color: var(--accent); }
 
     /* Footer */
     footer {
-      text-align: center; padding: 3rem 2rem 2.5rem;
+      padding: 2.5rem 0;
+      text-align: center;
       border-top: 1px solid var(--border);
-      color: var(--fg-dim); font-size: 0.8125rem;
-    }
-    footer .live-dot {
-      display: inline-block; width: 6px; height: 6px;
-      background: var(--accent); border-radius: 50%;
-      margin-right: 0.4rem; box-shadow: 0 0 8px var(--accent);
-      animation: pulse 2s ease-in-out infinite;
+      color: var(--text-muted);
+      font-size: 0.9rem;
     }
 
-    /* Scroll Reveal */
-    .reveal {
-      opacity: 0; transform: translateY(30px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
+    footer strong { color: var(--text); }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
     }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    footer a:hover { text-decoration: underline; }
 
     /* Responsive */
-    @media (max-width: 640px) {
-      nav { padding: 1rem 1.25rem; }
+    @media (max-width: 720px) {
       .nav-links { display: none; }
-      .hero { padding-top: 5rem; }
+      .hero { padding: 3.5rem 0 2.5rem; }
+      .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
       .step { grid-template-columns: 1fr; }
-      .impact-band, .persona-band, .agency-band { padding: 1.75rem; }
     }
   </style>
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-  <div class="noise"></div>
-  <div class="scanlines"></div>
 
-  <div class="content">
-    <nav>
-      <div class="logo">Medha</div>
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo"><span class="logo-mark" aria-hidden="true"></span> Medha</a>
       <ul class="nav-links">
-        <li><a href="#problems">Problems</a></li>
-        <li><a href="#personas">Who We Serve</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#agencies">Agencies</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#who">Who it's for</a></li>
+        <li><a href="#what">How it works</a></li>
+        <li><a href="#pilot">Try before you buy</a></li>
+        <li><a href="#trust">Why Medha</a></li>
+        <li><a href="#faq">Questions</a></li>
       </ul>
-    </nav>
-
-    <!-- ═══ HERO ═══ -->
-    <header class="hero">
-      <div class="hero-badge">
-        <span class="dot"></span>
-        By Trelo Labs — White-Label AI for VDC Agencies
-      </div>
-      <h1>
-        Stop Buried in Drawings.<br>
-        <span class="accent-text">Start Streaming Intelligence.</span>
-      </h1>
-      <p class="hero-subtitle">
-        <strong>Medha</strong> is the first AI document intelligence platform built specifically for
-        VDC agencies and construction teams. Upload entire project document sets — drawings,
-        specs, RFIs, submittals — and query them with natural language.
-        No manual review. No missed contradictions. Just cited, grounded answers.
-      </p>
-      <div class="hero-stats">
-        <span><strong>10x</strong> faster review</span>
-        <span><strong>RAG-Grounded</strong> answers</span>
-        <span><strong>White-Label</strong> ready</span>
-        <span><strong>Local + Cloud</strong> LLMs</span>
-      </div>
-
-      <div class="pixel-stream">
-        <canvas id="pixelCanvas"></canvas>
-        <div class="pixel-overlay">
-          <span>Live Document Stream — Simulated</span>
-        </div>
-      </div>
-    </header>
-
-    <!-- ═══ PROBLEMS ═══ -->
-    <section id="problems">
-      <div class="reveal">
-        <p class="section-label">The Problem</p>
-        <h2 class="section-title">Construction's Semantics Layer Is Unowned</h2>
-        <p class="section-desc">
-          VDC agencies and BIM coordinators spend <strong>15+ hours per project per week</strong> manually reviewing documents.
-          Construction projects generate extensive documentation — drawings, specs, RFIs, submittals, addenda —
-          yet most workflows still rely on manual copying, cross-checking, and Ctrl+F through 50+ PDFs.
-          This remains <em>one of the least explored frontiers for AI</em>, despite its centrality to project administration.
-        </p>
-      </div>
-      <div class="problems-grid">
-        <div class="problem-card reveal">
-          <div class="icon">⏱️</div>
-          <h4>Manual Spec Review</h4>
-          <p>10–15 hours per project spent searching through drawings and specifications to find answers. A single question like "What is the concrete strength for columns?" can take 45 minutes.</p>
-          <span class="pain">15 hrs/week lost per coordinator</span>
-        </div>
-        <div class="problem-card reveal">
-          <div class="icon">📝</div>
-          <h4>RFI Response Drafting</h4>
-          <p>Every RFI takes 2–4 hours to research across the document set and draft a professional TO/FROM/DATE/RE response with accurate citations.</p>
-          <span class="pain">2–4 hrs per RFI</span>
-        </div>
-        <div class="problem-card reveal">
-          <div class="icon">⚠️</div>
-          <h4>Drawing-Spec Contradictions</h4>
-          <p>Conflicting dimensions and requirements slip through to the field, causing costly rework and change orders. One missed contradiction can cost $400K.</p>
-          <span class="pain">Caught too late — in the field</span>
-        </div>
-        <div class="problem-card reveal">
-          <div class="icon">🏷️</div>
-          <h4>No White-Label AI Solution</h4>
-          <p>VDC agencies want to sell AI analytics to GC clients as a premium service — but no product exists that lets them rebrand and resell document intelligence.</p>
-          <span class="pain">$0 margin opportunity — until now</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ PERSONAS ═══ -->
-    <section id="personas">
-      <div class="reveal">
-        <p class="section-label">Who We Serve</p>
-        <h2 class="section-title">Built for the People Who Actually Read the Drawings</h2>
-        <p class="section-desc">
-          Medha is designed around four real personas in the construction document workflow —
-          from the BIM coordinator burning out on spec review to the VDC agency owner looking for a new revenue stream.
-        </p>
-      </div>
-      <div class="persona-band reveal">
-        <div class="persona-grid">
-          <div class="persona">
-            <div class="avatar">A</div>
-            <h4>Alex Chen</h4>
-            <div class="role">BIM / VDC Coordinator</div>
-            <p class="quote">"I spent 3 hours yesterday searching for the fire damper spec. It was in the mechanical spec, but I checked the fire protection spec first. Then the architectural notes. Then I called the engineer."</p>
-          </div>
-          <div class="persona">
-            <div class="avatar">J</div>
-            <h4>Jordan Martinez</h4>
-            <div class="role">VDC Manager</div>
-            <p class="quote">"We review 200+ drawings per project. My team is burning out. If we could automate even half of the spec cross-checking, we'd save months."</p>
-          </div>
-          <div class="persona">
-            <div class="avatar">P</div>
-            <h4>Priya Sharma</h4>
-            <div class="role">Director of Preconstruction</div>
-            <p class="quote">"We lost $400K on the last project because no one caught that the structural spec said 5,000 psi but the drawings showed 4,000 psi."</p>
-          </div>
-          <div class="persona">
-            <div class="avatar">M</div>
-            <h4>Michael Torres</h4>
-            <div class="role">VDC Agency Owner</div>
-            <p class="quote">"Every GC client asks if we 'do AI now.' I say yes, but it's really just my team working harder. I need a real product I can slap my logo on and sell."</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ IMPACT ═══ -->
-    <section id="impact">
-      <div class="reveal">
-        <p class="section-label">Impact Driven</p>
-        <h2 class="section-title">Real Numbers. Real ROI.</h2>
-        <p class="section-desc">
-          The AI in construction market is growing at <strong>32–56% CAGR</strong> and will reach $35B+ by 2034.
-          One BIM coordinator at $75/hr spending 15 hrs/week on document review costs $1,125/week.
-          Medha cuts this to $112/week — a <strong>10x cost reduction</strong>.
-        </p>
-      </div>
-      <div class="impact-band reveal">
-        <div class="impact-grid">
-          <div class="impact-item">
-            <div class="number">10x</div>
-            <div class="label">Faster Document Review<br><strong>15 hrs → 3 min</strong></div>
-          </div>
-          <div class="impact-item">
-            <div class="number">30s</div>
-            <div class="label">RFI Response Drafting<br><strong>vs. 2–4 hours</strong></div>
-          </div>
-          <div class="impact-item">
-            <div class="number">$3K</div>
-            <div class="label">White-Label Tier / mo<br><strong>$36K ARR per client</strong></div>
-          </div>
-          <div class="impact-item">
-            <div class="number">$2K</div>
-            <div class="label">Pure Margin / mo<br><strong>Per GC client resale</strong></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ FEATURES ═══ -->
-    <section id="features">
-      <div class="reveal">
-        <p class="section-label">All Features</p>
-        <h2 class="section-title">Everything You Need to Sell AI to VDC Agencies</h2>
-        <p class="section-desc">
-          From multi-document RAG to contradiction detection to white-label resale.
-          Built for production. Built for security. Built for scale.
-        </p>
-      </div>
-      <div class="features-wrap">
-
-        <div class="feature-category reveal">
-          <h3>🧠 Core AI Capabilities</h3>
-          <div class="feature-grid">
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Multi-Document RAG</h4>
-              <p>Upload an entire project document set and ask natural language questions. Every answer is grounded in your documents with cited sources and similarity scores.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Auto-Draft RFI Responses</h4>
-              <p>Paste an RFI question; Medha scans all project docs and drafts a professional TO/FROM/DATE/RE response with full citations — in 30 seconds, not 4 hours.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Drawing-Spec Contradiction Detection</h4>
-              <p>AI scans drawings and specs to flag dimension mismatches, conflicting requirements, and code discrepancies before they reach the field.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Query-Aware Scanning</h4>
-              <p>Uses semantic embedding similarity to only flag contradictions relevant to the user's question — no false positive noise. A 0.35 confidence threshold prevents hallucination.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-category reveal">
-          <h3>📄 Document & Data Engine</h3>
-          <div class="feature-grid">
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Multi-Format Ingestion</h4>
-              <p>PDF, DOCX, TXT, MD. pdfplumber + python-docx with OCR fallback via pytesseract for scanned PDFs. Optional IBM Docling for layout-aware extraction.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Smart Chunking & Embeddings</h4>
-              <p>512-character chunks with 128-character overlap. all-mpnet-base-v2 (768-dim) embeddings with cosine similarity search. Stored per-project for clean isolation.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Confidence Thresholding</h4>
-              <p>Queries scoring below 0.35 similarity get an explicit "low confidence" message instead of a fabricated answer. No hallucination. No guesswork.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Per-Project Isolation</h4>
-              <p>Each project has its own document index, embedding store, and metadata. Clean separation by client. No data bleed between projects.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-category reveal">
-          <h3>🔒 Security & Compliance</h3>
-          <div class="feature-grid">
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Prompt Injection Detection</h4>
-              <p>Scans uploads for jailbreak patterns, system prompt overrides, and DAN-mode attempts. Malicious files rejected and audit-logged before they touch the LLM.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Full Audit Logging</h4>
-              <p>Every upload, query, RFI draft, and deletion is logged with timestamp, project ID, and API key reference. Compliance-ready out of the box.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> API Authentication</h4>
-              <p>Bearer token or X-API-Key header auth. Optional and configurable via API_SECRET environment variable. Your data, your control.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Safety Disclaimers</h4>
-              <p>Every AI-generated answer includes a footer disclaimer. Benchmark suite verifies disclaimer presence on every output.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-category reveal">
-          <h3>🤖 LLM Infrastructure</h3>
-          <div class="feature-grid">
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Multi-Provider LLMs</h4>
-              <p>Priority: Local Qwen2.5-3B → xAI Grok-3 → Groq Llama-3.3-70B → HuggingFace SmolLM2 fallback. Choose speed, privacy, or cost — Medha adapts.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Local LLM Mode</h4>
-              <p>Full offline CPU inference. Auto-downloads Qwen2.5-3B-Instruct Q4_K_M (~1.9GB). 5–15 tok/sec. Zero API keys. Air-gapped projects welcome.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Cloud API Mode</h4>
-              <p>Fast responses via Grok-3 or Groq Llama-3.3-70B for production deployments where speed and accuracy matter most.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Zero-Config Fallback</h4>
-              <p>If no API keys are set and local model isn't available, falls back to tiny HuggingFace model automatically. Medha always works.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-category reveal">
-          <h3>🖥️ Frontend & Experience</h3>
-          <div class="feature-grid">
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Agent Mesh Dashboard</h4>
-              <p>Real-time "Agent Fleet" status showing Curiosity Brain, Document Parser, Contradiction Detector, and RFI Drafter — all streaming live.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Live Activity Log</h4>
-              <p>WebSocket-driven event stream showing ingest, query, RFI, and scan events with timestamps. Watch your documents become intelligence in real time.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Chat with Quick Queries</h4>
-              <p>Pre-built buttons for common questions: HVAC setpoints, fire specs, concrete psi, live loads. One click, one answer, one citation.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Source Citations & Contradiction Banners</h4>
-              <p>Retrieved sources shown alongside every answer with match scores. Collapsible yellow warning banners when contradictions are detected.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Drag-and-Drop Inbox</h4>
-              <p>Upload zone with document type selector: drawing, spec, RFI, submittal, addendum. The Inbox Watcher auto-triggers ingestion workflows.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Zero-Build Frontend</h4>
-              <p>Pure vanilla JS + Tailwind CDN. No npm. No webpack. No framework lock-in. Deploy anywhere in minutes.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-category reveal">
-          <h3>🔌 Agent Mesh & Automation</h3>
-          <div class="feature-grid">
-            <div class="feature-card">
-              <h4><span class="check">✓</span> WebSocket Agent Bridge</h4>
-              <p>Real-time events: query_result, rfi_result, scan_result, document_ingested, workflow_complete. Your frontend stays in sync.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Agent Orchestrator</h4>
-              <p>Coordinates specialized agents: ingestor, retriever, contradiction engine, RFI drafter. Each does one thing perfectly.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Inbox Watcher</h4>
-              <p>Monitors a shared inbox directory and auto-triggers document ingestion workflows on new files. Set it and forget it.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-category reveal">
-          <h3>🧪 Testing & Benchmarking</h3>
-          <div class="feature-grid">
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Integration Test Suite</h4>
-              <p>End-to-end tests for health, project CRUD, document upload, query, RFI draft, and contradiction scan.</p>
-            </div>
-            <div class="feature-card">
-              <h4><span class="check">✓</span> Benchmark Suite</h4>
-              <p>Scores answers on retrieval quality, factual accuracy, citation quality, and safety. Outputs JSON report before every deployment.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ═══ HOW IT WORKS ═══ -->
-    <section id="how">
-      <div class="reveal">
-        <p class="section-label">How It Works</p>
-        <h2 class="section-title">From Document Dump to Intelligence in Four Steps</h2>
-      </div>
-      <div class="steps">
-        <div class="step reveal">
-          <span class="step-num">Step 01</span>
-          <div>
-            <h4>Create a Project & Upload Documents</h4>
-            <p>Drop PDFs, DOCX, TXT, or MD files into the inbox. Select document types: drawing, spec, RFI, submittal, or addendum. The Inbox Watcher auto-triggers ingestion — no manual processing needed.</p>
-          </div>
-        </div>
-        <div class="step reveal">
-          <span class="step-num">Step 02</span>
-          <div>
-            <h4>Parse, Chunk & Embed</h4>
-            <p>Documents are parsed (pdfplumber / Docling), split into 512-char overlapping chunks, and embedded with all-mpnet-base-v2. Vectors are stored per-project with clean client isolation.</p>
-          </div>
-        </div>
-        <div class="step reveal">
-          <span class="step-num">Step 03</span>
-          <div>
-            <h4>Query with Natural Language</h4>
-            <p>Ask anything: "What is the concrete strength for columns?" The retriever finds the most relevant chunks via cosine similarity, and the LLM synthesizes a cited answer — grounded, not guessed.</p>
-          </div>
-        </div>
-        <div class="step reveal">
-          <span class="step-num">Step 04</span>
-          <div>
-            <h4>Detect Contradictions & Draft RFIs</h4>
-            <p>The contradiction engine scans retrieved chunks for numeric mismatches (psi, psf, ft, in, °F, gpm, cfm). The RFI drafter auto-generates professional responses with full citations — ready to send.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ TARGET AGENCIES ═══ -->
-    <section id="agencies">
-      <div class="reveal">
-        <p class="section-label">Who We're Reaching Out To</p>
-        <h2 class="section-title">VDC Agencies & Construction Firms Using Medha</h2>
-        <p class="section-desc">
-          We're actively partnering with VDC agencies, BIM consultancies, and forward-thinking GCs
-          who want to offer AI document intelligence to their clients. Here are the types of firms
-          already in our outreach pipeline.
-        </p>
-      </div>
-      <div class="agency-band reveal">
-        <div class="agency-grid">
-          <div class="agency">
-            <h5>Turner Construction</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/turner-construction-company" target="_blank">LinkedIn</a>
-              <a href="https://x.com/turner_talk" target="_blank">Twitter</a>
-              <a href="https://instagram.com/turnerconstructioncompany" target="_blank">Instagram</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Clark Construction</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/clarkconstructiongroup" target="_blank">LinkedIn</a>
-              <a href="https://x.com/ClarkBuilds" target="_blank">Twitter</a>
-              <a href="https://instagram.com/clarkbuilds" target="_blank">Instagram</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Hensel Phelps</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/hensel-phelps-construction-co-" target="_blank">LinkedIn</a>
-              <a href="https://x.com/henselphelps" target="_blank">Twitter</a>
-              <a href="https://instagram.com/henselphelps" target="_blank">Instagram</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Barton Malow</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/bartonmalow" target="_blank">LinkedIn</a>
-              <a href="https://instagram.com/bartonmalow" target="_blank">Instagram</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Mortenson</h5>
-            <div class="links">
-              <a href="https://mortenson.com/careers" target="_blank">Careers</a>
-              <a href="https://linkedin.com/company/mortenson" target="_blank">LinkedIn</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Kiewit Corporation</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/kiewit" target="_blank">LinkedIn</a>
-              <a href="https://kiewit.com" target="_blank">Website</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Powerkh</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/powerkh" target="_blank">LinkedIn</a>
-              <a href="https://instagram.com/powerkh_com" target="_blank">Instagram</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Haskell</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/the-haskell-company" target="_blank">LinkedIn</a>
-              <a href="https://x.com/HaskellCo" target="_blank">Twitter</a>
-              <a href="https://instagram.com/haskellco" target="_blank">Instagram</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Alston Construction</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/alston-construction" target="_blank">LinkedIn</a>
-              <a href="https://instagram.com/alstonconstruction" target="_blank">Instagram</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Worth & Company</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/worth-and-company" target="_blank">LinkedIn</a>
-              <a href="https://instagram.com/worthandcompanyinc" target="_blank">Instagram</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>P1 Group</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/p1-group-inc-" target="_blank">LinkedIn</a>
-              <a href="https://instagram.com/p1_group_inc" target="_blank">Instagram</a>
-            </div>
-          </div>
-          <div class="agency">
-            <h5>Weifield Group</h5>
-            <div class="links">
-              <a href="https://linkedin.com/company/weifield-group-contracting" target="_blank">LinkedIn</a>
-              <a href="https://x.com/weifield" target="_blank">Twitter</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ QUOTE ═══ -->
-    <section class="quote-section reveal">
-      <blockquote>
-        "The first AI product you can sell to VDC agencies <span>TODAY</span>.<br>
-        Construction's semantics layer is unowned.<br>
-        Medha is here to own it."
-      </blockquote>
-      <cite>— Trelo Labs</cite>
-    </section>
-
-    <!-- ═══ KEYWORDS ═══ -->
-    <div class="keywords reveal">
-      <span class="keyword">AI Document Intelligence</span>
-      <span class="keyword">Construction RFI Automation</span>
-      <span class="keyword">Drawing Spec Contradiction Detection</span>
-      <span class="keyword">VDC AI Assistant</span>
-      <span class="keyword">BIM Coordinator Tools</span>
-      <span class="keyword">White Label Construction AI</span>
-      <span class="keyword">Construction Document QA</span>
-      <span class="keyword">Preconstruction Software</span>
-      <span class="keyword">Generative UI Construction</span>
-      <span class="keyword">Agent Mesh Architecture</span>
-      <span class="keyword">Construction Knowledge Graph</span>
-      <span class="keyword">LTX Studio</span>
-      <span class="keyword">Modal Labs</span>
-      <span class="keyword">HyperFrames</span>
-      <span class="keyword">Trelo Labs</span>
-      <span class="keyword">Medha</span>
+      <a href="#contact" class="nav-cta">Start a conversation</a>
     </div>
+  </nav>
 
-    <!-- ═══ FOOTER ═══ -->
-    <footer>
-      <span class="live-dot"></span>
-      Medha by Trelo Labs — AI document intelligence for the built world.
-      <br><br>
-      <small style="color: var(--fg-dim); opacity: 0.6;">
-        Built with RAG + Vector Embeddings + Multi-Provider LLMs. White-label ready. Deploy anywhere.
-      </small>
-    </footer>
-  </div>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Production release this Sunday · Try before you buy</p>
+      <h1>The contradiction is already in the documents. Most teams find it too late.</h1>
+      <p>Medha reads your drawings, specs, RFIs, and addenda as one connected set, and flags the mismatches that slip past manual review. This Sunday we release to production — and this week you can reserve a <strong>free, customized pilot</strong> on your own documents before any pricing conversation.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Reserve your free pilot</a>
+        <a href="#pilot" class="btn btn-secondary">See how the pilot works</a>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <section id="problem">
+      <div class="container">
+        <p class="eyebrow">The problem</p>
+        <h2>The documents should tell one story.</h2>
+        <p class="section-lead">Every construction project starts with the same hope: this time, the documents will line up. Then the drawings, specs, addenda, and RFIs arrive from different teams, in different versions, and the contradictions start to hide.</p>
+        <div class="cards">
+          <div class="card card-warning">
+            <h3>Drawing vs. spec mismatch</h3>
+            <p>The structural spec calls for 5,000 psi concrete. The drawing notes show 4,000 psi. Which one governs?</p>
+          </div>
+          <div class="card">
+            <h3>Buried answers</h3>
+            <p>A single question can mean opening fifteen PDFs, checking three addenda, and still not being sure you found the latest revision.</p>
+          </div>
+          <div class="card">
+            <h3>RFI avalanche</h3>
+            <p>When documents disagree, coordination turns into a stream of RFIs that eat time from engineers, coordinators, and field staff.</p>
+          </div>
+          <div class="card card-warning">
+            <h3>Late surprises</h3>
+            <p>The cheapest place to catch a contradiction is before ground breaks. The most expensive place is in the field.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cost">
+      <div class="container">
+        <p class="eyebrow">The cost</p>
+        <h2>One missed contradiction can cost more than a year of software.</h2>
+        <p class="section-lead">Research ties document errors directly to rework, delays, and claims. The cost rarely shows up as a line item until it is already in the field.</p>
+        <div class="stats">
+          <div class="stat">
+            <strong>Rework is expensive</strong>
+            <span>Document-related errors are a leading driver of construction rework and cost overrun.</span>
+          </div>
+          <div class="stat">
+            <strong>RFIs multiply</strong>
+            <span>When answers are buried across disconnected documents, teams generate more RFIs than necessary.</span>
+          </div>
+          <div class="stat">
+            <strong>Change orders trace back</strong>
+            <span>Many change orders originate in contradictions that could have been caught during preconstruction.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="who">
+      <div class="container">
+        <p class="eyebrow">Who it's for</p>
+        <h2>Built for the people who have to find the answer.</h2>
+        <div class="personas">
+          <div class="persona">
+            <h3>VDC / BIM Coordinators</h3>
+            <p>You spend hours hunting for the right spec, crossing drawings, and writing RFIs. You need a second pair of eyes that has already read everything.</p>
+          </div>
+          <div class="persona">
+            <h3>GC Project Engineers</h3>
+            <p>You are the bridge between the field and the documents. You need to know about contradictions before the foreman does.</p>
+          </div>
+          <div class="persona">
+            <h3>Preconstruction Directors</h3>
+            <p>You own risk before ground breaks. You want fewer surprises in the submittal log and a cleaner handoff to operations.</p>
+          </div>
+          <div class="persona">
+            <h3>VDC Agency Owners</h3>
+            <p>Your clients ask if you "do AI." You need a real capability you can stand behind, not a chatbot demo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what">
+      <div class="container">
+        <p class="eyebrow">How it works</p>
+        <h2>Four steps. No new workflow to learn.</h2>
+        <div class="steps">
+          <div class="step">
+            <div>
+              <h3>Upload your project documents</h3>
+              <p>PDFs, Word files, text, and scanned sheets. One project, one connected index. No manual tagging required.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Ask in plain language</h3>
+              <p>"What concrete strength do the column notes require?" Get an answer with the source page attached, not a guess.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Get contradiction flags</h3>
+              <p>When two documents disagree, Medha surfaces both sides so you can decide before it becomes an RFI.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Export findings</h3>
+              <p>Pull flags into your existing workflow: RFIs, submittals, coordination meetings, or reports.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pilot">
+      <div class="container">
+        <p class="eyebrow">Try before you buy</p>
+        <h2>We will customize Medha to your documents before you pay.</h2>
+        <p class="section-lead">No generic demo. We will load a real set of your drawings and specs, tune the search to your document structure, and show you the contradictions Medha finds. You decide if it is worth a subscription.</p>
+        <div class="steps">
+          <div class="step">
+            <div>
+              <h3>Send us a document set</h3>
+              <p>Pick one active or recent project. Upload drawings, specs, RFIs, and addenda — or share a secure link. We handle the ingest.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>We tune it to your company</h3>
+              <p>Every firm writes specs differently. We adjust chunking, search thresholds, and contradiction rules to match how your documents are organized.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Run it live with your team</h3>
+              <p>Ask real questions. Look for real contradictions. If Medha does not save time in the first week, there is no obligation to continue.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Decide after you see the value</h3>
+              <p>Pricing only comes up once you have seen Medha work on your project. No upfront commitment required.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust">
+      <div class="container">
+        <p class="eyebrow">Why Medha</p>
+        <h2>Built for construction, not for hype.</h2>
+        <ul class="trust-list">
+          <li>
+            <strong>Cited answers</strong>
+            <span>Every response points back to the source document and page. No black box.</span>
+          </li>
+          <li>
+            <strong>Confidence thresholds</strong>
+            <span>If the answer is not in the documents, Medha says so instead of fabricating one.</span>
+          </li>
+          <li>
+            <strong>Per-project isolation</strong>
+            <span>Each project gets its own index. No data bleeding between clients or jobs.</span>
+          </li>
+          <li>
+            <strong>Local or cloud</strong>
+            <span>Run offline on your own hardware, or use cloud models. Your infrastructure, your choice.</span>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <p class="eyebrow">Questions</p>
+        <h2>You might be wondering.</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Will this replace my BIM coordinators?</h3>
+            <p>No. Medha is a second pair of eyes. Your team still makes the judgment calls; the tool just finds the contradictions faster.</p>
+          </div>
+          <div class="card">
+            <h3>What documents can we upload?</h3>
+            <p>PDFs, Word files, plain text, and scanned sheets. Each project gets its own isolated index so client data stays separate.</p>
+          </div>
+          <div class="card">
+            <h3>How long before we see value?</h3>
+            <p>Upload a document set and ask a question in the same hour. The first useful contradiction flag usually shows up during the first project.</p>
+          </div>
+          <div class="card">
+            <h3>Do we need to train a model?</h3>
+            <p>No custom training required. Medha uses retrieval-based search over your documents, so it works with your existing specs and drawings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div class="contact-copy">
+          <p class="eyebrow">Reserve your pilot</p>
+          <h2>Try Medha on your documents this week.</h2>
+          <p>We are accepting a small number of free pilots ahead of Sunday's production release. Tell us about your project and we will set up a customized trial on your own drawings and specs.</p>
+          <p>You will get a reply from a real person — not a nurture sequence — within one business day.</p>
+          <p class="cite">Prefer email? <a href="mailto:shivaramiitmb085@gmail.com?subject=Medha%20document%20review%20question">shivaramiitmb085@gmail.com</a></p>
+          <p class="cite"><a href="https://www.linkedin.com/in/shivarammorigala/" target="_blank" rel="noopener">LinkedIn — Shivaram Morigala</a></p>
+        </div>
+        <form id="contactForm" action="#" method="GET">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Jordan Martinez" required>
+          </label>
+          <label>
+            Company
+            <input type="text" name="company" placeholder="Your firm or agency" required>
+          </label>
+          <label>
+            Role
+            <select name="role" required>
+              <option value="" disabled selected>Select your role</option>
+              <option>VDC / BIM Coordinator</option>
+              <option>BIM / VDC Manager</option>
+              <option>GC Project Engineer</option>
+              <option>Preconstruction Director</option>
+              <option>VDC Agency Owner</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="jordan@company.com" required>
+          </label>
+          <label>
+            Which project should we pilot on?
+            <textarea name="message" placeholder="e.g., 250-unit multifamily job in Dallas; drawings + mechanical + structural specs; biggest pain is spec-drawing mismatches on MEP..." required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Start the conversation</button>
+          <p class="alt">This will open your email app with a pre-filled message.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Medha</strong> by Trayini.ai</p>
+      <p>Construction document review, without the scavenger hunt.</p>
+      <p style="margin-top: 0.75rem;">Built by <a href="https://www.linkedin.com/in/shivarammorigala/" target="_blank" rel="noopener">Shivaram Morigala</a> · <a href="mailto:shivaramiitmb085@gmail.com">shivaramiitmb085@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!--
+    Form handler: builds a mailto link from the form fields.
+    No backend required; keeps the page static and portable.
+  -->
   <script>
-    // Scroll Reveal
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value.trim();
+      const company = form.company.value.trim();
+      const role = form.role.value;
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
 
-    // Pixel Stream Canvas
-    const canvas = document.getElementById('pixelCanvas');
-    const ctx = canvas.getContext('2d');
-    let w, h, cols, rows;
-    const cellSize = 8;
-    let t = 0;
+      const subject = `Medha pilot request from ${name} at ${company}`;
+      const body = `Name: ${name}\nCompany: ${company}\nRole: ${role}\nEmail: ${email}\n\nProject for pilot:\n${message}`;
 
-    function resize() {
-      const rect = canvas.parentElement.getBoundingClientRect();
-      w = rect.width; h = rect.height;
-      canvas.width = w; canvas.height = h;
-      cols = Math.ceil(w / cellSize);
-      rows = Math.ceil(h / cellSize);
-    }
-    resize();
-    window.addEventListener('resize', resize);
-
-    function draw() {
-      t += 0.015;
-      ctx.fillStyle = '#0d0d14';
-      ctx.fillRect(0, 0, w, h);
-
-      for (let y = 0; y < rows; y++) {
-        for (let x = 0; x < cols; x++) {
-          const nx = x / cols, ny = y / rows;
-          const noise = Math.sin(nx * 6 + t) * Math.cos(ny * 4 - t * 0.7) * Math.sin((nx + ny) * 3 + t * 1.3);
-          const brightness = (noise + 1) / 2;
-
-          if (brightness > 0.55) {
-            const intensity = (brightness - 0.55) / 0.45;
-            const g = Math.floor(180 + intensity * 75);
-            const b = Math.floor(160 + intensity * 95);
-            ctx.fillStyle = `rgba(0,${g},${b},${intensity * 0.9})`;
-            ctx.fillRect(x * cellSize, y * cellSize, cellSize - 1, cellSize - 1);
-          } else if (brightness > 0.45) {
-            const intensity = (brightness - 0.45) / 0.1;
-            ctx.fillStyle = `rgba(255, 107, 157, ${intensity * 0.3})`;
-            ctx.fillRect(x * cellSize, y * cellSize, cellSize - 1, cellSize - 1);
-          }
-        }
-      }
-
-      const scanY = ((t * 80) % (h + 40)) - 20;
-      const grad = ctx.createLinearGradient(0, scanY - 20, 0, scanY + 20);
-      grad.addColorStop(0, 'rgba(0,240,200,0)');
-      grad.addColorStop(0.5, 'rgba(0,240,200,0.08)');
-      grad.addColorStop(1, 'rgba(0,240,200,0)');
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, scanY - 20, w, 40);
-
-      requestAnimationFrame(draw);
-    }
-    draw();
+      window.location.href = `mailto:shivaramiitmb085@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
   </script>
+
 </body>
 </html>
