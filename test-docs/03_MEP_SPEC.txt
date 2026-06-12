@@ -1,0 +1,62 @@
+PROJECT: HIGHRISE TOWER - PHASE 2
+MECHANICAL SPECIFICATIONS
+SECTION 23 00 00 - HEATING, VENTILATION, AND AIR CONDITIONING
+
+1. GENERAL REQUIREMENTS
+   1.1 All HVAC work shall conform to ASHRAE 90.1-2019 and local mechanical code.
+   1.2 All equipment shall be Energy Star rated where available.
+   1.3 Contractor shall provide 1-year warranty on all equipment and workmanship.
+
+2. DUCTWORK REQUIREMENTS
+   2.1 Supply ductwork: galvanized steel, minimum 26 gauge for ducts up to 30 inches.
+   2.2 Return ductwork: galvanized steel, minimum 24 gauge.
+   2.3 Ductwork above 30 inches: reinforced with angle iron supports at 6 feet on center.
+   2.4 All ductwork shall be internally lined with 1-inch fiberglass insulation where noted.
+   2.5 Ductwork clearance to structure: 8 inches minimum from all beams and columns.
+   2.6 Ductwork clearance to slab soffit: 6 inches minimum for maintenance access.
+   2.7 Flexible ductwork: maximum 5 feet in length, UL 181 Class 1.
+
+3. AIR HANDLING UNITS
+   3.1 AHU-1 (Roof): 25,000 CFM capacity, variable frequency drive.
+   3.2 AHU-2 through AHU-5 (Mechanical floors): 15,000 CFM each.
+   3.3 All AHUs shall have MERV 13 filters minimum.
+   3.4 Outside air intake: 15% minimum per ASHRAE 62.1.
+   3.5 AHU casing: double-wall construction with 2-inch insulation.
+
+4. DIFFUSERS AND GRILLES
+   4.1 Ceiling diffusers: linear slot type, aluminum finish.
+   4.2 Return grilles: perforated face, hinged for filter access.
+   4.3 Diffuser spacing: maximum 10 feet on center in open areas.
+   4.4 Perimeter zones: dedicated diffusers at 8 feet on center.
+
+5. CONTROLS
+   5.1 Building Automation System (BAS): BACnet protocol, IP-based.
+   5.2 Zone temperature setpoint: 72 degrees Fahrenheit cooling, 70 degrees Fahrenheit heating.
+   5.3 Occupancy sensors: auto- setback to 78 degrees Fahrenheit unoccupied.
+   5.4 CO2 sensors required in all conference rooms and assembly areas.
+   5.5 All control wiring in conduit, minimum 3/4 inch EMT.
+
+6. INSULATION
+   6.1 Ductwork insulation: 2-inch fiberglass, R-8 minimum.
+   6.2 Pipe insulation: 1-inch fiberglass for chilled water, 1.5-inch for hot water.
+   6.3 Insulation jacket: UV-resistant PVC for all exterior exposed piping.
+   6.4 Fire-rated enclosures: 2-hour rating where penetrating rated assemblies.
+
+---
+SECTION 22 00 00 - PLUMBING
+
+1. GENERAL
+   1.1 All plumbing shall conform to IPC 2021 and local amendments.
+   1.2 Water service: 6-inch domestic, 8-inch fire protection from city main.
+   1.3 All fixtures shall be low-flow, WaterSense labeled.
+
+2. PIPE MATERIALS
+   2.1 Domestic water: Type L copper above ground, ductile iron below ground.
+   2.2 Sanitary waste: PVC Schedule 40 above ground, PVC SDR 35 below ground.
+   2.3 Storm drainage: PVC Schedule 40, sized per local code.
+   2.4 Natural gas: black steel, threaded joints, pressure tested at 30 psi.
+
+3. WATER HEATERS
+   3.1 Domestic hot water: 2 gas-fired units, 100-gallon capacity each.
+   3.2 Temperature setting: 120 degrees Fahrenheit at fixture.
+   3.3 Circulation pump: continuous recirculation, timer-controlled.

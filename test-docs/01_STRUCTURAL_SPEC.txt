@@ -1,0 +1,64 @@
+PROJECT: HIGHRISE TOWER - PHASE 2
+STRUCTURAL SPECIFICATIONS
+SECTION 03 30 00 - CAST-IN-PLACE CONCRETE
+
+1. GENERAL REQUIREMENTS
+   1.1 All concrete work shall conform to ACI 318-19 Building Code Requirements for Structural Concrete.
+   1.2 Concrete shall be supplied by a certified ready-mix supplier.
+   1.3 All pours require 48-hour advance notice to the structural engineer.
+
+2. CONCRETE STRENGTH REQUIREMENTS
+   2.1 Column concrete strength: 6,000 psi at 28 days (f'c = 6,000 psi).
+   2.2 Beam concrete strength: 5,000 psi at 28 days (f'c = 5,000 psi).
+   2.3 Slab-on-grade concrete strength: 4,000 psi at 28 days (f'c = 4,000 psi).
+   2.4 Elevated slab concrete strength: 5,000 psi at 28 days (f'c = 5,000 psi).
+   2.5 Foundation mat concrete strength: 6,000 psi at 28 days (f'c = 6,000 psi).
+
+3. SLAB THICKNESS REQUIREMENTS
+   3.1 Typical floor slab thickness: 8 inches minimum.
+   3.2 Transfer slab thickness: 14 inches minimum.
+   3.3 Slab-on-grade thickness: 6 inches minimum.
+   3.4 Roof slab thickness: 10 inches minimum.
+   3.5 All slab thicknesses subject to structural engineer review and approval.
+
+4. REINFORCEMENT REQUIREMENTS
+   4.1 Column vertical bars: #11 grade 60 rebar, spacing not exceeding 12 inches.
+   4.2 Beam stirrups: #4 grade 60 rebar, spacing 6 inches on center.
+   4.3 Slab reinforcing: #5 grade 60 rebar at 12 inches on center both ways.
+   4.4 Temperature reinforcement: #4 grade 60 rebar at 18 inches on center.
+   4.5 All rebar shall be epoxy-coated where exposed to moisture.
+
+5. FORMWORK REQUIREMENTS
+   5.1 Formwork shall be designed for full hydrostatic pressure plus 25 psf live load.
+   5.2 Deflection limit: L/360 for visible surfaces, L/480 for architectural finishes.
+   5.3 Form release agent shall be non-staining and VOC-compliant.
+
+6. CURING REQUIREMENTS
+   6.1 Minimum curing period: 7 days for all structural elements.
+   6.2 Curing compound: ASTM C309 Type 1, Class A.
+   6.3 Temperature monitoring required for all pours exceeding 100 cubic yards.
+
+7. QUALITY CONTROL
+   7.1 Test cylinders: 1 set per 100 cubic yards or per pour, whichever is more frequent.
+   7.2 Slump test: Every truck, must be between 3 and 6 inches.
+   7.3 Air content: 4% to 7% for all exterior slabs.
+   7.4 Core testing required if any cylinder fails below 90% of specified strength.
+
+---
+SECTION 05 12 00 - STRUCTURAL STEEL
+
+1. GENERAL
+   1.1 All structural steel shall conform to ASTM A992 Grade 50.
+   1.2 Welding shall conform to AWS D1.1.
+   1.3 All connections require shop drawings approved by the engineer of record.
+
+2. STEEL MEMBERS
+   2.1 Wide flange beams: W24x55 minimum for typical floors.
+   2.2 Columns: W14x90 minimum for typical columns.
+   2.3 Transfer girders: W36x160 minimum.
+   2.4 All steel shall be primed with SSPC-SP6 commercial blast cleaning.
+
+3. FIREPROOFING
+   3.1 Spray-applied fire-resistive material (SFRM) required on all steel members.
+   3.2 Fire rating: 2-hour rating for all primary structural members.
+   3.3 SFRM thickness: 1.5 inches minimum on beams, 2.0 inches on columns.

@@ -1,0 +1,70 @@
+PROJECT: HIGHRISE TOWER - PHASE 2
+STRUCTURAL DRAWING SET S-101
+TYPICAL FLOOR FRAMING PLAN - LEVELS 5 THROUGH 20
+
+DRAWING NOTES:
+1. All dimensions are in feet and inches unless otherwise noted.
+2. All concrete shall be normal weight, 145 pcf.
+3. Refer to structural specifications for all material requirements.
+4. All rebar lap splices per ACI 318-19, Class B.
+
+COLUMN SCHEDULE:
+C-1 through C-12: 24" x 24" reinforced concrete columns
+- Concrete strength: 5,000 psi (f'c = 5,000 psi) 
+- Vertical bars: 12-#11 grade 60
+- Tie spacing: 6" o.c.
+
+C-13 through C-20: 30" x 30" reinforced concrete columns  
+- Concrete strength: 6,000 psi (f'c = 6,000 psi)
+- Vertical bars: 16-#11 grade 60
+- Tie spacing: 4" o.c.
+
+BEAM SCHEDULE:
+B-1 through B-8: 24" x 18" reinforced concrete beams
+- Concrete strength: 5,000 psi (f'c = 5,000 psi)
+- Bottom bars: 4-#9 continuous
+- Stirrups: #4 at 6" o.c.
+
+B-9 through B-12: 30" x 24" transfer beams
+- Concrete strength: 6,000 psi (f'c = 6,000 psi)
+- Bottom bars: 6-#11 continuous
+- Stirrups: #5 at 4" o.c.
+
+SLAB DETAILS:
+Typical elevated slab: 6 inches thick
+- Reinforcing: #5 at 12" o.c. both ways
+- Top bars at columns per detail A
+- Concrete strength: 5,000 psi (f'c = 5,000 psi)
+
+Transfer slab: 14 inches thick
+- Reinforcing: #6 at 10" o.c. both ways
+- Post-tensioned tendons per PT-001
+- Concrete strength: 6,000 psi (f'c = 6,000 psi)
+
+Roof slab: 10 inches thick
+- Reinforcing: #5 at 12" o.c. both ways
+- Slope 1/4" per foot to drains
+- Concrete strength: 5,000 psi (f'c = 5,000 psi)
+
+FOUNDATION:
+Mat foundation: 48 inches thick
+- Concrete strength: 6,000 psi (f'c = 6,000 psi)
+- Bottom reinforcing: #8 at 8" o.c. both ways
+- Top reinforcing: #8 at 8" o.c. both ways
+- Dowels into columns per detail B
+
+SECTION DETAILS:
+Detail A - Column Capital:
+- Slab thickens to 10 inches at column head
+- Additional top bars: 4-#6 each way
+- Dimension from column face: 36 inches all sides
+
+Detail B - Mat Foundation Dowel:
+- #11 dowels, 48 inches long
+- Standard hooks per ACI 318
+- Lap splice with column bars: 36 inches minimum
+
+DETAIL C - BEAM TO COLUMN CONNECTION:
+- Beam bottom bars extend 6 inches minimum into column core
+- Column ties continue through joint per ACI 318
+- Concrete placement sequence: columns first, beams second

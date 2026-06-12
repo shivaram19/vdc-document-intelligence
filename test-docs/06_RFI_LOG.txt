@@ -1,0 +1,63 @@
+PROJECT: HIGHRISE TOWER - PHASE 2
+RFI LOG - ACTIVE REQUESTS
+
+RFI-042:
+Date Submitted: March 28, 2026
+From: ABC Concrete (Subcontractor)
+To: Structural Engineer
+Question: Structural drawing S-101 shows slab thickness of 6 inches at typical floors. Specification Section 03 30 00 requires 8 inches minimum. Which governs?
+Status: PENDING RESPONSE
+
+RFI-043:
+Date Submitted: April 2, 2026
+From: MEP Systems Inc.
+To: Architect
+Question: The mechanical room on Level 3 has a beam depth of 30 inches per S-101. Our AHU-2 unit is 36 inches tall. Can we route ductwork below the beam with only 6-inch clearance as shown on drawing M-201?
+Status: PENDING RESPONSE
+
+RFI-044:
+Date Submitted: April 5, 2026
+From: FirePro Contractors
+To: Architect / Fire Marshal
+Question: Fire protection spec calls for 155-degree heads in office areas. The architect's interior spec calls for chrome concealed heads. Are concealed heads acceptable at 155-degree rating?
+Status: ANSWERED - Concealed heads acceptable per FM Global approval. See response letter dated April 8.
+
+RFI-045:
+Date Submitted: April 10, 2026
+From: SteelFab Corp
+To: Structural Engineer
+Question: Drawing S-101 calls for W24x55 beams. Our supplier can only provide W24x62 in the required grade within the schedule. Is W24x62 acceptable?
+Status: PENDING RESPONSE
+
+RFI-046:
+Date Submitted: April 12, 2026
+From: General Contractor
+To: Architect
+Question: Addendum 3 revised corridor doors from 45-minute to 90-minute rating. We have already ordered 45-minute doors for floors 5-10. Can we use the 45-minute doors for floors 5-10 and 90-minute for 11-20, or must all be 90-minute?
+Status: PENDING RESPONSE
+
+RFI-047:
+Date Submitted: April 14, 2026
+From: Electrical Contractor
+To: Architect
+Question: Electrical room doors were 60-minute in spec, now 90-minute in Addendum 3. The electrical rooms are not rated enclosures per drawing A-401. Why do the doors need 90-minute rating?
+Status: PENDING RESPONSE
+
+RFI-048:
+Date Submitted: April 16, 2026
+From: Plumbing Contractor
+To: MEP Engineer
+Question: Domestic hot water spec calls for 120 degrees at fixture. The plumbing code allows up to 140 degrees. Can we set water heaters to 130 degrees to reduce bacteria risk?
+Status: PENDING RESPONSE
+
+RFI-049:
+Date Submitted: April 18, 2026
+From: Drywall Contractor
+To: Architect
+Question: The fire-rated corridor wall assembly per drawing A-302 shows 1-hour rating. The door schedule now calls for 90-minute doors. Does the wall assembly need to be upgraded to 2-hour to match the 90-minute door requirement?
+Status: PENDING RESPONSE
+
+---
+CLOSED RFIs:
+
+RFI-001 through RFI-041: Resolved. See RFI response binder Vol. 1-3.

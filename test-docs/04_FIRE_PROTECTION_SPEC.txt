@@ -1,0 +1,70 @@
+PROJECT: HIGHRISE TOWER - PHASE 2
+FIRE PROTECTION SPECIFICATIONS
+SECTION 21 13 00 - FIRE SUPPRESSION SPRINKLERS
+
+1. GENERAL REQUIREMENTS
+   1.1 All fire protection work shall conform to NFPA 13 (2019 Edition).
+   1.2 All work shall be performed by a licensed fire protection contractor.
+   1.3 Hydraulic calculations required for all systems.
+   1.4 Water supply: 8-inch dedicated fire service from city main.
+
+2. SPRINKLER SYSTEM DESIGN
+   2.1 System type: Wet pipe throughout, except dry pipe in unheated areas.
+   2.2 Design density: 0.15 gpm/sf for light hazard areas.
+   2.3 Design density: 0.20 gpm/sf for ordinary hazard Group 1 areas.
+   2.4 Design density: 0.30 gpm/sf for ordinary hazard Group 2 areas.
+   2.5 Maximum protected area per sprinkler head: 225 square feet.
+   2.6 Sprinkler spacing: maximum 15 feet on center.
+   2.7 Sprinkler spacing from walls: maximum 7.5 feet.
+   2.8 Minimum operating pressure: 7 psi at most remote head.
+
+3. SPRINKLER HEAD REQUIREMENTS
+   3.1 Office areas: quick-response, pendent, 155 degrees Fahrenheit rated.
+   3.2 Corridors: quick-response, sidewall, 155 degrees Fahrenheit rated.
+   3.3 Mechanical rooms: standard response, upright, 175 degrees Fahrenheit rated.
+   3.4 Parking garage: standard response, upright, 200 degrees Fahrenheit rated.
+   3.5 All sprinkler heads: chrome finish unless noted otherwise.
+
+4. PIPE AND FITTINGS
+   4.1 Above-ground pipe: Schedule 40 steel, threaded or grooved.
+   4.2 Fittings: malleable iron threaded, 300 psi rated.
+   4.3 Hangers: adjustable swivel ring, spaced per NFPA 13 table.
+   4.4 Pipe size: minimum 1-inch for branch lines, 6-inch for main risers.
+   4.5 Pipe clearance to structure: 6 inches minimum from all beams and decks.
+
+5. FIRE PUMP
+   5.1 Fire pump: electric-driven, 1,000 gpm rated capacity.
+   5.2 Fire pump pressure: 125 psi rated at churn.
+   5.3 Jockey pump: 15 gpm, maintains system pressure.
+   5.4 Controller: full service, with manual start and automatic transfer.
+
+6. STANDPIPES
+   6.1 Class I standpipe: 2.5-inch outlet, one per floor at stairwell.
+   6.2 Standpipe pressure: 100 psi residual at topmost outlet.
+   6.3 Flow rate: 500 gpm for first standpipe, 250 gpm for each additional.
+
+---
+SECTION 08 71 00 - FIRE-RATED DOOR ASSEMBLIES
+
+1. GENERAL
+   1.1 All fire-rated doors shall conform to NFPA 80.
+   1.2 All doors shall be listed and labeled by a recognized testing agency.
+   1.3 Hardware shall be fire-rated and compliant with ADA requirements.
+
+2. DOOR RATINGS
+   2.1 Stairwell doors: 90-minute fire rating, 1.5-hour label.
+   2.2 Corridor doors: 45-minute fire rating, 3/4-hour label.
+   2.3 Mechanical room doors: 90-minute fire rating, 1.5-hour label.
+   2.4 Electrical room doors: 60-minute fire rating, 1-hour label.
+   2.5 Tenant separation doors: 45-minute fire rating, 3/4-hour label.
+
+3. DOOR MATERIALS
+   3.1 Hollow metal doors: 18-gauge steel face, mineral core.
+   3.2 Vision panels: 1/4-inch wired glass in steel frame.
+   3.3 Frames: 16-gauge steel, welded corners.
+   3.4 Seals: intumescent seals at head and jambs.
+
+4. HARDWARE
+   4.1 Closers: heavy-duty, adjustable, 180-degree swing.
+   4.2 Locks: fail-safe electrified mortise, keyed to master system.
+   4.3 Panic hardware: touchpad style on all egress doors.

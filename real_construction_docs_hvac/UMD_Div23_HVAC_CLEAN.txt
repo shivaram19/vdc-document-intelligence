@@ -1,0 +1,2207 @@
+Division 23 - HVAC | Facilities Management 
+ - EXISTING HVAC AIR DISTRIBUTION SYSTEM CLEANING PART 1 - GENERAL
+ RELATED DOCUMENTS A.
+rawings and general provisions of the Contract, including General and Supplementary Conditions and Division 01 Specification Sections, apply to this Section.
+ SUMMARY A.
+ection includes cleaning existing HVAC air-distribution equipment, ducts, plenums, and system components.
+.
+elated Requirements: 1.
+ivision 23 Section "Metal Ducts" for cleaning newly installed metal ducts. 2.
+ivision 23 Section "Testing, Adjusting, Balancing for HVAC" for system flow documentation before cleaning and balancing and following cleaning and restoration. 3.
+ivision 23 Section "Air Duct Accessories" for restoration of opened ducts and plenums with access doors.
+ DEFINITIONS A.
+CAC: American Council for Accredited Certification.
+.
+IHA-LAP: American Industrial Hygiene Association Lab Accreditation Program C.
+SCS: Air systems cleaning specialist.
+.
+ESB: Council of Engineering and Scientific Specialty Boards.
+.
+MI: Certified Microbial Investigator.
+.
+MC: Certified Microbial Consultant.
+.
+MR: Certified Microbial Remediator.
+.
+MRS: Certified Microbial Remediation Supervisor.
+.
+MLAP: Environmental Microbiology Laboratory Accreditation Program.
+.
+EP: Indoor Environmental Professional.
+.
+ICRC: Institute of Inspection, Cleaning, and Restoration Certification.
+.
+ADCA: National Air Duct Cleaners Association.
+ A.
+CTION SUBMITTALS Product Data: 1.
+leaning agents 2.
+ntimicrobial surface treatments ("sealant" for sustainable design submittal purposes).
+ A.
+.
+NFORMATIONAL SUBMITTALS Qualification Data: 1.
+or an ASCS. 2.
+or an IEP. 3.
+or a CMR and a CMRS.
+ield Quality-Control Reports: 1.
+roject's existing conditions. 2.
+valuations and recommendations, including cleanliness verification. 3.
+trategies and procedures plan.
+ A.
+LOSEOUT SUBMITTALS Post-Project report.
+ A.
+.
+UALITY ASSURANCE ASCS Qualifications: A certified member of NADCA. 1.
+ertification: Employ an ASCS certified by NADCA on a full-time basis. 2.
+upervisor Qualifications: Certified as an ASCS by NADCA.
+EP Qualifications: CMI who is certified by ACAC and accredited by CESB.
+.
+EP Qualifications: CMC who is certified by ACAC and accredited by CESB.
+.
+MR Qualifications: Certified by ACAC and accredited by CESB.
+.
+MRS Qualifications: Certified by ACAC and accredited by CESB.
+.
+L Compliance: Comply with UL 181 and UL 181A for fibrous-glass ducts.
+.
+leaning Conference: Conduct conference at Project site. 1.
+eview methods and procedures related to HVAC air-distribution system cleaning, including, but not limited to, review of the cleaning strategies and procedures plan.
+ART 2 - PRODUCTS
+ HVAC CLEANING AGENTS A.
+anufacturers: Subject to compliance with Requirements, available manufacturers offering products that may be incorporated into the Work include, but are not limited to the following: 1.
+pex Engineering Products C 2.
+BJ Environmental Solutions. 3.
+oodway Technologies Corporation. 4.
+u-Calgon. 5.
+uest Vapco Corporation.
+.
+escription: 1.
+ormulated for each specific soiled coil condition that needs remedy. 2.
+ill not corrode or tarnish aluminum, copper, or other metals.
+ ANTIMICROBIAL SURFACE TREATMENT A.
+anufacturers: Subject to compliance with Requirements, available manufacturers offering products that may be incorporated into the Work include, but are not limited to the following: 1.
+io-Cide International, Inc. 2.
+ontec, Inc. 3.
+colab, Inc.
+.
+escription: Specific product selected shall be as recommended by the IEP based on the specific antimicrobial needs of the specific Project conditions. 1.
+ormulated to kill and inhibit growth of microorganisms. 2.
+PA-registered for use in HVAC systems and for the specific application in which it will be used. 3.
+ave no residual action after drying, with zero VOC off-gassing. 4.
+SHA compliant. 5.
+reatment shall dry clear to allow continued visual observation of the treated surface.
+ART 3 - EXECUTION
+ PREPARATION A.
+nspect HVAC air-distribution equipment, ducts, plenums, and system components to determine appropriate methods, tools, and equipment required for performance of the Work.
+.
+erform "Project Evaluation and Recommendation" according to NADCA ACR.
+.
+leaning Plan: Prepare a written plan for air-distribution system cleaning that includes strategies and step-by-step procedures.
+t a minimum, include the following: 1.
+upervisor contact information. 2.
+ork schedule, including location, times, and impact on occupied areas. 3.
+ethods and materials planned for each HVAC component type. 4.
+equired support from other trades. 5.
+quipment and material storage requirements. 6.
+xhaust equipment setup locations.
+.
+xisting Conditions Report: Prepare a written report that documents existing conditions of the systems and equipment.
+nclude documentation of existing conditions, including inspection results, photo images, laboratory results, and interpretations of the laboratory results by an IEP. 1.
+repare written report listing conditions detrimental to performance of the Work.
+.
+roceed with work only after conditions detrimental to performance of the Work have been corrected.
+.
+se the existing service openings, as required for proper cleaning, at various points of the HVAC system for physical and mechanical entry and for inspection.
+.
+omply with NADCA ACR, "Guidelines for Constructing Service Openings in HVAC Systems" Section.
+.
+ark the position of manual volume dampers and air-directional mechanical devices inside the system prior to cleaning.
+ CLEANING A.
+omply with NADCA ACR, including items identified as "recommended," "advised," and "suggested." B.
+erform electrical lockout and tagout according to Owner's standards or authorities having jurisdiction.
+.
+emove non-adhered substances and deposits from within the HVAC system.
+.
+omplete cleaning in accordance with Owner-Contractor agreed-upon scope of work.
+.
+ystems and Components to Be Cleaned: As identified on contract documents.
+.
+ystems and Components to Be Cleaned if duct cleaning is called for within project boundary : 1.
+ir devices for supply and return air. 2.
+ir-terminal units and connections. a.
+AV boxes. b.
+hilled beams. c.
+an coil units. d.
+nit ventilators. e.
+lexible connectors. 3.
+uctwork: a.
+upply-air ducts, including turning vanes and reheat coils, to the air-handling unit. b.
+eturn-air ducts to the air-handling unit. c.
+xhaust-air ducts. d.
+ransfer ducts. 4.
+asings. 5.
+uct-mounted coils. 6.
+ir-Handling Units: a.
+nterior surfaces of the unit casing. b.
+oil surfaces compartment. c.
+ondensate drain pans. d.
+ans, fan blades, and fan housings. 7.
+xhaust fans and power ventilators. 8.
+ilters and filter housings. 9.
+ravity ventilators. 10.
+ir-to-air heat exchangers.
+.
+ollect debris removed during cleaning.
+nsure that debris is not dispersed outside the HVAC system during the cleaning process.
+.
+articulate Collection: 1.
+or particulate collection equipment, include adequate filtration to contain debris removed.
+ocate equipment downwind and away from all air intakes and other points of entry into the building. 2.
+EPA filtration with
+ percent collection efficiency for particles sized
+ micrometer or larger shall be used where the particulate collection equipment is exhausting inside the building, I.
+ontrol odors and mist vapors during the cleaning and restoration process.
+.
+ark the position of manual volume dampers and air-directional mechanical devices inside the system prior to cleaning.
+estore them to their marked position on completion of cleaning.
+.
+ystem components shall be cleaned so that all HVAC system components are visibly clean.
+n completion, all components must be returned to those settings recorded just prior to cleaning operations.
+.
+lean all air-distribution devices, registers, grilles, and diffusers.
+.
+lean non-adhered substance deposits according to NADCA ACR and the following: 1.
+lean air-handling units, airstream surfaces, components, condensate collectors, and drains. 2.
+nsure that a suitable operative drainage system is in place prior to beginning wash-down procedures. 3.
+lean evaporator coils, reheat coils, and other airstream components.
+.
+ir-Distribution Systems: 1.
+reate service openings in the HVAC system as necessary to accommodate cleaning. 2.
+echanically clean air-distribution systems specified to remove all visible contaminants, so that the systems are capable of passing the HVAC System Cleanliness Tests (see NADCA ACR).
+.
+ebris removed from the HVAC system shall be disposed of according to applicable Federal, state, and local requirements.
+.
+echanical Cleaning Methodology: 1.
+ource-Removal Cleaning Methods: The HVAC system shall be cleaned using source- removal mechanical cleaning methods designed to extract contaminants from within the HVAC system and to safely remove these contaminants from the facility.
+o cleaning method, or combination of methods, shall be used that could potentially damage components of the HVAC system or negatively alter the integrity of the system. a.
+se continuously operating vacuum-collection devices to keep each section being cleaned under negative pressure. b.
+leaning methods that require mechanical agitation devices to dislodge debris that is adhered to interior surfaces of HVAC system components shall be equipped to safely remove these devices.
+leaning methods shall not damage the integrity of HVAC system components or damage porous surface materials, such as duct and plenum liners. 2.
+leaning Mineral-Fiber Insulation Components: a.
+ibrous-glass thermal or acoustical insulation elements present in equipment or ductwork shall be thoroughly cleaned with HEPA vacuuming equipment while the HVAC system is under constant negative pressure and shall not be permitted to get wet according to NADCA ACR. b.
+leaning methods used shall not cause damage to fibrous-glass components and will render the system capable of passing the HVAC System Cleanliness Tests (see NADCA ACR). c.
+ibrous materials that become wet shall be discarded and replaced.
+.
+oil Cleaning: 1.
+ee NADCA ACR, "Coil Surface Cleaning" Section.
+ype 1, or Type 1 and Type 2, cleaning methods shall be used to render the coil visibly clean and capable of passing coil cleaning verification. 2.
+oil drain pans shall be subject to NADCA ACR, "Non-Porous Surfaces Cleaning Verification." Ensure that condensate drain pans are operational. 3.
+lectric-resistance coils shall be de-energized, locked out, and tagged before cleaning. 4.
+leaning methods shall not cause any appreciable damage to, cause displacement of, inhibit heat transfer, or cause erosion of the coil surface or fins, and shall comply with coil manufacturer's written recommendations. 5.
+inse thoroughly with clean water to remove any latent residues.
+.
+pplication of Antimicrobial Treatment: 1.
+pply antimicrobial agents and coatings if active fungal growth is determined by the IEP to be at Condition 2 or Condition 3 status according to IICRC S520, as analyzed by a laboratory accredited by AIHA-LAP with an EMLAP certificate, and with results interpreted by an IEP.
+pply antimicrobial agents and coatings according to manufacturer's written recommendations and EPA registration listing after the removal of surface deposits and debris. 2.
+pply antimicrobial treatments and coatings after the system is rendered clean. 3.
+pply antimicrobial agents and coatings directly onto surfaces of interior ductwork. 4.
+icrobial remediation shall be performed by a qualified CMR and CMRS.
+ CLEANLINESS VERIFICATION A.
+erify cleanliness according to NADCA ACR, "Verification of HVAC System Cleanliness" Section.
+.
+erify HVAC system cleanliness after mechanical cleaning and before applying any treatment or introducing any treatment-related substance to the HVAC system, including biocidal agents and coatings.
+.
+urface-Cleaning Verification: Perform visual inspection for cleanliness.
+f no contaminants are evident through visual inspection, the HVAC system shall be considered clean.
+f visible contaminants are evident through visual inspection, those portions of the system where contaminants are visible shall be re-cleaned and subjected to re-inspection for cleanliness.
+.
+erification of Coil Cleaning: 1.
+easure static-pressure differential across each coil. 2.
+oil will be considered clean if cleaning restored the coil static-pressure differential within 10 percent of the differential measured when the coil was first installed.
+.
+erification of Coil Cleaning: Coil will be considered clean if the coil is free of foreign matter and chemical residue, based on a thorough visual inspection.
+.
+dditional Verification: 1.
+erform surface comparison testing or NADCA vacuum test. 2.
+onduct NADCA vacuum gravimetric test analysis for nonporous surfaces.
+.
+repare a written cleanliness verification report.
+t a minimum, include the following: 1.
+ritten documentation of the success of the cleaning. 2.
+ite inspection reports, initialed by supervisor, including notation on areas of inspection, as verified through visual inspection. 3.
+urface comparison test results if required. 4.
+ravimetric analysis (nonporous surfaces only). 5.
+ystem areas found to be damaged.
+.
+hotographic Documentation: Comply with requirements in Section 013233 "Photographic Documentation."
+ RESTORATION A.
+estore and repair HVAC air-distribution equipment, ducts, plenums, and components according to NADCA ACR, "Restoration and Repair of Mechanical Systems" Section.
+.
+estore service openings capable of future reopening.
+omply with requirements in Section 233113 "Metal Ducts." C.
+eseal fibrous-glass ducts.
+omply with requirements in Section 233116 "Nonmetal Ducts." D.
+eplace fibrous-glass materials that cannot be restored by cleaning or resurfacing.
+omply with requirements in Section 233113 "Metal Ducts" and Section 233116 "Nonmetal Ducts." E.
+eplace damaged insulation according to Section 230713 "Duct Insulation." F.
+nsure that closures do not hinder or alter airflow.
+.
+ew closure materials, including insulation, shall match opened materials and shall have removable closure panels fitted with gaskets and fasteners.
+.
+estore manual volume dampers and air-directional mechanical devices inside the system to their marked position on completion of cleaning.
+.
+easure air flows through air-distribution system.
+.
+easure static-pressure differential across each coil.
+ PROJECT CLOSEOUT A.
+ost-Project Report: 1.
+ost-cleaning laboratory results if any. 2.
+ost-cleaning photo images. 3.
+ost-cleaning verification summary.
+.
+rawings: 1.
+eviations of existing system from Owner's record drawings. 2.
+ocation of service openings.
+ND OF SECTION
+ SECTION 230513 - COMMON MOTOR REQUIREMENTS FOR HVAC EQUIPMENT PART 1 - GENERAL
+ RELATED DOCUMENTS A.
+rawings and general provisions of the Contract, including General and Supplementary Conditions and Division 01 Specification Sections, apply to this Section.
+ SUMMARY A.
+ection includes general requirements for single-phase and polyphase, general-purpose, horizontal, small and medium, squirrel-cage induction motors for use on alternating-current power systems up to 600 V and installed at equipment manufacturer's factory or shipped separately by equipment manufacturer for field installation.
+ COORDINATION A.
+oordinate features of motors, installed units, and accessory devices to be compatible with the following: 1.
+otor controllers. 2.
+orque, speed, and horsepower requirements of the load. 3.
+atings and characteristics of supply circuit and required control sequence. 4.
+mbient and environmental conditions of installation location.
+ART 2 - PRODUCTS
+ GENERAL MOTOR REQUIREMENTS A.
+omply with NEMA MG 1 unless otherwise indicated.
+.
+omply with IEEE 841 for severe-duty motors.
+.
+nverter-Duty Motors shall comply with NEMA MG-1 Section IV part 3.
+.
+FD driven Motors need to be provided with shaft grounding rings.
+ MOTOR CHARACTERISTICS A.
+uty: Continuous duty at ambient temperature of 40 deg C and at altitude of 3300 feet above sea level.
+.
+apacity and Torque Characteristics: Sufficient to start, accelerate, and operate connected loads at designated speeds, at installed altitude and environment, with indicated operating sequence, and without exceeding nameplate ratings or considering service factor.
+ POLYPHASE MOTORS A.
+escription: NEMA MG 1, Design B, medium induction motor.
+.
+fficiency: Premium efficient, as defined in NEMA MG 1.
+.
+ervice Factor: 1.15.
+.
+ultispeed Motors: Variable torque. 1.
+or motors with 2:1 speed ratio, consequent pole, single winding. 2.
+or motors with other than 2:1 speed ratio, separate winding for each speed.
+.
+ultispeed Motors: Separate winding for each speed.
+.
+otor: Random-wound, squirrel cage.
+.
+earings: Regreasable, shielded, antifriction ball bearings suitable for radial and thrust loading.
+.
+emperature Rise: Match insulation rating.
+.
+nsulation: Class F.
+.
+ode Letter Designation: 1.
+otors 15 HP and Larger: NEMA starting Code F or Code G. 2.
+otors Smaller Than 5 HP: Manufacturer's standard starting characteristic.
+.
+nclosure Material: Cast iron for motor frame sizes 324T and larger; rolled steel for motor frame sizes smaller than 324T.
+ ADDITIONAL REQUIREMENTS FOR POLYPHASE MOTORS A.
+otors Used with Reduced-Voltage and Multispeed Controllers: Match wiring connection requirements for controller with required motor leads.
+rovide terminals in motor terminal box, suited to control method.
+.
+otors Used with Variable-Frequency Controllers: Ratings, characteristics, and features coordinated with and approved by controller manufacturer. 1.
+indings: Copper magnet wire with moisture-resistant insulation varnish, designed and tested to resist transient spikes, high frequencies, and short time rise pulses produced by pulse-width-modulated inverters. 2.
+remium-Efficient Motors: Class B temperature rise; Class F insulation. 3.
+nverter-Duty Motors: Class F temperature rise; Class H insulation shall comply with NEMA MG-1 Section IV part 3. 4.
+hermal Protection: Comply with NEMA MG 1 requirements for thermally protected motors. 5.
+rovide shaft grounding rings.
+.
+evere-Duty Motors: Comply with IEEE 841, with
+ minimum service factor.
+ SINGLE-PHASE MOTORS A.
+otors larger than 1/20 hp shall be one of the following, to suit starting torque and requirements of specific motor application: 1.
+ermanent-split capacitor. 2.
+plit phase. 3.
+apacitor start, inductor run. 4.
+apacitor start, capacitor run.
+.
+ultispeed Motors: Variable-torque, permanent-split-capacitor type.
+.
+earings: Prelubricated, antifriction ball bearings or sleeve bearings suitable for radial and thrust loading.
+.
+otors 1/20 HP and Smaller: Shaded-pole type.
+.
+hermal Protection: Internal protection to automatically open power supply circuit to motor when winding temperature exceeds a safe value calibrated to temperature rating of motor insulation.
+hermal-protection device shall automatically reset when motor temperature returns to normal range.
+ART 3 - EXECUTION (Not Applicable) END OF SECTION 230513 SECTION 230519 - METERS AND GAGES FOR HVAC PIPING PART 1 - GENERAL
+ RELATED DOCUMENTS A.
+rawings and general provisions of the Contract, including General and Supplementary Conditions and Division 01 Specification Sections, apply to this Section.
+ SUMMARY A.
+ection Includes: 1.
+imetallic-actuated thermometers. 2.
+illed-system thermometers. 3.
+iquid-in-glass thermometers. 4.
+igital Solar-Powered Thermometer 5.
+hermowells. 6.
+ial-type pressure gages. 7.
+age attachments. 8.
+est plugs. 9.
+est-plug kits. 10.
+ight flow indicators. 11.
+rifice flowmeters. 12.
+itot-tube flowmeters.
+.
+elated Sections: 1.
+ivision 23 Section "Steam and Condensate Heating Piping Accessories" for steam and condensate accessories.
+ SUBMITTALS A.
+roduct Data: For each type of product indicated.
+.
+iring Diagrams: For power, signal, and control wiring.
+.
+roduct Certificates: For each type of meter and gage, from manufacturer.
+.
+peration and Maintenance Data: For meters and gages to include in operation and maintenance manuals.
+ART 2 - PRODUCTS
+ BIMETALLIC-ACTUATED THERMOMETERS A.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: B.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: 1.
+shcroft Inc. 2.
+rnst Flow Industries. 3.
+arsh Bellofram. 4.
+iljoco Corporation. 5.
+anmac Corporation. 6.
+oshok. 7.
+almer Wahl Instrumentation Group. 8.
+EOTEMP Instrument Corporation. 9.
+el-Tru Manufacturing Company. 10.
+rerice, H.
+.
+o. 11.
+atts Regulator Co.; a div. of Watts Water Technologies, Inc. 12.
+eiss Instruments, Inc. 13.
+IKA Instrument Corporation - USA. 14.
+inters Instruments - U.S.
+.
+tandard: ASME B40.200.
+.
+ase: Liquid-filled and sealed type(s); stainless steel with 3-inch nominal diameter.
+.
+ial: Nonreflective aluminum with permanently etched scale markings and scales in deg F.
+.
+onnector Type(s): Union joint, adjustable angle, with unified-inch screw threads.
+.
+onnector Size: 1/2 inch, with ASME B1.1 screw threads.
+.
+tem:
+ inch in diameter; stainless steel.
+.
+indow: Plain glass.
+.
+ing: Stainless steel.
+.
+lement: Bimetal coil.
+.
+ointer: Dark-colored metal.
+.
+ccuracy: Plus or minus 1 percent of scale range.
+ FILLED-SYSTEM THERMOMETERS A.
+irect-Mounted, Metal-Case, Vapor-Actuated Thermometers: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+shcroft Inc. b.
+arsh Bellofram. c.
+iljoco Corporation. d.
+almer Wahl Instrumentation Group. e.
+EOTEMP Instrument Corporation. f.
+rerice, H.
+.
+o. g.
+eiss Instruments, Inc. 3.
+tandard: ASME B40.200. 4.
+ase: Sealed type, cast aluminum or drawn steel; 4-1/2-inch nominal diameter. 5.
+lement: Bourdon tube or other type of pressure element. 6.
+ovement: Mechanical, dampening type, with link to pressure element and connection to pointer. 7.
+ial: Nonreflective aluminum with permanently etched scale markings graduated in deg F. 8.
+ointer: Dark-colored metal. 9.
+indow: Glass. 10.
+ing: Stainless steel. 11.
+onnector Type(s): Union joint, adjustable, 180 degrees in vertical plane,; with ASME B1.1 screw threads. 12.
+hermal System: Liquid-filled bulb in copper-plated steel, aluminum, or brass stem and of length to suit installation. a.
+esign for Air-Duct Installation: With ventilated shroud. b.
+esign for Thermowell Installation: Bare stem. 13.
+ccuracy: Plus or minus 1 percent of scale range.
+ LIQUID-IN-GLASS THERMOMETERS A.
+etal-Case, Compact-Style, Liquid-in-Glass Thermometers: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+rerice, H.
+.
+o. 3.
+tandard: ASME B40.200. 4.
+ase: Cast aluminum; 6-inch nominal size. 5.
+ase Form: Straight unless otherwise indicated. 6.
+ube: Glass with magnifying lens and blue organic liquid. 7.
+ube Background: Nonreflective aluminum with permanently etched scale markings graduated in deg F. 8.
+indow: Glass or plastic. 9.
+tem: Aluminum or brass and of length to suit installation. a.
+esign for Air-Duct Installation: With ventilated shroud. b.
+esign for Thermowell Installation: Bare stem. 10.
+onnector: 3/4 inch, with ASME B1.1 screw threads. 11.
+ccuracy: Plus or minus 1 percent of scale range or one scale division, to a maximum of
+ percent of scale range.
+.
+lastic-Case, Compact-Style, Liquid-in-Glass Thermometers: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+lo Fab Inc. b.
+iljoco Corporation. c.
+el-Tru Manufacturing Company. d.
+atts Regulator Co.; a div. of Watts Water Technologies, Inc. e.
+eiss Instruments, Inc. f.
+IKA Instrument Corporation - USA. 3.
+tandard: ASME B40.200. 4.
+ase: Plastic; 6-inch nominal size. 5.
+ase FormStraight unless otherwise indicated. 6.
+ube: Glass with magnifying lens and blue organic liquid. 7.
+ube Background: Nonreflective with permanently etched scale markings graduated in deg F. 8.
+indow: Glass or plastic. 9.
+tem: Aluminum or brass and of length to suit installation. a.
+esign for Air-Duct Installation: With ventilated shroud. b.
+esign for Thermowell Installation: Bare stem. 10.
+onnector: 3/4 inch, with ASME B1.1 screw threads. 11.
+ccuracy: Plus or minus 1 percent of scale range or one scale division, to a maximum of
+ percent of scale range.
+.
+etal-Case, Industrial-Style, Liquid-in-Glass Thermometers: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+lo Fab Inc. b.
+iljoco Corporation. c.
+almer Wahl Instrumentation Group. d.
+el-Tru Manufacturing Company. e.
+rerice, H.
+.
+o. f.
+eiss Instruments, Inc. g.
+inters Instruments - U.S. 3.
+tandard: ASME B40.200. 4.
+ase: Cast aluminum; 7-inch nominal size unless otherwise indicated. 5.
+ase Form: Adjustable angle unless otherwise indicated. 6.
+ube: Glass with magnifying lens and blue organic liquid. 7.
+ube Background: Nonreflective aluminum with permanently etched scale markings graduated in deg F. 8.
+indow: Glass. 9.
+tem: Aluminum and of length to suit installation. a.
+esign for Air-Duct Installation: With ventilated shroud. b.
+esign for Thermowell Installation: Bare stem. 10.
+onnector: 1-1/4 inches, with ASME B1.1 screw threads. 11.
+ccuracy: Plus or minus 1 percent of scale range or one scale division, to a maximum of
+ percent of scale range.
+.
+lastic-Case, Industrial-Style, Liquid-in-Glass Thermometers: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+rnst Flow Industries. b.
+arsh Bellofram. c.
+iljoco Corporation. d.
+almer Wahl Instrumentation Group. e.
+EOTEMP Instrument Corporation. f.
+atts Regulator Co.; a div. of Watts Water Technologies, Inc. g.
+eiss Instruments, Inc. h.
+IKA Instrument Corporation - USA. 3.
+tandard: ASME B40.200. 4.
+ase: Plastic; 7-inch nominal size unless otherwise indicated. 5.
+ase Form: Adjustable angle unless otherwise indicated. 6.
+ube: Glass with magnifying lens and blue organic liquid. 7.
+ube Background: Nonreflective aluminum with permanently etched scale markings graduated in deg F. 8.
+indow: Glass. 9.
+tem: Aluminum and of length to suit installation. a.
+esign for Air-Duct Installation: With ventilated shroud. b.
+esign for Thermowell Installation: Bare stem. 10.
+onnector: 1-1/4 inches, with ASME B1.1 screw threads. 11.
+ccuracy: Plus or minus 1 percent of scale range or one scale division, to a maximum of
+ percent of scale range.
+ DIGITAL SOLAR-POWERED THERMOMETERS A.
+escription: Light-powered digital Thermometer; thermowell applications.
+CD display and an adjustable-angle stem that is fully interchangeable with industrial liquid-in-glass thermometers. 1.
+ase: Cast aluminum, Blue epoxy finish NEMA-4X / PP65 2.
+tem Industrial, Bimetal 3.
+onnection: Bimetal 304 stainless steel stem, ¼” diameter, ½ NPT. 4.
+ensor: Glass Passivated thermistor 5.
+ange: -40°F to 300°F 6.
+isplay: 9/16” LCD read in °F/°C.
+ush button min/max reading with reset. 7.
+ccuracy 1% or 1°F 8.
+esolution: 1/10° 9.
+pdate Interval: 10 Seconds 10.
+mbient Operating Temperature: -40°F to 140°F 11.
+mbient Temperature Error: None 12.
+umidity: Maximum 95% RH non-condensing 13.
+asis of Design: Trerice Sx9 or approved equal.
+ DUCT-THERMOMETER MOUNTING BRACKETS A.
+escription: Flanged bracket with screw holes, for attachment to air duct and made to hold thermometer stem.
+ THERMOWELLS A.
+hermowells: 1.
+tandard: ASME B40.200. 2.
+escription: Pressure-tight, socket-type fitting made for insertion into piping tee fitting. 3.
+aterial for Use with Copper Tubing: CNR or CUNI. 4.
+aterial for Use with Steel Piping: CRES. 5.
+ype: Stepped shank unless straight or tapered shank is indicated. 6.
+xternal Threads: NPS 1/2, NPS 3/4, or NPS 1, ASME B1.20.1 pipe threads. 7.
+nternal Threads: 1/2, 3/4, and 1 inch, with ASME B1.1 screw threads. 8.
+ore: Diameter required to match thermometer bulb or stem. 9.
+nsertion Length: Length required to match thermometer bulb or stem. 10.
+agging Extension: Include on thermowells for insulated piping and tubing. 11.
+ushings: For converting size of thermowell's internal screw thread to size of thermometer connection.
+.
+eat-Transfer Medium: Mixture of graphite and glycerin.
+ PRESSURE GAGES A.
+irect-Mounted, Metal-Case, Dial-Type Pressure Gages: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+METEK, Inc.; U.S.
+auge. b.
+shcroft Inc. c.
+rnst Flow Industries. d.
+lo Fab Inc. e.
+arsh Bellofram. f.
+iljoco Corporation. g.
+oshok. h.
+almer Wahl Instrumentation Group. i.
+EOTEMP Instrument Corporation. j.
+el-Tru Manufacturing Company. k.
+rerice, H.
+.
+o. l.
+atts Regulator Co.; a div. of Watts Water Technologies, Inc. m.
+eiss Instruments, Inc. n.
+IKA Instrument Corporation - USA. o.
+inters Instruments - U.S. 3.
+tandard: ASME B40.100. 4.
+ase: Liquid-filled type(s); cast aluminum or drawn steel; 4-1/2-inch nominal diameter. 5.
+ressure-Element Assembly: Bourdon tube unless otherwise indicated. 6.
+ressure Connection: Brass, with NPS 1/4, ASME B1.20.1 pipe threads and bottom- outlet type unless back-outlet type is indicated. 7.
+ovement: Mechanical, with link to pressure element and connection to pointer. 8.
+ial: Nonreflective aluminum with permanently etched scale markings graduated in psi. 9.
+ointer: Dark-colored metal. 10.
+indow: Glass. 11.
+ing: Stainless steel. 12.
+ccuracy: Grade A, plus or minus 1 percent of middle half of scale range.
+.
+irect-Mounted, Plastic-Case, Dial-Type Pressure Gages: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+METEK, Inc.; U.S.
+auge. b.
+shcroft Inc. c.
+lo Fab Inc. d.
+arsh Bellofram. e.
+iljoco Corporation. f.
+oshok. g.
+almer Wahl Instrumentation Group. h.
+EOTEMP Instrument Corporation. i.
+el-Tru Manufacturing Company. j.
+rerice, H.
+.
+o. k.
+eiss Instruments, Inc. l.
+IKA Instrument Corporation - USA. m.
+inters Instruments - U.S. 3.
+tandard: ASME B40.100. 4.
+ase: Sealed type; glass; 4-1/2-inch nominal diameter. 5.
+ressure-Element Assembly: Bourdon tube unless otherwise indicated. 6.
+ressure Connection: Brass, with NPS 1/4, ASME B1.20.1 pipe threads and bottom- outlet type unless back-outlet type is indicated. 7.
+ovement: Mechanical, with link to pressure element and connection to pointer. 8.
+ial: Nonreflective aluminum with permanently etched scale markings graduated in psi. 9.
+ointer: Dark-colored metal. 10.
+indow: Glass. 11.
+ccuracy: Grade A, plus or minus 1 percent of middle half of scale range.
+ GAGE ATTACHMENTS A.
+nubbers: ASME B40.100, brass; with NPS 1/4, ASME B1.20.1 pipe threads and piston-type surge-dampening device.
+nclude extension for use on insulated piping.
+.
+iphons: Loop-shaped section of stainless-steel pipe with NPS 1/4 pipe threads.
+.
+alves: Brass ball, with NPS 1/4, ASME B1.20.1 pipe threads.
+ TEST PLUGS A.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: B.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: 1.
+low Design, Inc. 2.
+iljoco Corporation. 3.
+ational Meter, Inc. 4.
+eterson Equipment Co., Inc. 5.
+isco Manufacturing Company, Inc. 6.
+rerice, H.
+.
+o. 7.
+atts Regulator Co.; a div. of Watts Water Technologies, Inc. 8.
+eiss Instruments, Inc.
+.
+escription: Test-station fitting made for insertion into piping tee fitting.
+.
+ody: Brass or stainless steel with core inserts and gasketed and threaded cap.
+nclude extended stem on units to be installed in insulated piping.
+.
+hread Size: NPS 1/4, ASME B1.20.1 pipe thread.
+.
+inimum Pressure and Temperature Rating: 500 psig at 200 deg F.
+.
+ore Inserts: EPDM self-sealing rubber.
+ TEST-PLUG KITS A.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: B.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: 1.
+low Design, Inc. 2.
+iljoco Corporation. 3.
+ational Meter, Inc. 4.
+eterson Equipment Co., Inc. 5.
+isco Manufacturing Company, Inc. 6.
+rerice, H.
+.
+o. 7.
+atts Regulator Co.; a div. of Watts Water Technologies, Inc. 8.
+eiss Instruments, Inc.
+.
+urnish one test-plug kit(s) containing one thermometer(s), one pressure gage and adapter, and carrying case.
+hermometer sensing elements, pressure gage, and adapter probes shall be of diameter to fit test plugs and of length to project into piping.
+.
+ow-Range Thermometer: Small, bimetallic insertion type with 1- to 2-inch- diameter dial and tapered-end sensing element.
+ial range shall be at least 25 to 125 deg F.
+.
+igh-Range Thermometer: Small, bimetallic insertion type with 1- to 2-inch- diameter dial and tapered-end sensing element.
+ial range shall be at least 0 to 220 deg F.
+.
+ressure Gage: Small, Bourdon-tube insertion type with 2- to 3-inch- diameter dial and probe.
+ial range shall be at least 0 to 200 psig.
+.
+arrying Case: Metal or plastic, with formed instrument padding.
+ FLOWMETERS A.
+rifice Flowmeters: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+BB; Instrumentation and Analytical. b.
+ell & Gossett; ITT Industries. c.
+eriam Process Technologies. d.
+reso Meters; a division of Racine Federated Inc. e.
+.
+.
+rmstrong Limited; Armstrong Pumps Inc. 3.
+escription: Flowmeter with sensor, hoses or tubing, fittings, valves, indicator, and conversion chart. 4.
+low Range: Sensor and indicator shall cover operating range of equipment or system served. 5.
+ensor: Wafer-orifice-type, calibrated, flow-measuring element; for installation between pipe flanges. a.
+esign: Differential-pressure-type measurement for steam, water . b.
+onstruction: Cast-iron body, brass valves with integral check valves and caps, and calibrated nameplate. c.
+inimum Pressure Rating: 300 psig. d.
+inimum Temperature Rating: 250 deg F. 6.
+ermanent Indicators: Meter suitable for wall or bracket mounting, calibrated for connected sensor and having 6-inch- diameter, or equivalent, dial with fittings and copper tubing for connecting to sensor. a.
+cale: Gallons per minute. b.
+ccuracy: Plus or minus 1 percent between 20 and 80 percent of scale range.
+.
+itot-Tube Flowmeters: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+BB; Instrumentation and Analytical. b.
+merson Process Management; Rosemount. c.
+eriam Process Technologies. d.
+reso Meters; a division of Racine Federated Inc. e.
+ACO Incorporated. f.
+eris Industries, Inc. 3.
+escription: Flowmeter with sensor and indicator. 4.
+low Range: Sensor and indicator shall cover operating range of equipment or system served. 5.
+ensor: Insertion type; for inserting probe into piping and measuring flow directly in gallons per minute. a.
+esign: Differential-pressure-type measurement for water. b.
+onstruction: Stainless-steel probe of length to span inside of pipe, with integral transmitter and direct-reading scale. c.
+inimum Pressure Rating: 150 psig. d.
+inimum Temperature Rating: 250 deg F. 6.
+ndicator: Hand-held meter; either an integral part of sensor or a separate meter. 7.
+ntegral Transformer: For low-voltage power connection. 8.
+ccuracy: Plus or minus 3 percent. 9.
+isplay: Shows rate of flow. 10.
+perating Instructions: Include complete instructions with each flowmeter. 11.
+.
+enturi Flowmeters: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: 2.
+asis-of-Design Product: Subject to compliance with requirements, provide product by one of the following: a.
+BB; Instrumentation and Analytical. b.
+erand Engineering Co. c.
+yspan Precision Products, Inc. d.
+reso Meters; a division of Racine Federated Inc. e.
+.
+.
+rmstrong Limited; Armstrong Pumps Inc. f.
+ictaulic Company. 3.
+escription: Flowmeter with calibrated flow-measuring element, hoses or tubing, fittings, valves, indicator, and conversion chart. 4.
+low Range: Sensor and indicator shall cover operating range of equipment or system served. 5.
+ensor: Venturi-type, calibrated, flow-measuring element; for installation in piping. a.
+esign: Differential-pressure-type measurement for steam, water . b.
+onstruction: Bronze, brass, or factory-primed steel, with brass fittings and attached tag with flow conversion data. c.
+inimum Pressure Rating: 250 psig. d.
+inimum Temperature Rating: 250 deg F. e.
+nd Connections for NPS 2 and Smaller: Threaded. f.
+nd Connections for NPS 2-1/2 and Larger: Flanged or welded. g.
+low Range: Flow-measuring element and flowmeter shall cover operating range of equipment or system served. 6.
+ermanent Indicators: Meter suitable for wall or bracket mounting, calibrated for connected flowmeter element, and having 6-inch- diameter, or equivalent, dial with fittings and copper tubing for connecting to flowmeter element. a.
+cale: Gallons per minute. b.
+ccuracy: Plus or minus 1 percent between 20 and 80 percent of scale range .
+ART 3 - EXECUTION
+ INSTALLATION A.
+nstall thermowells with socket extending a minimum of 2 inches into fluid one-third of pipe diameter and in vertical position in piping tees.
+.
+nstall thermowells of sizes required to match thermometer connectors.
+nclude bushings if required to match sizes.
+.
+nstall thermowells with extension on insulated piping.
+.
+ill thermowells with heat-transfer medium.
+.
+nstall direct-mounted thermometers in thermowells and adjust vertical and tilted positions.
+.
+nstall remote-mounted thermometer bulbs in thermowells and install cases on panels; connect cases with tubing and support tubing to prevent kinks.
+se minimum tubing length.
+.
+nstall duct-thermometer mounting brackets in walls of ducts.
+ttach to duct with screws.
+.
+nstall direct-mounted pressure gages in piping tees with pressure gage located on pipe at the most readable position.
+.
+nstall remote-mounted pressure gages on panel.
+.
+nstall valve and snubber in piping for each pressure gage for fluids (except steam).
+.
+nstall valve and syphon fitting in piping for each pressure gage for steam.
+.
+nstall test plugs in piping tees.
+.
+nstall flow indicators in piping systems in accessible positions for easy viewing.
+.
+ssemble and install connections, tubing, and accessories between flow-measuring elements and flowmeters according to manufacturer's written instructions.
+.
+nstall flowmeter elements in accessible positions in piping systems.
+.
+nstall wafer-orifice flowmeter elements between pipe flanges.
+.
+nstall differential-pressure-type flowmeter elements, with at least minimum straight lengths of pipe, upstream and downstream from element according to manufacturer's written instructions.
+.
+nstall permanent indicators on walls or brackets in accessible and readable positions.
+.
+nstall connection fittings in accessible locations for attachment to portable indicators.
+.
+ount thermal-energy meters on wall if accessible; if not, provide brackets to support meters.
+.
+nstall thermometers in the following locations: 1.
+nlet and outlet of each hydronic zone. 2.
+nlet and outlet of each hydronic boiler. 3.
+wo inlets and two outlets of each chiller. 4.
+nlet and outlet of each hydronic coil in air-handling units. 5.
+wo inlets and two outlets of each hydronic heat exchanger. 6.
+nlet and outlet of each thermal-storage tank. 7.
+utside-, return-, supply-, and mixed-air ducts.
+.
+nstall pressure gages in the following locations: 1.
+ischarge of each pressure-reducing valve. 2.
+nlet and outlet of each chiller chilled-water and condenser-water connection. 3.
+uction and discharge of each pump.
+ CONNECTIONS A.
+nstall meters and gages adjacent to machines and equipment to allow service and maintenance of meters, gages, machines, and equipment.
+.
+onnect flowmeter-system elements to meters.
+.
+onnect flowmeter transmitters to meters.
+.
+onnect thermal-energy meter transmitters to meters.
+ ADJUSTING A.
+fter installation, calibrate meters according to manufacturer's written instructions.
+.
+djust faces of meters and gages to proper angle for best visibility.
+ THERMOMETER SCHEDULE A.
+hermometers at inlet and outlet of each hydronic zone shall be one of the following: 1.
+iquid-filled, bimetallic-actuated type. 2.
+est plug with EPDM self-sealing rubber inserts.
+.
+hermometers at inlet and outlet of each hydronic boiler shall be one of the following: 1.
+ight-powered digital Thermometer. 2.
+est plug with EPDM self-sealing rubber inserts.
+.
+hermometers at inlets and outlets of each chiller shall be one of the following: 1.
+ight-powered digital Thermometer. 2.
+est plug with EPDM self-sealing rubber inserts.
+.
+hermometers at inlet and outlet of each hydronic coil in air-handling units and built-up central systems shall be one of the following: 1.
+ight-powered digital Thermometer. 2.
+est plug EPDM self-sealing rubber inserts.
+.
+hermometers at inlets and outlets of each hydronic heat exchanger shall be one of the following: 1.
+ight-powered digital Thermometer. 2.
+est plug with EPDM self-sealing rubber inserts.
+.
+hermometers at inlet and outlet of each hydronic heat-recovery unit shall be one of the following: 1.
+ight-powered digital Thermometer. 2.
+est plug EPDM self-sealing rubber inserts.
+.
+hermometers at inlet and outlet of each thermal-storage tank shall be one of the following: 1.
+ight-powered digital Thermometer. 2.
+est plug with EPDM self-sealing rubber inserts.
+.
+hermometers at outside-, return-, supply-, and mixed-air ducts shall be one of the following: 1.
+iquid-filled, bimetallic-actuated type.
+.
+hermometer stems shall be of length to match thermowell insertion length.
+ THERMOMETER SCALE-RANGE SCHEDULE A.
+cale Range for Chilled-Water Piping: Minus 40 to plus 160 deg F.
+.
+cale Range for Chilled-Water Piping: 0 to 100 deg F.
+.
+cale Range for Chilled-Water Piping: 0 to 150 deg F.
+.
+cale Range for Condenser-Water Piping: 0 to 150 deg F.
+.
+cale Range for Heating, Hot-Water Piping: 0 to 250 deg F.
+.
+cale Range for Steam and Steam-Condensate Piping: 0 to 250 deg F.
+.
+cale Range for Air Ducts: 0 to 150 deg F.
+ PRESSURE-GAGE SCHEDULE A.
+ressure gages at discharge of each pressure-reducing valve shall be one of the following: 1.
+iquid-filled, direct-mounted, metal case. 2.
+est plug with EPDM self-sealing rubber inserts.
+.
+ressure gages at inlet and outlet of each chiller chilled-water and condenser-water connection shall be one of the following: 1.
+iquid-filled, direct-mounted, metal case. 2.
+est plug with EPDM self-sealing rubber inserts.
+.
+ressure gages at suction and discharge of each pump shall be one of the following: 1.
+iquid-filled, direct-mounted, metal case. 2.
+est plug with EPDM self-sealing rubber inserts.
+ PRESSURE-GAGE SCALE-RANGE SCHEDULE A.
+cale Range for Chilled-Water Piping: 0 to 160 psi.
+.
+cale Range for Condenser-Water Piping: 0 to 160 psi.
+.
+cale Range for Heating, Hot-Water Piping: 0 to 160 psi.
+.
+cale Range for Steam Piping: 0 to 300 psi.
+ FLOWMETER SCHEDULE A.
+lowmeters for Chilled-Water Piping: Orifice, Pitot-tube type.
+.
+lowmeters for Condenser-Water Piping: Orifice, Pitot-tube type.
+.
+lowmeters for Heating, Hot-Water Piping: Orifice, Pitot-tube type.
+.
+lowmeters for Steam and Steam-Condensate Piping: Orifice, Venturi type.
+ND OF SECTION 230519 SECTION 230523 - GENERAL-DUTY VALVES FOR HVAC PIPING PART 1 - GENERAL
+ RELATED DOCUMENTS A.
+rawings and general provisions of the Contract, including General and Supplementary Conditions and Division 01 Specification Sections, apply to this Section.
+ SUMMARY A.
+ection Includes: 1.
+ronze angle valves. 2.
+rass ball valves. 3.
+ronze ball valves. 4.
+ron ball valves. 5.
+ron, single-flange butterfly valves. 6.
+ron, grooved-end butterfly valves. 7.
+igh-performance butterfly valves. 8.
+ronze lift check valves. 9.
+ronze swing check valves. 10.
+ron swing check valves. 11.
+ron, grooved-end swing-check valves. 12.
+ronze gate valves. 13.
+ron gate valves. 14.
+ronze globe valves. 15.
+ron globe valves. 16.
+ubricated plug valves. 17.
+ccentric plug valves. 18.
+hainwheels.
+.
+elated Sections: 1.
+ivision 23 HVAC piping Sections for specialty valves applicable to those Sections only. 2.
+ivision 23 Section "Identification for HVAC Piping and Equipment" for valve tags and schedules.
+ DEFINITIONS A.
+WP: Cold working pressure.
+.
+PDM: Ethylene propylene copolymer rubber.
+.
+BR: Acrylonitrile-butadiene, Buna-N, or nitrile rubber.
+.
+RS: Nonrising stem.
+.
+S&Y: Outside screw and yoke.
+.
+S: Rising stem.
+.
+WP: Steam working pressure.
+ SUBMITTALS A.
+roduct Data: For each type of valve indicated.
+ QUALITY ASSURANCE A.
+ource Limitations for Valves: Obtain each type of valve from single source from single manufacturer.
+.
+SME Compliance: 1.
+SME B16.10 and ASME B16.34 for ferrous valve dimensions and design criteria. 2.
+SME B31.1 for power piping valves. 3.
+SME B31.9 for building services piping valves.
+ DELIVERY, STORAGE, AND HANDLING A.
+repare valves for shipping as follows: 1.
+rotect internal parts against rust and corrosion. 2.
+rotect threads, flange faces, grooves, and weld ends. 3.
+et angle, gate, and globe valves closed to prevent rattling. 4.
+et ball and plug valves open to minimize exposure of functional surfaces. 5.
+et butterfly valves closed or slightly open. 6.
+lock check valves in either closed or open position.
+.
+se the following precautions during storage: 1.
+aintain valve end protection. 2.
+tore valves indoors and maintain at higher than ambient dew point temperature.
+f outdoor storage is necessary, store valves off the ground in watertight enclosures.
+.
+se sling to handle large valves; rig sling to avoid damage to exposed parts.
+o not use handwheels or stems as lifting or rigging points.
+ART 2 - PRODUCTS
+ GENERAL REQUIREMENTS FOR VALVES A.
+efer to HVAC valve schedule articles for applications of valves.
+.
+alve Pressure and Temperature Ratings: Not less than indicated and as required for system pressures and temperatures.
+.
+alve Sizes: Same as upstream piping unless otherwise indicated.
+.
+alve Actuator Types: 1.
+ear Actuator: For quarter-turn valves NPS 8 and larger. 2.
+andwheel: For valves other than quarter-turn types. 3.
+andlever: For quarter-turn valves NPS 6 and smaller except plug valves. 4.
+rench: For plug valves with square heads.
+urnish Owner with 1 wrench for every plug valves, for each size square plug-valve head. 5.
+hainwheel: Device for attachment to valve handwheel, stem, or other actuator; of size and with chain for mounting height, as indicated in the "Valve Installation" Article.
+.
+alves in Insulated Piping: With 2-inch stem extensions and the following features: 1.
+ate Valves: With rising stem. 2.
+all Valves: With extended operating handle of non-thermal-conductive material, and protective sleeve that allows operation of valve without breaking the vapor seal or disturbing insulation. 3.
+utterfly Valves: With extended neck.
+.
+alve-End Connections: 1.
+langed: With flanges according to ASME B16.1 for iron valves. 2.
+rooved: With grooves according to AWWA C606. 3.
+older Joint: With sockets according to ASME B16.18. 4.
+hreaded: With threads according to ASME B1.20.1.
+.
+alve Bypass and Drain Connections: MSS SP-45.
+ BRONZE ANGLE VALVES A.
+lass 125, Bronze Angle Valves with Bronze Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+ammond Valve. b.
+ilwaukee Valve Company. 2.
+escription: a.
+tandard: MSS SP-80, Type 1. b.
+WP Rating: 200 psig. c.
+ody Material: ASTM B 62, bronze with integral seat and screw-in bonnet. d.
+nds: Threaded. e.
+tem and Disc: Bronze. f.
+acking: Asbestos free. g.
+andwheel: Malleable iron or aluminum.
+.
+lass 125, Bronze Angle Valves with Nonmetallic Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+merican Valve, Inc. b.
+IBCO INC. 2.
+escription: a.
+tandard: MSS SP-80, Type 2. b.
+WP Rating: 200 psig. c.
+ody Material: ASTM B 62, bronze with integral seat and screw-in bonnet. d.
+nds: Threaded. e.
+tem: Bronze. f.
+isc: PTFE or TFE. g.
+acking: Asbestos free. h.
+andwheel: Malleable iron or aluminum.
+.
+lass 150, Bronze Angle Valves with Bronze Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Stockham Division. b.
+itz Corporation. 2.
+escription: a.
+tandard: MSS SP-80, Type 1. b.
+WP Rating: 300 psig. c.
+ody Material: ASTM B 62, bronze with integral seat and union-ring bonnet. d.
+nds: Threaded. e.
+tem and Disc: Bronze. f.
+acking: Asbestos free. g.
+andwheel: Malleable iron or aluminum.
+.
+lass 150, Bronze Angle Valves with Nonmetallic Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+rane Co.; Crane Valve Group; Stockham Division. d.
+ammond Valve. e.
+ilwaukee Valve Company. f.
+IBCO INC. g.
+owell Valves. 2.
+escription: a.
+tandard: MSS SP-80, Type 2. b.
+WP Rating: 300 psig. c.
+ody Material: ASTM B 62, bronze with integral seat and union-ring bonnet. d.
+nds: Threaded. e.
+tem: Bronze. f.
+isc: PTFE or TFE. g.
+acking: Asbestos free. h.
+andwheel: Malleable iron or aluminum.
+ BRASS BALL VALVES A.
+eneral Requirements: 1.
+all valves utilized for vent or drain service to be provided with a brass hose connection with brass cap and chain.
+.
+ne-Piece, Reduced-Port, Brass Ball Valves with Brass Trim: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+itz Corporation. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 400 psig. c.
+ody Design: One piece. d.
+ody Material: Forged brass. e.
+nds: Threaded. f.
+eats: PTFE or TFE. g.
+tem: Brass. h.
+all: Chrome-plated brass. i.
+ort: Reduced.
+.
+wo-Piece, Full-Port, Brass Ball Valves with Brass Trim: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+ynaQuip Controls. d.
+low-Tek, Inc.; a subsidiary of Bray International, Inc. e.
+ammond Valve. f.
+amesbury; a subsidiary of Metso Automation. g.
+omar International, LTD. h.
+itz Corporation. i.
+egend Valve. j.
+arwin Valve; a division of Richards Industries. k.
+ilwaukee Valve Company. l.
+IBCO INC. m.
+ed-White Valve Corporation. n.
+uB Inc. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 150 psig. c.
+WP Rating: 600 psig. d.
+ody Design: Two piece. e.
+ody Material: Forged brass. f.
+nds: Threaded. g.
+eats: PTFE or TFE. h.
+tem: Brass. i.
+all: Chrome-plated brass. j.
+ort: Full.
+.
+wo-Piece, Full-Port, Brass Ball Valves with Stainless-Steel Trim: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+low-Tek, Inc.; a subsidiary of Bray International, Inc. d.
+ammond Valve. e.
+amesbury; a subsidiary of Metso Automation. f.
+itz Corporation. g.
+arwin Valve; a division of Richards Industries. h.
+ilwaukee Valve Company. i.
+uB Inc. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 150 psig. c.
+WP Rating: 600 psig. d.
+ody Design: Two piece. e.
+ody Material: Forged brass. f.
+nds: Threaded. g.
+eats: PTFE or TFE. h.
+tem: Stainless steel. i.
+all: Stainless steel, vented. j.
+ort: Full.
+.
+wo-Piece, Regular-Port, Brass Ball Valves with Brass Trim: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+ammond Valve. b.
+amesbury; a subsidiary of Metso Automation. c.
+egend Valve. d.
+arwin Valve; a division of Richards Industries. e.
+ilwaukee Valve Company. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 150 psig. c.
+WP Rating: 600 psig. d.
+ody Design: Two piece. e.
+ody Material: Forged brass. f.
+nds: Threaded. g.
+eats: PTFE or TFE. h.
+tem: Brass. i.
+all: Chrome-plated brass. j.
+ort: Regular.
+.
+wo-Piece, Regular-Port, Brass Ball Valves with Stainless-Steel Trim: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+amesbury; a subsidiary of Metso Automation. b.
+arwin Valve; a division of Richards Industries. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 150 psig. c.
+WP Rating: 600 psig. d.
+ody Design: Two piece. e.
+ody Material: Brass or bronze. f.
+nds: Threaded. g.
+eats: PTFE or TFE. h.
+tem: Stainless steel. i.
+all: Stainless steel, vented. j.
+ort: Regular.
+.
+hree-Piece, Full-Port, Brass Ball Valves with Brass Trim: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+omar International, LTD. b.
+itz Corporation. c.
+ed-White Valve Corporation. d.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 150 psig. c.
+WP Rating: 600 psig. d.
+ody Design: Three piece. e.
+ody Material: Forged brass. f.
+nds: Threaded. g.
+eats: PTFE or TFE. h.
+tem: Brass. i.
+all: Chrome-plated brass. j.
+ort: Full.
+.
+hree-Piece, Full-Port, Brass Ball Valves with Stainless-Steel Trim: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+omar International, LTD. b.
+itz Corporation. c.
+arwin Valve; a division of Richards Industries. d.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 150 psig. c.
+WP Rating: 600 psig. d.
+ody Design: Three piece. e.
+ody Material: Forged brass. f.
+nds: Threaded. g.
+eats: PTFE or TFE. h.
+tem: Stainless steel. i.
+all: Stainless steel, vented. j.
+ort: Full.
+ BRONZE BALL VALVES A.
+eneral Requirements: 1.
+all valves utilized for vent or drain service to be provided with a brass hose connection with brass cap and chain.
+.
+wo-Piece, Full-Port, Bronze Ball Valves with Stainless-Steel Trim: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+onbraco Industries, Inc.; Apollo Valves. b.
+rane Co.; Crane Valve Group; Crane Valves. c.
+ammond Valve. d.
+ance Valves; a division of Advanced Thermal Systems, Inc. e.
+ilwaukee Valve Company. f.
+IBCO INC. g.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 150 psig. c.
+WP Rating: 600 psig. d.
+ody Design: Two piece. e.
+ody Material: Bronze. f.
+nds: Threaded. g.
+eats: PTFE or TFE. h.
+tem: Stainless steel. i.
+all: Stainless steel, vented. j.
+ort: Full. k.
+rovide Handle Extension C.
+hree-Piece, Full-Port, Bronze Ball Valves with Stainless-Steel Trim: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+onbraco Industries, Inc.; Apollo Valves. b.
+ammond Valve. c.
+ilwaukee Valve Company. d.
+IBCO INC. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 150 psig. c.
+WP Rating: 600 psig. d.
+ody Design: Three piece. e.
+ody Material: Bronze. f.
+nds: Threaded. g.
+eats: PTFE or TFE. h.
+tem: Stainless steel. i.
+all: Stainless steel, vented. j.
+ort: Full. k.
+rovide Handle Extension D.
+hree-Piece, Full-Port, Carbon-Steel Ball Valve: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+onbraco Industries, Inc.; Apollo Valves. b.
+ammond Valve. c.
+ilwaukee Valve Company. d.
+IBCO INC. 2.
+escription: a.
+tandard: MSS SP-110. b.
+WP Rating: 150 psig. c.
+WP Rating: 750 psig. d.
+ody Design: Three piece. e.
+ody Material: Carbon-Steel. f.
+nds: Threaded. g.
+eats: PTFE or TFE. h.
+tem: Stainless steel. i.
+all: Stainless steel, vented. j.
+ort: Full. k.
+rovide Handle Extension
+ IRON BALL VALVES A.
+lass 125, Iron Ball Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+merican Valve, Inc. b.
+onbraco Industries, Inc.; Apollo Valves. c.
+itz Corporation. d.
+ure Flow Equipment Inc. e.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-72. b.
+WP Rating: 200 psig. c.
+ody Design: Split body. d.
+ody Material: ASTM A 126, gray iron. e.
+nds: Flanged. f.
+eats: PTFE or TFE. g.
+tem: Stainless steel. h.
+all: Stainless steel. i.
+ort: Full.
+ IRON, SINGLE-FLANGE BUTTERFLY VALVES A. 150 CWP, Iron, Single-Flange Butterfly Valves with EPDM Seat and Aluminum-Bronze Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+ray Controls; a division of Bray International. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Jenkins Valves. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+ammond Valve. i.
+itz Corporation. j.
+ilwaukee Valve Company. k.
+IBCO INC. l.
+orriseal; a Dover Corporation company. m.
+ed-White Valve Corporation. n.
+pence Strainers International; a division of CIRCOR International. o.
+yco Valves & Controls; a unit of Tyco Flow Control. p.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 150 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: EPDM. f.
+tem: One- or two-piece stainless steel. g.
+isc: Aluminum bronze.
+. 150 CWP, Iron, Single-Flange Butterfly Valves with NBR Seat and Aluminum-Bronze Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+ray Controls; a division of Bray International. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Jenkins Valves. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+ammond Valve. i.
+itz Corporation. j.
+ilwaukee Valve Company. k.
+IBCO INC. l.
+orriseal; a Dover Corporation company. m.
+ed-White Valve Corporation. n.
+pence Strainers International; a division of CIRCOR International. o.
+yco Valves & Controls; a unit of Tyco Flow Control. p.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 150 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: NBR. f.
+tem: One- or two-piece stainless steel. g.
+isc: Aluminum bronze.
+. 150 CWP, Iron, Single-Flange Butterfly Valves with EPDM Seat and Ductile-Iron Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+ray Controls; a division of Bray International. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Center Line. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+ammond Valve. i.
+itz Corporation. j.
+ilwaukee Valve Company. k.
+ueller Steam Specialty; a division of SPX Corporation. l.
+IBCO INC. m.
+orriseal; a Dover Corporation company. n.
+pence Strainers International; a division of CIRCOR International. o.
+ure Flow Equipment Inc. p.
+yco Valves & Controls; a unit of Tyco Flow Control. q.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 150 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: EPDM. f.
+tem: One- or two-piece stainless steel. g.
+isc: Nickel-plated or -coated ductile iron.
+. 150 CWP, Iron, Single-Flange Butterfly Valves with NBR Seat and Ductile-Iron Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+ray Controls; a division of Bray International. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Center Line. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+ammond Valve. i.
+itz Corporation. j.
+ilwaukee Valve Company. k.
+ueller Steam Specialty; a division of SPX Corporation. l.
+IBCO INC. m.
+orriseal; a Dover Corporation company. n.
+pence Strainers International; a division of CIRCOR International. o.
+ure Flow Equipment Inc. p.
+yco Valves & Controls; a unit of Tyco Flow Control. q.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 150 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: NBR. f.
+tem: One- or two-piece stainless steel. g.
+isc: Nickel-plated or -coated ductile iron.
+. 150 CWP, Iron, Single-Flange Butterfly Valves with EPDM Seat and Stainless-Steel Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+ray Controls; a division of Bray International. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Jenkins Valves. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+ammond Valve. i.
+itz Corporation. j.
+ilwaukee Valve Company. k.
+ueller Steam Specialty; a division of SPX Corporation. l.
+IBCO INC. m.
+orriseal; a Dover Corporation company. n.
+ed-White Valve Corporation. o.
+pence Strainers International; a division of CIRCOR International. p.
+ure Flow Equipment Inc. q.
+yco Valves & Controls; a unit of Tyco Flow Control. r.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 150 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: EPDM. f.
+tem: One- or two-piece stainless steel. g.
+isc: Stainless steel.
+. 150 CWP, Iron, Single-Flange Butterfly Valves with NBR Seat and Stainless-Steel Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+ray Controls; a division of Bray International. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Jenkins Valves. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+ammond Valve. i.
+itz Corporation. j.
+ilwaukee Valve Company. k.
+ueller Steam Specialty; a division of SPX Corporation. l.
+IBCO INC. m.
+orriseal; a Dover Corporation company. n.
+ed-White Valve Corporation. o.
+pence Strainers International; a division of CIRCOR International. p.
+ure Flow Equipment Inc. q.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 150 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: NBR. f.
+tem: One- or two-piece stainless steel. g.
+isc: Stainless steel.
+. 200 CWP, Iron, Single-Flange Butterfly Valves with EPDM Seat and Aluminum-Bronze Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+onbraco Industries, Inc.; Apollo Valves. c.
+ooper Cameron Valves; a division of Cooper Cameron Corp. d.
+rane Co.; Crane Valve Group; Jenkins Valves. e.
+rane Co.; Crane Valve Group; Stockham Division. f.
+eZurik Water Controls. g.
+lo Fab Inc. h.
+ammond Valve. i.
+itz Corporation. j.
+egend Valve. k.
+ilwaukee Valve Company. l.
+IBCO INC. m.
+orriseal; a Dover Corporation company. n.
+ed-White Valve Corporation. o.
+pence Strainers International; a division of CIRCOR International. p.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 200 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: EPDM. f.
+tem: One- or two-piece stainless steel. g.
+isc: Aluminum bronze.
+. 200 CWP, Iron, Single-Flange Butterfly Valves with NBR Seat and Aluminum-Bronze Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+onbraco Industries, Inc.; Apollo Valves. c.
+ooper Cameron Valves; a division of Cooper Cameron Corp. d.
+rane Co.; Crane Valve Group; Jenkins Valves. e.
+rane Co.; Crane Valve Group; Stockham Division. f.
+eZurik Water Controls. g.
+lo Fab Inc. h.
+ammond Valve. i.
+itz Corporation. j.
+egend Valve. k.
+ilwaukee Valve Company. l.
+IBCO INC. m.
+orriseal; a Dover Corporation company. n.
+ed-White Valve Corporation. o.
+pence Strainers International; a division of CIRCOR International. p.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 200 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: NBR. f.
+tem: One- or two-piece stainless steel. g.
+isc: Aluminum bronze.
+. 200 CWP, Iron, Single-Flange Butterfly Valves with EPDM Seat and Ductile-Iron Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+merican Valve, Inc. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Center Line. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+lo Fab Inc. i.
+ammond Valve. j.
+itz Corporation. k.
+egend Valve. l.
+ilwaukee Valve Company. m.
+ueller Steam Specialty; a division of SPX Corporation. n.
+IBCO INC. o.
+orriseal; a Dover Corporation company. p.
+pence Strainers International; a division of CIRCOR International. q.
+ure Flow Equipment Inc. r.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 200 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: EPDM. f.
+tem: One- or two-piece stainless steel. g.
+isc: Nickel-plated or -coated ductile iron.
+. 200 CWP, Iron, Single-Flange Butterfly Valves with NBR Seat and Ductile-Iron Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+merican Valve, Inc. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Center Line. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+lo Fab Inc. i.
+ammond Valve. j.
+itz Corporation. k.
+egend Valve. l.
+ilwaukee Valve Company. m.
+ueller Steam Specialty; a division of SPX Corporation. n.
+IBCO INC. o.
+orriseal; a Dover Corporation company. p.
+pence Strainers International; a division of CIRCOR International. q.
+ure Flow Equipment Inc. r.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 200 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: NBR. f.
+tem: One- or two-piece stainless steel. g.
+isc: Nickel-plated or -coated ductile iron.
+. 200 CWP, Iron, Single-Flange Butterfly Valves with EPDM Seat and Stainless-Steel Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+merican Valve, Inc. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Jenkins Valves. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+lo Fab Inc. i.
+ammond Valve. j.
+itz Corporation. k.
+egend Valve. l.
+ilwaukee Valve Company. m.
+ueller Steam Specialty; a division of SPX Corporation. n.
+IBCO INC. o.
+orriseal; a Dover Corporation company. p.
+ed-White Valve Corporation. q.
+pence Strainers International; a division of CIRCOR International. r.
+ure Flow Equipment Inc. s.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 200 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: EPDM. f.
+tem: One- or two-piece stainless steel. g.
+isc: Stainless steel.
+. 200 CWP, Iron, Single-Flange Butterfly Valves with NBR Seat and Stainless-Steel Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+merican Valve, Inc. c.
+onbraco Industries, Inc.; Apollo Valves. d.
+ooper Cameron Valves; a division of Cooper Cameron Corp. e.
+rane Co.; Crane Valve Group; Jenkins Valves. f.
+rane Co.; Crane Valve Group; Stockham Division. g.
+eZurik Water Controls. h.
+lo Fab Inc. i.
+ammond Valve. j.
+itz Corporation. k.
+egend Valve. l.
+ilwaukee Valve Company. m.
+ueller Steam Specialty; a division of SPX Corporation. n.
+IBCO INC. o.
+orriseal; a Dover Corporation company. p.
+ed-White Valve Corporation. q.
+pence Strainers International; a division of CIRCOR International. r.
+ure Flow Equipment Inc. s.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 200 psig. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: ASTM A 126, cast iron or ASTM A 536, ductile iron. e.
+eat: NBR. f.
+tem: One- or two-piece stainless steel. g.
+isc: Stainless steel.
+ IRON, GROOVED-END BUTTERFLY VALVES A. 175 CWP, Iron, Grooved-End Butterfly Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+ennedy Valve; a division of McWane, Inc. b.
+hurjoint Piping Products. c.
+yco Fire Products LP; Grinnell Mechanical Products. d.
+ictaulic Company. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+WP Rating: 175 psig. c.
+ody Material: Coated, ductile iron. d.
+tem: Two-piece stainless steel. e.
+isc: Coated, ductile iron. f.
+eal: EPDM.
+. 300 CWP, Iron, Grooved-End Butterfly Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+nvil International, Inc. b.
+ennedy Valve; a division of McWane, Inc. c.
+ueller Steam Specialty; a division of SPX Corporation. d.
+IBCO INC. e.
+hurjoint Piping Products. f.
+yco Fire Products LP; Grinnell Mechanical Products. g.
+ictaulic Company. 2.
+escription: a.
+tandard: MSS SP-67, Type I. b.
+PS 8 and Smaller CWP Rating: 300 psig. c.
+PS 10 and Larger CWP Rating: 200 psig. d.
+ody Material: Coated, ductile iron. e.
+tem: Two-piece stainless steel. f.
+isc: Coated, ductile iron. g.
+eal: EPDM.
+ HIGH-PERFORMANCE BUTTERFLY VALVES A.
+eneral Requirements: 1.
+igh performance butterfly valves shall be fully bi-directional and bi-directionally dead- endable to the full pressure rating of the seat.
+he seat rating can not be reduced when pressure is applied in either direction and the valve shall be capable of serving as a blank flange, when bolted to the end of a line from either side of the valve body and no mating flange is attached.
+he means of attaching the body to the pipe flange and of attaching the seat ring to the body shall meet the ANSI class rating of the valve without mechanical failure.
+artially lugged butterfly valves are not acceptable. 2.
+acking shall be able to be tightened without removing the insulation. 3.
+xternal disc position indicators shall be provided. 4.
+alves must be fully factory assembled, set and tested. 5.
+ear operators on steam valves shall be spaced 4” (Four Inches) above packing assembly. 6.
+nstall all steam valves with the stem at least 30° off vertical to protect the bottom bearing from debris 7.
+n all butterfly valve actuators located greater than 5ft above the floor install chain wheels to 5ft above the floor.
+.
+lass 150, Single-Flange, High-Performance Butterfly Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+ray Controls; a division of Bray International. c.
+ooper Cameron Valves; a division of Cooper Cameron Corp. d.
+rane Co.; Crane Valve Group; Flowseal. e.
+rane Co.; Crane Valve Group; Stockham Division. f.
+eZurik Water Controls. g.
+ammond Valve. h.
+amesbury; a subsidiary of Metso Automation. i.
+ilwaukee Valve Company. j.
+IBCO INC. k.
+rocess Development & Control, Inc. l.
+yco Valves & Controls; a unit of Tyco Flow Control. m.
+omox Corporation. 2.
+escription: a.
+tandard: MSS SP-68. b.
+WP Rating: 285 psig at 100 deg F. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: Carbon steel or stainless steel. e.
+eat: EPDM High Temperature or RTFE. f.
+tem: 316 Stainless steel; offset from seat plane. g.
+isc: 316 Stainless Steel. h.
+ervice: Bidirectional. i.
+and wheel gear operated C.
+.
+lass 300, Single-Flange, High-Performance Butterfly Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+BZ Valve and Controls; a division of ABZ Manufacturing, Inc. b.
+ray Controls; a division of Bray International. c.
+ooper Cameron Valves; a division of Cooper Cameron Corp. d.
+rane Co.; Crane Valve Group; Flowseal. e.
+rane Co.; Crane Valve Group; Stockham Division. f.
+eZurik Water Controls. g.
+ammond Valve. h.
+amesbury; a subsidiary of Metso Automation. i.
+ilwaukee Valve Company. j.
+IBCO INC. k.
+rocess Development & Control, Inc. l.
+yco Valves & Controls; a unit of Tyco Flow Control. m.
+omox Corporation. 2.
+escription: a.
+tandard: MSS SP-68. b.
+WP Rating: 720 psig at 100 deg F. c.
+ody Design: Lug type; suitable for bidirectional dead-end service at rated pressure without use of downstream flange. d.
+ody Material: Carbon steel or 316 Stainless Steel. e.
+eat: EPDM High Temperature or RTFE. f.
+tem: 316 Stainless steel; offset from seat plane. g.
+isc: 316 Stainless Steel. h.
+ervice: Bidirectional. i.
+and wheel gear operated
+ BUTTERFLY VALVES FOR BURIED CHILLED WATER, HEATING HOT WATER AND DOMESTIC WATER A.
+rovide Butterfly Valves with Mechanical Joints.
+alves to include 150 PSIG seats, ANSI Class 150B bodies and 450 Ft-Lb Operator.
+alves are to be closed Clockwise.
+ BRONZE LIFT CHECK VALVES A.
+eneral Requirements: 1.
+PS 2 and below provide 45° swing check with screwed ends for hydronic applications. 2.
+PS 2-1/2 and above and over provide Non-slam type globe style lift check for hydronic applications.
+.
+lass 125, Lift Check Valves with Bronze Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+rane Co.; Crane Valve Group; Stockham Division. 2.
+escription: a.
+tandard: MSS SP-80, Type 1. b.
+WP Rating: 200 psig. c.
+ody Design: Vertical flow. d.
+ody Material: ASTM B 61 or ASTM B 62, bronze. e.
+nds: Threaded. f.
+isc: Bronze.
+.
+lass 125, Lift Check Valves with Nonmetallic Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+lo Fab Inc. b.
+ammond Valve. c.
+itz Corporation. d.
+ilwaukee Valve Company. e.
+ueller Steam Specialty; a division of SPX Corporation. f.
+IBCO INC. g.
+ed-White Valve Corporation. h.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-80, Type 2. b.
+WP Rating: 200 psig. c.
+ody Design: Vertical flow. d.
+ody Material: ASTM B 61 or ASTM B 62, bronze. e.
+nds: Threaded. f.
+isc: NBR, PTFE, or TFE.
+ BRONZE SWING CHECK VALVES A.
+eneral Requirements: 1.
+PS 2 and below provide 45° swing check with screwed ends for hydronic applications. 2.
+PS 2-1/2 and above and over provide Non-slam type globe style lift check for hydronic applications.
+.
+lass 125, Bronze Swing Check Valves with Bronze Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+merican Valve, Inc. b.
+rane Co.; Crane Valve Group; Crane Valves. c.
+rane Co.; Crane Valve Group; Jenkins Valves. d.
+rane Co.; Crane Valve Group; Stockham Division. e.
+ammond Valve. f.
+itz Corporation. g.
+ilwaukee Valve Company. h.
+IBCO INC. i.
+owell Valves. j.
+ed-White Valve Corporation. k.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. l.
+y-Tech Global Industries, Inc. 2.
+escription: a.
+tandard: MSS SP-80, Type 3. b.
+WP Rating: 200 psig. c.
+ody Design: Horizontal flow. d.
+ody Material: ASTM B 62, bronze. e.
+nds: Threaded. f.
+isc: Bronze.
+.
+lass 125, Bronze Swing Check Valves with Nonmetallic Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+rane Co.; Crane Valve Group; Stockham Division. d.
+ammond Valve. e.
+itz Corporation. f.
+ilwaukee Valve Company. g.
+IBCO INC. h.
+ed-White Valve Corporation. i.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-80, Type 4. b.
+WP Rating: 200 psig. c.
+ody Design: Horizontal flow. d.
+ody Material: ASTM B 62, bronze. e.
+nds: Threaded. f.
+isc: PTFE or TFE.
+.
+lass 150, Bronze Swing Check Valves with Bronze Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+merican Valve, Inc. b.
+rane Co.; Crane Valve Group; Crane Valves. c.
+rane Co.; Crane Valve Group; Jenkins Valves. d.
+rane Co.; Crane Valve Group; Stockham Division. e.
+itz Corporation. f.
+ilwaukee Valve Company. g.
+IBCO INC. h.
+ed-White Valve Corporation. i.
+y-Tech Global Industries, Inc. 2.
+escription: a.
+tandard: MSS SP-80, Type 3. b.
+WP Rating: 300 psig. c.
+ody Design: Horizontal flow. d.
+ody Material: ASTM B 62, bronze. e.
+nds: Threaded. f.
+isc: Bronze.
+.
+lass 150, Bronze Swing Check Valves with Nonmetallic Disc: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+ammond Valve. d.
+ilwaukee Valve Company. e.
+IBCO INC. f.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-80, Type 4. b.
+WP Rating: 300 psig. c.
+ody Design: Horizontal flow. d.
+ody Material: ASTM B 62, bronze. e.
+nds: Threaded. f.
+isc: PTFE or TFE.
+ IRON SWING CHECK VALVES A.
+eneral Requirements: 1.
+PS 2 and below provide 45° swing check with screwed ends for hydronic applications. 2.
+PS 2-1/2 and above and over provide Non-slam type globe style lift check for hydronic applications.
+.
+lass 125, Iron Swing Check Valves with Metal Seats: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+rane Co.; Crane Valve Group; Stockham Division. d.
+ammond Valve. e.
+itz Corporation. f.
+egend Valve. g.
+ilwaukee Valve Company. h.
+IBCO INC. i.
+owell Valves. j.
+ed-White Valve Corporation. k.
+ure Flow Equipment Inc. l.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. m.
+y-Tech Global Industries, Inc. 2.
+escription: a.
+tandard: MSS SP-71, Type I. b.
+PS 2-1/2 to NPS 12, CWP Rating: 200 psig. c.
+PS 14 to NPS 24, CWP Rating: 150 psig. d.
+ody Design: Clear or full waterway. e.
+ody Material: ASTM A 126, gray iron with bolted bonnet. f.
+nds: Flanged. g.
+rim: Bronze. h.
+asket: Asbestos free.
+.
+lass 125, Iron Swing Check Valves with Nonmetallic-to-Metal Seats: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Stockham Division. 2.
+escription: a.
+tandard: MSS SP-71, Type I. b.
+PS 2-1/2 to NPS 12, CWP Rating: 200 psig. c.
+PS 14 to NPS 24, CWP Rating: 150 psig. d.
+ody Design: Clear or full waterway. e.
+ody Material: ASTM A 126, gray iron with bolted bonnet. f.
+nds: Flanged. g.
+rim: Composition. h.
+eat Ring: Bronze. i.
+isc Holder: Bronze. j.
+isc: PTFE or TFE. k.
+asket: Asbestos free.
+.
+lass 250, Iron Swing Check Valves with Metal Seats: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+rane Co.; Crane Valve Group; Stockham Division. d.
+ammond Valve. e.
+ilwaukee Valve Company. f.
+IBCO INC. g.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-71, Type I. b.
+PS 2-1/2 to NPS 12, CWP Rating: 500 psig. c.
+PS 14 to NPS 24, CWP Rating: 300 psig. d.
+ody Design: Clear or full waterway. e.
+ody Material: ASTM A 126, gray iron with bolted bonnet. f.
+nds: Flanged. g.
+rim: Bronze. h.
+asket: Asbestos free.
+ IRON, GROOVED-END SWING CHECK VALVES A.
+eneral Requirements: 1.
+PS 2 and below provide 45° swing check with screwed ends for hydronic applications. 2.
+PS 2-1/2 and above and over provide Non-slam type globe style lift check for hydronic applications.
+. 300 CWP, Iron, Grooved-End Swing Check Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+nvil International, Inc. b.
+hurjoint Piping Products. c.
+yco Fire Products LP; Grinnell Mechanical Products. d.
+ictaulic Company. 2.
+escription: a.
+WP Rating: 300 psig. b.
+ody Material: ASTM A 536, ductile iron. c.
+eal: EPDM. d.
+isc: Spring operated, ductile iron or stainless steel.
+ IRON, CENTER-GUIDED CHECK VALVES A.
+eneral Requirements: 1.
+PS 2 and below provide 45° swing check with screwed ends for hydronic applications. 2.
+PS 2-1/2 and above and over provide Non-slam type globe style lift check for hydronic applications.
+.
+lass 125, Iron, Compact-Wafer, Center-Guided Check Valves with Metal Seat: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+nvil International, Inc. b.
+PCO Willamette Valve and Primer Corporation. c.
+rispin Valve. d.
+FT Inc. e.
+lo Fab Inc. f.
+A Industries, Inc. g.
+ammond Valve. h.
+etraflex, Inc. i.
+ilwaukee Valve Company. j.
+ueller Steam Specialty; a division of SPX Corporation. k.
+IBCO INC. l.
+pence Strainers International; a division of CIRCOR International. m.
+ure Flow Equipment Inc. n.
+al-Matic Valve & Manufacturing Corp. o.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-125. b.
+PS 2-1/2 to NPS 12, CWP Rating: 200 psig. c.
+PS 14 to NPS 24, CWP Rating: 150 psig. d.
+ody Material: ASTM A 126, gray iron. e.
+tyle: Compact wafer. f.
+eat: Bronze.
+.
+lass 125, Iron, Globe, Center-Guided Check Valves with Metal Seat: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+PCO Willamette Valve and Primer Corporation. b.
+rispin Valve. c.
+FT Inc. d.
+lomatic Corporation. e.
+ammond Valve. f.
+etraflex, Inc. g.
+ilwaukee Valve Company. h.
+ueller Steam Specialty; a division of SPX Corporation. i.
+IBCO INC. j.
+pence Strainers International; a division of CIRCOR International. k.
+ure Flow Equipment Inc. l.
+al-Matic Valve & Manufacturing Corp. m.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-125. b.
+PS 2-1/2 to NPS 12, CWP Rating: 200 psig. c.
+PS 14 to NPS 24, CWP Rating: 150 psig. d.
+ody Material: ASTM A 126, gray iron. e.
+tyle: Globe, spring loaded. f.
+nds: Flanged. g.
+eat: Bronze.
+.
+lass 150, Iron, Globe, Center-Guided Check Valves with Metal Seat: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+PCO Willamette Valve and Primer Corporation. b.
+rispin Valve. c.
+al-Matic Valve & Manufacturing Corp. 2.
+escription: a.
+tandard: MSS SP-125. b.
+PS 2-1/2 to NPS 12, CWP Rating: 300 psig. c.
+PS 14 to NPS 24, CWP Rating: 250 psig. d.
+ody Material: ASTM A 395/A 395M or ASTM A 536, ductile iron. e.
+tyle: Globe, spring loaded. f.
+nds: Flanged. g.
+eat: Bronze.
+.
+lass 250, Iron, Globe, Center-Guided Check Valves with Metal Seat: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+PCO Willamette Valve and Primer Corporation. b.
+rispin Valve. c.
+FT Inc. d.
+lomatic Corporation. e.
+ammond Valve. f.
+etraflex, Inc. g.
+ilwaukee Valve Company. h.
+ueller Steam Specialty; a division of SPX Corporation. i.
+IBCO INC. j.
+al-Matic Valve & Manufacturing Corp. 2.
+escription: a.
+tandard: MSS SP-125. b.
+PS 2-1/2 to NPS 12, CWP Rating: 400 psig. c.
+PS 14 to NPS 24, CWP Rating: 300 psig. d.
+ody Material: ASTM A 126, gray iron. e.
+tyle: Globe, spring loaded. f.
+nds: Flanged. g.
+eat: Bronze.
+.
+lass 300, Iron, Globe, Center-Guided Check Valves with Metal Seat: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+PCO Willamette Valve and Primer Corporation. b.
+rispin Valve. c.
+al-Matic Valve & Manufacturing Corp. 2.
+escription: a.
+tandard: MSS SP-125. b.
+PS 2-1/2 to NPS 12, CWP Rating: 500 psig. c.
+PS 14 to NPS 24, CWP Rating: 400 psig. d.
+ody Material: ASTM A 395/A 395M or ASTM A 536, ductile iron. e.
+tyle: Globe, spring loaded. f.
+nds: Flanged. g.
+eat: Bronze.
+.
+lass 125, Iron, Globe, Center-Guided Check Valves with Resilient Seat: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+nvil International, Inc. b.
+PCO Willamette Valve and Primer Corporation. c.
+rispin Valve. d.
+FT Inc. e.
+A Industries, Inc. f.
+ammond Valve. g.
+ilwaukee Valve Company. h.
+IBCO INC. i.
+ure Flow Equipment Inc. j.
+al-Matic Valve & Manufacturing Corp. 2.
+escription: a.
+tandard: MSS SP-125. b.
+PS 2-1/2 to NPS 12, CWP Rating: 200 psig. c.
+PS 14 to NPS 24, CWP Rating: 150 psig. d.
+ody Material: ASTM A 126, gray iron. e.
+tyle: Globe, spring loaded. f.
+nds: Flanged. g.
+eat: EPDM.
+.
+lass 150, Iron, Globe, Center-Guided Check Valves with Resilient Seat: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+PCO Willamette Valve and Primer Corporation. b.
+rispin Valve. c.
+FT Inc. d.
+al-Matic Valve & Manufacturing Corp. 2.
+escription: a.
+tandard: MSS SP-125. b.
+PS 2-1/2 to NPS 12, CWP Rating: 300 psig. c.
+PS 14 to NPS 24, CWP Rating: 250 psig. d.
+ody Material: ASTM A 395/A 395M or ASTM A 536, ductile iron. e.
+tyle: Globe, spring loaded. f.
+nds: Flanged. g.
+eat: EPDM.
+.
+lass 250, Iron, Globe, Center-Guided Check Valves with Resilient Seat: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+PCO Willamette Valve and Primer Corporation. b.
+rispin Valve. c.
+FT Inc. d.
+ammond Valve. e.
+ilwaukee Valve Company. f.
+IBCO INC. g.
+al-Matic Valve & Manufacturing Corp. 2.
+escription: a.
+tandard: MSS SP-125. b.
+PS 2-1/2 to NPS 12, CWP Rating: 400 psig. c.
+PS 14 to NPS 24, CWP Rating: 300 psig. d.
+ody Material: ASTM A 126, gray iron. e.
+tyle: Globe, spring loaded. f.
+nds: Flanged. g.
+eat: EPDM.
+.
+lass 300, Iron, Globe, Center-Guided Check Valves with Resilient Seat: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+PCO Willamette Valve and Primer Corporation. b.
+rispin Valve. c.
+al-Matic Valve & Manufacturing Corp. 2.
+escription: a.
+tandard: MSS SP-125. b.
+PS 2-1/2 to NPS 12, CWP Rating: 500 psig. c.
+PS 14 to NPS 24, CWP Rating: 400 psig. d.
+ody Material: ASTM A 395/A 395M or ASTM A 536, ductile iron. e.
+tyle: Globe, spring loaded. f.
+nds: Flanged. g.
+eat: EPDM.
+ BRONZE GATE VALVES A.
+lass 125, NRS Bronze Gate Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+merican Valve, Inc. b.
+rane Co.; Crane Valve Group; Crane Valves. c.
+rane Co.; Crane Valve Group; Jenkins Valves. d.
+rane Co.; Crane Valve Group; Stockham Division. e.
+ammond Valve. f.
+itz Corporation. g.
+ilwaukee Valve Company. h.
+IBCO INC. i.
+owell Valves. j.
+ed-White Valve Corporation. k.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. l.
+y-Tech Global Industries, Inc. 2.
+escription: a.
+tandard: MSS SP-80, Type 1. b.
+WP Rating: 200 psig. c.
+ody Material: ASTM B 62, bronze with integral seat and screw-in bonnet. d.
+nds: Threaded or solder joint. e.
+tem: Bronze. f.
+isc: Solid wedge; bronze. g.
+acking: Asbestos free. h.
+andwheel: Malleable iron or aluminum.
+.
+lass 125, RS Bronze Gate Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+merican Valve, Inc. b.
+rane Co.; Crane Valve Group; Crane Valves. c.
+rane Co.; Crane Valve Group; Jenkins Valves. d.
+rane Co.; Crane Valve Group; Stockham Division. e.
+ammond Valve. f.
+itz Corporation. g.
+ilwaukee Valve Company. h.
+IBCO INC. i.
+owell Valves. j.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. k.
+y-Tech Global Industries, Inc. 2.
+escription: a.
+tandard: MSS SP-80, Type 2. b.
+WP Rating: 200 psig. c.
+ody Material: ASTM B 62, bronze with integral seat and screw-in bonnet. d.
+nds: Threaded. e.
+tem: Bronze. f.
+isc: Solid wedge; bronze. g.
+acking: Asbestos free. h.
+andwheel: Malleable iron or aluminum.
+.
+lass 150, NRS Bronze Gate Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+ammond Valve. b.
+itz Corporation. c.
+ilwaukee Valve Company. d.
+IBCO INC. e.
+owell Valves. f.
+ed-White Valve Corporation. g.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. 2.
+escription: a.
+tandard: MSS SP-80, Type 1. b.
+WP Rating: 300 psig. c.
+ody Material: ASTM B 62, bronze with integral seat and union-ring bonnet. d.
+nds: Threaded. e.
+tem: Bronze. f.
+isc: Solid wedge; bronze. g.
+acking: Asbestos free. h.
+andwheel: Malleable iron or aluminum.
+.
+lass 150, RS Bronze Gate Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Stockham Division. c.
+ammond Valve. d.
+itz Corporation. e.
+ilwaukee Valve Company. f.
+IBCO INC. g.
+owell Valves. h.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. i.
+y-Tech Global Industries, Inc. 2.
+escription: a.
+tandard: MSS SP-80, Type 2. b.
+WP Rating: 300 psig. c.
+ody Material: ASTM B 62, bronze with integral seat and union-ring bonnet. d.
+nds: Threaded. e.
+tem: Bronze. f.
+isc: Solid wedge; bronze. g.
+acking: Asbestos free. h.
+andwheel: Malleable iron or aluminum.
+ IRON GATE VALVES A.
+lass 125, NRS, Iron Gate Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+rane Co.; Crane Valve Group; Stockham Division. d.
+lo Fab Inc. e.
+ammond Valve. f.
+itz Corporation. g.
+egend Valve. h.
+ilwaukee Valve Company. i.
+IBCO INC. j.
+owell Valves. k.
+ed-White Valve Corporation. l.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. m.
+y-Tech Global Industries, Inc. 2.
+escription: a.
+tandard: MSS SP-70, Type I. b.
+PS 2-1/2 to NPS 12, CWP Rating: 200 psig. c.
+PS 14 to NPS 24, CWP Rating: 150 psig. d.
+ody Material: ASTM A 126, gray iron with bolted bonnet. e.
+nds: Flanged. f.
+rim: Bronze. g.
+isc: Solid wedge. h.
+acking and Gasket: Asbestos free.
+.
+lass 125, OS&Y, Iron Gate Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Jenkins Valves. c.
+rane Co.; Crane Valve Group; Stockham Division. d.
+lo Fab Inc. e.
+ammond Valve. f.
+itz Corporation. g.
+egend Valve. h.
+ilwaukee Valve Company. i.
+IBCO INC. j.
+owell Valves. k.
+ed-White Valve Corporation. l.
+atts Regulator Co.; a division of Watts Water Technologies, Inc. m.
+y-Tech Global Industries, Inc. 2.
+escription: a.
+tandard: MSS SP-70, Type I. b.
+PS 2-1/2 to NPS 12, CWP Rating: 200 psig. c.
+PS 14 to NPS 24, CWP Rating: 150 psig. d.
+ody Material: ASTM A 126, gray iron with bolted bonnet. e.
+nds: Flanged. f.
+rim: Bronze. g.
+isc: Solid wedge. h.
+acking and Gasket: Asbestos free.
+.
+lass 250, NRS, Iron Gate Valves: 1.
+anufacturers: Subject to compliance with requirements, provide products by one of the following: a.
+rane Co.; Crane Valve Group; Crane Valves. b.
+rane Co.; Crane Valve Group; Stockham Division. c.
+IBCO INC. 2.
+escription: a.
+tandard: MSS SP-70, Type I. b.
+PS 2-1/2 to NPS 12, CWP Rating: 500 psig. c.
+PS 14 to NPS 24, CWP Rating: 300 psig. d.
+ody Material: ASTM A 126, gray iron with bolted bonnet. e.
+nds: Flanged. f.
+rim: Bronze. g.
+isc: 

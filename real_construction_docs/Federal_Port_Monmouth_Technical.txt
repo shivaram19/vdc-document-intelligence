@@ -1,0 +1,2645 @@
+http://www.usace.army.mil/Portals/2/docs/Safety/EM%20385-1-
+1,%202014%20Sections/Checklists/CESO%20Checklist%20A-
+02%20Accident%20Prevention%20Plan.pdf) The Contractor shall
+address each of the elements/sub-elements in the outline contained in
+Appendix A of EM 385-1-1 in the order that they are provided in the
+manual. If an item is not applicable because of the nature of the work to
+be performed, the Contractor shall state this exception and provide a
+justification.
+(2) Activity Hazard Analysis (AHA) Form, Figure 1-2 in Section 1
+“Program Management” of EM 385-1-1 (Nov 2014) (Attached at the end of
+this section).
+(3) A copy of company policy statement regarding accident prevention.
+(4) When marine plant and equipment are in use under a contract, the
+method of fuel oil transfer shall be included on MVN Form 385-10 (Latest
+Edition), Fuel Oil Transfer (attached at the end of this section), (Refer to
+33 CFR 156).
+(5) EM-385-1-1 01.A.14 (a) requires a hazard analysis for all features of
+work. For this contract, these hazard analyses shall be submitted with the
+rest of the APP for review before work begins. Hazard analysis may be
+refined and resubmitted at a later date if the Contractor chooses.
+The Contractor shall not commence physical work at the site until the Contracting
+Officer, or his/her authorized representative has accepted the plan. The
+Contractor may submit its Accident Prevention Plan only for the first phase of
+construction provided that it is accompanied by an outline of the remaining
+phases of construction. All remaining phases shall be submitted and accepted
+prior to the beginning of work in each phase. Also refer to Section 1 of EM 385-
+1-1.
+(c) Comprehensive Hazard Communication Program. The Contractor shall
+develop, implement, and maintain at the workplace a written, Comprehensive
+Hazard Communication Program (see Section 06.B.01 of EM 385-1-1) that
+includes identification of potential hazards as prescribed in 29 CFR Part
+1910.1200 and/or 1926.59, effects of exposure and control measures to be used
+for chemical products and physical agents that may be encountered during the
+performance of work on this contract, provisions for container labeling, Safety
+Data Sheets, and employee training program, and other criteria in accordance
+with 29 CFR Part 1910.1200 and/or 1926.59. Training shall include
+communication methods and systems to be used (i.e., voice, hand signals, radios
+or other means), and training in the use and understanding of safety data sheets
+and chemical product hazard warning labels. Prior to bringing hazardous
+substances, as defined in 29 CFR 1910.1200 and/or 1926.59, onto the job site, a
+01100-3 Ed 22-018
+
+copy of the Hazard Communication Program and the Safety Data Sheets of each
+substance shall be submitted to the Contracting Officer and made available to
+the Contractor's employees as part of its Accident Prevention Plan. A site map
+shall be attached to the inventory showing where the inventoried hazardous
+substances are stored. The inventory list and site map shall be updated monthly
+to assure accuracy. The Contractor shall note that “Safety Data Sheets (SDS)
+has replaced Material Safety Data Sheets (MSDS)” referenced in Section
+06.B.01 of EM 385-1-1 meeting the criteria of the new OSHA globally
+harmonized system.
+(d) Daily Inspections. The Contractor shall perform daily safety inspections and
+record them on the forms approved by the Contracting Officer. Reports of daily
+inspections shall be maintained at the jobsite in accordance with Section 01 45
+04.00 10, "CONTRACTOR QUALITY CONTROL". The reports shall be records
+of the daily inspections and resulting actions. Each report shall include, as a
+minimum, the following:
+(1) Phase(s) of construction underway during the inspection.
+(2) Locations of areas where inspections were made.
+(3) Results of inspections, including nature of deficiencies observed and
+corrective actions taken, or to be taken, date, and signature of the person
+responsible for its contents.
+(e) Safety Sign. The Contractor shall furnish, erect, and maintain a safety sign
+at the site where indicated by the Contracting Officer. The sign shall conform to
+the requirements of this paragraph and the drawing included at the end of this
+section. The lettering shall be black, the safety circle and cross green, and the
+background white. When placed on a floating plant, the sign may be half size.
+The sign shall be erected as soon as practicable, but not later than 15 calendar
+days after the date established for commencement of work. The data required
+shall be current. The sign coordinator is Timothy Lacoste, (504) 862-2663.
+(f) Ground Fault Protection. Electrical equipment used on this contract shall be
+equipped with ground fault circuit interrupters in accordance with EM 385-1-1,
+Section 11.D.05.
+(g) Means of Escape for Personnel Quartered or Working on Floating Plant.
+Two means of escape shall be provided for assembly, sleeping, and messing
+areas on floating plants. For areas involving 10 or more persons, both means of
+egress shall be through standard size doors opening to different exit routes.
+Where nine or fewer persons are involved, one of the means of escape may be a
+window (minimum dimensions 24-inches by 36-inches), which leads to a different
+exit route. Refer to Section 19 of EM 385-1-1.
+01100-4 Ed 22-018
+
+(h) Emergency Alarms and Signals.
+(1) Alarms. Emergency alarms shall be installed and maintained on all
+floating plant requiring a crew where it is possible for either a passenger or
+crewman to be out of sight or hearing from any other person. The alarm
+system shall be operated from the primary electrical system with standby
+batteries on trickle charge that will automatically furnish the required
+energy during an electrical-system failure. A sufficient number of signaling
+devices shall be placed on each deck so that the sound can be heard
+distinctly at any point above the usual background noise. All signaling
+devices shall be so interconnected that actuation can occur from at least
+one strategic point on each deck.
+(2) Signals.
+(a) Fire Alarm Signals. The general fire alarm signal shall be in
+accordance with 46 CFR Ch. I; Subpart E.109.503 of the Coast
+Guard Rules and Regulations for Cargo and Miscellaneous
+Vessels, Sub-Chapter I & Ia.
+(b) Abandon Ship Signals. The signal for abandon ship shall be in
+accordance with paragraph 109.503(b) of the reference cited in
+subparagraph (2)(a) above.
+(c) Man-Overboard Signal. Hail and pass the word to the bridge.
+All personnel and vessels capable of rendering assistance shall
+respond.
+(i) Hurricane Plan. A detailed plan for protection and evacuation of personnel
+and the construction site, in the event of an impending hurricane or storm, is
+required as an enclosure to the Contractor's Accident Prevention Plan. This plan
+shall be submitted to the Contracting Officer, or his/her representative, for review
+and approval prior to the preconstruction conference. Work being performed to
+satisfy the Hurricane Plan will not be measured for payment. Payment for all
+work associated with the Hurricane Plan, and providing the equipment required
+for the duration specified, shall be distributed among the existing bid items. The
+Hurricane Plan shall include at least the following:
+(1) The time each phase of the plan will be put in effect. The time shall
+be the number of hours remaining for the storm to reach the worksite if it
+continues at the predicted speed and direction.
+(2) The estimated time necessary to secure and evacuate the site
+including any emergency flood protection.
+(3) The safe harbor for personnel and plant specifically identified.
+01100-5 Ed 22-018
+
+(4) The name of the boat which will be used to move the plant, its type,
+capacity, speed, and availability.
+(5) The estimated time necessary to move the plant to the safe harbor
+after movement is started.
+(j) Hazardous Energy Protection. The Contractor shall develop, implement and
+maintain at the workplace, a written Control of Hazardous Energy
+(Lockout/Tagout) System. Refer to Section 12 of EM 385-1-1.
+(k) Site Safety and Health Officer (SSHO). The Contractor shall have a qualified
+Site Safety and Health Officer (SSHO) on the construction site at all times that
+work is being performed to manage the Contractor's Accident Prevention Plan.
+The SSHO shall be a full-time position with the SSHO having no other duties
+than Contractor Safety management (See EM 385-1-1, paragraph 01.A.17). The
+person(s), as a minimum, shall have completed the 30-hour OSHA Construction
+Industry Safety Class (may be web-based training if the student is able to directly
+ask questions of the instructor by chat / phone) or an equivalent course (see
+Appendix A, paragraph 3.d(3)) applicable to the work to be performed and given
+by a qualified instructor. Such training shall have been completed within the last
+three (3) years. SSHO's shall maintain competency through taking 8 hours of
+documented formal, on-line, or self-study safety and health coursework every
+year. For projects with multiple shifts, an alternate SSHO shall be assigned to
+assure coverage of the project during all working hours. Alternate SSHO's (as
+listed in the Contractor's APP) must meet the same requirements as the primary
+SSHO. Alternate SSHO's may hold other positions when not functioning as an
+SSHO.
+4. INSPECTOR'S FIELD OFFICE
+(a) The Contractor shall furnish to the Government inspectors on board the
+floating plant bottled water and a suitable room for an office. The office shall be
+fully equipped and maintained to the satisfaction of the government inspectors
+aboard the floating plant. The office shall be lighted, heated, ventilated, and air
+conditioned to the satisfaction of the inspectors. Power surge protectors shall be
+available for the protection of any of the inspector's equipment he/she deems
+necessary to protect from electrical outlet power surges. The entire cost to the
+Contractor for furnishing, equipping, and maintaining the accommodations shall
+be included in the contract job price for “Mobilization and Demobilization”. If the
+Contractor fails to meet the requirements of this paragraph, the accommodations
+will be secured by the inspector, and the cost will be deducted from payments
+due the Contractor.
+(b) The office shall be equipped with the following items, which must be supplied
+in a fully functional condition:
+01100-6 Ed 22-018
+
+1. A desk with locking drawers and two sets of matching keys;
+2. A swivel desk chair with a contoured seat, two arms, and adjustable
+height and back rest, all of which shall have fully cushioned and
+upholstered surfaces;
+3. A two or more drawer legal sized file cabinet;
+4. A three foot by five foot drafting table, with a drafting table fluorescent
+light that is mechanically adjustable. This equipment shall include
+appropriate drafting instruments, as requested by the inspector.
+5. A legal/letter sized capable copy machine - the Contractor may allow
+the use of his own in lieu of providing a separate one for the inspector;
+6. Double convenience outlets to provide 110-volt power along with surge
+protectors to protect Government equipment.
+(c) If the Contractor maintains on this work an establishment for the subsistence
+of his/her own employees, he/she shall, when required, furnish to inspectors
+employed on the work, and to all Government agents who may visit the work on
+official business, meals of quality satisfactory to the Contracting Officer. All
+meals shall be available for purchase, by the Government's inspectors and
+agents, at the cost not to exceed $5.00 per person for each meal.
+5. GOVERNMENT TRANSPORTATION
+The Contractor shall furnish, on the request of the Contracting Officer or any
+Inspector, the use of such boats, boatmen, laborers, and material as may be
+reasonably necessary in inspecting and supervising the work. The Contractor shall
+furnish, at no additional cost to the Government, a skiff with an enclosed cabin,
+overall hull length of at least 18 feet and a combined weight capacity of at least 1200
+pounds. The skiff shall bear a plate of certification for minimum flotation by the
+Boating Industry Association (BIA) and shall also meet the safety requirements in EM
+385-1-1, Section 19.C, entitled “Launches, Motorboats, and Skiffs”. The skiff shall be
+outfitted with two outboard motors of at least 40 horsepower for propulsion.
+6. PROJECT SIGN
+Prior to commencement of work, the Contractor shall construct a project sign at the
+site of the work at a location directed by the Contracting Officer. The sign, which will
+identify the work with the Corps of Engineers shall be 4 feet by 6 feet in size and shall
+conform to the requirements of the PROJECT SIGN drawing and installation
+instructions attached at the end of this section. The lettering for the 2 feet by 4 feet
+section of the sign with the Corps logo and Army Star shall be white; all other lettering
+shall be black. Lettering for the project name shall be Helvetica Bold, all other
+01100-7 Ed 22-018
+
+lettering shall be Helvetica Regular. The sign coordinator is Timothy Lacoste, (504)
+862-2663. No separate payment will be made for construction and erection of the
+project sign and all costs in connection therewith will be considered an incidental
+obligation of the Contractor. Upon completion of the work, the sign shall become the
+property of the Contractor and shall be removed from the job site.
+7. RADIO AND TELEPHONE COMMUNICATIONS
+The Contractor shall furnish and maintain the following radio and telephone
+equipment throughout the period of the contract. Final approval of the plant will not
+be made until this equipment is installed and in good working order:
+a. Maritime Radio Transceiver. The Contractor shall furnish and maintain
+throughout the contract, one FM ship's radio transceiver with power not in excess
+of 25 watts, and at least 15 watts output on the maritime frequencies of 156.800
+(Channel 16) and 156.375 (Channel 67) MHz 16F3 emission, with a tolerance of
+plus or minus 5 kHz deviation at 100 percent modulation for communication
+concerning navigation in the vicinity of the floating plant. The radio shall be
+operated in accordance with FCC rules and regulations.
+b. Radio Equipment for Additional Floating Plant. In the event that the Contractor
+should have two (2) plants operating simultaneously under this contract, the
+above-specified radio equipment shall be furnished and maintained on both
+floating plants. The radio transceivers provided for hereinabove shall be
+continuously monitored by qualified Contractor persons operating the floating
+plants.
+c. Satellite Telephone. The Contractor shall provide functioning 24-hour satellite
+telephone service with voice and facsimile capability within the inspector’s office.
+The satellite service shall have, as a minimum, voice capability of 4.8 kb/s
+(kilobytes per second) voice coding and fax speed of 2.4 kb/s. The satellite
+telephone shall be made available for official use by Government personnel on a
+24-hour per day basis to exclusively conduct Government business and
+emergency calls.
+d. WIFI Capability for RMS Field Reporting. The Contractor shall provide the
+Inspector's office with a cellular wireless Broadband / WiFi 802.11n capable
+router that accepts cellular data signals through satellite. The high-speed
+internet service and associated equipment must be capable of providing
+adequate connection to allow the inspectors to import / export files through RMS
+(shall provide a minimum download speed of 10 Mbps and a minimum upload
+speed of 1.5 Mbps for the sole use of the Inspector). The Contractor shall field
+verify that the service provider chosen has adequate continuous coverage
+throughout the site of work. The Contractor shall be responsible for the
+installation, maintenance of, and the monthly service fees necessary to provide
+continuous high speed internet service for the duration of the contract. Final
+01100-8 Ed 22-018
+
+approval of the plant will not be made until this equipment is installed and in good
+working order.
+e. No separate measurement or payment will be made for furnishing and
+maintaining radio and telephone equipment as specified herein. All costs shall
+be distributed throughout the existing bid items.
+8. SEAWORTHINESS CERTIFICATION
+EM 385-1-1, Section 19.A.01.b. All floating plants not subject to USCG inspection
+and certification or not having a current American Bureau of Shipping (ABS)
+classification shall be inspected in the working mode annually by a marine surveyor
+accredited by the National Association of Marine Surveyors (NAMS) or Society of
+Accredited Marine Surveyors (SAMS) and having at least five (5) years’ experience in
+commercial marine plant and equipment. All other plant shall be inspected annually
+by a qualified person. The inspection shall be documented, and a copy of the most
+recent inspection report shall be posted in a public area on board the vessel and a
+copy shall be furnished to the designated authority upon request. The inspection
+shall be appropriate for the intended use of the plant and shall, as a minimum,
+evaluate structural integrity and compliance with NFPA 302, Fire Protection Standard
+for Pleasure and Commercial Motor Craft.
+9. RIGHTS-OF-WAY
+a. The rights of entry required for the work to be constructed under this contract,
+within the rights-of-way limits indicated on the drawings, have been obtained by
+the Government and are provided without cost to the Contractor. The Contractor
+shall make its own investigations to determine the conditions, restrictions, and
+difficulties that may be encountered in the transportation of equipment and
+material to and from the work site. The proposed work, including rights-of-way,
+as defined by these specifications and as shown on the drawings, is in
+compliance with all applicable Federal and state environmental laws and
+regulations. Upon completion of the Contractor’s work, rights-of-way furnished
+by the Government shall be returned to its original condition prior to construction
+unless otherwise noted.
+b. If the Contractor proposes a deviation from the Government furnished rights-
+of-way for his convenience, the Contractor shall notify the Contracting Officer or
+its representative in writing. Contractor shall not provide any permanent rights-
+of-way for the project. The Contractor is cautioned that any deviation to the
+Government furnished rights-of-way is subject to all applicable Federal and state
+environmental laws and regulations. Compliance with these environmental laws
+and regulations may require additional National Environmental Policy Act (NEPA)
+documents, cultural resources surveys, coordination with the Louisiana State
+Historical Preservation Officer, water quality certification, modification of the
+Federal consistency determination, etc. The Government is ultimately
+01100-9 Ed 22-018
+
+responsible for environmental compliance; therefore, the Government will
+determine the additional environmental coordination and documentation
+necessary for a proposed deviation to the Government furnished rights-of-way.
+For any environmental investigations the Government is to perform on areas
+outside of Government furnished rights-of-way, the Contractor shall provide
+sufficient rights of entry to the Government. The Contracting Officer will advise
+the Contractor of the additional environmental coordination and documentation
+that must be completed. The Government shall be responsible for any additional
+environmental compliance; however, the Contractor may conduct specific tasks
+identified by the Government. The Government will offer advice and assistance
+to the Contractor in conducting these tasks. Depending on the environmental
+impact of the proposed deviation, obtaining the coordination and documentation
+may not be approved or could take as much as 180 days for approval by the
+Government. The Government must review, approve and ensure distribution of
+all environmental compliance documentation and ensure all comments on the
+same have been resolved before any utilization of any areas outside of the
+Government furnished rights-of-way. The Contractor shall reimburse the
+Government for actual expenses incurred for assistance in completing or
+attempting to complete additional environmental coordination and
+documentation, which expenses will not exceed one hundred thousand
+($100,000. 00) dollars. There is no guarantee that environmental compliance will
+be obtained; therefore, the Contractor shall assume all risks and liabilities
+associated with pursuing a deviation. Any delays resulting from the deviation
+and/or the environmental coordination and documentation shall not be made the
+basis of any Contractor claim for increase in the contract cost and/or increase in
+contract time. Deviations will be at Contractor’s sole risk and liability, including,
+but not limited to, such liabilities associated with items such as hazardous
+substances regulated under the Comprehensive Environmental Response,
+Compensation, and Liability Act (42 U.S.C. 9601 et. seq.), and at no cost to the
+Government. Government assistance in obtaining additional environmental
+clearances does not relieve the Contractor of responsibility for complying with
+other Federal, state or local licenses and permits.
+10. CERTIFICATES OF COMPLIANCE
+Any certificates required for demonstrating proof of compliance of materials with
+specification requirements shall be executed in three (3) copies. Each certificate shall
+be signed by an official authorized to certify on behalf of the manufacturing company
+and shall contain the name and address of the Contractor, the project name and
+location, and the quantity and date or dates of shipment or delivery to which the
+certificates apply. Copies of laboratory test reports submitted with certificates shall
+contain the name and address of the testing laboratory and the date or dates of the
+tests to which the report applies. Certification shall not be construed as relieving the
+Contractor from furnishing satisfactory material, if, after tests are performed on
+selected samples, the material is found not to meet specified requirements.
+01100-10 Ed 22-018
+
+11. ENVIRONMENTAL LITIGATION
+(a) The term "environmental litigation", as used herein, means a lawsuit alleging
+that the work has an adverse effect on the environment or that the Government
+has not duly considered, either substantively or procedurally, the effect of the
+work on the environment.
+(b) If the performance of all or any part of the work is suspended, delayed, or
+interrupted due to an order of a court of competent jurisdiction as a result of
+environmental litigation, as defined above, the Contracting Officer, at the request
+of the Contractor, shall determine whether the order is due in any part to the acts
+or omissions of the Contractor or a Subcontractor at any tier not required by the
+terms of this contract. If the order is not due in any part to acts or omissions of
+the Contractor (or a Subcontractor at any tier) other than as required by this
+contract, such suspension, delay, or interruption shall be as if ordered by the
+Contracting Officer under the Contract Clause in Section 00700, entitled
+SUSPENSION OF WORK (FAR 52.242-14). The period of such suspension,
+delay or interruption shall be considered unreasonable, and an adjustment shall
+be made for any increase in the cost of performance of this contract (excluding
+profit) as provided in that clause, subject to all the provisions thereof.
+12. UTILITIES AND IMPROVEMENTS
+(a) There are no known utilities within the limits of work.
+(b) Any unidentified pipes or structures which may be found within the limits of
+the work during construction shall not be disturbed nor shall construction or
+excavation be performed at these locations unless and until approved by the
+Contracting Officer. The Contractor shall notify the utility owners by certified mail
+45 days, 15 days, and 72 hours prior to construction near the utility.
+13. PERMISSIBLE HOURS OF WORK
+When the Contractor elects to work weekends and holidays, notice shall be given to
+the Contracting Officer, in writing, 36 hours in advance of commencement of such
+operations to permit suitable arrangements for inspections to be made. Adequate
+lighting for safe operations and thorough inspection of night operations conducted
+within the permissible hours of work shall be provided by the Contractor at his/her
+own expense.
+14. STONE SOURCES
+(a) On the basis of information and data available to the Contracting Officer,
+stone meeting the quality requirements of these specifications has been
+produced from the listed stone sources attached at the end of this section.
+01100-11 Ed 22-018
+
+(b) Stone may be furnished from any of the listed STONE SOURCES (attached
+at the end of this section), or at the option of the Contractor may be furnished
+from any other source designated by the Contractor and accepted by the
+Contracting Officer, subject to the conditions hereinafter stated.
+(c) The Contractor shall determine that the stone source or combination of
+sources selected is capable of supplying the quantities and gradation needed
+and at the rate needed to maintain the scheduled progress of the work.
+(d) After the award of the contract, the Contractor shall designate in writing only
+one source or one combination of sources from which he/she proposes to furnish
+stone. If the Contractor proposes to furnish stone from a source not listed in
+STONE SOURCES (attached at the end of this section) , he/she may designate
+only a single additional source for stone. Samples for acceptance testing shall
+be provided as required by Sections 35 31 19.03 12 and 35 31 20.10 12. If a
+source for stone so designated by the Contractor is not accepted for use by the
+Contracting Officer, the Contractor may not propose other sources but shall
+furnish the stone from a source listed in STONE SOURCES (attached at the end
+of this section) at no additional cost to the Government.
+(e) The listings of the names of the stone suppliers does not constitute an
+endorsement of such companies. Acceptance of a source of stone is not to be
+construed as acceptance of all material from the source. The right is reserved to
+reject materials from certain localized areas, zones, strata, or channels, when
+such materials are unsuitable for stone as determined by the Contracting Officer.
+Materials produced from a listed or unlisted source shall meet all requirements of
+Sections 35 31 19.03 12 and 35 31 20.10 12.
+15. SIGNAL LIGHTS
+The Contractor shall display signal lights and conduct his/her operations in
+accordance with U. S. Coast Guard regulations governing lights and day signals to be
+displayed, as set forth in Commandant, U. S. Coast Guard Instruction M16672.2C,
+Navigation Rules, International - Inland (COMDTINST M16672); 33 CFR 81,
+Appendix A (International); and 33 CFR 84 through 33 CFR 90 (Inland) as applicable.
+16. EQUIPMENT OWNERSHIP AND OPERATING EXPENSE SCHEDULE
+(a) This clause does not apply to terminations.
+(b) Allowable costs for construction and marine plant and equipment in sound
+workable condition owned or controlled and furnished by a Contractor or
+Subcontractor at any tier shall be based on actual cost data for each piece of
+equipment or groups of similar serial and series for which the Government can
+determine both ownership and operating costs from the Contractor's accounting
+records. When both ownership and operating costs cannot be determined for
+01100-12 Ed 22-018
+
+any piece of equipment or groups of similar serial or series equipment from the
+Contractor's accounting records, costs for that equipment shall be based upon
+the applicable provisions of Engineering Pamphlet (EP) 1110-1-8, "Construction
+Equipment Ownership and Operating Expense Schedule," Region III. Working
+conditions shall be considered to be average for determining equipment rates
+using the schedule unless specified otherwise by the Contracting Officer. For
+equipment not included in the schedule, rates for comparable pieces of
+equipment may be used or a rate may be developed using the formula provided
+in the schedule. For forward pricing, the schedule in effect at the time of
+negotiations shall apply. For retroactive pricing, the schedule in effect at the time
+the work was performed shall apply.
+(c) Equipment rental costs are allowable, subject to the provisions of FAR
+31.105(d) (ii) and FAR 31.205-36. Rates for equipment rented from an
+organization under common control, lease-purchase arrangements, and sale-
+leaseback arrangements, will be determined using the schedule, except that
+actual rates will be used for equipment leased from an organization under
+common control that has an established practice of leasing the same or similar
+equipment to unaffiliated lessees.
+(d) When actual equipment costs are proposed and the total amount of the
+pricing action exceeds the simplified acquisition threshold (SAT), the Contracting
+Officer will request the Contractor to submit either certified cost or pricing data, or
+partial/limited data, as appropriate.
+(End of Clause)
+NOTE1: Costs for repairs or overhauling are not allowed.
+NOTE 2: A copy of the “EQUIPMENT OWNERSHIP AND OPERATING
+EXPENSE SCHEDULE” for Region III can be obtained from the following
+website: EP 1110-1-8, Construction Equipment Ownership and Operating
+Expense Schedule (Region III) Volume 3 (army.mil) .
+17. FORMAT OF SURVEYS
+a. The Contractor shall submit compliance surveys upon completion of certain
+construction activities. The compliance surveys shall be performed and reports
+signed and sealed by a Licensed Surveyor. The survey data shall be collected in
+accordance with the “USACE New Orleans District Guide for Minimum Survey
+Standards” and delivered in USACE EM Format as described in “Engineering
+Manual File Format Specifications”. Links to these documents are shown below:
+http://www.mvn.usace.army.mil/Missions/Engineering/SurveySection/SurveyingG
+uidelines.aspx
+01100-13 Ed 22-018
+
+http://www.mvn.usace.army.mil/portals/56/docs/engineering/Geospatial/EM_For
+mat09.pdf
+b. Each surveyed point should be listed on a separate line as a comma-delimited
+list of the following:
+(1) Point ID, northing, easting, elevation, code
+(2) Surveyed points that are part of a profile shall be grouped under the
+appropriate #P01 record for that profile.
+(3) Surveyed points that are part of a cross-section shall be grouped
+under the appropriate #X01 record for that cross-section.
+(4) All other points shall be grouped under the appropriate #M01 record.
+c. The code value shall be one of the three letter codes listed in Appendix 2 of
+“USACE New Orleans District Guide for Minimum Survey Standards”. If a
+surveyed point is not one of the items listed in Appendix 2, the Contractor shall
+submit a CODES.DAT file containing a semi-colon delimited list of these unique
+survey codes. Each reference benchmark shall be included as #V/#T records
+with the surveyed elevation #V/T06, and vertical datum and epoch information.
+Absolute vertical and horizontal accuracies shall be shown in the #H03 and #H17
+records. Surveys that are referenced to local coordinates, and not true State
+Plane coordinates, shall use the horizontal epoch “BASELINE” in the #H16
+record. The USACE Survey Drivers shall be used to check for proper formatting.
+The drivers can be downloaded from the following site:
+(http://www.mvn.usace.army.mil/Missions/Engineering/GeospatialSection/USACESurvey
+Drivers.aspx).
+d. A survey report shall be delivered which includes a brief synopsis of the
+survey methodology (traverse run, level loops, GPS). All supporting field books
+shall be delivered. If static GPS is collected minimally and fully constrained GPS
+adjustment reports must be delivered. All surveys shall adhere to the
+requirements of the “USACE New Orleans District Guide for Minimum Survey
+Standards” and be performed and reports signed and sealed by a Licensed
+Surveyor. The point of contact for survey information is Dwayne Blanchard
+@504.862.1589.
+18. PROJECT BENCHMARKS
+a. Benchmark And Project Temporary Benchmarks (TBM). To ensure
+local/internal consistency, the Contractor shall verify all project benchmarks using
+differential leveling in accordance with Section D of the “USACE New Orleans
+District Guide for Minimum Survey Standards”. The differential levels must be to
+Second Order Class II closure standards, as defined in Appendix 4 of the afore
+mentioned Survey Standards, and as follows: closure error (in feet) must be less
+01100-14 Ed 22-018
+
+than or equal to 0.035 x √(distance in miles). Ties between the “project controls”
+identified on the drawings and the Contractor utilized temporary benchmarks
+shall be performed at least every 6 months using differential leveling. Field notes
+showing all data and the closure error shall be provided to the Government.
+Field records of these survey verifications shall be submitted in a survey report,
+which shall be updated with each periodic verification. A Registered Land
+Surveyor licensed in any of the 48 contiguous United States shall perform, sign,
+and seal the benchmark verification survey.
+b. Records. Field records of these benchmark verifications shall be submitted to
+the Contracting Officer’s Representative in electronic format via RMS, and
+emailed to mvn-cd-q-testresults@usace.army.mil <mailto:mvn-cd-q-
+testresults@usace.army.mil> within 7 days of the completion of the benchmark
+verification. The Contracting Officer's representative shall be notified
+immediately if any errors or inconsistencies in the benchmark verifications are
+found. Field records of the first benchmark verification must be received within
+14 days of notice to proceed.
+19. COMMERCIAL WARRANTY
+The Contractor agrees that the standard commercial equipment furnished under this
+contract shall be covered by the most favorable commercial warranties the
+manufacturer gives to any customer for such equipment, and that the remedies
+provided herein are in addition to and do not limit any rights afforded to the
+Government by any other clause of this contract. Two copies of the warranties shall
+be furnished by the Contractor to the Contracting Officer.
+20. ACCESS PLAN
+The Contractor shall submit an Access Plan to be reviewed and approved by the
+Contracting Officer to include, as a minimum, the following:
+(a) Layout drawings showing the location of all equipment, office structures,
+toilets, and storage areas for materials.
+(b) Show mobilization and demobilization routing and locations of large
+equipment, such as draglines, cranes, etc. while on the jobsite.
+(c) Show waterway channels or canals used to mobilize and demobilize
+equipment and materials and show access routes and docking areas of all
+marine equipment with respect to the jobsite. Any designated barge
+onload/offload facilities shall be licensed, permitted facilities approved to accept
+and stockpile bulk fill material. Any proposed onload/offload sites that are not
+licensed, permitted facilities approved to accept and stockpile bulk fill material
+may require additional National Environmental Policy Act documentation and/or
+USACE Regulatory permit issuance.
+01100-15 Ed 22-018
+
+21. SECURITY REQUIREMENTS
+a. Suspicious Activity Reporting Training (e.g. iWATCH, CorpsWatch, or See
+Something, Say Something). The Contractor will not have access to the CORPS
+network. This is an unclassified contract and the Contractor will not have access
+to critical information. The Contractor and all associated sub-contractors shall
+receive locally developed training provided by the New Orleans District Security
+Office on the Local Suspicious Activity Reporting Program. This training will be
+used to inform employees of the types of behavior to watch for and instruct
+employees to report suspicious activity relating to the project manager, security
+representative or law enforcement entity. The Contractor shall provide local
+background checks to New Orleans District Security Office before performing
+work. Point of contact is Robin Hebert, 504.862.1656. This training shall be
+completed within 30 calendar days of contract award and within 30 calendar days
+of new employees commencing performance. The results of this training shall be
+reported to the COR within 5 calendar days after the completion of the training.
+b. Pre-Screen Candidates Using E-Verify Program. The Contractor shall pre-
+screen Candidates using the E-verify Program (https://www.uscis.gov/e-verify)
+website to meet the established employment eligibility requirements. The
+Contractor shall ensure that the Candidate has two valid forms of Government
+issued identification prior to enrollment to ensure the correct information is
+entered into the E-verify system. An initial list of verified/eligible Candidates shall
+be provided to the COR no later than 3 business days after the initial contract
+award. When contracts are with individuals, the individuals shall complete a
+Form I-9, Employment Eligibility Verification, with the designated Government
+representative. The completed Form I-9 shall be provided to the Contracting
+Officer and shall become part of the official contract file.
+01100-16 Ed 22-018
+
+STONE SOURCES
+April 2020
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+ALABAMA
+34º 26’ 47”N Guntersville Quarry - from the intersection of Madison Materials
+86º 15’ 32”W US Hwy 431 and AL Hwy 79, north of 692 Convict Camp Rd
+Guntersville, AL, travel north 0.7 miles on US Guntersville, AL 35976
+NEW SOURCE HWY 431 to Convict Camp Road. Turn right
+Added Mar 2016 onto Convict Camp Rd and travel 0.5 miles. POC: Tom Bass
+Mine scale house will be on the right. TEL: 256.582.2656
+tombass@whitaker-contracting.com
+TEL:256.582.2130
+34º 11’ 33”N Summit Quarry - from the intersection of US Madison Materials
+86º 29’ 18”W Hwy 278 and US Hwy 231, near Brooksville, 2335 Hinds Rd.
+AL, travel north 2.8 miles on US Hwy 231N to Blountville, AL 35031
+NEW SOURCE Blount County Road 25. Turn right onto
+Added Mar 2016 Blount County Road 25 and travel 1.5 miles to POC: Tom Bass
+Hinds Road. Turn right onto Hinds Road and TEL: 256.582.2656
+Travel 1.8 miles to quarry entrance. Quarry tombass@whitaker-contracting.com
+entrance will be on the right.
+TEL: 205.429.3807
+33º 37’ 40”N Flat Top Quarry – from the intersection of Madison Materials
+87º 00’ 22”W interstate I-22W and US Hwy 78, near 2335 Hinds Rd.
+Graysville, AL, take exit 85 toward Blountville, AL 35031
+NEW SOURCE Birmingham and travel 0.6 miles on US Hwy
+Added Mar 2016 78. Turn right onto first exit ramp (2nd Ave. POC: Tom Bass
+NW). Travel 0.4 miles on 2nd Ave NW and TEL: 256.582.2656
+merge onto Flat Top Road. Travel north on tombass@whitaker-contracting.com
+Flat Top Road 0.12 miles to quarry entrance on
+left.
+1
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+34º 33’ 29.89”N Lacey Spring Quarry – From Lacey Spring AL, Rogers Group Inc.
+86º 34’ 31.37”W go 1.7 miles north of intersection of US Hwy Corporate Headquarters
+231/AL Hwy 53 with AL Hwy 36 and turn 421 Great Circle Rd.
+right onto the southern end of 149 Parks Chapel Nashville, TN 37228
+Rd and go to quarry entrance on right. 615.242.0585
+Updated
+2019 Lacey Spring Quarry
+149 Parks Chapel Rd. Rogers Group Inc.
+Lacey Spring, AL 35754 Administrative Office
+520 Three Mile Lane
+Tuscumbia, AL 35674
+256.383.1645
+POC: Mr. Michael Wilkes -
+Quarry Manager
+34º 39’ 51.82”N Tuscumbia Quarry – from the intersection of Roger Group Inc.
+87º 37’ 31.33”W US Hwys 72 and 43, in Tuscumbia, take US Corporate Headquarters
+Hwy72/AL Hwy 20 east approximately 2 miles 421 Great Circle Rd.
+Updated and then turn south on to Three Mile Road Nashville, TN 37228
+2019 (County Rd 57) and go 2.3 miles to Quarry 615.242.0585
+entrance on left.
+LEDGES 1,2 AND 3* Roger Group Inc.
+Administrative Office
+*Ledge 3 – Randomly oriented fractures are 520 Three Mile Lane
+present in the material. Failure can occur along Tuscumbia, AL 35674
+existing fractures under F&T. 256.383.1645
+Tuscumbia Quarry
+520 Three Mile Lane POC: Mr. Michael Wilkes -
+Tuscumbia, AL 35674 Quarry Manager
+34º 43’ 24.70”N Allsboro Quarry- 8 miles east of intersection of Hoover Incorporated
+88º 06’ 59.75”W MS Hwy 25 & Tish. Co. #957 at Midway, MS, 1205 Bridgestone Parkway
+just across AL. state line. P. O. Box 1700
+Updated LaVergne, TN 37086-1700
+January 2015 Hoover Incorporated (615) 793-2600
+P. O. Box 613
+Iuka, MS 38852
+(256) 360-2400/(800) 535-2636
+2
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+32º 44’ 05.14”N Hard Rock Hill Quarry – From intersection I- North Montgomery Materials, LLC
+86º 16’ 12.72”W 95/US-231 go 15 miles north to Wallasboro, 2194 Providence Rd
+AL. Continue north on US-231(AL-53&21) for Titus Alabama 36080
+Updated approximately 8 miles to intersection of US- P.O. Box 469
+January 2015 231 & CR-429 (Bucky Rd.) and go approx. 3.5 Millbrook, AL 36054
+miles and turn right on to County Rd. 428 Office: 334.514.8800
+(Providence Rd) and go approx. 0.8 miles to E-mail: hardrockhill2@aol.com
+quarry on left.
+Quarry Phone – 334.514.8800
+34º 43’ 33.46”N Pride Quarry located on N side of US Hwy 72, Vulcan Materials Co.
+87º 48’ 28.66”W Pride, AL. approx.8.2 miles west of intersection Southern and GLF CST DVSN
+of US-72 and US-43 in Tuscumbia, AL P.O. Box 385016
+2015 Birmingham, AL 35238-5016
+Data update Vulcan Materials, Pride Quarry Tim Wyatt – Area Manager
+submitted P.O. 740250 wyattt@vmcmail.com
+18055 Hwy 72 205.668.6001-office
+Tuscumbia, AL 35674 205.310.6853-cell
+205.310.6853-cell
+34º 44’ 40” N Cherokee Quarry- 3 miles east of Cherokee, AL Vulcan Materials Co.
+87º 56’ 0”W on old Hwy 72. Southern and GLF CST DVSN
+P.O. Box 385016
+2015 Vulcan Materials Co., Cherokee Quarry Birmingham, AL 35238-5016
+P.O. Box 459 POC: Tim Wyatt
+205.310.6853
+Cherokee, AL 35616
+wyattt@vmcmail.com
+POC: Tim Wyatt
+205.310.6853
+wyattt@vmcmail.com
+ARKANSAS
+3
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+N 34º 57’ 31.72” Cabot Quarry - The quarry is located in Lonoke Rogers Group, Inc
+W 92º 4’ 16.30” County off AR Highway 5 approx. 1.6miles 1223 Front St. Arkansas 72032
+north of US Highways 167/67 exit 16B, Cabot,
+Updated AR. POC: Johnathan Lane
+2015
+LEDGE 3
+Rogers Group, Inc. – Cabot Quarry
+10302 AR Hwy 5,
+Cabot AR 72023
+36º 05’ 18.33”N Black Rock Quarry (Powhatan Quarry) - Capital Quarries Co. Inc,
+91º 06’ 35.34”W Take Hwy 63 north or south to Hwy 25/3rd PO Box 105050
+street east. Travel approx .1 miles and turn Jefferson City, Mo 65110
+Updated right to stay on Hwy 25, quarry will be on right
+Jan 2018 hand side approx two miles ahead. Chris W. Pitts
+Powhatan Quarry Phone (870) 248-1212
+Div. Capital Quarries Co. Inc, Fax (870) 248-0532
+4549 Hwy 25 Cell (573) 694-0797
+Powhatan AR 72458
+36º 17’ Pocahontas Quarry - Take Hwy 67 north or Capital Quarries Co. Inc,
+51.468”N south to the Hwy 90/115 junction west. Follow PO Box 105050
+90º 58’ 55.70”W Hwy 90/115 until the two highways split, bear Jefferson City, Mo 65110
+right to stay on Hwy 115. Stay on Hwy 115
+Updated approx two miles and turn left on Hwy 251. Chris W. Pitts
+Jan 2018 Proceed .1 miles and turn left onto Johnson Phone (870) 248-1212
+Church Rd. The quarry is .5 miles ahead on Fax (870) 248-0532
+left. Cell (573) 694-0797
+Div. Capital Quarries Co. Inc,
+632 Johnson Church Rd
+Pocahontas AR 72455
+35° 51’ 48”N Bradley/Batesville Quarry - From Cord, AR Bradley Contracting
+91° 19’ 32”W take AR-122 north to interception with AR 25 500 Bradley Lane
+and continue north on AR-25 for a total Cord, AR 72524
+Updated distance of approx. 3.2 miles. Take Bradley Ln (870) 799-2338
+Dec 2017 on left to the quarry. blakebci@gmail.com
+4
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+34º 40’ 38”N Granite Mountain Quarry #1 is located on east McGeorge Corporation
+92º 15’ 38”W side of AR I-530 and just north of Dixon Road, P.O. Box 408
+AR Hwy 338 1425 Shamburger Lane
+Updated Sweet Home, AR 72164
+(2016) Granite Mountain Quarries (501) 490-1456
+P.O. Box 138
+Sweet Home, AR 72164
+(501) 490-1535
+34º 40’ 38” N Granite Mountain Quarry #2 is located on west McGeorge Corporation
+92º 15’ 38”W side of AR I-530 and just north of Dixon Road, P.O. Box 408
+AR Hwy 338 1425 Shamburger Lane
+Updated Sweet Home, AR 72164
+(2016) Granite Mountain Quarries (501) 490-1456
+P.O. Box 138
+Sweet Home, AR 72164
+(501) 490-1535
+34º 34’ 48”N Granite Mountain Quarry #3 is located 3 miles McGeorge Corporation
+92º 27’ 59”W south of intersection of I-30 and AR Hwy 183 P.O. Box 408
+and south of Bryant, AR and 1 mile east on 1425 Shamburger Lane
+Updated County Rd. #2 Sweet Home, AR 72164
+(2016) Granite Mountain Quarries (501) 490-1456
+P.O. Box 886
+Bryant, AR 72089
+34º 19’ 21.08”N River Mountain Quarry – From intersection of Pine Bluff Sand and Gravel
+93º 20’ AR Hwy 7 and AR Hwy 22 in Dardanelle, AR, P.O. Box 7008
+56.81”W go west to Delaware, AR and turn north on AR Pine Bluff, AR 71611-7008
+Hwy 393, then go 0.9 miles and then turn left 12615 Scenic Highway
+Updated onto River Mountain Road and go 4.0 miles to Baton Rouge, LA 70807
+September entrance to quarry, at AR River Mile 218.5 POC: Chris Abadie
+(2017) 318.308.5670 – cell
+Two active pits: 225.922.7861 – office
+Area C or Berryhill pit Chris.abadie@pbsgc.com
+Main or Lower East pit
+Pine Bluff Sand & Gravel, River Mountain
+Quarry
+3979 River Mountain Rd.
+Delaware, AR 72835
+(479) 938-7018
+5
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+34º 41’ 22.44”N Big Rock Quarry- Off AR Hwy 367, 0.5 mile Arkansas Aggregates (3M Quarry)
+92º 17’ 53.23”W north of junction with 65th Street, Little Rock, 1910 W. 65tth St.
+AR Little Rock, AR 72209
+Updated (501)565-5333
+(2016)
+35º 16’ 56.44”N Searcy Quarry – from I-67, exit 48, Judsonia, Vulcan Materials Co.
+91º 40’ 55.06”W AR exit (AR Hwy 385), turn to go toward Southern and GLF CST DVSN
+Plainview, AR on AR Hwy 385, go P.O. Box 385016
+Ledge 2 approximately 1.5 miles and turn left into Birmingham, AL 35238-5016
+Updated quarry, Rock Lane. (205) 298-3701
+(2015)
+Vulcan Materials Co., Searcy Quarry
+125 Rock Road
+Judsonia, AR 72081
+(501) 729-3925
+36° 8’ 36.74”N Verkler Quarry – Approx. 4 miles north of Vulcan Materials Co.
+91° 9’ 49.80”W Black Rock, AR on U.S. Hwy. 63 to quarry on Southern and GLF CST DVSN
+west side of highway. P.O. Box 385016
+Ledge 5 Vulcan Materials Co., Verkler Quarry Birmingham, AL 35238-5016
+Updated P.O. Box 276 (205) 298-3701
+(2015) Black Rock, AR 72415
+(870) 878-6245
+34° 8'46.58"N, Hollywood Quarry located off Highway 53, 3 McGeorge Contracting Co. Inc.
+93°15'34.80"W miles north of Hollywood, Arkansas, AR in P.O Box 408
+(Sep 2019) Ouachita Mountain Range. 1425 Shamburger Lane
+Sweet Home AR 72164
+Pine Bluff, Arkansas
+POC: Anthony Jones
+anthony.jones@mcgeorgecontracting.co
+m
+office: 501.490.6079
+Cell: 501.353.4515
+GEORGIA
+6
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+Columbus Quarry is located North of
+The Concrete Company
+Columbus, Georgia near the small community
+32°36’ 5.5”N Columbus Quarry
+of Fortson, on Smith Rd, 0.2 miles east of exit
+84° 56’ 54.7”W 1030 1st Ave.
+14 Interstate I-185.
+Columbus, GA 31901
+3001 Smith Rd.
+Added (706) 569-4446
+Fortson, Georgia 31808
+December 2018 POC: Dan Johnson
+POC: Dan Johnson
+ILLINOIS
+37º 28’ 59.07”N Buncombe Quarry: From Marion IL, take I-57 Delta Companies, Inc
+88º 58’ 2.99”W South to exit 45, turn right (east) MO-148 (N. www.deltacos.com
+Refuge Rd.), keep straight onto MO-37. The (573) 785-2757
+December quarry is 3-4 miles South of Goreville. POC: Mike Martin
+2018
+Top Ledge
+Delta Companies, Inc. SILS.
+4800 State Route 37 N
+Goreville, IL 62939-3003
+(618) 995-2392
+370 28' 47.72" N Cave-In-Rock Quarry is located approximately Lafarge Holcim
+880 7' 32.89" W 5 miles east of Cave in Rock, IL. From the One Deerfield Center
+flashing light on Illinois Highway 1, from the 13560 Morris Road, Suite 3350
+Updated ferry across the Ohio River, head east past Alpharetta, GA 30004
+(2016) Cave-in-Rock State Park to intersection with TEL: 678.867.1309
+next road and turn south toward river. Quarry is Ken Coats
+on right 0.25 miles from intersection. 205.492.7934
+7
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+37° 19’ 07.42”N Shawnee Stone, LLC- Cypress Plant Shakespeare Aggregates, Inc.
+89° 01’ 12.36”W From Cairo IL, go to north on I-57 to exit 18, 202 West Main Street
+Ullin and take ramp right. At the end of ramp Salem, IL 62881
+Updated turn right on Co. Rd. 7 (East), Ullin Rd. Tel. No. 618.548.1585
+(Sep 2019) (Shawnee College Rd.), and proceed 7 mi. to www.shakespeare-oil.com
+St. Rt. 37. Turn left on St. Rt. 37 (North) and
+proceed north for 3.2 mi. and the quarry is on
+the right hand side of the road.
+Bottom Ledge
+Ledge 20
+Ledge 70
+NOTE: The Cypress plant quarry should
+provide rock from bottom of the Lower Ledge
+(Mammoth Cave Group. Ste. Genevieve
+Formation) which should produce riprap and
+stone protection meeting the required
+requirements.
+KENTUCKY
+37º 02’55.14” N Grand Rivers Quarry – located at the Winn Material of Kentucky, LLC
+88º 17’52.56” W Livingston County, KY. From the intersection 877 Dover Rd.
+of Interstate 24 and KY Hwy 453 (Dover Rd.), Grand Rivers, KY 42045
+Mar 2016 Grand Rivers, KY, take KY 453 1.7 miles north POC: Bradley Walker
+to the entrance quarry on the left. TEL: 270.977.8860
+TJ Palmer:
+St. Louis/Salem Formation TEL: 270.928-4757
+From Ledge A Lift 3 only
+37º 11’ 36” N Cumberland River Quarry (Formerly Smith Pine Bluff Sand and Gravel Co.
+88º 15’ 59” W Quarry) is located approximately 6 miles south 780 Spencer Road
+of Salem, KY, at Cumberland River Mile 14.5. Salem, KY 42078
+Updated October From the intersection of US Hwy 60 and KY Tel: 870.541.4464
+(2016) Hwy 723 in Salem, KY go south approximately Fax: 870.541.4465
+3.5 miles and then turn right onto Maddox Email: chris.abadie@pbsgc.com
+Road and go approximately 2.5 miles Tel: 318.308.5670
+Formerly Titan Cumberland Resources
+8
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+37º 10’ 36.37”N Fredonia Quarry – Take US Hwy 641 2.8 miles Lafarge Holcim
+88º 01’ 18.15”W Southeast of Fredonia, KY and turn east onto One Deerfield Center
+Fredonia Quarry Road. 13560 Morris Road, Suite 3350
+Updated Alpharetta, GA 30004
+(2016) 297 Fredonia Quarry Rd. TEL: 678.867.1309
+Fredonia, KY 42411 Ken Coats
+(270) 545-9338 205.492.7934
+Ken Coats john.pooler@lafarge.com
+POC:
+robby.maxwell@lafarge.com bob.beste@lafarge.com
+37º 11’ 41.68”N Three Rivers Quarry – 7 miles northeast of Lafarge of North America
+88º 22’ 58.92”W Smithland, KY, off U.S. Hwy 60 (Cumberland 800 N. Causeway Blvd. Ste 2A
+Road). From I-24 exit 31and go N on KY Hwy Mandeville, LA 70448
+Updated 453 to intersection with U.S. Hwy 60 and turn POC: John Pooler and Bob Beste
+(2014) right and go over Cumberland River. Quarry is (985)-727-7572 or
+on the right 4.5 mile from bridge. (314) 910-9999
+POC: Eddie Cooper john.pooler@lafarge.com
+((270)-210-4993 bob.beste@lafarge.com
+eddie.cooper@lafarge.com
+37º 02’ 13” N Grand Rivers Quarry (Gilbertsville Quarry) – Vulcan Materials Co.
+88º 15’ 00” W On US Hwy 62/641, “Between the Dams”, Southern and GLF CST DVSN
+Lake City, KY. From I-24 exit 31and go S on P.O. Box 385016
+Updated KY Hwy 453 to ramp for US Hwy 62/641 and Birmingham, AL 35238-5016
+(2015) go west to quarry office on left. (205) 298-3701
+Ledge 2 through 9 POC: Mr. Terry Teitloff
+Ledge 3 – Can be used within a good portion of
+MVD based on the map in ASTM 5312 (20
+cycles F&T)
+Vulcan Materials Co., Grand Rivers Quarry
+947 U.S. Hwy 62
+Grand Rivers, KY 42045
+(270) 362-4264
+9
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+37° 11’ 30.62”N Slats Lucas Quarry - is located in Livingston Warren Paving Co.
+88° 13' 32.64”W County, KY, From Paducah, KY take US Hwy 562 Elks Lake Road
+& 60N through Smithland, KY to Salem, KY. P.O. Box 572
+37° 11’ 39.58”N Turn South on KY Hwy 723 for 5.4 mi to Hattiesburg, MS 39403
+88° 13' 26.63”W Pinkneyville, KY and turn left onto Lee Rd (601)544.7800
+Quarry. Bobby Sullivan
+601.544.7811
+Updated Bench D, Ledge 10
+April (2016) Bench D, Ledge 7
+712 Lee Road
+Pinkneyville, KY
+Mr. Daniel Adams Quarry Manager
+Mr. Colby Croft Assurance Technician
+(270)988.2647
+MISSOURI
+37º 25’ 25.15”N Heartland Materials Delta Companies – Corporate office
+89º 38’ 7.83”W 1965 County Rd. 601 114 S. Silver Springs Rd.
+Jackson, MO 63755 Capa Girardeau, MO 63701
+Added Aug 2018 Phone: 573.243.0063 573.334.5261
+www.deltacos.com
+36º 40’ 56.64”N Cane Creek Stone, LLC Cane Creek Stone, LLC
+90º 27’ 57.6”W Butler County, MO 2179 County Road 321
+July 2016 Poplar Bluff, Missouri 63901
+Ledge #1 Mr. Chris Williams (Owner)
+39° 04’ 04.64”N Foley Quarry is located approximately 1.4miles Magruder Limestone Co., Inc
+90° 44’ 22.44”W north of Foley, Missouri on the west side of 255 Watson Rd.
+Updated Old State route 79 (presently known as Lincoln Troy, MO 63379
+(2015) County Road 925).
+POC: Harold Bono
+POC: Jake Fortner Harold_bono@magrudercompanies.com
+636.266.8714
+jfortner@magrudercompanies.com
+Ledge 1 and Ledge 2
+10
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+37º 26’ 04.17”N Fruitland Quarry – Cape Girarddeau County, Base Rock Minerals (New owner)
+89º 38’ 02.39”W Missouri, On I-55 starting from Cape Girardeau 5154 US Highway 61
+go North to Mile Marker 105. Get off of I-55 Jackson, MO 63755
+Added at the 105/Furitland exit and trun right on Hwy POC: Dwayne Holst
+May 2018 61. Go northeast on Hwy 61 towards Fruitland Aggregates Sales
+for ¼ mile. The quarry is on the right between Tel (cell): 573.579.1074
+Rhodes 101 Convenience Store and Purcell dwayneh@baserockminerals.com
+Tire.
+POC: Kerry Bauman
+Quarry Manager
+Tel (cell): 573.880.0885
+kerry@baserockminerals.com
+37º 54’ 05.76”N Bonne Terre Quarry – St. Francois Country, Base Rock Minerals (New owner)
+90º 31’ 29.38”W MO 6801 Votech Road
+Starting in Farmington MO at the intersection Bonne Terre, Mo 63628
+Added of Hwy 67 and Hwy 32. Take Hwy 67 north POC: Dwayne Holst
+May 2018 about 8.0 miles to Desloge. Take the Desloge Aggregates Sales
+exit onto Bus 67/North Desloge Rd. Go about Tel (cell): 573.579.1074
+¼ mile to first stop light and turn north onto dwayneh@baserockminerals.com
+State Drive/Votech Rd. The quarry extrance is
+on the west side of Votech Rd. just past the
+cemetery.
+POC: Kerry Bauman
+Quarry Manager
+Tel (cell): 573.880.0885
+kerry@baserockminerals.com
+37° 14’ 58.92”N Arab Aggregates, LLC POC: Koreen Bassham
+90° 05’ 01.22”W 3051 State Hwy 51 Fischer Quarry & Hauling, LLC
+Zalma, MO 63787 Burfordville Quarry
+Updated Quarry POC: Arab Aggregates, LLC
+(2014) Dale Kreitler 25501 State Route Z
+Tel: 573.222.2211 St. Mary, MO 63673
+Tel: 573-543-5366
+Mailing Address:
+11
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+37º 15’ 57.96”N Cape Girardeau Quarry – is located on the Delta Companies, Inc. - Corporate Office
+89º 33’ 24.00”W Northeast corner of MO-72 and South Sprigg 114 S Silver Springs Rd
+St. East of I-55, exit no. 93. Cape Girardeau, MO 63701
+Updated Phone: 573-334-5261
+December LEDGE 3-4 ONLY Fax: 573-986-9511
+(2018)
+Southeast Missouri Stone Co.
+3155 Sprigg St.
+Cape Girardeau, MO 63702
+(573) 986-9516
+Stockpile Shook Quarry is located in Shook, MO in Delta Companies, Inc. - Corporate Office
+37.047439; Wayne County on the east side of Wappapello 114 S Silver Springs Rd
+-90.308292 Lake. Take US-67 north from Poplar Bluff to Cape Girardeau, MO 63701
+Greenville, MO. Take State Road D east for Phone: 573-334-5261
+Updated approx. 10.4 miles to Shook, MO and the Fax: 573-986-9511
+December quarry will be on the left east of the highway.
+(2018)
+Shook Quarry (R200 Stockpile tested)
+Shook, MO
+Top Ledge Williamsville Stone Co. Quarry, State Highway Delta Companies, Inc. - Corporate Office
+36898187 67N, Poplar Bluff, MO 63901 114 S Silver Springs Rd
+-90.480115 Take US-67 north from Poplar Bluff for Cape Girardeau, MO 63701
+Middle Ledge approximately and quarry will be on the right Phone: 573-334-5261
+36.895213 (east) of highway just south of a bridge Fax: 573-986-9511
+-90.475573 crossing the Black River.
+POC: Mike Martin
+December
+(2018) ACCEPTABLE : TOP AND MIDDLE
+LEDGE
+(573) 785-2757
+12
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+37° 13.867N Seminole Ag-Lime quarry direction - in Scott Seminole Ag Lime
+89° 32.028W City, MO from the south on I-55 are: take 501 Rock Levee Rd.
+Exit 89 onto Main St.; left (east) onto Main St.; P.O. Box 4236
+Added Jan 0.4 miles and left (north) Scott City, MO
+(2014) onto Mulberry St.; 0.2 miles and continue on POC: William R. Florman
+Warner Ave. (new concrete); 0.6 miles and left (573)388-4930
+(east) on Rock Levee Rd.; 0.4 miles to quarry (573)388-4931 (fax)
+road on left.
+POC: Mike Crostic QC
+(314)775-5242
+Note: It is recommended that rock from
+overlying and other layers should not be
+intermixed with the rock from this ledge
+(MODOT Ledge 25).
+38° 05’ 03”N Brickeys Quarry (Old Menefee Quarry) APAC
+90° 12’ 30”W @MRM 135.8 above the mouth of the Ohio 13588 Brickeys Rd.
+River,- Take I-55 4 miles north of Bloomsdale, Bloomsdale, MO 63627
+Updated MO, exit 162, and take exit for County Rds. (573) 483-3475
+(2016) DD & OO and turn east and go 1 mile to US
+Hwy 61 and continue straight ahead thru
+intersection on Brickeys Rd. to quarry.
+(Formerly Brickeys Stone LLC)
+38 05 03N Ledges 50-48 - Burlington
+90 12 30W Ledge 46 - Kimmswick
+Ledges 43-42 Added Plattin Limestone
+formation - 2013
+37º 14’ 40.02”N Lodi Quarry - From Cape Girardeau, MO take Strack Stone Lodi, LLC.
+90º 27’ 17.04”W MO Highway 34 west to junction with the U.S. HC1 Box 1169
+Highway 67 and turn north onto U.S. 67 and go Silva, MO 63964
+Updated approx. 5 miles and the quarry will be on the
+Jan 2018 right. O:(573)-224-3621
+F:(573)-224-3123
+POC: J.W. Strack –owner Owner: JW Strack -573.270.2024
+Charles McCutcheon office manager e-mail: strackstone@gmail.com
+13
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+38° 00’ 36.68”N Bussen Quarry - 5 miles north of St. Tower Rock Stone Co.
+90° 05’ 42.47”W Genevieve, MO, MRM 127.6, above the mouth P. O. Box 50
+of the Ohio River, 19829 Lower Frenchman Columbia, IL 62236
+Rd. (618) 281-4106
+Updated
+(2015) Zone 8, Zone 12, Ledge 8B, and Ledge 8T.
+Note: Ledge 8T and Zone 12 can only be used
+on regions that required 20 and 25 cycles of
+F&T.
+Tower Rock Stone Co.
+P.O. Box 111
+St. Genevieve, MO 63670
+(573) 883-7415
+OHIO
+41° 26’ 25.87”N Woodville Quarry – From Ohio Turnpike (I- The Olen Corporation
+83° 21’ 23.92”W 90/80) exit 81, take MO Hwy 51 south for 2 4755 South High St. Columbus, OH
+miles and turn right on to US Hwy 23W toward 43207
+Woodville. From intersection of Us – 23 & 614.491.1515
+Added MO – 51 go 3.4 miles to N. Anderson Rd. and Area Aggregates
+Mar 2014 turn south go 0.5 miles and quarry entrance will 659 Anderson Rd.
+be on your right. Woodville, Ohio 43469
+Located at Sandusky County. 419.849.3218
+POC: Mr. Jim Bischoff – Quarry Manager
+14
+
+STONE SOURCES
+Lat/Long Quarry Location, Address Main Office Address
+(Tested) and Telephone Number and Telephone Number
+HONDURAS, CENTRAL AMERICA
+Bench 8 updated Quarry is located in The State Of Cortez in Importaciones Rodriguez, S.A.
+2010 and Zone- Honduras. Located about 18 miles south of the 22543 Ventura Blvd., Ste 227
+12 new source city of El Progreso and 22 miles north of the Woodland Hills, CA 91364
+added city of Santa Barbara, Zacatales, Honduras Metairie, LA 70002
+15° 10’N Tel: (818) 224-4270
+87° 52’W Fax: (818)224-4736
+Sources only tested for use along Gulf Cost at Email: sebrown@looseb.com
+Updated present time.) Contact: Sharon E. Brown
+(2016)
+American Stone Supply, Inc./ ABM
+Enterprises Inc.
+3617 Aspen Dr.
+Harvey, Louisiana 70058
+Tel: (504) 782- 6046
+Tel: (818) 297- 6635
+Fax: (866) 594- 3730
+Email: abm.email@abmenterprise.com
+MEXICO, STATE OF VERACRUZ
+19.524296 N, The quarry is located at 19.524296o N, Wayne LeBaron, Alamo Construction
+96.426432 W 96.426432 o W, in the State of Veracruz, 15088 Rufus White Road, Prairieville,
+Added Mexico approximately 61 kilometers north and LA 70769
+September 2019 west of the Veracruz International Airport. Telephone 225.362.8997
+wlebaron83@gmail.com
+15
+
+#H01 SAMPLE.EM
+#H02 11/06/06
+#H03 3
+#H04 NAD83
+#H05 07-002
+#H06 FT
+#H07 1702
+#H08 PLAQUEMINES PARISH LA
+#H09 CHUSTZ SURVEYING INC.
+#H12 1.0
+#H13 PLAQUEMINES PARISH
+#H14 NEW ORLEANS EAST SE CHALMETTE SW BERTRANDVILLE NE & NW
+#H15 W912P8-06-D-0050
+#H20 WEST BANK & VICINITY ALGIERS CANAL HURRICANE PROTECTION
+#H21 LEVEES HERO TO BELLE CHASSE HWY (EAST SIDE) & BELLE CHASSE
+#H22 HWY TO ALGIERS LOCK (WEST SIDE)
+;
+;
+;-------------------VERTICAL CONTROL INFORMATION---------------------
+;
+;
+#V01 BEL 1
+#V02 -3.42
+#V03 2004.65
+#V04 NAVD88
+#V05 GOOD
+#V06 -3.42
+#V07 494282.40,3697937.71
+#V20 MONUMENT IS A 3/4" IRON ROD SET FLUSH WITH THE GROUND. IT IS
+#V21 LOCATED 5.9 FT SE OF A RAILROAD IRON 25 FT NE OF ANOTHER
+#V22 RAILROAD IRON AND 116 FT EAST OF A GATE POST AT THE PUMP
+#V23 STATION AREA.
+#V24 PROJECT BENCHMARK POINTS ARE BEL1 AND V375 SEE
+#V25 GPS REPORT FOR DETAILS.
+;
+;
+#V01 770+58.11 (SETTLEMENT PLUG)
+#V02 19.21
+#V03 2004.65
+#V04 NAVD88
+#V05 GOOD
+#V06 19.21
+#V07 516940.13,3711674.20
+#V20 MONUMENT IS A SETTLEMENT PLUG IN CONCRETE. IT IS LOCATED 9.4 FT
+#V21 EAST NE OF THE EAST EDGE OF THE METAL STEPS 13.55 FT NE OF THE
+#V22 EAST CORNER OF THE LOCK WALL AND 17.3 FT NW OF THE NE CORNER
+#V23 OF THE LOCK HOUSE.
+;
+;
+;-------------------TEMPORARY BENCHMARK INFORMATION------------------
+;
+;
+#T01 TBM AC-1
+#T02 7.96
+#T05 GOOD
+#T06 7.96
+#T10 MONUMENT IS A STANDARD COE BRASS CAP RECESSED 0.5' BELOW GROUND
+
+#T11 STAMPED "AC-1 07002C". IT IS LOCATED +/-500 FT. SW OF THE
+#T12 CONCRETE BRIDGE OVER THE CANAL AT GENERAL DE GAULLE RD 69.3 FT
+#T13 NW OF THE WATERS EDGE OF THE CANAL 17.6 FT NE OF THE SOUTHERN
+#T14 GATE POST OF AN ENTRANCE GATE AND 17.8 FT NE OF THR NORTHERN
+#T15 MOST GATE POST.
+;
+;
+#T01 TBM AC-2
+#T02 8.50
+#T05 GOOD
+#T06 8.50
+#T07 482914.44,3683055.07
+#T10 MONUMENT IS A STANDARD COE BRASS CAP ON REBAR STAMPED "AC2
+#T11 07002C". IT IS LOCATED 86.4 FT WNW OF THE AIRBASE FENCELINE
+#T12 1.6 MILES SW OF THE PUMP STATION AT THE CROSSING AND 0.17
+#T13 MILES NE OF THE EDGE OF THE ASPHALT ROAD AT THE AIRBASE BOAT
+#T14 RAMP.
+;
+;
+#T01 TBM AC-3
+#T02 8.86
+#T05 GOOD
+#T06 8.86
+#T07 482917.55,3683035.15
+#T10 MONUMENT IS A STANDARD COE BRASS CAP ON REBAR STAMPED "AC3
+#T11 07002C". IT IS LOCATED 334 FT NW OF THE NORTHERNMOST GATE POST
+#T12 ON THE ENTRANCE GATE TO THE LEVEE 336 FT NNW OF THE SOUTHERN
+#T13 POST 0.2 MILES SE OF A POWER LINE CROSSING AND 1 MILE SE OF
+#T14 A CHAIN LINE FENCE GATE CROSSING THE LEVEE.
+;
+;
+;
+;
+#H02 11/06/06
+;
+;
+#H10 070003
+#H11 53
+;
+;
+;
+;
+;------------------------FIELD PERSONNEL----------------------------
+;
+#C01 J. GREMILLION
+#C02 J. MASSE
+#C03 K. MANUEL
+#C03 S. HOLMES
+;
+;---------------------------EQUIPMENT--------------------------------
+;
+#E01 TOTAL STATION
+#E02 46587793
+#E03 TCR-305
+;
+#E01 LEICA
+#E02 235668975
+
+#E03 GT-3
+;
+;--------------------------------------------------------------------
+;
+#H02 11/02/06
+;
+;
+#H10 070003
+#H11 19
+;
+;
+;-----------------------GAGE INFORMATION--------------------------
+;
+;
+#G02 GAGE AC-3
+#G03 0.50
+#G04 12:55
+#G07 483479.75,3683384.21
+#G10 TEMPORARY STAKE GAGE SET AT AC-3
+;
+;
+;---------------------- CROSS-SECTION -----------------------------
+;
+;
+#X01 3700241.41 501025.16 3700687.38 500799.09 57090.00 570+90
+#X03 10:53
+#X04 0.80
+20590,500960.30,3700343.72,-11.10,SND
+20591,500954.99,3700362.88,-13.30,SND
+20592,500948.11,3700381.50,-16.50,SND
+20593,500942.69,3700401.47,-16.80,SND
+20594,500934.73,3700420.93,-18.20,SND
+20595,500927.26,3700438.51,-17.00,SND
+20596,500916.38,3700455.22,-13.30,SND
+20597,500907.08,3700473.36,-10.90,SND
+20598,500899.57,3700491.79,-8.50,SND
+20599,500892.12,3700510.12,-5.40,SND
+20600,500882.66,3700528.07,-4.90,SND
+20601,500872.68,3700545.22,-4.50,SND
+20602,500862.95,3700562.58,-1.70,SND
+20603,500854.68,3700581.17,-1.55,SND
+20604,500847.27,3700599.48,-1.88,SND
+20605,500838.98,3700617.69,-0.74,SND
+20606,500830.68,3700635.90,0.40,SND
+;
+;----------------------- PROFILE ---------------------------------------
+#P01
+5552,494333.46,3697419.77,9.27,SHP
+5553,494376.90,3697443.90,8.56,SHP
+5554,494398.99,3697455.69,8.36,SHP
+5555,494410.50,3697455.82,8.24,SHP
+5556,494411.15,3697455.40,7.78,CLL
+5557,494419.34,3697455.62,8.17,CLL
+5558,494428.02,3697458.04,8.15,CLL
+5559,494439.50,3697463.11,8.46,CLL
+5560,494483.81,3697485.83,8.43,CLL
+5561,494524.13,3697505.97,8.66,CLL
+
+5562,494550.34,3697518.80,8.54,CLL
+5563,494585.08,3697537.20,8.66,CLL
+5564,494625.86,3697557.24,8.70,CLL
+5565,494664.84,3697577.20,8.93,CLL
+5566,494704.71,3697597.16,8.94,CLL
+5567,494743.17,3697617.15,8.82,CLL
+5568,494782.44,3697636.60,8.64,CLL
+5569,494823.03,3697657.00,8.69,CLL
+5570,494861.50,3697676.57,8.56,CLL
+5571,494898.96,3697696.31,8.77,CLL
+5572,494921.54,3697707.77,6.95,CLL
+5573,494932.32,3697709.54,7.94,SHP
+5574,494950.46,3697718.64,7.67,SHP
+5575,494956.49,3697722.33,7.35,SHP
+5576,494957.71,3697722.81,6.43,CLL
+5577,494971.83,3697731.26,5.79,CLL
+5578,494987.62,3697740.41,5.77,CLL
+5579,495001.65,3697748.14,5.33,ESH
+5580,495024.72,3697759.96,5.43,ESH
+5581,495029.15,3697761.70,5.74,CLL
+;
+;--------------- MISC. SHOT POINTS ---------------------------
+#M01 MISCELLANEOUS SHOTS TAKEN IN BETWEEN RANGES 312+00 AND 318+00
+;
+;
+2807,482976.57,3682869.45,1.52,FL
+2808,482905.77,3682933.86,4.69,FL
+2809,482896.57,3682942.44,9.02,FL
+2810,482885.94,3682951.60,8.64,FL
+2811,482863.67,3682971.79,-0.26,FL
+2812,482785.09,3683042.12,-2.88,FL
+2813,482917.55,3683035.15,-0.89,RMP
+2814,482931.41,3683036.73,1.15,RMP
+2815,482952.25,3683037.10,4.61,RMP
+2816,482977.95,3683039.14,8.61,RMP
+2817,482998.08,3683041.58,9.32,RMP
+2818,483030.60,3683049.20,7.53,RMP
+2819,483056.35,3683056.21,4.64,RMP
+2820,483051.39,3683065.63,5.47,RMP
+2821,483033.83,3683062.95,7.85,RMP
+2822,483020.70,3683060.67,9.36,RMP
+2823,482995.31,3683055.36,9.26,RMP
+2824,482970.99,3683049.58,7.08,RMP
+2825,482951.69,3683049.63,4.06,RMP
+2826,482914.44,3683055.07,-1.17,RMP
+2827,483110.59,3683031.57,2.16,PIR
+2828,483127.39,3683017.25,2.61,PIR
+2829,483137.72,3683029.53,2.55,PIR
+2830,483133.88,3683032.85,2.46,PIR
+2831,483125.12,3683022.40,2.67,PIR
+2832,483112.12,3683033.44,2.18,PIR
+2833,483265.05,3683138.27,1.66,FL
+2834,483195.48,3683208.46,5.46,FL
+2835,483183.05,3683219.30,9.36,FL
+2836,483172.83,3683229.40,9.28,FL
+2837,483156.14,3683245.27,1.95,FL
+2838,483069.19,3683323.97,-3.40,FL
+
+ACCIDENT PREVENTION PLAN
+FUEL OIL TRANSFER -- FLOATING PLANT
+U.S. Army Engineer District, New Orleans
+EM 385-1-1, Section 19.A.06
+1) Contractor 2) Contract Name & Number 3) Date
+4) Officer in Charge of Fuel Transfer 4a) Name of Vessel 4b) Fuel to be Transferred
+5) Name of Vessel 5a) Names of Qualified Tankermen 5b) Type of Certification and
+expiration date
+6) Name of Vessel 6a) Type of fill nozzle or 6b) Location of fill pipes 6c) Location of vents
+connection on Vessel openings openings
+7) Type, number, and size of fire fighting equipment to be available during fuel transfer operations.
+8) Sequential steps to be followed when taking on fuel.
+_____________________ ____________________ _____________________ _________________
+Contractor's Signature Date C.O. or C.O.R. Signature Date
+MVN Form 385-10R Proponent MVN-SS
+15 Sep 2008
+
+Activity Hazard Analysis (AHA)
+Activity/Work Task: Overall Risk Assessment Code (RAC) (Use highest code)
+Project Location: Risk Assessment Code (RAC) Matrix
+Contract Number: Probability
+Severity
+Date Prepared: Frequent Likely Occasional Seldom Unlikely
+Catastrophic E E H H M
+Prepared by (Name/Title):
+Critical E H H M L
+Marginal H M M L L
+Reviewed by (Name/Title):
+Negligible M L L L L
+Notes: (Field Notes, Review Comments, etc.)
+Step 1: Review each “Hazard” with identified safety “Controls” and determine RAC (See above)
+“Probability” is the likelihood to cause an incident, near miss, or accident and RAC Chart
+identified as: Frequent, Likely, Occasional, Seldom or Unlikely.
+“Severity” is the outcome/degree if an incident, near miss, or accident did E = Extremely High Risk
+occur and identified as: Catastrophic, Critical, Marginal, or Negligible H = High Risk
+Step 2: Identify the RAC (Probability/Severity) as E, H, M, or L for each M = Moderate Risk
+“Hazard” on AHA. Annotate the overall highest RAC at the top of AHA. L = Low Risk
+Job Steps Hazards Controls RAC
+Training Requirements/Competent or
+Equipment to be Used Inspection Requirements
+Qualified Personnel name(s)
+
+4
+New Orleans District
+
+3” 31” 3” 8” 3”
+6”
+Safety is a Job
+4.5” Requirement
+10.5”
+Gap Closures at Pump Station #3,
+Interim Protection Plan, Phase 1
+2.25”
+3”
+U.D.H. Builders, Inc.
+2.25”
+Baton Rouge, Louisiana
+3”
+This project started 3 15 0 4
+4.875”
+4.875”
+Date since last
+Lost time accident 4.875”
+4.875”
+Total lost time injuries
+0
+4.5”
+5”
+3”
+3” 21” 24”
+o o o
+.75”
+5 0 4
+3”
+.75”
+o o o
+(NOT TO SCALE) 2.5” 1.25” 2.5” 2.5”
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+SECTION TABLE OF CONTENTS
+DIVISION 01 - GENERAL REQUIREMENTS
+SECTION 01 33 00
+SUBMITTAL PROCEDURES
+PART 1 GENERAL
+1.1 MEASUREMENT AND PAYMENT
+1.2 DEFINITIONS
+1.2.1 Submittal Descriptions (SD)
+1.2.2 Approving Authority
+1.2.3 Work
+1.3 SUBMITTALS
+1.4 SUBMITTAL CLASSIFICATION
+1.4.1 Government Approved
+1.4.2 Information Only
+1.5 APPROVED SUBMITTALS
+1.6 DISAPPROVED SUBMITTALS
+1.7 GENERAL
+1.8 SUBMITTAL REGISTER
+1.9 SCHEDULING
+1.10 TRANSMITTAL FORM (ENG FORM 4025)
+1.11 SUBMITTAL PROCEDURES
+1.11.1 Procedures
+1.11.2 Deviations
+1.12 CONTROL OF SUBMITTALS
+1.13 GOVERNMENT APPROVED SUBMITTALS
+1.14 INFORMATION ONLY SUBMITTALS
+1.15 STAMPS
+PART 2 PRODUCTS
+PART 3 EXECUTION
+-- End of Section Table of Contents --
+SECTION 01 33 00 Page 1 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+SECTION 01 33 00
+SUBMITTAL PROCEDURES
+PART 1 GENERAL
+1.1 MEASUREMENT AND PAYMENT
+No separate measurement or payment will be made for submittal requirements
+as specified herein. Payment for the work covered under this section shall
+be distributed throughout the existing bid items. Payment for materials
+incorporated in the work will not be made if required approvals have not
+been obtained.
+1.2 DEFINITIONS
+1.2.1 Submittal Descriptions (SD)
+Submittals requirements are specified in the technical sections.
+Submittals are identified by SD numbers and titles as follows.
+SD-01 Preconstruction Submittals
+Certificates of insurance.
+Surety bonds.
+List of proposed subcontractors.
+List of proposed products.
+Construction Progress Schedule.
+Submittal register.
+Schedule of prices.
+Health and safety plan.
+Work plan.
+Quality control plan.
+Environmental protection plan.
+1.2.2 Approving Authority
+Office or designated person authorized to approve submittal.
+1.2.3 Work
+As used in this section, on-site and off-site construction required by
+contract documents, including labor necessary to produce submittals,
+construction, materials, products, equipment, and systems incorporated or
+to be incorporated in such construction.
+1.3 SUBMITTALS
+Government approval is required for submittals with a "G" designation;
+submittals not having a "G" designation are for information only or as
+otherwise designated. When used, a designation following the "G"
+designation identifies the office that will review the submittal for the
+Government. The following shall be submitted in accordance with Section
+01 33 00 SUBMITTAL PROCEDURES:
+SD-01 Preconstruction Submittals
+SECTION 01 33 00 Page 2 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+Submittal Register; G
+1.4 SUBMITTAL CLASSIFICATION
+Submittals are classified as follows:
+1.4.1 Government Approved
+Governmental approval is required for extensions of design, critical
+materials, deviations, equipment whose compatibility with the entire system
+must be checked, and other items as designated by the Contracting Officer.
+Within the terms of the Contract Clause in section 00700 entitled,
+Specifications And Drawings For Construction (FAR 52.236-21), they are
+considered to be "shop drawings." Any reference to Government approval by
+the Contracting Officer (CO) includes the approving authority of the CO,
+the Administrative Contracting Officer (ACO), or the Contracting Officer's
+representative (COR).
+1.4.2 Information Only
+All submittals not requiring Government approval will be for information
+only. They are not considered to be "shop drawings" within the terms of
+the Contract Clause referred to above.
+1.5 APPROVED SUBMITTALS
+The Contracting Officer's approval of submittals shall not be construed as
+a complete check, but will indicate only that the general method of
+construction, materials, detailing and other information are satisfactory.
+Approval will not relieve the Contractor of the responsibility for any
+error which may exist, as the Contractor under the Contractor Quality
+Control (CQC) requirements of this contract is responsible for dimensions,
+the design of adequate connections and details, and the satisfactory
+construction of all work. After submittals have been approved by the
+Contracting Officer, no resubmittal for the purpose of substituting
+materials or equipment will be considered unless accompanied by an
+explanation of why a substitution is necessary.
+1.6 DISAPPROVED SUBMITTALS
+The Contractor shall respond to all concerns expressed by the Contracting
+Officer and promptly make any corrections necessary to address those
+concerns. The Contractor shall promptly furnish a corrected submittal in
+the form and number of copies specified for the initial submittal. If the
+Contractor considers any correction indicated on the submittals to
+constitute a change to the contract, a notice in accordance with the
+Contract Clause in Section 00700 entitled, CHANGES (FAR 52.243-4), shall be
+given promptly to the Contracting Officer.
+1.7 GENERAL
+The Contractor shall submit all items listed on the Submittal Register (ENG
+Form 4288) or specified in the other sections of these specifications. The
+Contractor shall make submittals as required by the specifications. The
+Contracting Officer may request submittals in addition to those specified
+when deemed necessary to adequately describe the work covered in the
+respective sections. Units of weights and measures used on all submittals
+shall be the same as those used in the contract drawings. Each submittal
+SECTION 01 33 00 Page 3 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+shall be complete and in sufficient detail to allow ready determination of
+compliance with contract requirements. Prior to submittal, all items shall
+be checked and approved by the Contractor's Quality Control (CQC)
+representative and each item shall be stamped, signed, and dated by the
+CQC representative indicating action taken. Proposed deviations from the
+contract requirements shall be clearly identified. Submittals shall
+include items such as: Contractor's, manufacturer's, or fabricator's
+drawings; descriptive literature including (but not limited to) catalog
+cuts, diagrams, operating charts or curves; test reports; test cylinders;
+samples; O&M manuals (including parts list); certifications; warranties;
+and other such required submittals. Submittals requiring Government
+approval shall be scheduled and made prior to the acquisition of the
+material or equipment covered thereby. Samples remaining upon completion
+of the work shall be picked up and disposed of in accordance with
+manufacturer's Safety Data Sheets (SDS) and in compliance with existing
+laws and regulations.
+1.8 SUBMITTAL REGISTER
+At the end of this section is a submittal register showing items of
+equipment and materials for which submittals are required by the
+specifications; this submittal register may not be all inclusive and
+additional submittals may be required. The Contractor shall maintain a
+submittal register for the project in accordance with Section 01 45 00.15 10
+RESIDENT MANAGEMENT SYSTEM CONTRACTOR MODE (RMS CM). The Government will
+provide the initial submittal register in electronic format. Thereafter,
+the Contractor shall maintain a complete list of all submittals, including
+completion of all data columns. Dates on which submittals are received and
+returned by the Government will be included in its export file to the
+Contractor. The Contractor shall track all submittals.
+1.9 SCHEDULING
+Submittals covering component items forming a system or items that are
+interrelated shall be scheduled to be coordinated and submitted
+concurrently. Certifications to be submitted with the pertinent drawings
+shall be so scheduled. Adequate time (a minimum of 30 calendar days
+exclusive of mailing time) shall be allowed and shown on the register for
+review and approval. No delay damages or time extensions will be allowed
+for time lost in late submittals.
+1.10 TRANSMITTAL FORM (ENG FORM 4025)
+The transmittal form (ENG Form 4025) attached to this section shall be used
+for submitting both Government-approved and information-only submittals in
+accordance with the instructions on the reverse side of the form. These
+forms are included in the RMS software that the Contractor is required to
+use for this contract. This form shall be properly completed by filling out
+all the heading blank spaces and identifying each item submitted. Special
+care shall be exercised to ensure proper listing of the contract
+specification paragraph and/or sheet number of the contract drawings
+pertinent to the data submitted for each item. In order to expedite review
+of submittals, an electronic copy of all submittals, with their complete
+backup materials, shall be sent to the Contracting Officer's
+Representative, along with the hard copies. The electronic files shall be .pdf, .dgn, .do
+or other format acceptable to the Contracting Officer's Representative.
+SECTION 01 33 00 Page 4 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+1.11 SUBMITTAL PROCEDURES
+Submittals shall be made as follows:
+1.11.1 Procedures
+Procedures for submittals will be stipulated by the Contracting Officer at
+the preconstruction conference.
+1.11.2 Deviations
+For submittals which include proposed deviations requested by the
+Contractor, the column "variation" of ENG Form 4025 shall be checked. The
+Contractor shall set forth in writing the reason for any deviations and
+annotate such deviations on the submittal. The Government reserves the
+right to rescind inadvertent approval of submittals containing unnoted
+deviations.
+1.12 CONTROL OF SUBMITTALS
+The Contractor shall carefully control his procurement operations to ensure
+that each individual submittal is made on or before the Contractor
+scheduled submittal date shown on the approved "Submittal Register".
+1.13 GOVERNMENT APPROVED SUBMITTALS
+All submittals shall be received through RMS, including any attachments.
+Upon completion of review of submittals requiring Government approval, the
+submittals will be identified as having received approval by being so
+stamped and dated. The Contractor shall provide at least one (1) hard copy
+to the Government Inspector of all submittals. This copy will be retained
+by the Contracting Officer. If the Contractor requires the return of any
+hard copies for their records, these copies shall be provided in addition
+to the one (1) Government copy at the time of submittal.
+1.14 INFORMATION ONLY SUBMITTALS
+Normally submittals for information only will not be returned. Approval of
+the Contracting Officer is not required on information only submittals.
+The Government reserves the right to require the Contractor to resubmit any
+item found not to comply with the contract. This does not relieve the
+Contractor from the obligation to furnish material conforming to the plans
+and specifications; will not prevent the Contracting Officer from requiring
+removal and replacement of nonconforming material incorporated in the work;
+and does not relieve the Contractor of the requirement to furnish samples
+for testing by the Government laboratory or for check testing by the
+Government in those instances where the technical specifications so
+prescribe. The Contractor shall also submit electronic copies (i.e., .pdf
+files) of all submittals to expedite the review and approval process.
+1.15 STAMPS
+Stamps used by the Contractor on the submittal data to certify that the
+submittal meets contract requirements shall be similar to the following:
+SECTION 01 33 00 Page 5 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+________________________________________________________________________
+| CONTRACTOR |
+| |
+| (Firm Name) |
+| |
+| |
+| |
+| _____ Approved |
+| |
+| |
+| _____ Approved with corrections as noted on submittal data and/or |
+| attached sheets(s). |
+| |
+| |
+| |
+| SIGNATURE: __________________________________________________________ |
+| |
+| TITLE: ______________________________________________________________ |
+| |
+| DATE: _______________________________________________________________ |
+| |
+|________________________________________________________________________|
+PART 2 PRODUCTS
+Not Used
+PART 3 EXECUTION
+Not Used
+-- End of Section --
+SECTION 01 33 00 Page 6 ED-22-018
+
+CONTRACT NO.
+SUBMITTAL REGISTER
+TITLE AND LOCATION CONTRACTOR
+Grand Isle West Jetty Spur and Extension
+CONTRACTOR: CONTRACTOR APPROVING AUTHORITY
+SCHEDULE DATES ACTION
+G
+O
+V
+T C T
+R L
+A A O
+A N S R A A
+C S S C C
+T M S P I A T T
+I I P A F / I I
+V T E R I E O DATE FWD O MAILED
+I T C A C N TO APPR N TO
+T A G# A R AUTH/ CONTR/
+Y L S R T E C C
+E DESCRIPTION A I V APPROVAL MATERIAL O DATE DATE RCD DATE FWD DATE RCD O DATE DATE RCD
+N N C P O W NEEDED NEEDED D OF FROM TO OTHER FROM OTH D OF FRM APPR
+O O T ITEM SUBMITTED H N R SUBMIT BY BY E ACTION CONTR REVIEWERREVIEWER E ACTION AUTH REMARKS
+(a) (b) (c) (d) (e) (f) (g) (h) (i) (j) (k) (l) (m) (n) (o) (p) (q) (r)
+01 33 00 SD-01 Preconstruction Submittals
+Submittal Register 1.7 G
+01 45 04.00 10SD-01 Preconstruction Submittals
+Contractor Quality Control Plan 3.2 G CD
+01 78 02.00 10SD-02 Shop Drawings
+As-Built Drawings 1.3.1 G EDC
+As-Built Drawings 1.3.1 G EDC
+02 21 10.00 12SD-02 Shop Drawings
+Before Construction Jetty Spur 3.1.3 G ED
+Surveys
+Compliance Jetty Spur Cross G ED
+Sections Survey
+Compliance Jetty Spur Profile G ED
+Survey
+SD-05 Design Data
+Before Construction Jetty Spur 3.1.3 G CD
+Surveys
+Compliance Jetty Spur Cross 3.1.4 G CD
+Sections Surveys
+Compliance Jetty Spur Profiles 3.1.5 G CD
+Surveys
+31 05 19.04 12SD-01 Preconstruction Submittals
+Work Plan 1.5.1
+SD-04 Samples
+Geotextile 1.5.1
+SD-07 Certificates
+SUBMITTAL FORM,Jan 96 PREVIOUS EDITION IS OBSOLETE PAGE 1 OF 2 PAGES
+
+CONTRACT NO.
+SUBMITTAL REGISTER
+TITLE AND LOCATION CONTRACTOR
+Grand Isle West Jetty Spur and Extension
+CONTRACTOR: CONTRACTOR APPROVING AUTHORITY
+SCHEDULE DATES ACTION
+G
+O
+V
+T C T
+R L
+A A O
+A N S R A A
+C S S C C
+T M S P I A T T
+I I P A F / I I
+V T E R I E O DATE FWD O MAILED
+I T C A C N TO APPR N TO
+T A G# A R AUTH/ CONTR/
+Y L S R T E C C
+E DESCRIPTION A I V APPROVAL MATERIAL O DATE DATE RCD DATE FWD DATE RCD O DATE DATE RCD
+N N C P O W NEEDED NEEDED D OF FROM TO OTHER FROM OTH D OF FRM APPR
+O O T ITEM SUBMITTED H N R SUBMIT BY BY E ACTION CONTR REVIEWERREVIEWER E ACTION AUTH REMARKS
+(a) (b) (c) (d) (e) (f) (g) (h) (i) (j) (k) (l) (m) (n) (o) (p) (q) (r)
+31 05 19.04 12 Geotextile 1.5.1 G
+SUBMITTAL FORM,Jan 96 PREVIOUS EDITION IS OBSOLETE PAGE 2 OF 2 PAGES
+
+TRANSMITTAL OF SHOP DRAWINGS, EQUIPMENT DATA, MATERIAL SAMPLES, OR DATE TRANSMITTAL NO.
+MANUFACTURER'S CERTIFICATES OF COMPLIANCE
+(Read instructions on the reverse side prior to initiating this form)
+SECTION I - REQUEST FOR APPROVAL OF THE FOLLOWING ITEMS (This section will be initiated by the contractor)
+TO: FROM: CONTRACT NO. CHECK ONE:
+THIS IS A NEW TRANSMITTAL
+THIS IS A RESUBMITTAL OF
+TRANSMITTAL
+SPECIFICATION SEC. NO. (Cover only one section with PROJECT TITLE AND LOCATION CHECK ONE: THIS TRANSMITTAL IS
+each transmittal) FOR FIO GOV'T. APPROVAL
+ITEM DESCRIPTION OF ITEM SUBMITTED MFG OR CONTR. NO. CONTRACT REFERENCE FOR VARIATION FOR
+NO. (Type size, model number/etc.) CAT., CURVE OF DOCUMENT CONTRACTOR (See CE
+DRAWING OR COPIES USE CODE instruction USE
+BROCHURE NO. SPEC. DRAWING No. 6) CODE
+(See instruction no. 8) PARA. NO. SHEET NO.
+a. b. c. d. e. f. g. h. i.
+REMARKS I certify that the above submitted items have been reviewed
+in detail and are correct and in strict conformance with the
+contract drawings and specifications except as other wise
+stated.
+NAME AND SIGNATURE OF CONTRACTOR
+SECTION II - APPROVAL ACTION
+ENCLOSURES RETURNED (List by Item No.) NAME, TITLE AND SIGNATURE OF APPROVING AUTHORITY DATE
+ENG FORM 4025-R, MAR 95 (ER 415-1-10) EDITION OF SEP 93 IS OBSOLETE. SHEET OF (Proponent: CEMP-CE)
+
+INSTRUCTIONS
+1. Section I will be initiated by the Contractor in the required number of copies.
+2. Each transmittal shall be numbered consecutively in the space provided for "Transmittal No.". This number, in addition to the contract number, will form a serial
+number for identifying each submittal. For new submittals or resubmittals mark the appropriate box; on resubmittals, insert transmittal number of last submission as
+well as the new submittal number.
+3. The "Item No." will be the same "Item No." as indicated on ENG FORM 4288-R for each entry on this form.
+4. Submittals requiring expeditious handling will be submitted on a separate form.
+5. Separate transmittal form will be used for submittals under separate sections of the specifications.
+6. A check shall be placed in the "Variation" column when a submittal is not in accordance with the plans and specifications--also, a written statement to that effect
+shall be included in the space provided for "Remarks".
+7. Form is self-transmittal, letter of transmittal is not required.
+8. When a sample of material or Manufacturer's Certificate of Compliance is transmitted, indicate "Sample" or "Certificate" in column c, Section I.
+9. U.S. Army Corps of Engineers approving authority will assign action codes as indicated below in space provided in Section I, column i to each item submitted. In
+addition they will ensure enclosures are indicated and attached to the form prior to return to the contractor. The Contractor will assign action codes as indicated below
+in Section I, column g, to each item submitted.
+THE FOLLOWING ACTION CODES ARE GIVEN TO ITEMS SUBMITTED
+A -- Approved as submitted. E -- Disapproved (See attached).
+B -- Approved, except as noted on drawings. F -- Receipt acknowledged.
+C -- Approved, except as noted on drawings. FX-- Receipt acknowledged, does not comply
+Refer to attached sheet resubmission required. as noted with contract requirements.
+D -- Will be returned by separate correspondence. G -- Other (Specify)
+10.Approval of items does not relieve the contractor from complying with all the requirements of the contract plans and specifications.
+(Reverse of ENG Form 4025-R)
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+SECTION TABLE OF CONTENTS
+DIVISION 01 - GENERAL REQUIREMENTS
+SECTION 01 42 00
+SOURCES FOR REFERENCE PUBLICATIONS
+PART 1 GENERAL
+1.1 REFERENCES
+1.2 ORDERING INFORMATION
+-- End of Section Table of Contents --
+SECTION 01 42 00 Page 1 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+SECTION 01 42 00
+SOURCES FOR REFERENCE PUBLICATIONS
+PART 1 GENERAL
+1.1 REFERENCES
+Various publications are referenced in other sections of the specifications
+to establish requirements for the work. These references are identified in
+each section by document number, date and title. The document number used
+in the citation is the number assigned by the standards producing
+organization, (e.g. ASTM B 564 Nickel Alloy Forgings). However, when the
+standards producing organization has not assigned a number to a document,
+an identifying number has been assigned for reference purposes.
+1.2 ORDERING INFORMATION
+The addresses of the standards publishing organizations whose documents are
+referenced in other sections of these specifications are listed below, and
+if the source of the publications is different from the address of the
+sponsoring organization, that information is also provided. Documents
+listed in the specifications with numbers which were not assigned by the
+standards producing organization should be ordered from the source by title
+rather than by number.
+ASTM INTERNATIONAL (ASTM)
+100 Barr Harbor Drive, P.O. Box C700
+West Conshohocken, PA 19428-2959
+Ph: 610-832-9500
+Fax: 610-832-9555
+E-mail: service@astm.org
+Internet: http://www.astm.org
+LOUISIANA ADMINISTRATIVE CODE (LAC)
+Office of State Register
+P.O. Box 94095
+Baton Rouge, LA 70804-9095
+Ph: 225-342-5015
+Internet:
+U.S. ARMY CORPS OF ENGINEERS (USACE)
+Order CRD-C DOCUMENTS from:
+U.S. Army Engineer Research & Development Center
+ATTN: Materials Testing Center
+Building 6000
+3909 Halls Ferry Road
+Vicksburg, MS 39180-6199
+Ph: 601-634-2496
+Fax: 601-634-3242
+E-mail: mtc-info@erdc.usace.army.mil
+Internet: http://www.wes.army.mil/SL/MTC/handbook.htm
+Order Other Documents from:
+USACE Publications Depot
+SECTION 01 42 00 Page 2 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+Attn: CEHEC-IM-PD
+2803 52nd Avenue
+Hyattsville, MD 20781-1102
+Ph: 301-394-0081
+Fax: 301-394-0084
+E-mail: mtc-info@erdc@usace.army.mil
+Internet: http://gsl.erdc.usace.army.mil/SL/MTC/
+U.S. ENVIRONMENTAL PROTECTION AGENCY (EPA)
+Ariel Rios Building
+1200 Pennsylvania Avenue, N.W.
+Washington, DC 20460
+Ph: 202-272-0167
+Internet: http://www.epa.gov
+--- Some EPA documents are available only from:
+National Technical Information Service (NTIS)
+5285 Port Royal Road
+Springfield, VA 22161
+Ph: 703-605-6585
+Fax: 703-605-6900
+E-mail: info@ntis.gov
+Internet: http://www.ntis.gov
+U.S. NATIONAL ARCHIVES AND RECORDS ADMINISTRATION (NARA)
+8601 Adelphi Road
+College Park, MD 20740-6001
+Ph: 866-272-6272
+Fax: 301-837-0483
+Internet: http://www.archives.gov
+Order documents from:
+Superintendent of Documents
+U.S.Government Printing Office (GPO)
+732 North Capitol Street, NW
+Washington, DC 20401
+Ph: 202-512-1800
+Fax: 202-512-2104
+E-mail: contactcenter@gpo.gov
+Internet: http://www.gpoaccess.gov
+-- End of Section --
+SECTION 01 42 00 Page 3 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+SECTION TABLE OF CONTENTS
+DIVISION 01 - GENERAL REQUIREMENTS
+SECTION 01 45 00.15 10
+RESIDENT MANAGEMENT SYSTEM CONTRACTOR MODE(RMS CM)
+PART 1 GENERAL
+1.1 REFERENCES
+1.2 MEASUREMENT AND PAYMENT
+1.3 CONTRACT ADMINISTRATION
+1.3.1 Correspondence and Electronic Communications
+1.3.2 Other Factors
+1.4 RMS SOFTWARE
+1.5 SYSTEM REQUIREMENTS
+1.6 CONTRACT DATABASE - GOVERNMENT
+1.7 CONTRACT DATABASE - CONTRACTOR
+1.7.1 Administration
+1.7.1.1 Contractor Information
+1.7.1.2 Subcontractor Information
+1.7.1.3 Correspondence
+1.7.1.4 Equipment
+1.7.1.5 Reports
+1.7.1.6 Request For Information (RFI)
+1.7.2 Finances
+1.7.2.1 Pay Activity Data
+1.7.2.2 Payment Requests
+1.7.3 Quality Control (QC)
+1.7.3.1 Quality Control (QC) Reports
+1.7.3.2 Deficiency Tracking.
+1.7.3.3 Three-Phase Control Meetings
+1.7.3.4 Labor and Equipment Hours
+1.7.3.5 Accident/Safety Reporting
+1.7.3.6 Definable Features of Work
+1.7.3.7 Activity Hazard Analysis
+1.7.4 Submittal Management
+1.7.5 Schedule
+1.7.6 Closeout
+1.8 IMPLEMENTATION
+1.9 NOTIFICATION OF NONCOMPLIANCE
+PART 2 PRODUCTS
+PART 3 EXECUTION
+-- End of Section Table of Contents --
+SECTION 01 45 00.15 10 Page 1 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+SECTION 01 45 00.15 10
+RESIDENT MANAGEMENT SYSTEM CONTRACTOR MODE(RMS CM)
+PART 1 GENERAL
+1.1 REFERENCES
+The publications listed below form a part of this section to the extent
+referenced. The publications are referred to within the text by the basic
+designation only.
+U.S. ARMY CORPS OF ENGINEERS (USACE)
+EM 385-1-1 (2014) Safety and Health Requirements
+Manual
+RMS CM Guide (2021) Resident Management System (RMS)
+User Manual For Contractors
+1.2 MEASUREMENT AND PAYMENT
+No separate measurement or payment will be made for resident management
+system requirements as specified herein. Payment for the work covered
+under this section shall be distributed throughout the existing bid items.
+1.3 CONTRACT ADMINISTRATION
+The Government will use the Resident Management System (RMS) to assist in
+its monitoring and administration of this contract. The Government accesses
+the system using the Government Mode of RMS (RMS GM) and the Contractor
+accesses the system using the Contractor Mode (RMS CM). The term RMS will
+be used in the remainder of this section for both RMS GM and RMS CM. The
+joint Government-Contractor use of RMS facilitates electronic exchange of
+information and overall management of the contract. The Contractor accesses
+RMS to record, maintain, input, track, and electronically share information
+with the Government throughout the contract period in the following areas:
+Administration
+Finances
+Quality Control
+Submittal Monitoring
+Scheduling
+Closeout
+Import/Export of Data
+For assistance in providing contract-required data to the Government, the
+Contractor is directed to the following website for guidance:
+https://rms.usace.army.mil/datafiles/rms_qcs_manuals/qcs_manual_2_38.pdf
+1.3.1 Correspondence and Electronic Communications
+For ease and speed of communications, exchange correspondence and other
+documents in electronic format to the maximum extent feasible. Some
+correspondence, including pay requests and payrolls, are also to be
+SECTION 01 45 00.15 10 Page 2 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+provided in paper format with original signatures. Paper documents will
+govern, in the event of discrepancy with the electronic version.
+1.3.2 Other Factors
+Other portions of this document have a direct relationship to the reporting
+accomplished through RMS. Particular attention is directed to Contract
+Clause, 52.236-15 "SCHEDULES FOR CONSTRUCTION CONTRACTS"; Contract Clause,
+52.232-27 "PROMPT PAYMENT FOR CONSTRUCTION CONTRACTS"; Contract Clause,
+52.232-5 "PAYMENTS UNDER FIXED-PRICED CONSTRUCTION CONTRACTS"; Section
+01 33 00 SUBMITTAL PROCEDURES; and Section 01 45 04.00 10 CONTRACTOR
+QUALITY CONTROL.
+1.4 RMS SOFTWARE
+RMS is a Windows-based program that can be run on a Windows-based PC
+meeting the requirements as specified in Paragraph: SYSTEM REQUIREMENTS.
+Download, install and be able to utilize the latest version of the RMS
+software within 7 calendar days of receipt of the Notice to Proceed. RMS
+software, user manuals (RMS CM Guide), access and installation
+instructions, program updates and training information are available from
+the RMS website (
+https://rms.usace.army.mil/datafiles/rmsdocwebsite/default.html. The
+Government and the Contractor will have different access authorities to the
+same contract database through RMS. The common database will be updated
+automatically each time a user finalizes an entry or change.
+1.5 SYSTEM REQUIREMENTS
+The following is the recommended system configuration to run the Contractor
+Mode RMS for full utilization of all features for all types and sizes of
+contracts. Smaller, less complicated, projects may not require the
+configuration levels described below. Required configuration also noted
+below.
+Minimum RMS System Requirements
+Hardware
+Windows-based PC 1.7 GHz i3; AMD A6 3650 GHz or
+higher processor (REQUIRED)
+RAM 8 GB
+Hard drive disk 100 GB space for sole use by RMS
+system
+Monitor Screen resolution 1366 x 768
+Mouse or other pointing device
+Windows compatible printer Laser printer must have 4 MB+ of RAM
+Connection to the Internet minimum 10 Mbs per user
+Software
+SECTION 01 45 00.15 10 Page 3 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+Minimum RMS System Requirements
+MS Windows Windows 10 x 64 bit (RMS requires 64
+bit O/S) or newer (REQUIRED)
+Word Processing software Viewer for MS Word 2013, MS Excel
+2013 or newer (REQUIRED)
+E-mail MAPI compatible (REQUIRED)
+Virus protection software Regularly upgraded with all issued
+Manufacturer's
+updates and is able to detect
+most zero day viruses (REQUIRED)
+1.6 CONTRACT DATABASE - GOVERNMENT
+The Government will enter the basic contract award data in RMS prior to
+granting the Contractor access. The Government entries into RMS will
+generally be related to submittal reviews, correspondence status, and
+Quality Assurance(QA)comments, as well as other miscellaneous
+administrative information.
+1.7 CONTRACT DATABASE - CONTRACTOR
+Contractor entries into RMS establish, maintain, and update data throughout
+the duration of the contract. Contractor entries generally include prime
+and subcontractor information, daily reports, submittals, RFI's, schedule
+updates and payment requests. RMS includes the ability to import
+attachments and export reports in many of the modules, including
+submittals. The contractor responsibilities for entries in RMS typically
+include the following items:
+1.7.1 Administration
+1.7.1.1 Contractor Information
+Enter all current Contractor administrative data and information into RMS
+within 7 calendar days of receiving access to the contract in RMS. This
+includes, but is not limited to, Contractor's name, address, telephone
+numbers, management staff, and other required items.
+1.7.1.2 Subcontractor Information
+Enter all missing subcontractor administrative data and information into
+RMS CM within 7 calendar days of receiving access to the contract in RMS or
+within 7 calendar days of the signing of the subcontractor agreement for
+agreements signed at a later date. This includes name, trade, address,
+phone numbers, and other required information for all subcontractors. A
+subcontractor is listed separately for each trade to be performed.
+1.7.1.3 Correspondence
+Identify all Contractor correspondence to the Government with a serial
+number. Prefix correspondence initiated by the Contractor's site office
+with "S". Prefix letters initiated by the Contractor's home (main) office
+with "H". Letters are numbered starting from 0001. (e.g., H-0001 or
+S-0001). The Government's letters to the Contractor will be prefixed with
+"C" or "RFP".
+SECTION 01 45 00.15 10 Page 4 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+1.7.1.4 Equipment
+Enter and maintain a current list of equipment planned for use or being
+used on the jobsite, including the most recent and planned equipment
+inspection dates.
+1.7.1.5 Reports
+Track the status of the project utilizing the reports available in RMS.
+The value of these reports is reflective of the quality of the data input.
+These reports include the Progress Payment Request worksheet, Quality
+Control (QC) comments, Submittal Register Status, and Three-Phase Control
+worksheets.
+1.7.1.6 Request For Information (RFI)
+Create and track all Requests For Information (RFI) in the RMS
+Administration Module for Government review and response.
+1.7.2 Finances
+1.7.2.1 Pay Activity Data
+Develop and enter a list of pay activities in conjunction with the project
+schedule. The sum of pay activities equals the total contract amount,
+including modifications. Each pay activity must be assigned to a Contract
+Line Item Number (CLIN). The sum of the activities assigned to a CLIN
+equals the amount of each CLIN.
+1.7.2.2 Payment Requests
+Prepare all progress payment requests using RMS. Update the work completed
+under the contract at least monthly, measured as percent or as specific
+quantities. After the update, generate a payment request and prompt
+payment certification using RMS. Submit the signed prompt payment
+certification and payment request as well as supporting data either
+electronically or by hard copy. Unless waived by the Contracting Officer, a
+signed paper copy of the approved payment certification and request is also
+required and will govern in the event of discrepancy with the electronic
+version.
+1.7.3 Quality Control (QC)
+Enter and track implementation of the 3-phase QC Control System, QC
+testing, transferred and installed property and warranties in RMS. Prepare
+daily reports, identify and track deficiencies, document progress of work,
+and support other Contractor QC requirements in RMS. Maintain all data on
+a daily basis. Insure that RMS reflects all quality control methods, tests
+and actions contained within the Contractor Quality Control (CQC) Plan and
+Government review comments of same within 7 calendar days of Government
+acceptance of the CQC Plan.
+1.7.3.1 Quality Control (QC) Reports
+The Contractor's Quality Control (QC) Daily Report in RMS is the official
+report. The Contractor can use other supplemental formats to record QC
+data, but information from any supplemental formats are to be consolidated
+and entered into the RMS QC Daily Report. Any supplemental information may
+be entered into RMS as an attachment to the report. QC Daily Reports must
+SECTION 01 45 00.15 10 Page 5 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+be finalized and signed in RMS within 24 hours after the date covered by
+the report. Provide the Government a printed signed copy of the QC Daily
+Report, unless waived by the Contracting Officer.
+1.7.3.2 Deficiency Tracking.
+Use the QC Daily Report Module to enter and track deficiencies.
+Deficiencies identified and entered into RMS by the Contractor or the
+Government will be sequentially numbered with a QC or QA prefix for
+tracking purposes. Enter each deficiency into RMS the same day that the
+deficiency is identified. Monitor, track and resolve all QC and QA entered
+deficiencies. A deficiency is not considered to be corrected until the
+Government indicates concurrence in RMS.
+1.7.3.3 Three-Phase Control Meetings
+Maintain scheduled and actual dates and times of preparatory and initial
+control meetings in RMS. Worksheets for the three-phase control meetings
+are generated within RMS.
+1.7.3.4 Labor and Equipment Hours
+Enter labor and equipment exposure hours on a daily basis. Roll up the
+labor and equipment exposure data into a monthly exposure report.
+1.7.3.5 Accident/Safety Reporting
+Both the Contractor and the Government enter safety related comments in RMS
+as a deficiency. The Contractor will monitor, track and show resolution
+for safety issues in the QC Daily Report area of the RMS QC Module. In
+addition, follow all reporting requirements for accidents and incidents as
+required in EM 385-1-1 and as required by any other applicable Federal,
+State or local agencies.
+1.7.3.6 Definable Features of Work
+Enter each feature of work, as defined in the approved CQC Plan, into the
+RMS QC Module. A feature of work may be associated with a single or
+multiple pay activities, however a pay activity is only to be linked to a
+single feature of work.
+1.7.3.7 Activity Hazard Analysis
+Import activity hazard analysis electronic document files into the RMS QC
+Module utilizing the document package manager.
+1.7.4 Submittal Management
+Enter all current submittal register data and information into RMS within 7
+calendar days of receiving access to the contract in RMS. The information
+shown on the submittal register following the specification section 01 33
+00 SUBMITTAL PROCEDURES will already be entered into the RMS database when
+access is granted. Group electronic submittal documents into transmittal
+packages to send to the Government, except very large electronic files,
+samples, spare parts, mock ups, color boards, or where hard copies are
+specifically required. Track transmittals and update the submittal register
+in RMS on a daily basis throughout the duration of the contract. Submit
+hard copies of all submittals unless waived by the Contracting Officer.
+SECTION 01 45 00.15 10 Page 6 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+1.7.5 Schedule
+Enter and update the contract project schedule in RMS by either manually
+entering all schedule data or by importing the Standard Data Exchange
+Format (SDEF) file.
+1.7.6 Closeout
+Closeout documents, processes and forms are managed and tracked in RMS by
+both the Contractor and the Government. Ensure that all closeout documents
+are entered, completed and documented within RMS.
+1.8 IMPLEMENTATION
+Use of RMS as described in the preceding paragraphs is mandatory. Ensure
+that sufficient resources are available to maintain contract data within
+the RMS system. RMS is an integral part of the Contractor's required
+management of quality control.
+1.9 NOTIFICATION OF NONCOMPLIANCE
+Take corrective action within 7 calendar days after receipt of notice of
+RMS non-compliance by the Contracting Officer.
+PART 2 PRODUCTS
+Not Used
+PART 3 EXECUTION
+Not Used
+-- End of Section --
+SECTION 01 45 00.15 10 Page 7 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+SECTION TABLE OF CONTENTS
+DIVISION 01 - GENERAL REQUIREMENTS
+SECTION 01 45 04.00 10
+CONTRACTOR QUALITY CONTROL
+PART 1 GENERAL
+1.1 MEASUREMENT AND PAYMENT
+1.2 SUBMITTALS
+1.3 ELECTRONIC TEST REPORT DATA
+PART 2 PRODUCTS
+PART 3 EXECUTION
+3.1 GENERAL REQUIREMENTS
+3.2 CONTRACTOR QUALITY CONTROL (CQC) PLAN
+3.2.1 Content of the CQC Plan
+3.2.2 Acceptance of Plan
+3.2.3 Notification of Changes
+3.3 COORDINATION MEETING
+3.4 QUALITY CONTROL ORGANIZATION
+3.4.1 Personnel Requirements
+3.4.2 CQC System Manager
+3.4.3 CQC Personnel
+3.4.4 Additional Requirement
+3.4.5 Organizational Changes
+3.5 SUBMITTALS AND DELIVERABLES
+3.6 CONTROL
+3.6.1 Preparatory Phase
+3.6.2 Initial Phase
+3.6.3 Follow-up Phase
+3.6.4 Additional Preparatory and Initial Phases
+3.7 TESTS
+3.7.1 Testing Procedure
+3.7.2 Testing Laboratories
+3.7.2.1 Capability Check
+3.7.2.2 Capability Recheck
+3.7.3 Onsite Laboratory
+3.7.4 Furnishing or Transportation of Samples for Testing
+3.8 COMPLETION INSPECTION
+3.8.1 Punch-Out Inspection
+3.8.2 Pre-Final Inspection
+3.8.3 Final Acceptance Inspection
+3.9 DOCUMENTATION
+3.10 SAMPLE FORMS
+3.11 NOTIFICATION OF NONCOMPLIANCE
+-- End of Section Table of Contents --
+SECTION 01 45 04.00 10 Page 1 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+SECTION 01 45 04.00 10
+CONTRACTOR QUALITY CONTROL
+PART 1 GENERAL
+1.1 MEASUREMENT AND PAYMENT
+No separate measurement or payment will be made for providing and
+maintaining an effective Quality Control program, and all costs associated
+therewith shall be included in the applicable contract unit or job prices
+contained in the Bidding Schedule.
+1.2 SUBMITTALS
+Government approval is required for submittals with a "G" designation;
+submittals not having a "G" designation are for information only. When
+used, a designation following the "G" designation identifies the office
+that will review the submittal for the Government. The following shall be
+submitted in accordance with Section 01 33 00 SUBMITTAL PROCEDURES:
+SD-01 Preconstruction Submittals
+Contractor Quality Control Plan; G, CD
+1.3 ELECTRONIC TEST REPORT DATA
+As part of the Contractor's Quality Control program, the selected QC
+laboratory shall provide electronic transmission of the test report data in
+the prescribed formats with the original hard copy test report data to the
+government. Test results shall be emailed to
+"mvn-cd-q-testresults@usace.army.mil" and uploaded to RMS. The New Orleans
+District Construction Control Manual (NODCC Manual) specifies the minimum
+number of tests to be made, and includes forms which shall be used to
+report test data. The technical specification sections may include testing
+and/or frequency requirements other than those listed in the NODCC manual.
+These additional requirements shall be followed in addition to the
+aforementioned. A copy of the NODCC manual is attached at the end of this
+section.
+PART 2 PRODUCTS
+Not Used.
+PART 3 EXECUTION
+3.1 GENERAL REQUIREMENTS
+The Contractor is responsible for quality control and shall establish and
+maintain an effective quality control system in compliance with the
+Contract Clause in Section 00700, entitled "INSPECTION OF CONSTRUCTION"
+(FAR 52.246-12). The quality control system shall consist of plans,
+procedures, and organization necessary to produce an end product which
+complies with the contract requirements. The system shall cover all
+construction operations, both onsite and offsite, and shall be keyed to the
+SECTION 01 45 04.00 10 Page 2 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+proposed construction sequence. The site project superintendent and
+Quality Control Manager will be held responsible for the quality of work on
+the job and is subject to removal by the Contracting Officer for
+non-compliance with the quality requirements specified in the contract.
+The site project superintendent in this context shall be the highest level
+manager responsible for the overall construction activities at the site,
+including quality and production. The site project superintendent shall
+maintain a physical presence at the site at all times, except as otherwise
+acceptable to the Contracting Officer, and shall be responsible for all
+construction and construction related activities at the site.
+3.2 CONTRACTOR QUALITY CONTROL (CQC) PLAN
+The Contractor shall furnish for review by the Government, not later than
+15 days after receipt of notice of award, the Contractor Quality Control
+Plan proposed to implement the requirements of the Contract Clause in
+Section 00700, entitled "INSPECTION OF CONSTRUCTION" (FAR 52.246-12). The
+plan shall identify personnel, procedures, control, instructions, tests,
+records, and forms to be used. The Government will consider an interim
+plan for the first 30 days of operation. Construction will be permitted
+to begin only after acceptance of the CQC Plan or acceptance of an interim
+plan applicable to the particular feature of work to be started. Work
+outside of the features of work included in an accepted interim plan will
+not be permitted to begin until acceptance of a CQC Plan or another interim
+plan containing the additional features of work to be started. A sample
+CQC Plan is attached at the end of the section.
+3.2.1 Content of the CQC Plan
+The CQC Plan shall include, as a minimum, the following to cover all
+construction operations, both onsite and offsite, including work by
+subcontractors, fabricators, suppliers, and purchasing agents:
+a. A description of the quality control organization, including a
+chart showing lines of authority and acknowledgment that the CQC
+staff shall implement the three phase control system for all
+aspects of the work specified. The staff shall include a CQC
+System Manager who shall report to the project superintendent.
+b. The name, qualifications (in resume format), duties,
+responsibilities, and authorities of each person assigned a CQC
+function.
+c. A copy of the letter to the CQC System Manager signed by an
+authorized official of the firm which describes the
+responsibilities and delegates sufficient authorities to
+adequately perform the functions of the CQC System Manager,
+including authority to stop work which is not in compliance with
+the contract. The CQC System Manager shall issue letters of
+direction to all other various quality control representatives
+outlining duties, authorities, and responsibilities. Copies of
+these letters shall also be furnished to the Government.
+d. Procedures for scheduling, reviewing, certifying, and managing
+submittals, including those of subcontractors, offsite
+fabricators, suppliers, and purchasing agents. These procedures
+shall be in accordance with Section 01 33 00 SUBMITTAL PROCEDURES.
+e. Control, verification, and acceptance testing procedures for each
+SECTION 01 45 04.00 10 Page 3 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+specific test to include the test name, specification paragraph
+requiring test, feature of work to be tested, test frequency, and
+person responsible for each test. (Laboratory facilities approved
+by the Contracting Officer shall be used.)
+f. Procedures for tracking preparatory, initial, and follow-up
+control phases and control, verification, and acceptance tests
+including documentation.
+g. Procedures for tracking construction deficiencies from
+identification through acceptable corrective action. These
+procedures shall establish verification that identified
+deficiencies have been corrected.
+h. Reporting procedures, including proposed reporting formats.
+i. A list of the definable features of work. A definable feature of
+work is a task which is separate and distinct from other tasks,
+has separate control requirements, and may be identified by
+different trades or disciplines, or it may be work by the same
+trade in a different environment. Although each section of the
+specifications may generally be considered as a definable feature
+of work, there are frequently more than one definable features
+under a particular section. This list will be agreed upon during
+the coordination meeting.
+3.2.2 Acceptance of Plan
+Acceptance of the Contractor's plan is required prior to the start of
+construction. Acceptance is conditional and will be predicated on
+satisfactory performance during the construction. The Government reserves
+the right to require the Contractor to make changes in his/her CQC Plan and
+operations including removal of personnel, as necessary, to obtain the
+quality specified.
+3.2.3 Notification of Changes
+After acceptance of the CQC Plan, the Contractor shall notify the
+Contracting Officer in writing of any proposed change. Proposed changes
+are subject to acceptance by the Contracting Officer.
+3.3 COORDINATION MEETING
+After the Preconstruction Conference, before start of construction, and
+prior to acceptance by the Government of the CQC Plan, the Contractor shall
+meet with the Contracting Officer or Authorized Representative and discuss
+the Contractor's quality control system. The CQC Plan shall be submitted
+for review a minimum of 14 calendar days prior to the Coordination
+Meeting. During the Coordination Meeting, a mutual understanding of the
+system details shall be developed, including the forms for recording the
+CQC operations, control activities, testing, administration of the system
+for both onsite and offsite work, and the interrelationship of Contractor's
+Management and control with the Government's Quality Assurance. Minutes of
+the meeting shall be prepared by the Government and signed by both the
+Contractor and the Contracting Officer. The minutes shall become a part of
+the contract file. There may be occasions when subsequent conferences will
+be called by either party to reconfirm mutual understandings and/or address
+deficiencies in the CQC system or procedures which may require corrective
+action by the Contractor.
+SECTION 01 45 04.00 10 Page 4 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+3.4 QUALITY CONTROL ORGANIZATION
+3.4.1 Personnel Requirements
+The requirements for the CQC organization are a CQC System Manager and
+sufficient number of additional qualified personnel to ensure safety and
+contract compliance. The Safety and Health Manager shall serve as a member
+of the CQC staff. Personnel identified in the technical provisions as
+requiring specialized skills to assure the required work is being performed
+properly will also be included as part of the CQC organization. The
+Contractor's CQC staff shall maintain a presence at the site at all times
+during progress of the work and have complete authority and responsibility
+to take any action necessary to ensure contract compliance. The CQC staff
+shall be subject to acceptance by the Contracting Officer. The Contractor
+shall provide adequate office space, filing systems and other resources as
+necessary to maintain an effective and fully functional CQC organization.
+Complete records of all letters, material submittals, shop drawing
+submittals, schedules and all other project documentation shall be promptly
+furnished to the CQC organization by the Contractor. The CQC organization
+shall be responsible to maintain these documents and records at the site at
+all times, except as otherwise acceptable to the Contracting Officer.
+3.4.2 CQC System Manager
+The Contractor shall identify as CQC System Manager an individual within
+the onsite work organization who shall be responsible for overall
+management of CQC and have the authority to act in all CQC matters for the
+Contractor. The CQC System Manager shall be a construction person with a
+minimum of 3 years (full time) experience in related equivalent work. This
+CQC System Manager shall be on the site at all times during construction
+and shall be employed by the prime Contractor. The CQC System Manager may
+not have any other duties than quality control. An alternate for the CQC
+System Manager shall be identified in the plan to serve in the event of the
+System Manager's absence. The requirements for the alternate are the same
+as for the designated CQC System Manager when the alternate is performing
+those duties.
+3.4.3 CQC Personnel
+In addition to CQC personnel specified elsewhere in the contract, the
+Contractor shall provide as part of the CQC organization specialized
+personnel to assist the CQC System Manager for the following areas: civil,
+submittals clerk. These individuals may be employees of the prime or
+subcontractor; be responsible to the CQC System Manager; be physically
+present at the construction site during work on their areas of
+responsibility; have the necessary education and/or experience in
+accordance with the experience matrix listed herein. These individuals may
+perform other duties but must be allowed sufficient time to perform their
+assigned quality control duties as described in the Quality Control Plan.
+A single person may cover more than one area provided that they are
+qualified to perform QC activities in each designated field of expertise
+and if his/her workload allows.
+SECTION 01 45 04.00 10 Page 5 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+Experience Matrix
+Area Qualifications
+a. Civil Graduate Civil Engineer or
+Construction Manager with
+2 years experience in the
+type of work being performed
+on this project or technician
+with 5 yrs related experience
+b. Submittals Submittal Clerk with 1
+yr experience
+3.4.4 Additional Requirement
+In addition to the above experience and educational requirements, the CQC
+System Manager and his/her alternate shall have completed the course
+entitled "Construction Quality Management For Contractors" within the last
+3 years. This course is periodically offered at the New Orleans District
+and other Corps of Engineers districts.
+3.4.5 Organizational Changes
+The Contractor shall maintain the CQC staff at full strength at all times.
+When it is necessary to make changes to the CQC staff, the Contractor shall
+revise the CQC Plan to reflect the changes and submit the changes to the
+Contracting Officer for acceptance.
+3.5 SUBMITTALS AND DELIVERABLES
+Submittals, if needed, shall be made as specified in Section 01 33 00
+SUBMITTAL PROCEDURES. The CQC organization shall be responsible for
+certifying that all submittals and deliverables are in compliance with the
+contract requirements.
+3.6 CONTROL
+Contractor Quality Control is the means by which the Contractor ensures
+that the construction, to include that of subcontractors and suppliers,
+complies with the requirements of the contract. At least three phases of
+control shall be conducted by the CQC System Manager for each definable
+feature of the construction work as follows:
+3.6.1 Preparatory Phase
+This phase shall be performed prior to beginning work on each definable
+feature of work, after all required plans/documents/materials are
+approved/accepted, and after copies are at the work site. This phase shall
+include:
+a. A review of each paragraph of applicable specifications
+b. A review of the contract drawings.
+c. A check to assure that all materials and/or equipment have been
+tested, submitted, and approved.
+SECTION 01 45 04.00 10 Page 6 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+d. Review of provisions that have been made to provide required
+control inspection and testing.
+e. Examination of the work area to assure that all required
+preliminary work has been completed and is in compliance with the
+contract.
+f. A physical examination of required materials, equipment, and
+sample work to assure that they are on hand, conform to approved
+shop drawings or submitted data, and are properly stored.
+g. A review of the appropriate activity hazard analysis to assure
+safety requirements are met.
+h. Discussion of procedures for controlling quality of the work
+including repetitive deficiencies. Document construction
+tolerances and workmanship standards for that feature of work.
+i. A check to ensure that the portion of the plan for the work to be
+performed has been accepted by the Contracting Officer.
+j. Discussion of the initial control phase.
+k. The Government Quality Assurance personnel shall be notified at
+least 48 hours in advance of beginning the preparatory control
+phase. The Contractor shall submit a written agenda of the topics
+to be discussed at the preparatory meeting on the day prior to the
+meeting date. This phase shall include a meeting conducted by the
+CQC System Manager and attended by the superintendent, other CQC
+personnel (as applicable), Government Quality Assurance personnel,
+and the foreman responsible for the definable feature. The
+results of the preparatory phase actions shall be documented by
+separate minutes prepared by the CQC System Manager and attached
+to the daily CQC report. The Contractor shall instruct applicable
+workers as to the acceptable level of workmanship required in
+order to meet contract specifications.
+3.6.2 Initial Phase
+This phase shall be accomplished at the beginning of a definable feature of
+work. The following shall be accomplished:
+a. A check of work to ensure that it is in full compliance with
+contract requirements. Review minutes of the preparatory meeting.
+b. Verify adequacy of controls to ensure full contract compliance.
+Verify required control inspection and testing.
+c. Establish level of workmanship and verify that it meets minimum
+acceptable workmanship standards. Compare with required sample
+panels as appropriate.
+d. Resolve all differences.
+e. Check safety to include compliance with and upgrading of the
+safety plan and activity hazard analysis. Review the activity
+analysis with each worker.
+SECTION 01 45 04.00 10 Page 7 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+f. The Government shall be notified at least 24 hours in advance of
+beginning the initial phase. Separate minutes of this phase shall
+be prepared by the CQC System Manager and attached to the daily
+CQC report. Exact location of initial phase shall be indicated
+for future reference and comparison with follow-up phases.
+g. The initial phase should be repeated for each new crew to work
+onsite, or any time acceptable specified quality standards are not
+being met.
+3.6.3 Follow-up Phase
+Daily checks shall be performed to assure control activities, including
+control testing, are providing continued compliance with contract
+requirements, until completion of the particular feature of work. The
+checks shall be made a matter of record in the CQC documentation. Final
+follow-up checks shall be conducted and all deficiencies corrected prior to
+the start of additional features of work which may be affected by the
+deficient work. The Contractor shall not build upon nor conceal
+non-conforming work.
+3.6.4 Additional Preparatory and Initial Phases
+Additional preparatory and initial phases shall be conducted on the same
+definable features of work if: the quality of on-going work is
+unacceptable; if there are changes in the applicable CQC staff, onsite
+production supervision or work crew; if work on a definable feature is
+resumed after a substantial period of inactivity; or if other problems
+develop.
+3.7 TESTS
+3.7.1 Testing Procedure
+The Contractor shall perform specified or required tests to verify that
+control measures are adequate to provide a product which conforms to
+contract requirements. The Contractor shall notify the Contracting
+Officer's Representative (COR) at least 24 hours prior to all quality
+control testing in order to coordinate simultaneous quality assurance tests
+if the COR elects to do so. Upon request, the Contractor shall furnish to
+the Government duplicate samples of test specimens for possible testing by
+the Government. Testing includes operation and/or acceptance tests when
+specified. The Contractor shall procure the services of a Corps of
+Engineers approved testing laboratory or establish an approved testing
+laboratory at the project site. Depending upon the workload by the
+Government inspecting agency, acceptance or rejection of the Contractor
+proposed testing laboratory is usually done approximately 60 to 120 days
+after notification is received from the Contractor. The certification will
+be valid for two years. The Contractor shall perform the following
+activities and record and provide the following data:
+a. Verify that testing procedures comply with contract requirements.
+b. Verify that facilities and testing equipment are available and
+comply with testing standards.
+c. Check test instrument calibration data against certified standards.
+d. Verify that recording forms and test identification control number
+SECTION 01 45 04.00 10 Page 8 ED-22-018
+
+Grand Isle_ West Jetty Spur Dike
+Ed 22-018
+system, including all of the test documentation requirements, have
+been prepared.
+e. Results of all tests taken, both passing and failing tests, shall
+be recorded on the CQC report for the date taken. Specification
+paragraph reference, location where tests were taken, and the
+sequential control number identifying the test shall be given. If
+approved by the Contracting Officer, actual test reports may be
+submitted later with a reference to the test number and date
+taken. An information copy of tests performed by an offsite or
+commercial test facility shall be provided directly to the
+Contracting Officer. Failure to submit timely test reports as
+stated may result in nonpayment for related work performed and
+disapproval of the test facility for this contract.
+f. Field soil sampling and testing locations shall be recorded using
+GPS coordinates accurate to the meter range.
+g. An informational electronic copy (PDF file of actual test result)
+of all material tests performed (regardless of whether performed
+by an offsite test facility or an on-site test facility) shall be
+electronically transmitted to the Government's Safe Access File
+Exchange (SAFE) website: https://safe.apps.mil/, emailed to
+mvn-cd-q-testresults@usace.army.mil, and uploaded to RMS within 24
+hours of test report completion. An electronic data entry form
+(Excel based) will be provided by the Government to enter
+electronic data, in a format prescribed by the Government. This
+data file shall contain the results of the required material
+tests. The required template for data transmission can be found
+in the NODCC manual (New Orleans District Construction Control
+Manual).
+3.7.2 Testing Laboratories
+3.7.2.1 Capability Check
+All laboratory facilities, personnel, and equipment used to test soil,
+concrete, and asphalt shall be part of a validated laboratory that has been
+inspected or audited by the USACE Materials Testing Center, Vicksburg, MS.
+3.7.2.2 Capability Recheck
+If the selected laboratory fails the capability check, the Contractor will
+be assessed a charge of $5000.00 to reimburse the Government for each
+succeeding recheck of the laboratory or the checking of a subsequently
+selected laboratory. Such costs will be deducted from the contract amount
+due the Contractor.
+3.7.3 Onsite Laboratory
+The Government reserves the right to utilize the Contractor's control
+testing laboratory and equipment to make assurance tests, and to check the
+Contractor's testing procedures, techniques, and test results at no
+additional cost to the Government.
+3.7.4 Furnishing or Transportation of Samples for Testing
+Costs incidental to the transportation of samples or materials shall be
+borne by the Contractor. Samples of materials for test verification and
+SECTION 01 45 04.00 10 Page 9 ED-22-018
+

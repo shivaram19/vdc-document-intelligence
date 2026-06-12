@@ -1,0 +1,67 @@
+PROJECT: HIGHRISE TOWER - PHASE 2
+ADDENDUM NO. 3
+DATE: APRIL 15, 2026
+
+TO: ALL BIDDERS / CONTRACTORS
+FROM: ARCHITECT OF RECORD - SMITH & Associates
+RE: REVISED FIRE-RATED DOOR REQUIREMENTS AND CLARIFICATIONS
+
+---
+
+1. FIRE-RATED DOOR REVISIONS
+
+   The following changes supersede Section 08 71 00 of the Specifications:
+
+   1.1 Stairwell doors: REVISED from 90-minute to 120-minute fire rating (2-hour label).
+       - All stairwell doors shall now meet 2-hour fire resistance rating per UL 10C.
+       - This applies to all stairwell exit doors at Levels B through 20.
+       - Existing orders for 90-minute doors must be revised.
+
+   1.2 Corridor doors: REVISED from 45-minute to 90-minute fire rating (1.5-hour label).
+       - All corridor doors shall now meet 90-minute rating.
+       - This applies to all unit entry doors and corridor cross-over doors.
+       - Frames must be upgraded to 14-gauge steel.
+
+   1.3 Mechanical room doors: UNCHANGED at 90-minute rating.
+
+   1.4 Electrical room doors: REVISED from 60-minute to 90-minute fire rating.
+       - All electrical room doors require 90-minute rating with 14-gauge frames.
+
+   1.5 Tenant separation doors: REVISED from 45-minute to 60-minute fire rating.
+       - Demising walls between tenant spaces now require 1-hour rated doors.
+
+2. SLAB THICKNESS CLARIFICATION
+
+   2.1 The structural drawing S-101 indicates typical elevated slab at 6 inches.
+   2.2 The structural specification Section 03 30 00 requires 8 inches minimum.
+   2.3 CLARIFICATION: The 8-inch thickness per specification governs. Drawing S-101 shall be revised in Addendum 4 to show 8-inch slab.
+   2.4 Contractor shall proceed with 8-inch slab pending formal drawing revision.
+
+3. CONCRETE STRENGTH CLARIFICATION
+
+   3.1 Column schedule on Drawing S-101 shows C-1 through C-12 at 5,000 psi.
+   3.2 Structural specification Section 2.1 requires 6,000 psi for all columns.
+   3.3 CLARIFICATION: All columns including C-1 through C-12 shall be 6,000 psi.
+   3.4 Drawing S-101 shall be revised in Addendum 4. Contractor to proceed at 6,000 psi.
+
+4. DUCTWORK CLEARANCE ADDITIONAL REQUIREMENT
+
+   4.1 MEP specification requires 8-inch minimum clearance from structure.
+   4.2 ADDITIONAL REQUIREMENT: Where ducts cross below beams, maintain 12-inch clearance to bottom of beam for inspection access.
+   4.3 Coordinate with structural to confirm beam depths do not conflict.
+
+5. SPRINKLER SPACING CLARIFICATION
+
+   5.1 Fire protection spec Section 21 13 00 states maximum 15 feet on center.
+   5.2 Architectural reflected ceiling plan A-302 shows sprinkler layout at 14 feet on center.
+   5.3 CLARIFICATION: Architectural layout at 14 feet governs. Sprinkler contractor to coordinate with ceiling grid layout.
+
+---
+
+CERTIFICATION:
+This Addendum No. 3 is hereby made part of the Contract Documents.
+All work shall conform to the revised requirements herein.
+
+/s/ J. Smith, PE
+Architect of Record
+Date: April 15, 2026
