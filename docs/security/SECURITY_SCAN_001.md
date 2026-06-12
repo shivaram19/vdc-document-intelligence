@@ -55,17 +55,24 @@ Scanned: `main`, `master`, `origin/main`, `origin/master`, plus all tags and ref
 | XAI API key | `picocloth-deploy/node-a-vdc-config.json` | main, master, origin/main, origin/master | Unverified | **Treat as exposed — rotate** |
 | XAI API key | `picocloth-deploy/node-b-vdc-config.json` | main, master, origin/main, origin/master | Unverified | **Treat as exposed — rotate** |
 | XAI API key | `picocloth-deploy/backups/node-a-config.json.orig` | main, master, origin/main, origin/master | Unverified | **Treat as exposed — rotate** |
-| XAI API key | `picocloth-deploy/backups/node-b-config.json.json.orig` | main, master, origin/main, origin/master | Unverified | **Treat as exposed — rotate** |
+| XAI API key | `picocloth-deploy/backups/node-b-config.json.orig` | main, master, origin/main, origin/master | Unverified | **Treat as exposed — rotate** |
 | XAI API key | `SECURITY.md` | master, origin/master only | Unverified | **Treat as exposed — rotate** |
 
 **Important:** These are unverified because TruffleHog could not reach the XAI verification endpoint, but the strings are valid-looking XAI API keys in plain text. They were emitted in the scan output and exist in git history, so they must be considered compromised.
 
 The same XAI key appears in all five locations. It was also referenced in `SECURITY.md` (master branch) as an example for BFG history rewriting.
 
+### Current working tree status (post-remediation)
+
+The following commits removed the literal keys from the current working tree (history still contains them until `git filter-repo` is run):
+
+- `main` commit `0c1a035` — replaced hardcoded XAI keys in `picocloth-deploy/*.json` with `__XAI_API_KEY__` placeholder; `deploy.sh` now substitutes from `XAI_API_KEY` env var.
+- `master` commit `754bfdf` — removed literal XAI key from `SECURITY.md` and backup configs; added this scan report.
+
 ### Git history summary
 
-- `main` / `origin/main`: 4 unverified secrets
-- `master` / `origin/master`: 5 unverified secrets
+- `main` / `origin/main`: 4 unverified secrets in history
+- `master` / `origin/master`: 5 unverified secrets in history
 - `trufflehog git file://. --only-verified` returned **0 verified** secrets in committed history.
 
 ### False positives
@@ -98,6 +105,27 @@ These were scanned but did not surface as verified secrets. They should still be
 6. **Re-run OSV-Scanner** after upgrades until zero high/critical findings remain.
 7. **Audit `.env` files** in `plane/plane-app/` and `postiz/` for stale credentials.
 8. **Add `certbot-venv/` to TruffleHog ignore list** to reduce false positives in future scans.
+
+### History purge command
+
+A replacement file has been created at `scripts/git-filter-repo-replacements.txt` (do **not** commit it). After rotating both keys, run:
+
+```bash
+# Ensure git-filter-repo is installed
+pip install git-filter-repo
+
+# Run from repo root
+git filter-repo --replace-text scripts/git-filter-repo-replacements.txt --force
+
+# Force-push rewritten history
+git push origin main --force
+git push origin master --force
+
+# Delete the replacement file
+rm scripts/git-filter-repo-replacements.txt
+```
+
+**Warning:** `git filter-repo` removes the origin remote and rewrites all refs. Ensure you have a fresh backup clone before running.
 
 ---
 
