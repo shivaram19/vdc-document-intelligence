@@ -36,7 +36,7 @@
       "model": "grok-4.20-multi-agent-0309",
       "api_base": "https://api.x.ai/v1",
       "api_keys": [
-        "xai-NAncuOYy8VqcSlBMzTI1n8FV1lx2GWUj6Q0irGUyHuFpbuwuxFJX6zvwUHeUwAaZgmWqOLpTtG5Oeq7n"
+        "__XAI_API_KEY__"
       ],
       "enabled": true
     },
@@ -46,7 +46,7 @@
       "model": "grok-4-1-fast-non-reasoning",
       "api_base": "https://api.x.ai/v1",
       "api_keys": [
-        "xai-NAncuOYy8VqcSlBMzTI1n8FV1lx2GWUj6Q0irGUyHuFpbuwuxFJX6zvwUHeUwAaZgmWqOLpTtG5Oeq7n"
+        "__XAI_API_KEY__"
       ],
       "enabled": true
     }

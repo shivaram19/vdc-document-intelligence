@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # VDC Document Intelligence - PicoCloth Deployment Script
-# Deploys the Trelo Labs VDC app using Node-A (Curiosity Brain) and Node-B (Executor)
+# Deploys the Trayini.ai VDC app using Node-A (Curiosity Brain) and Node-B (Executor)
 # with all 5 document characters and digital twins enabled.
 
 set -euo pipefail
@@ -88,12 +88,18 @@ backup_configs() {
 install_vdc_configs() {
     log "Installing VDC-specific node configs..."
 
-    cp "$SCRIPT_DIR/node-a-vdc-config.json" "$PICOCLOTH_DIR/node-a/config.json"
-    cp "$SCRIPT_DIR/node-b-vdc-config.json" "$PICOCLOTH_DIR/node-b/config.json"
+    if [ -z "${XAI_API_KEY:-}" ]; then
+        error "XAI_API_KEY is required to populate node configs."
+        exit 1
+    fi
+
+    # Substitute placeholder with actual env var so keys never live in committed JSON.
+    sed "s/__XAI_API_KEY__/${XAI_API_KEY}/g" "$SCRIPT_DIR/node-a-vdc-config.json" > "$PICOCLOTH_DIR/node-a/config.json"
+    sed "s/__XAI_API_KEY__/${XAI_API_KEY}/g" "$SCRIPT_DIR/node-b-vdc-config.json" > "$PICOCLOTH_DIR/node-b/config.json"
 
     # Also copy to home dirs so picoclaw picks them up
-    cp "$SCRIPT_DIR/node-a-vdc-config.json" "$PICOCLOTH_DIR/node-a/home/config.json"
-    cp "$SCRIPT_DIR/node-b-vdc-config.json" "$PICOCLOTH_DIR/node-b/home/config.json"
+    sed "s/__XAI_API_KEY__/${XAI_API_KEY}/g" "$SCRIPT_DIR/node-a-vdc-config.json" > "$PICOCLOTH_DIR/node-a/home/config.json"
+    sed "s/__XAI_API_KEY__/${XAI_API_KEY}/g" "$SCRIPT_DIR/node-b-vdc-config.json" > "$PICOCLOTH_DIR/node-b/home/config.json"
 
     success "VDC configs installed for node-a and node-b"
 }
