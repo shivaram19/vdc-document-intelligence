@@ -1,7 +1,7 @@
 ---
 title: VDC Document Intelligence Doctrine
 version: 1.0
-author: Trelo Labs / PicoCloth Fleet
+author: Trayini.ai / PicoCloth Fleet
 project: DOWNTOWN OFFICE TOWER
 date: 2026-04-24
 ---
@@ -9,7 +9,7 @@ date: 2026-04-24
 # VDC Document Intelligence Fleet Doctrine
 
 ## Mission
-Deploy and operate the Trelo Labs VDC Document Intelligence system across a 2-node PicoCloth fleet. Node-A researches and queries construction documents. Node-B executes backend operations and drafts RFI responses.
+Deploy and operate the Trayini.ai VDC Document Intelligence system across a 2-node PicoCloth fleet. Node-A researches and queries construction documents. Node-B executes backend operations and drafts RFI responses.
 
 ## Characters (Document Entities)
 

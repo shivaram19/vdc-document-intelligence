@@ -1,8 +1,8 @@
 #!/bin/bash
-# Trelo Labs VDC Document Intelligence - Quick Start
+# Trayini.ai VDC Document Intelligence - Quick Start
 
 echo "=================================="
-echo "Trelo Labs VDC Document Intelligence"
+echo "Trayini.ai VDC Document Intelligence"
 echo "=================================="
 echo ""
 

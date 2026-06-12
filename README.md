@@ -1,4 +1,4 @@
-# Trelo Labs — VDC Document Intelligence
+# Trayini.ai — VDC Document Intelligence
 
 > **The first AI product you can sell to VDC agencies TODAY.**
 
@@ -29,14 +29,14 @@ AI automatically scans drawings and specifications to flag dimension mismatches,
 
 ## Why VDC Agencies Will Buy This
 
-| Pain Point | Current State | With Trelo Labs |
+| Pain Point | Current State | With Trayini.ai |
 |-----------|---------------|-----------------|
 | Manual spec review | 10-15 hrs/project | 3 minutes |
 | RFI response drafting | 2-4 hrs per RFI | 30 seconds |
 | Drawing-spec cross-check | Ad-hoc, often missed | Automated scan before submission |
 | Document search | Ctrl+F through 50 PDFs | Natural language query |
 
-**ROI for a VDC agency:** If one BIM coordinator spends 15 hrs/week on document review at $75/hr, that's **$1,125/week**. Trelo Labs cuts this to **$112/week** — a **10x cost reduction**.
+**ROI for a VDC agency:** If one BIM coordinator spends 15 hrs/week on document review at $75/hr, that's **$1,125/week**. Trayini.ai cuts this to **$112/week** — a **10x cost reduction**.
 
 ---
 
@@ -48,7 +48,7 @@ AI automatically scans drawings and specifications to flag dimension mismatches,
 | **Agency** | $3,000/mo unlimited | Unlimited projects + docs, contradiction detection, white-label branding |
 | **Enterprise** | Custom | On-premise, custom model training, API access |
 
-The **$3,000/mo Agency tier** is the sweet spot. VDC agencies already charge GCs $3K–$5K/month for coordination. They can bundle Trelo Labs as a "premium AI analytics" add-on for $1,000/mo — netting them **$2,000/mo pure margin per client**.
+The **$3,000/mo Agency tier** is the sweet spot. VDC agencies already charge GCs $3K–$5K/month for coordination. They can bundle Trayini.ai as a "premium AI analytics" add-on for $1,000/mo — netting them **$2,000/mo pure margin per client**.
 
 ---
 
@@ -61,7 +61,7 @@ The **$3,000/mo Agency tier** is the sweet spot. VDC agencies already charge GCs
 | **Constructable** | Mid-tier GCs | Per-project | No VDC agency partnership model |
 | **Buildots** | Large GCs / Owners | Custom | Progress tracking, not document intelligence |
 | **Arphie** | Enterprise sales teams | Custom | RFI response only, no construction docs |
-| **Trelo Labs** | **VDC Agencies (white-label)** | **$3K/mo** | **The ONLY white-label AI document intelligence for VDC** |
+| **Trayini.ai** | **VDC Agencies (white-label)** | **$3K/mo** | **The ONLY white-label AI document intelligence for VDC** |
 
 ---
 
@@ -171,5 +171,5 @@ In exchange, we need:
 
 ---
 
-*Built by Trelo Labs. AI infrastructure for the construction semantics layer.*
+*Built by Trayini.ai. AI infrastructure for the construction semantics layer.*
 *Graph-powered. RAG-grounded. VC-backable.*

@@ -1,4 +1,4 @@
-# Trelo Labs — VDC Document Intelligence
+# Trayini.ai — VDC Document Intelligence
 ## Investor / Partner Pitch (One-Pager)
 
 ---
@@ -31,7 +31,7 @@ Every project processed enriches the **construction knowledge graph**. Network e
 ### The Team
 - **Shivaram:** Network in Indian construction (L&T, Tata Projects), business development
 - **Sham:** AI/ML engineering, RAG pipelines, knowledge graphs
-- **Trelo Labs:** Born from the insight that construction's semantics layer is unowned
+- **Trayini.ai:** Born from the insight that construction's semantics layer is unowned
 
 ### The Ask
 **$150K pre-seed** to:
@@ -49,4 +49,4 @@ Live at `http://localhost:5001` + `frontend/index.html`
 
 *"The companies that survive are not the ones with the best technology. They are the ones with the clearest thinking."* — Charlie Munger
 
-*Trelo Labs has both.*
+*Trayini.ai has both.*
