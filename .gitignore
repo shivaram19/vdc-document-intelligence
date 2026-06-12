@@ -43,3 +43,4 @@ graphify-out/
 backend/medha_entities.db
 backend/chroma_db/
 landing-page/index-v1.html
+certbot-venv/
