@@ -37,3 +37,9 @@ plane/plane-app/plane.env
 plane/plane-app/docker-compose.yaml
 plane/ADMIN_CREDENTIALS.md
 backups/
+
+# Generated artifacts
+graphify-out/
+backend/medha_entities.db
+backend/chroma_db/
+landing-page/index-v1.html
