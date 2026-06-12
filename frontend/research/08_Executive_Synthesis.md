@@ -9,7 +9,7 @@
 
 Construction robotics companies (Built, Canvas, Dusty) have mature hardware. Reality capture companies (OpenSpace, Cupix) have mature data collection. What's missing is the **middle layer**: turning raw site captures into ML-ready training datasets with standardized schemas, auto-annotation, and edge-to-cloud pipelines.
 
-This is Trelo Labs' opportunity.
+This is Trayini.ai' opportunity.
 
 ---
 
@@ -39,7 +39,7 @@ This is Trelo Labs' opportunity.
 - **Pricing**: Offshore India $15-35/hr; Onshore US $65-150/hr; Dedicated teams $2K-4.5K/mo offshore
 - **Key players**: Excelize, ENG, Viatechnik, Buildots, OpenSpace, Togal.AI
 
-**Strategic implication:** Legacy agencies are Trelo Labs' **distribution channel**. They have client trust. We have AI capability.
+**Strategic implication:** Legacy agencies are Trayini.ai' **distribution channel**. They have client trust. We have AI capability.
 
 ### 2.4 Voice Agent Emotions ([Research Agent 4](04_Voice_Agent_Emotion_Research.md))
 - **Hume AI EVI 3 + Octave 2**: Only platform combining emotion detection + generation natively
@@ -66,7 +66,7 @@ This is Trelo Labs' opportunity.
 |-------------|------|----------|---------------|---------------|
 | **A. Data Infrastructure** | Unified ingestion → normalization → auto-annotation → training datasets | Robotics vendors, GCs, VDC consultants | SaaS per-site/robot + professional services | Schema standards + vendor partnerships |
 | **B. Agency White-Label** | Partner with legacy agencies to offer AI they can't build | Construction firms via agency channel | 70/30 revenue share | Execution velocity + exclusive partnerships |
-| **C. Voice-First Sales** | Emotionally intelligent voice agents for B2B outreach | Trelo Labs pipeline + agency partners | Internal cost center → productized | Construction-specific registers + conversion data |
+| **C. Voice-First Sales** | Emotionally intelligent voice agents for B2B outreach | Trayini.ai pipeline + agency partners | Internal cost center → productized | Construction-specific registers + conversion data |
 | **D. Sustainability Compliance** | Robotics data → ESG dashboards for LEED/GRIHA/IRA | GCs, developers, asset owners | SaaS + ESG consulting | Regulatory expertise + certification relationships |
 
 ---
@@ -87,7 +87,7 @@ This is Trelo Labs' opportunity.
 ### Phase 3 (Months 2-3): Scale & Differentiate
 8. **Foundation model integration** — connect to OpenVLA or π0 fine-tuning
 9. **Fleet learning** — multi-site shared datasets
-10. **Custom voice** — proprietary Trelo Labs voice for construction
+10. **Custom voice** — proprietary Trayini.ai voice for construction
 
 ---
 

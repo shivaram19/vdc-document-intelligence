@@ -1,12 +1,12 @@
 # IAN BROWN MEETING PREP
-## Trelo Labs | April 22, 2026 | 10:30 PM IST
+## Trayini.ai | April 22, 2026 | 10:30 PM IST
 
 ---
 
 ## CONTEXT
 - **Who:** Ian Brown, 21 years old, building AI systems
 - **Topic:** Construction robotics data management & how things are built in the domain
-- **Your Goal:** Understand his work, assess collaboration potential, and position Trelo Labs as a data infrastructure partner
+- **Your Goal:** Understand his work, assess collaboration potential, and position Trayini.ai as a data infrastructure partner
 
 ⚠️ **OSINT NOTE:** "Ian Brown" is too common for reliable background research. Ask him directly for:
 - LinkedIn / GitHub URL
@@ -17,7 +17,7 @@
 
 ## WHAT TO LEAD WITH (Your Positioning)
 
-> "We're building Trelo Labs at the intersection of tech and core industries — specifically the data infrastructure layer that turns construction site captures into ML-ready training datasets for robotics. We're talking to people who understand that the gap between data collection and usable training pipelines is the biggest bottleneck in construction robotics right now."
+> "We're building Trayini.ai at the intersection of tech and core industries — specifically the data infrastructure layer that turns construction site captures into ML-ready training datasets for robotics. We're talking to people who understand that the gap between data collection and usable training pipelines is the biggest bottleneck in construction robotics right now."
 
 **Key stat to drop:** "Largest robot datasets are about 1M episodes — that's 2,000× smaller than LLM training corpora. And in construction, every vendor uses incompatible schemas. We're trying to solve that."
 
@@ -38,7 +38,7 @@
 8. "Who physically operates the data collection — the GC's team, the robotics vendor, or a third-party scanning agency?"
 9. "How do people handle the frequency mismatch — design data is static, robot data is 100Hz real-time, site surveys are weekly?"
 
-### C. TRAINING & ANNOTATION (Where Trelo Labs can add value)
+### C. TRAINING & ANNOTATION (Where Trayini.ai can add value)
 10. "How are construction robotics companies handling annotation? Teleoperation, human demonstration, simulation, or self-supervised?"
 11. "What's the biggest bottleneck you've seen in going from raw site data to a trainable dataset?"
 12. "Are companies using foundation models and VLA architectures, or still training task-specific models per robot?"
@@ -58,7 +58,7 @@
 ### F. MARKET & PARTNERSHIPS (Closing — assess fit)
 21. "Where do you think the 'GPT moment' for robotics actually is — is it the model architecture, the data aggregation, or the simulation fidelity?"
 22. "Who should we be talking to in your network — robotics companies, general contractors, or the agencies that serve them?"
-23. "If Trelo Labs wanted to become the data infrastructure layer for construction robotics, what would we need to build first to be credible?"
+23. "If Trayini.ai wanted to become the data infrastructure layer for construction robotics, what would we need to build first to be credible?"
 24. "Are you looking for partners, funding, or customers — what's your biggest need right now?"
 
 ---

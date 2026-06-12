@@ -1,7 +1,7 @@
 # TRELO LABS RESEARCH BRIEF
 ## Voice Agent Emotion Fine-Tuning & Affective Computing (2025–2026)
 
-**Prepared for:** Trelo Labs B2B Sales/Outreach Initiative  
+**Prepared for:** Trayini.ai B2B Sales/Outreach Initiative  
 **Focus:** Construction Industry Decision-Makers (Relationship-Driven Sales)  
 **Date:** April 2026
 
@@ -334,7 +334,7 @@ Construction is a regulated industry with high liability sensitivity. Decision-m
 | **Balto** | Real-time coaching | Enterprise | Live agent coaching, sentiment alerts |
 | **Dialpad AI** | Live transcription + sentiment | Per-seat | Call center integration |
 
-### 9.4 Recommended Stack for Trelo Labs (Construction B2B)
+### 9.4 Recommended Stack for Trayini.ai (Construction B2B)
 
 **Phase 1 — MVP (Weeks 1–4):**
 - **Voice agent platform:** Vapi or Retell AI (fastest deployment)
@@ -418,9 +418,9 @@ ELIF caller_emotion == "engaged/curious":
 9. **Build analytics dashboard:** Track emotion detection confidence, register usage, and conversion correlation
 
 ### Long-Term (6–12 Months)
-10. **Invest in custom voice cloning:** Create a proprietary "Trelo Labs voice" optimized for construction industry trust signals
+10. **Invest in custom voice cloning:** Create a proprietary "Trayini.ai voice" optimized for construction industry trust signals
 11. **Explore open-source models:** Evaluate Dia2 or Chatterbox for on-premise deployment (data privacy for enterprise clients)
-12. **Publish ethical framework:** Position Trelo Labs as a leader in transparent, consent-based AI voice sales
+12. **Publish ethical framework:** Position Trayini.ai as a leader in transparent, consent-based AI voice sales
 
 ---
 

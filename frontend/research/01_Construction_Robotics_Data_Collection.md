@@ -1,5 +1,5 @@
 # **CONSTRUCTION ROBOTICS DATA COLLECTION & TRAINING PIPELINES**
-## **Research Brief for Trelo Labs**
+## **Research Brief for Trayini.ai**
 
 ---
 
@@ -280,4 +280,4 @@ The construction robotics data infrastructure market is severely underserved. Th
 
 ---
 
-*Research compiled for Trelo Labs. All data sourced from public documentation, academic papers, vendor materials, and industry reports as of April 2026.*
+*Research compiled for Trayini.ai. All data sourced from public documentation, academic papers, vendor materials, and industry reports as of April 2026.*

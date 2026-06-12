@@ -1,5 +1,5 @@
 # MASTER URL & CITATION INDEX
-## Trelo Labs Research Vault | 113 Unique Sources | April 23, 2026
+## Trayini.ai Research Vault | 113 Unique Sources | April 23, 2026
 
 ---
 

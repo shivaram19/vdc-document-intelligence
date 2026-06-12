@@ -1,11 +1,11 @@
 # CONSTRUCTION TECH AGENCY LANDSCAPE REPORT
-## Prepared for Trelo Labs | April 2026
+## Prepared for Trayini.ai | April 2026
 
 ---
 
 ## EXECUTIVE SUMMARY
 
-The construction technology agency landscape is bifurcated between **legacy service providers** (BIM/CAD outsourcers, Autodesk resellers, VDC consultants) and **AI-native startups** (computer vision, robotics, LLM-based field tools). The market is highly fragmented with significant gaps in AI/robotics implementation, creating a clear partnership and white-label opportunity for Trelo Labs. Construction firms in 2025-2026 are prioritizing efficiency software, AI-powered preconstruction, digital twins, and field automation — capabilities that legacy agencies struggle to deliver.
+The construction technology agency landscape is bifurcated between **legacy service providers** (BIM/CAD outsourcers, Autodesk resellers, VDC consultants) and **AI-native startups** (computer vision, robotics, LLM-based field tools). The market is highly fragmented with significant gaps in AI/robotics implementation, creating a clear partnership and white-label opportunity for Trayini.ai. Construction firms in 2025-2026 are prioritizing efficiency software, AI-powered preconstruction, digital twins, and field automation — capabilities that legacy agencies struggle to deliver.
 
 ---
 

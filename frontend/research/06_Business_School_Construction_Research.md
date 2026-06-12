@@ -4,7 +4,7 @@ Construction is the world’s largest industry (~13 % of global GDP, ≈ $13
 
 Market forecasts point to a construction‑technology market of **$5.7 B–$7.0 B in 2025** growing at **12–17 % CAGR**, and a broader **building‑technology market of $152 B in 2025 heading to $325 B by 2036**.  McKinsey estimates that **$265 B in annual profit pools** are up for grabs for players that move fast, while **40–45 % of incumbent value‑added is at risk**.  
 
-For Trelo Labs, the strategic imperative is clear: treat data as a core asset, move toward repeatable productized offerings, and position as a platform orchestrator rather than a traditional project‑based contractor.
+For Trayini.ai, the strategic imperative is clear: treat data as a core asset, move toward repeatable productized offerings, and position as a platform orchestrator rather than a traditional project‑based contractor.
 
 ---
 

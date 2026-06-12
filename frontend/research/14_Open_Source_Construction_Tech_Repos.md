@@ -6,7 +6,7 @@
 
 ## 1. EXECUTIVE SUMMARY
 
-The open-source construction technology ecosystem is **fragmented but maturing**. Strong tooling exists for BIM manipulation (IfcOpenShell, xBIM), point cloud processing (Open3D, CloudCompare, PCL), and web-based BIM viewing (xeokit, iTwin.js). However, **critical gaps remain** in: (a) construction-native LLM/RAG pipelines, (b) open-source 4D/5D digital twin platforms with real-time IoT integration, and (c) large-scale annotated 3D datasets for training foundation models on built environments. These gaps represent high-value opportunities for Trelo Labs.
+The open-source construction technology ecosystem is **fragmented but maturing**. Strong tooling exists for BIM manipulation (IfcOpenShell, xBIM), point cloud processing (Open3D, CloudCompare, PCL), and web-based BIM viewing (xeokit, iTwin.js). However, **critical gaps remain** in: (a) construction-native LLM/RAG pipelines, (b) open-source 4D/5D digital twin platforms with real-time IoT integration, and (c) large-scale annotated 3D datasets for training foundation models on built environments. These gaps represent high-value opportunities for Trayini.ai.
 
 ---
 
@@ -176,7 +176,7 @@ The **OpenConstruction Catalog** ([ruoxinx/OpenConstruction-Datasets](https://gi
 
 ---
 
-## 6. LICENSE ANALYSIS (Critical for Trelo Labs)
+## 6. LICENSE ANALYSIS (Critical for Trayini.ai)
 
 | License | Commercial Use? | Copyleft? | Key Repos |
 |---------|-----------------|-----------|-----------|
@@ -187,7 +187,7 @@ The **OpenConstruction Catalog** ([ruoxinx/OpenConstruction-Datasets](https://gi
 | **GPL-3.0+** | ⚠️ Yes (must open-source derivatives) | ✅ Strong | BlenderBIM/Bonsai, CloudCompare |
 | **AGPL-3.0** | ❌ No (for closed SaaS) unless commercial license purchased | ✅ Strongest | xeokit-sdk, xeokit-bim-viewer, BIMserver |
 
-**⚠️ Commercial Risk:** `xeokit` and `BIMserver` are AGPL. If Trelo Labs builds a closed-source web product incorporating these, **you must buy a commercial license** from Creoox (xeokit) or release your code as AGPL.
+**⚠️ Commercial Risk:** `xeokit` and `BIMserver` are AGPL. If Trayini.ai builds a closed-source web product incorporating these, **you must buy a commercial license** from Creoox (xeokit) or release your code as AGPL.
 
 ---
 

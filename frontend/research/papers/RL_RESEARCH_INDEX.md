@@ -1,6 +1,6 @@
 # RL Research Papers Index
 
-**For:** Trelo Labs — RL Feedback Framework (Phase 2)  
+**For:** Trayini.ai — RL Feedback Framework (Phase 2)  
 **Collected:** 2026-04-23  
 **Focus:** RL for LLM agents, coding agents, reasoning limitations
 

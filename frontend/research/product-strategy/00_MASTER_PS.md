@@ -34,13 +34,13 @@ Construction robotics companies (Built Robotics, Canvas, Dusty) have mature hard
 
 > **Unified ingestion → normalization → auto-annotation → training datasets → LLM query interface → robot task export**
 
-Every step exists in isolation. The integrated pipeline does not exist. That is Trelo Labs' product opportunity.
+Every step exists in isolation. The integrated pipeline does not exist. That is Trayini.ai' product opportunity.
 
 ---
 
 # SECTION II: THE PRODUCT
 
-## 2.1 Product Vision: "Trelo Construct Intelligence"
+## 2.1 Product Vision: "Trayini Construct Intelligence"
 
 A unified AI infrastructure platform for the built environment that connects physical reality to digital intelligence to robotic action.
 
@@ -81,7 +81,7 @@ A unified AI infrastructure platform for the built environment that connects phy
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 2.2 Phase 1 MVP: "Trelo Construct Copilot" (Months 0–6)
+## 2.2 Phase 1 MVP: "Trayini Construct Copilot" (Months 0–6)
 
 **The LLM + Ontology Layer for VDC Agencies**
 
@@ -102,7 +102,7 @@ A unified AI infrastructure platform for the built environment that connects phy
 - Graph: Neo4j for project knowledge graphs
 - UI: Web app (React) + chat interface
 
-## 2.3 Phase 2: "Trelo Scan Intelligence" (Months 6–18)
+## 2.3 Phase 2: "Trayini Scan Intelligence" (Months 6–18)
 
 **3D Reconstruction + Semantic BIM**
 
@@ -113,7 +113,7 @@ A unified AI infrastructure platform for the built environment that connects phy
 
 **Pricing:** $5,000–$15,000/project or $10,000–$30,000/year per team
 
-## 2.4 Phase 3: "Trelo Digital Twin Kernel" (Months 18–36)
+## 2.4 Phase 3: "Trayini Digital Twin Kernel" (Months 18–36)
 
 **End-to-End AI VDC Platform**
 
@@ -127,10 +127,10 @@ A unified AI infrastructure platform for the built environment that connects phy
 
 ## 2.5 Competitive Moat
 
-1. **Ontology-First Architecture** — Most AI construction startups build point solutions. Trelo builds the semantic glue.
+1. **Ontology-First Architecture** — Most AI construction startups build point solutions. Trayini builds the semantic glue.
 2. **India Cost Advantage + US Revenue** — Build in Bangalore, sell to US GCs at US prices.
 3. **Open-Source Distribution Strategy** — Open-source the MCP4IFC extensions, ontology fragments, dataset tools. Build community, sell enterprise.
-4. **Data Network Effects** — Every project fed into Trelo's system improves the SLM, segmentation models, and ontology.
+4. **Data Network Effects** — Every project fed into Trayini's system improves the SLM, segmentation models, and ontology.
 
 ---
 
@@ -146,11 +146,11 @@ A unified AI infrastructure platform for the built environment that connects phy
 | Construction Robotics | $4.1B | 18.5% | Fastest-growing subsegment |
 | Digital Twins (AEC) | $3.2B | 22.8% | Highest CAGR; early stage |
 
-**Trelo Labs Serviceable Obtainable Market (SOM):** $150M–$300M by Year 3
+**Trayini.ai Serviceable Obtainable Market (SOM):** $150M–$300M by Year 3
 
 ## 3.2 Competitive Map
 
-| Company | Layer | Threat Level | Trelo Differentiation |
+| Company | Layer | Threat Level | Trayini Differentiation |
 |---------|-------|-------------|----------------------|
 | **Autodesk** | All (platform) | High (long-term) | Open standard (IFC) vs. lock-in; ontology layer harder to replicate |
 | **OpenSpace** | Capture | Low (partner) | We add LLM/semantic layer on top of their captures |
@@ -201,7 +201,7 @@ A unified AI infrastructure platform for the built environment that connects phy
 
 ## 4.3 Positioning Statement
 
-> **For VDC agencies and construction firms who struggle with fragmented data and manual coordination, Trelo Construct Intelligence is an AI-native infrastructure platform that unifies capture, reconstruction, semantics, and language into a single workflow. Unlike point solutions (OpenSpace, Buildots, EdgeWise), we provide the semantic glue layer that connects them all — enabling natural language queries, automated compliance checking, and robot task planning from a single knowledge graph.**
+> **For VDC agencies and construction firms who struggle with fragmented data and manual coordination, Trayini Construct Intelligence is an AI-native infrastructure platform that unifies capture, reconstruction, semantics, and language into a single workflow. Unlike point solutions (OpenSpace, Buildots, EdgeWise), we provide the semantic glue layer that connects them all — enabling natural language queries, automated compliance checking, and robot task planning from a single knowledge graph.**
 
 ---
 
@@ -251,7 +251,7 @@ A unified AI infrastructure platform for the built environment that connects phy
 
 ### Connection Request (Day 1)
 ```
-Hi [Name], I'm Shivaram from Trelo Labs. We're building AI infrastructure 
+Hi [Name], I'm Shivaram from Trayini.ai. We're building AI infrastructure 
 at the intersection of VDC, 3D reconstruction, and LLMs for construction. 
 I came across [Company]'s work on [specific project/product] and see strong 
 alignment with what we're building. Would love to connect and share notes.
@@ -336,7 +336,7 @@ find the conversation interesting.
 │  ├─ Upsell: Phase 1 → Phase 2 → Phase 3 product modules                    │
 │  ├─ Cross-sell: Additional sites, additional users, additional modules      │
 │  ├─ Referral: "Introduce us to 1 peer → 1 free month"                      │
-│  └─ Community: Trelo Labs user group, annual conference                     │
+│  └─ Community: Trayini.ai user group, annual conference                     │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -451,7 +451,7 @@ Use Hume AI EVI 3 + Octave 2 for emotionally intelligent voice follow-ups:
 **When:** After LinkedIn connection accepted but no response to text follow-up
 **Script:**
 ```
-"Hi [Name], this is Shivaram from Trelo Labs. I noticed we connected on 
+"Hi [Name], this is Shivaram from Trayini.ai. I noticed we connected on 
 LinkedIn — I wanted to personally reach out because I came across [Company]'s 
 work on [specific project] and genuinely think our AI VDC layer could complement 
 what you're building. Not a hard sell — just curious if you'd be open to a 

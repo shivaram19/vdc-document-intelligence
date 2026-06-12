@@ -1,5 +1,5 @@
 # Medha v2 Architecture
-## Trelo Labs — VDC Document Intelligence Platform
+## Trayini.ai — VDC Document Intelligence Platform
 
 **Version:** 2.0.0-alpha  
 **Date:** 2026-04-24  

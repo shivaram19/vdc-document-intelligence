@@ -268,7 +268,7 @@ The convergence of three forces — **VDC design intent** (IFC/BIM), **3D recons
 
 5. **Robotics Integration:** The BIRS model shows that ontologies can translate BIM-GIS semantics into ROS-compatible navigation maps. Extend this to construction robotics: the ontology tells the robot not just *where* to go, but *what* it is looking at (`IfcDoor` vs `IfcWindow`) and *what operations* are permitted.
 
-### Recommended Path Forward for Trelo Labs
+### Recommended Path Forward for Trayini.ai
 
 Given your focus on **VDC + 3D reconstruction + robotics data**, the highest-leverage ontology investments are:
 

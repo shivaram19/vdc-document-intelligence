@@ -114,7 +114,7 @@
 ### Schema Markup
 - SoftwareApplication schema
 - FAQPage schema for common questions
-- Organization schema for Trelo Labs
+- Organization schema for Trayini.ai
 - HowTo schema for RFI drafting
 
 ### Internal Linking Strategy

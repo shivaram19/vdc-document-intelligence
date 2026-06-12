@@ -1,6 +1,6 @@
 # INTEGRATED SYNTHESIS REPORT
 ## The Convergence of VDC, 3D Reconstruction, LLMs/SLMs, Ontologies & Construction Tech
-### Capstone Report — Trelo Labs Multi-Agent Swarm | April 23, 2026
+### Capstone Report — Trayini.ai Multi-Agent Swarm | April 23, 2026
 
 ---
 
@@ -8,7 +8,7 @@
 
 ### 1.1 The Five-Domain Integrated Architecture
 
-The five research domains do not sit in silos. They form a **layered computational stack** for the built environment — analogous to how the OSI model structures networking. Trelo Labs' opportunity lies at the intersection, where no vendor has yet built a unified platform.
+The five research domains do not sit in silos. They form a **layered computational stack** for the built environment — analogous to how the OSI model structures networking. Trayini.ai' opportunity lies at the intersection, where no vendor has yet built a unified platform.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -57,7 +57,7 @@ Site photos         SAM/CLIP seg          Neo4j graph          Text2BIM       RF
 Security cam        Open3D processing     IDS validation       Code gen       Clash resolution
 ```
 
-**Critical insight from cross-domain analysis:** Each step of this pipeline exists in isolation today. The **integrated pipeline does not exist** — and that is Trelo Labs' product opportunity. [OpenSpace](https://www.openspace.ai/) captures but doesn't generate BIM. EdgeWise auto-extracts MEP but has no LLM interface. [MCP4IFC](https://arxiv.org/abs/2511.05533) queries BIM but doesn't ingest point clouds. [Text2BIM](https://arxiv.org/abs/2408.08054) generates models but doesn't read as-built reality.
+**Critical insight from cross-domain analysis:** Each step of this pipeline exists in isolation today. The **integrated pipeline does not exist** — and that is Trayini.ai' product opportunity. [OpenSpace](https://www.openspace.ai/) captures but doesn't generate BIM. EdgeWise auto-extracts MEP but has no LLM interface. [MCP4IFC](https://arxiv.org/abs/2511.05533) queries BIM but doesn't ingest point clouds. [Text2BIM](https://arxiv.org/abs/2408.08054) generates models but doesn't read as-built reality.
 
 ### 1.3 Role of Each Layer
 
@@ -78,7 +78,7 @@ The ontology layer is not merely a database schema — it is the ** Rosetta Ston
 - **Regulatory requirement** ([IDS/bSDD](https://www.buildingsmart.org/information-delivery-specification-ids-v1-0-is-approved-as-a-final-standard/)): "All fire-rated walls must have certification property"
 - **Human query** (LLM): "Show me all fire-rated walls without certification on Level 3"
 
-This is the **BIRS + MCP4IFC + BOT convergence** identified in the [ontology research](12_Ontologies_and_Knowledge_Graphs_for_BIM.md) — and it is the single most defensible technical moat Trelo Labs can build.
+This is the **BIRS + MCP4IFC + BOT convergence** identified in the [ontology research](12_Ontologies_and_Knowledge_Graphs_for_BIM.md) — and it is the single most defensible technical moat Trayini.ai can build.
 
 ---
 
@@ -152,7 +152,7 @@ SLM/LLM Interface (natural language query, RAG-grounded response)
 
 ### 3.1 What to Build First (MVP — Months 0–6)
 
-**Product: "Trelo Construct Copilot" — The LLM+Ontology Layer for VDC Agencies**
+**Product: "Trayini Construct Copilot" — The LLM+Ontology Layer for VDC Agencies**
 
 **Core Value Proposition:** An on-premise, AI-native assistant that lets VDC teams query their BIM models, project documents, and building codes in natural language — with zero hallucination via ontology-constrained RAG.
 
@@ -178,7 +178,7 @@ SLM/LLM Interface (natural language query, RAG-grounded response)
 
 ### 3.2 What to Build Next (Phase 2 — Months 6–18)
 
-**Product: "Trelo Scan Intelligence" — 3D Reconstruction + Semantic BIM**
+**Product: "Trayini Scan Intelligence" — 3D Reconstruction + Semantic BIM**
 
 **Feature Set:**
 1. **360° Video → 3DGS → Semantic Mesh** — Ingest [OpenSpace](https://www.openspace.ai/)/[Cupix](https://www.cupix.com/) captures; train Gaussian Splatting; extract mesh via SuGaR; segment with SAM/PointNet++
@@ -196,7 +196,7 @@ SLM/LLM Interface (natural language query, RAG-grounded response)
 
 ### 3.3 What to Build Later (Phase 3 — Months 18–36)
 
-**Product: "Trelo Digital Twin Kernel" — End-to-End AI VDC Platform**
+**Product: "Trayini Digital Twin Kernel" — End-to-End AI VDC Platform**
 
 **Vision:** Capture (any source) → AI model generation → AI clash detection → AI progress tracking → LLM query interface → Robot task planning
 
@@ -209,7 +209,7 @@ SLM/LLM Interface (natural language query, RAG-grounded response)
 
 **Why this is the long-term moat:**
 - No vendor has the full pipeline. [OpenSpace](https://www.openspace.ai/) captures. [Buildots](https://buildots.com/) tracks. EdgeWise models. Procore manages docs. **No one connects them all.**
-- The ontology layer becomes the switching cost — once a GC's project knowledge is encoded in Trelo's graph, migration is expensive
+- The ontology layer becomes the switching cost — once a GC's project knowledge is encoded in Trayini's graph, migration is expensive
 - Recurring revenue from digital twin operations (FM handover) is 15–70% of building lifecycle cost
 
 ### 3.4 Who Pays and How Much
@@ -224,10 +224,10 @@ SLM/LLM Interface (natural language query, RAG-grounded response)
 
 ### 3.5 Competitive Moat
 
-1. **Ontology-First Architecture** — Most AI construction startups build point solutions. Trelo builds the semantic glue. The knowledge graph is the moat.
+1. **Ontology-First Architecture** — Most AI construction startups build point solutions. Trayini builds the semantic glue. The knowledge graph is the moat.
 2. **India Cost Advantage + US Revenue** — Build in Bangalore (classic landmark location confirmed), sell to US GCs at US prices. Labor arbitrage on AI/ML engineering.
 3. **Open-Source Distribution Strategy** — Open-source the MCP4IFC extensions, the ontology fragments, and the dataset tools. Build community, sell enterprise features.
-4. **Data Network Effects** — Every project fed into Trelo's system improves the SLM, the segmentation models, and the ontology. Early projects create compounding advantage.
+4. **Data Network Effects** — Every project fed into Trayini's system improves the SLM, the segmentation models, and the ontology. Early projects create compounding advantage.
 
 ---
 
@@ -251,7 +251,7 @@ Point cloud / GS points → Point encoder → LLM → Text response
 - **Cons:** Limited to object/small-scene scale; no construction-site-scale model exists
 - **Best for:** MEP component identification, equipment recognition
 
-**Approach C: Semantic Graph + LLM (Recommended for Trelo)**
+**Approach C: Semantic Graph + LLM (Recommended for Trayini)**
 ```
 3D reconstruction → Semantic segmentation → Knowledge graph (Neo4j) → LLM RAG
 ```
@@ -270,7 +270,7 @@ LLM → calls COLMAP → calls 3DGS training → calls SAM segmentation → call
 
 ### 4.2 Scan-to-BIM Automation Gaps and Solutions
 
-| Gap | Current State | Trelo Solution | Technical Approach |
+| Gap | Current State | Trayini Solution | Technical Approach |
 |-----|--------------|----------------|-------------------|
 | **MEP clutter modeling** | Manual for small-diameter pipes, conduit, cable trays | AI segmentation + primitive fitting | Train PointNet++ on synthetic MEP datasets; RANSAC for cylinders/cones |
 | **LOD 350–400 connections** | Not reliably auto-generated | Rule-based + LLM-assisted parametric generation | [MCP4IFC](https://arxiv.org/abs/2511.05533) + IfcOpenShell API to generate IfcConnectionGeometry |
@@ -280,7 +280,7 @@ LLM → calls COLMAP → calls 3DGS training → calls SAM segmentation → call
 
 ### 4.3 The Path: 360° Video → BIM → LLM Query
 
-**The full pipeline Trelo should build:**
+**The full pipeline Trayini should build:**
 
 ```
 Step 1: CAPTURE
@@ -315,7 +315,7 @@ Step 5: ACT
 └─ Robot task export (BIRS → ROS navigation map)
 ```
 
-**Critical technical insight:** NeRF/3DGS currently prioritize visual fidelity over geometric metrology. For construction, this means they are excellent for stakeholder communication and immersive review, but **not yet suitable for LOD 400/500 without fusion with surveyed point clouds**. Trelo's architecture must use **TLS/LiDAR for metrology + 3DGS for visualization**, fused in a common coordinate system.
+**Critical technical insight:** NeRF/3DGS currently prioritize visual fidelity over geometric metrology. For construction, this means they are excellent for stakeholder communication and immersive review, but **not yet suitable for LOD 400/500 without fusion with surveyed point clouds**. Trayini's architecture must use **TLS/LiDAR for metrology + 3DGS for visualization**, fused in a common coordinate system.
 
 ---
 
@@ -364,12 +364,12 @@ Step 5: ACT
 | **Decision speed** | Faster; family-owned/conglomerate structure | Slower; procurement committees, legal review |
 | **Pain points** | Lack of universal as-built BIM software; regulatory complexity | Data silos; document chaos; skilled labor shortage |
 | **Talent** | Strong engineering talent; lower cost | Deep construction domain expertise |
-| **Trelo strategy** | **Build & test market**; prove product-market fit | **Primary revenue market**; premium pricing |
+| **Trayini strategy** | **Build & test market**; prove product-market fit | **Primary revenue market**; premium pricing |
 
 ### 5.4 Open-Source Strategy
 
 **What to Open-Source (Community Building):**
-1. **Trelo MCP Extensions** — Extensions to ifc-mcp for 3D reconstruction inputs (point cloud → IFC alignment)
+1. **Trayini MCP Extensions** — Extensions to ifc-mcp for 3D reconstruction inputs (point cloud → IFC alignment)
 2. **Construction Ontology Fragments** — BIRS-inspired cross-domain ontology (BIM ↔ 3D recon ↔ robotics)
 3. **AEC Bench Dataset** — Multi-modal benchmark for VDC tasks (BIM + images + point clouds + schedules)
 4. **Synthetic Data Generator** — SYNBUILD-3D-style tool for generating training data
@@ -453,13 +453,13 @@ Step 5: ACT
 No single technology (LLMs, 3D reconstruction, ontologies) wins alone. The winner will be the platform that **integrates capture → reconstruction → semantics → language → action** into a unified workflow. Every step exists in isolation. The integration gap is the product opportunity.
 
 ### The Moat
-1. **Ontology-first architecture** — Most startups build point solutions; Trelo builds the semantic glue
+1. **Ontology-first architecture** — Most startups build point solutions; Trayini builds the semantic glue
 2. **India cost advantage + US revenue** — Build in Bangalore, sell globally
 3. **Open-source distribution** — Community around MCP4IFC extensions and construction ontologies
 4. **Data network effects** — Every project improves the models
 
 ### The Path
-- **Now (0–6mo):** Build "Trelo Construct Copilot" — LLM+ontology layer for VDC agencies ($3K–$5K/month)
+- **Now (0–6mo):** Build "Trayini Construct Copilot" — LLM+ontology layer for VDC agencies ($3K–$5K/month)
 - **Next (6–18mo):** Add "Scan Intelligence" — 3D reconstruction + semantic BIM ($5K–$15K/project)
 - **Later (18–36mo):** Full "Digital Twin Kernel" — end-to-end AI VDC platform ($200K–$2M/year)
 
