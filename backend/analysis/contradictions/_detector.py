@@ -14,6 +14,7 @@ from ._comparators import (
     get_comparator,
 )
 from ._grouper import group_by_entity, group_by_entity_attribute
+from ._inferential import MeMoInferentialSensor
 from ._resolver import DEFAULT_SOURCE_PRIORITY, DocumentHierarchyResolver
 from ._scoring import score_conflict
 from ._sensors import ContradictionDetectionSensor
@@ -37,11 +38,15 @@ class ContradictionDetector:
         priority: Optional[Dict[str, int]] = None,
         sensor: Optional[ContradictionDetectionSensor] = None,
         raise_on_drift: bool = True,
+        use_inferential: bool = False,
+        inferential_sensor: Optional[MeMoInferentialSensor] = None,
     ):
         self.priority = priority if priority is not None else DEFAULT_SOURCE_PRIORITY
         self.resolver = DocumentHierarchyResolver(self.priority)
         self.sensor = sensor or ContradictionDetectionSensor()
         self.raise_on_drift = raise_on_drift
+        self.use_inferential = use_inferential
+        self.inferential_sensor = inferential_sensor
 
     def detect(self, claims: List[Claim]) -> DetectionResult:
         """Detect contradictions across a list of claims.
@@ -67,6 +72,18 @@ class ContradictionDetector:
             len(candidates), len(kept), phase="resolve", raise_on_excess=False
         )
         result.reports.append(drift_report)
+
+        if self.use_inferential:
+            sensor = self.inferential_sensor or MeMoInferentialSensor()
+            inferential = sensor.review(claims, kept)
+            inferential, inf_report = self.sensor.check_candidates(inferential)
+            result.reports.append(inf_report)
+            if self.raise_on_drift and inf_report.status.value == "fail":
+                raise SensorCheckError(
+                    "Inferential sensor candidate check failed",
+                    reports=result.reports,
+                )
+            kept = kept + inferential
 
         result.contradictions = self._build_contradictions(kept, claims)
         return result
