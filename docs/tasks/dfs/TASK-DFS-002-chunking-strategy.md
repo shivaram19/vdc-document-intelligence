@@ -1,9 +1,10 @@
 # TASK-DFS-002: Hierarchical Chunking Strategy for Construction Documents
 
-**Date:** 2026-05-03  
-**Scope:** Depth-first implementation of document chunking optimized for construction specs, drawings, and codes  
-**Personas:** First-Principles Engineer, Research Scientist, Infrastructure-First SRE  
-**Status:** Pending BFS Completion
+**Date:** 2026-05-03
+**Scope:** Depth-first implementation of document chunking optimized for construction specs, drawings, and codes
+**Personas:** First-Principles Engineer, Research Scientist, Infrastructure-First SRE
+**Status:** Design accepted; implementation pending
+**Decision record:** [ADR-011: Document-Type-Aware Hierarchical Chunking](../../decisions/ADR-011-chunking-strategy.md)
 
 ---
 
@@ -30,7 +31,9 @@ Division 23 — HVAC
     └── 23 09 23 — Direct-Digital Control System for HVAC
 ```
 
-## 3. Chunking Strategy: Hierarchical Late Chunking
+## 3. Chunking Strategy: Document-Type-Aware Hierarchical Chunking
+
+The design has been finalized in ADR-011. The implementation approach below is preserved as the target architecture.
 
 ### 3.1 Architecture
 
@@ -83,7 +86,9 @@ class HierarchicalChunker:
 - Link to parent drawing sheet chunk
 - Include scale, revision, date metadata
 
-## 4. Late Chunking Implementation
+## 4. Late Chunking Implementation (Future Optimization)
+
+_Deferred until after benchmark dataset exists (TASK-DFS-005)._
 
 Using Jina Embeddings v3 or bge-m3 with 8K context:
 
@@ -121,13 +126,14 @@ Compare chunking strategies on:
 
 ## 7. Implementation Tasks
 
+- [x] **Subtask 0:** Finalize chunking strategy design (ADR-011)
 - [ ] **Subtask 1:** Implement `Chunk` dataclass and `HierarchicalChunker`
 - [ ] **Subtask 2:** Implement heading hierarchy parser (CSI MasterFormat aware)
 - [ ] **Subtask 3:** Implement table extraction as standalone chunks
 - [ ] **Subtask 4:** Implement cross-reference detection and graph building
-- [ ] **Subtask 5:** Implement Late Chunking with Jina/bge-m3
+- [ ] **Subtask 5:** Implement Late Chunking with Jina/bge-m3 (deferred)
 - [ ] **Subtask 6:** Implement `HierarchicalRetriever` with two-phase search
-- [ ] **Subtask 7:** Build benchmark dataset (100 construction QA pairs)
+- [ ] **Subtask 7:** Build benchmark dataset (100 construction QA pairs) (moved to TASK-DFS-005)
 - [ ] **Subtask 8:** Run A/B test: Fixed vs. Hierarchical vs. Late chunking
 
 ## 8. Acceptance Criteria
