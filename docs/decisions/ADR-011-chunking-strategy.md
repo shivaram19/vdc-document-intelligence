@@ -38,6 +38,8 @@ Adopt a **document-type-aware hierarchical chunking** strategy as the default.
 
 6. **Defer late chunking.** Late chunking with token-level embeddings (e.g., Jina Embeddings v3, bge-m3) is a future optimization. It will be evaluated only after a benchmark dataset exists (see `TASK-DFS-005`).
 
+Implementation lives in `backend/chunking/` and is exercised by `backend/chunking/tests/test_chunker.py`.
+
 ## Consequences
 
 ### Positive

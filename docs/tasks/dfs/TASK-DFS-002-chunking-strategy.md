@@ -127,10 +127,10 @@ Compare chunking strategies on:
 ## 7. Implementation Tasks
 
 - [x] **Subtask 0:** Finalize chunking strategy design (ADR-011)
-- [ ] **Subtask 1:** Implement `Chunk` dataclass and `HierarchicalChunker`
-- [ ] **Subtask 2:** Implement heading hierarchy parser (CSI MasterFormat aware)
+- [x] **Subtask 1:** Implement `Chunk` dataclass and `HierarchicalChunker` (`backend/chunking/`)
+- [x] **Subtask 2:** Implement heading hierarchy parser (CSI MasterFormat / section aware)
 - [ ] **Subtask 3:** Implement table extraction as standalone chunks
-- [ ] **Subtask 4:** Implement cross-reference detection and graph building
+- [x] **Subtask 4:** Implement cross-reference detection (`backend/chunking/extractors.py`)
 - [ ] **Subtask 5:** Implement Late Chunking with Jina/bge-m3 (deferred)
 - [ ] **Subtask 6:** Implement `HierarchicalRetriever` with two-phase search
 - [ ] **Subtask 7:** Build benchmark dataset (100 construction QA pairs) (moved to TASK-DFS-005)
