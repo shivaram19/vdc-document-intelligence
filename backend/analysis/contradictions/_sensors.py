@@ -77,6 +77,7 @@ class ContradictionDetectionSensor:
         before: int,
         after: int,
         phase: str = "drift",
+        raise_on_excess: bool = True,
     ) -> SensorReport:
         """Report when the pipeline drops or inflates results unexpectedly."""
         denominator = max(before, 1)
@@ -96,7 +97,7 @@ class ContradictionDetectionSensor:
             status=status,
             details=[f"{before} -> {after} ({drift_ratio:.2%})"],
         )
-        if status == SensorStatus.FAIL:
+        if status == SensorStatus.FAIL and raise_on_excess:
             raise SensorCheckError(
                 f"Excessive drift at {phase}: {drift_ratio:.2%}",
                 reports=[report],
