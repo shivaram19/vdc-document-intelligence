@@ -42,5 +42,6 @@ backups/
 graphify-out/
 backend/medha_entities.db
 backend/chroma_db/
+medha_projects.db
 landing-page/index-v1.html
 certbot-venv/
