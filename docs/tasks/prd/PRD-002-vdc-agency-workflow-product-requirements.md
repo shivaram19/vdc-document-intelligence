@@ -9,21 +9,38 @@
 
 ## 1. Product Vision
 
-Medha becomes the **document-intelligence layer** that runs across every project in a VDC agency. It does not replace Revit, Navisworks, or Procore. It reads the documents that move between these tools and surfaces contradictions, gaps, and action items before they become RFIs or rework.
+Medha becomes the **lean document-intelligence layer** that runs across every project in a VDC agency. It does not replace Revit, Navisworks, or Procore. It reads the documents that move between these tools and surfaces contradictions, gaps, and action items before they become RFIs or rework — turning document waste into early, cheap resolution.
 
-> *“The VDC engineer still makes the call. Medha makes sure nothing gets missed.”*
+> *“The VDC engineer still makes the call. Medha makes sure nothing gets missed, and nothing gets wasted.”*
 
 ---
 
-## 2. Target Users
+## 2. Lean Construction Principles in Medha
+
+Medha is designed around lean construction values:
+
+| Lean Principle | How Medha Applies It |
+|---|---|
+| **Eliminate waste** | Catch document contradictions before they become RFIs, rework, or schedule delays. |
+| **Amplify learning** | Capture every accepted/rejected finding to improve model accuracy over time. |
+| **Decide as late as possible** | Provide real-time alerts so decisions happen with the latest information. |
+| **Deliver as fast as possible** | Reduce document review and RFI drafting cycles from hours to minutes. |
+| **Empower the team** | Keep the VDC engineer in control of final approvals and sign-offs. |
+| **Build integrity in** | Every finding includes citations, confidence scores, and audit trails. |
+| **See the whole** | Cross-project dashboards show agency-wide document risk and waste trends. |
+
+---
+
+## 3. Target Users
 
 | Role | Primary/Secondary | What they need from Medha |
 |---|---|---|
-| VDC Coordinator / Engineer | Primary | Fewer missed contradictions, faster RFI drafting, cleaner coordination reports |
-| VDC Manager / Lead | Primary | Visibility across all projects, quality control, client-ready reports |
+| VDC Coordinator / Engineer | Primary | Fewer missed contradictions, faster RFI drafting, cleaner coordination reports, less document waste |
+| VDC Manager / Lead | Primary | Visibility across all projects, quality control, client-ready reports, standardized workflows |
 | Project Engineer | Secondary | Quick answers from specs and drawings, impact analysis of addenda |
-| Document Controller | Secondary | Auto-organized incoming documents, version tracking, audit trail |
-| Preconstruction Manager | Secondary | Risk scoring before bid, contract/spec conflict detection |
+| Document Controller | Secondary | Auto-organized incoming documents, version tracking, audit trail, standardized file structure |
+| Preconstruction Manager | Secondary | Risk scoring before bid, contract/spec conflict detection, lean preconstruction efficiency |
+| Superintendent / Field Engineer | Secondary | Clear, visual summaries of document conflicts and resolution status |
 
 ---
 
@@ -43,6 +60,7 @@ Medha becomes the **document-intelligence layer** that runs across every project
 | Receive first document drop | **Smart intake** — auto-classify sheets by discipline and type; detect missing sheets; extract revision dates | P1 |
 | Set up project workspace | **Project workspace** — per-project document store, model links, team access, BEP template | P1 |
 | Verify document completeness | **Completeness checker** — flag missing disciplines, incomplete sheet sets, unmatched detail callouts | P1 |
+| Enforce agency standards | **Standardization assistant** — check file naming, folder structure, sheet numbering against agency BEP templates | P1 |
 
 **Feature: Smart Intake**
 - **User story:** As a VDC engineer, when a new drawing set arrives, I want Medha to organize it by discipline and flag missing sheets so I don’t start coordination with an incomplete set.
@@ -52,6 +70,14 @@ Medha becomes the **document-intelligence layer** that runs across every project
   - Extracts sheet number, title, revision, date
   - Flags duplicate or missing sheet numbers
   - Surfaces unclassified sheets for manual review
+
+**Feature: Standardization Assistant**
+- **User story:** As a VDC manager, I want every project in my agency to follow the same file naming and folder structure standards so engineers can move between projects without relearning where things live.
+- **Acceptance criteria:**
+  - Validates uploaded files against agency-defined naming conventions
+  - Flags sheets that violate BEP file structure
+  - Suggests correct names and locations
+  - Provides a project health score for standardization compliance
 
 ### Stage 3: Model Setup
 
@@ -71,6 +97,8 @@ This is Medha’s core value stage.
 | Check for new transmittals daily | **Inbox monitor** — watch email/SharePoint/ACC/Procore for new documents and notify the team | P1 |
 | Compare revised drawings | **Drawing diff** — highlight changes between revisions; categorize as major/minor/cosmetic | P1 |
 | Track addenda impact | **Addenda impact report** — list sheets/specs affected by each addendum | P1 |
+| Monitor document-driven risk in real time | **Live risk feed** — continuously scan for new contradictions as documents are added or updated | P1 |
+| Communicate issues to non-technical stakeholders | **Executive summary view** — visual, jargon-lite summary of document risk for PMs/owners | P2 |
 
 **Feature: Drawing Diff**
 - **User story:** As a VDC engineer, when an addendum is issued, I want to see exactly what changed against the previous drawing so I can assess coordination impact in minutes, not hours.
@@ -79,6 +107,15 @@ This is Medha’s core value stage.
   - Highlight added, deleted, and modified geometry/annotations
   - Generate a change summary by discipline
   - Link changes to affected coordination items
+
+**Feature: Live Risk Feed**
+- **User story:** As a VDC engineer, I want Medha to alert me the moment a new document introduces a contradiction so I can address it before the next coordination meeting.
+- **Acceptance criteria:**
+  - Monitors connected document sources for new or revised files
+  - Automatically re-runs contradiction checks on affected documents
+  - Surfaces new issues in a real-time activity feed
+  - Sends configurable notifications (email, Slack, in-app)
+  - Distinguishes new issues from previously reviewed issues
 
 #### 4.2 Clash preparation
 
@@ -136,6 +173,7 @@ This is Medha’s core value stage.
 | Prepare meeting materials | **Coordination deck builder** — auto-generate slides from current issue list | P2 |
 | Record decisions | **Meeting notes parser** — extract action items from meeting minutes and link to issues | P3 |
 | Get sign-offs | **Sign-off tracker** — track which trades have approved which coordination deliverables | P2 |
+| Report to non-technical stakeholders | **Stakeholder report** — one-page visual summary of document status, risk, and open issues | P2 |
 
 ### Stage 5: Closeout
 
@@ -151,26 +189,32 @@ This is Medha’s core value stage.
 
 ### P1 — Must have for MVP
 1. Smart document intake and classification
-2. Drawing diff / revision comparison
-3. Pre-clash document contradiction detection
-4. RFI drafter with citations
-5. Project workspace and basic user access
-6. Integration with Plane (existing) and Procore/ACC (next)
+2. Standardization assistant for file naming and structure
+3. Drawing diff / revision comparison
+4. Live risk feed for real-time contradiction alerts
+5. Pre-clash document contradiction detection
+6. RFI drafter with citations
+7. Project workspace and basic user access
+8. Integration with Plane (existing) and Procore/ACC (next)
 
 ### P2 — Strongly valuable
-7. Submittal comparator
-8. Addenda impact report
-9. Coordination deck builder
-10. Sign-off tracker
-11. As-built discrepancy report
-12. Model linking assistant
+9. Submittal comparator
+10. Addenda impact report
+11. Coordination deck builder
+12. Stakeholder report for non-technical audiences
+13. Sign-off tracker
+14. As-built discrepancy report
+15. Model linking assistant
 
 ### P3 — Differentiating later
-13. Project complexity scanner for proposals
-14. Compliance checklist generator
-15. Meeting notes parser
-16. Project retrospective analytics
-17. Clash-rule template library
+16. Project complexity scanner for proposals
+17. Compliance checklist generator
+18. Meeting notes parser
+19. Project retrospective analytics
+20. Clash-rule template library
+21. Quantity takeoff data extraction
+22. 4D-scheduling input validation
+23. Visualization exports for stakeholder communication
 
 ---
 
@@ -199,37 +243,41 @@ Medha’s existing pipeline supports this PRD with the following extensions:
 - PDF/DWG/DXF intake
 - Sheet classification and metadata extraction
 - Project workspace UI
-- **Success:** A VDC engineer can upload a drawing set and see organized sheets in under 5 minutes.
+- Standardization assistant for file naming and structure
+- **Success:** A VDC engineer can upload a drawing set and see organized sheets in under 5 minutes; standardization health score is visible.
 
-### Milestone 2: Drawing Diff & Addenda Impact (Weeks 4–6)
+### Milestone 2: Drawing Diff & Real-Time Monitoring (Weeks 4–7)
 - Revision comparison with visual diff
 - Addenda impact report
 - Notification of new document drops
-- **Success:** Engineer identifies all changed sheets and affected coordination items in under 10 minutes.
+- Live risk feed that re-checks documents on arrival
+- **Success:** Engineer identifies all changed sheets and affected coordination items in under 10 minutes; new contradictions are surfaced within minutes of document arrival.
 
-### Milestone 3: Pre-Clash Contradiction Detection (Weeks 7–12)
+### Milestone 3: Pre-Clash Contradiction Detection (Weeks 8–14)
 - Elevation, material, dimension, schedule contradiction detection
 - Confidence scoring and severity ranking
 - Source citations for every finding
-- **Success:** Medha finds ≥80% of document-level contradictions that would otherwise appear as RFIs, with <20% false-positive rate.
+- Stakeholder report for non-technical summaries
+- **Success:** Medha finds ≥80% of document-level contradictions that would otherwise appear as RFIs, with <20% false-positive rate; PMs/owners can read risk summaries without VDC jargon.
 
-### Milestone 4: RFI & Issue Workflow (Weeks 13–16)
+### Milestone 4: RFI & Issue Workflow (Weeks 15–19)
 - RFI drafter with citations
 - One-click push to Plane
 - Issue tracking dashboard
 - **Success:** RFI drafting time reduced from 2 hours to 15 minutes per issue.
 
-### Milestone 5: Submittal Review & Closeout (Weeks 17–22)
+### Milestone 5: Submittal Review & Closeout (Weeks 20–26)
 - Submittal comparator
 - As-built discrepancy report
 - Closeout package generator
 - **Success:** Submittal review time reduced by 50%.
 
-### Milestone 6: Multi-Project Agency Dashboard (Weeks 23–28)
+### Milestone 6: Multi-Project Agency Dashboard (Weeks 27–32)
 - Cross-project risk dashboard
 - Resource load visibility
 - Recurring issue analytics
-- **Success:** VDC manager can see document risk across all active projects in one view.
+- Lean waste metrics (RFIs prevented, rework avoided, review hours saved)
+- **Success:** VDC manager can see document risk and lean waste metrics across all active projects in one view.
 
 ---
 
@@ -244,6 +292,8 @@ Medha’s existing pipeline supports this PRD with the following extensions:
 | Submittal review time | 45–90 minutes | <20 minutes |
 | Document-level contradictions caught pre-clash | Manual, inconsistent | ≥80% auto-detected |
 | False-positive rate on contradiction findings | N/A | <20% |
+| Average time from document arrival to contradiction alert | Hours to days | <10 minutes |
+| Standardization compliance score | Manual check | ≥90% auto-scored |
 
 ### Business outcomes
 | Metric | Target |
@@ -252,6 +302,8 @@ Medha’s existing pipeline supports this PRD with the following extensions:
 | User weekly active rate | ≥70% |
 | Issues resolved via Medha-generated RFIs | ≥30% of project RFIs |
 | Client-perceived coordination quality improvement | Qualitative positive feedback |
+| Estimated rework cost avoided per project | Measurable reduction |
+| Document waste hours saved per week per engineer | ≥6 hours |
 
 ### Product health
 | Metric | Target |
@@ -269,6 +321,8 @@ Medha’s existing pipeline supports this PRD with the following extensions:
 3. What is the minimum training data needed for civil entity extraction to reach acceptable accuracy?
 4. How should Medha handle classified or owner-sensitive drawings in a self-hosted deployment?
 5. What is the liability framing in the terms of service for AI-generated contradiction findings?
+6. How should Medha quantify and report “waste prevented” in a way that VDC managers can defend to clients?
+7. Which lean KPIs (RFIs prevented, rework avoided, review hours saved) can be measured automatically vs. estimated?
 
 ---
 
@@ -279,3 +333,4 @@ Medha’s existing pipeline supports this PRD with the following extensions:
 - [CITE: PERSONA_VDC_001] `docs/research/PERSONA_VDC_ENGINEER_001.md`
 - [CITE: ADR-009] `docs/decisions/ADR-009-civil-engineering-drawing-intelligence-engine.md`
 - [CITE: COMPETITIVE_LANDSCAPE_2026] `docs/research/COMPETITIVE_LANDSCAPE_2026-05-03.md`
+- [CITE: VDC_VIDEO_INSIGHTS_001] `docs/research/VDC_VIDEO_INSIGHTS_SYNTHESIS_001.md`
