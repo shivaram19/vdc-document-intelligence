@@ -8,10 +8,12 @@ ADR-011: Document-Type-Aware Hierarchical Chunking.
 from .chunker import HierarchicalChunker
 from .extractors import count_tokens, extract_cross_references
 from .models import Chunk
+from .retriever import HierarchicalRetriever
 
 __all__ = [
     "Chunk",
     "HierarchicalChunker",
+    "HierarchicalRetriever",
     "count_tokens",
     "extract_cross_references",
 ]

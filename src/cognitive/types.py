@@ -23,12 +23,12 @@ from datetime import datetime
 class EpistemicStatus(Enum):
     """
     Discrete representation of the system's confidence in its knowledge state.
-    
+
     Why discrete and not continuous? [CITE: Gigerenzer2009] Fast-and-frugal
     heuristics use discrete cues rather than continuous probabilities because
     humans (and systems acting for humans) make better decisions with discrete
     categories than with poorly calibrated continuous scores.
-    
+
     Alternative considered: Continuous [0,1] confidence score.
     Rejected because: [CITE: Guo2017] Neural network probability outputs are
     poorly calibrated (overconfident). Discrete states force explicit
@@ -50,7 +50,7 @@ class ReasoningStrategy(Enum):
     """
     Available reasoning strategies mapped to cognitive science dual-process
     theory [CITE: Kahneman2011].
-    
+
     SYSTEM_1 corresponds to Type 1 (fast, heuristic, autonomous) processing.
     SYSTEM_2 corresponds to Type 2 (slow, analytical, effortful) processing.
     SYSTEM_3 implements active information seeking [CITE: Friston2010].
@@ -72,7 +72,7 @@ class QueryType(Enum):
     """
     Construction-domain query types derived from analysis of 10K+ real
     construction support tickets [CITE: Bansal2023].
-    
+
     Why not generic QA types (factoid, list, etc.)?
     Rejected: [CITE: Li2024] Domain-specific classifiers outperform
     generic taxonomies by 23% F1 on construction document tasks.
@@ -96,10 +96,10 @@ class QueryType(Enum):
 class Evidence:
     """
     Atomic piece of evidence retrieved from the document corpus.
-    
+
     [CITE: Khattab2022] DSPy framework: every piece of evidence must be
     traceable to its source for verifiable reasoning.
-    
+
     Why frozen? [CITE: Gamma1995] Immutable value objects prevent aliasing
     bugs in concurrent retrieval pipelines.
     """
@@ -110,17 +110,18 @@ class Evidence:
     relevance_score: float
     retrieval_method: str  # "vector", "graph", "keyword", "cross_reference"
     timestamp: datetime = field(default_factory=datetime.utcnow)
+    metadata: Dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass
 class CognitiveState:
     """
     Complete representation of the cognitive system's current state.
-    
+
     [CITE: Friston2010] The Free Energy Principle: an agent's state must
     encode both beliefs (about the world) and uncertainty (about those beliefs)
     to enable active inference.
-    
+
     [CITE: Daw2005] Prefrontal cortex encodes model-based state; striatum
     encodes model-free state. This structure mirrors that dual encoding.
     """
@@ -133,7 +134,7 @@ class CognitiveState:
     confidence_history: List[float] = field(default_factory=list)
     iterations: int = 0
     max_iterations: int = 5  # [CITE: Yao2023] ReAct: 5 iterations sufficient
-    
+
     # Bayesian belief state
     # [CITE: Jaynes2003] Probability Theory: The Logic of Science
     strategy_probabilities: Dict[ReasoningStrategy, float] = field(
@@ -145,10 +146,10 @@ class CognitiveState:
 class CognitiveOutput:
     """
     Final output from the cognitive architecture.
-    
+
     [CITE: Wiegreffe2021] Explainable NLP requires outputs to include
     both predictions and the reasoning that produced them.
-    
+
     [CITE: Amershi2019] Human-AI interaction guidelines: systems should
     communicate confidence and uncertainty clearly.
     """

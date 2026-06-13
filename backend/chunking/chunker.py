@@ -13,7 +13,12 @@ from dataclasses import dataclass
 from typing import List, Optional, Tuple
 
 from ingestion.models import Discipline, Document, DocumentType, Sheet
-from chunking.extractors import count_tokens, extract_cross_references
+from chunking.extractors import (
+    TableBlock,
+    count_tokens,
+    extract_cross_references,
+    extract_text_tables,
+)
 from chunking.models import Chunk
 
 
@@ -237,6 +242,7 @@ class SpecificationChunker(BaseChunker):
                 )
             )
 
+        chunks = self._split_table_chunks(chunks)
         return self._enrich(chunks)
 
     def _enrich(self, chunks: List[Chunk]) -> List[Chunk]:
@@ -244,6 +250,77 @@ class SpecificationChunker(BaseChunker):
             chunk.token_count = count_tokens(chunk.text)
             chunk.refs = extract_cross_references(chunk.text)
         return chunks
+
+    def _split_table_chunks(self, chunks: List[Chunk]) -> List[Chunk]:
+        """Extract inline tables from subsection chunks as standalone chunks."""
+        out: List[Chunk] = []
+        for chunk in chunks:
+            if chunk.level != 2 or chunk.source_type != self.context.source_type:
+                out.append(chunk)
+                continue
+
+            tables = extract_text_tables(chunk.text)
+            if not tables:
+                out.append(chunk)
+                continue
+
+            lines = chunk.text.splitlines()
+            last_end = 0
+            for table in tables:
+                before = "\n".join(lines[last_end : table.start_line]).strip()
+                if before:
+                    out.append(
+                        Chunk(
+                            document_id=chunk.document_id,
+                            project_id=chunk.project_id,
+                            source_type=chunk.source_type,
+                            discipline=chunk.discipline,
+                            level=chunk.level,
+                            parent_id=chunk.parent_id,
+                            section_number=chunk.section_number,
+                            title=chunk.title,
+                            text=before,
+                        )
+                    )
+
+                table_chunk = Chunk(
+                    document_id=chunk.document_id,
+                    project_id=chunk.project_id,
+                    source_type="table",
+                    discipline=chunk.discipline,
+                    level=chunk.level + 1,
+                    parent_id=chunk.id,
+                    section_number=chunk.section_number,
+                    title=table.caption or f"Table in {chunk.title}",
+                    text=table.markdown,
+                    metadata={
+                        "rows": table.row_count,
+                        "columns": table.column_count,
+                    },
+                )
+                table_chunk.token_count = count_tokens(table_chunk.text)
+                table_chunk.refs = extract_cross_references(table_chunk.text)
+                out.append(table_chunk)
+
+                last_end = table.end_line
+
+            after = "\n".join(lines[last_end:]).strip()
+            if after:
+                out.append(
+                    Chunk(
+                        document_id=chunk.document_id,
+                        project_id=chunk.project_id,
+                        source_type=chunk.source_type,
+                        discipline=chunk.discipline,
+                        level=chunk.level,
+                        parent_id=chunk.parent_id,
+                        section_number=chunk.section_number,
+                        title=chunk.title,
+                        text=after,
+                    )
+                )
+
+        return out
 
 
 # ---------------------------------------------------------------------------
